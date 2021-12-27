@@ -1,0 +1,6199 @@
+{
+  "operators": {
+    "Carnelian": {
+      "rarity": 6,
+      "name": "Carnelian",
+      "class": "Caster",
+      "subclass": "Modal Caster",
+      "tags": [
+        "AoE",
+        "Defense"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1622545200000,
+      "release_date_en": 1639047600000,
+      "gender": "Female",
+      "birthplace": "Sargon",
+      "birthday": [
+        1,
+        17
+      ],
+      "race": "Caprinae",
+      "height": 173,
+      "combat_experience": "6 Years",
+      "faction": "Leithanien",
+      "EN": {
+        "firstFeatured": 1639047600000,
+        "lastFeatured": 1640257200000,
+        "timesFeatured": 1,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      },
+      "CN": {
+        "firstFeatured": 1622545200000,
+        "lastFeatured": 1637838000000,
+        "timesFeatured": 2,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      }
+    },
+    "Skadi the Corrupting Heart": {
+      "rarity": 6,
+      "name": "Skadi the Corrupting Heart",
+      "class": "Supporter",
+      "subclass": "Aura Supporter",
+      "tags": [
+        "Support",
+        "Survival",
+        "DPS"
+      ],
+      "headhunting": true,
+      "limited": true,
+      "recruitment": true,
+      "release_date_cn": 1619866800000,
+      "release_date_en": 1634814000000,
+      "gender": "Female",
+      "birthplace": "Ægir",
+      "birthday": [
+        3,
+        7
+      ],
+      "race": "Undisclosed",
+      "height": 166,
+      "combat_experience": "——",
+      "faction": "Aegir",
+      "EN": {
+        "firstFeatured": 1634814000000,
+        "lastFeatured": 1636023600000,
+        "timesFeatured": 1,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      },
+      "CN": {
+        "firstFeatured": 1619866800000,
+        "lastFeatured": 1621076400000,
+        "timesFeatured": 1,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      }
+    },
+    "Kal'tsit": {
+      "rarity": 6,
+      "name": "Kal'tsit",
+      "class": "Medic",
+      "subclass": "ST Medic",
+      "tags": [
+        "Summon",
+        "Healing"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1619866800000,
+      "release_date_en": 1634814000000,
+      "gender": "Female",
+      "birthplace": "Rhodes Island",
+      "birthday": null,
+      "race": "Feline",
+      "height": 169,
+      "combat_experience": "3 Years",
+      "faction": "Rhodes Island",
+      "EN": {
+        "firstFeatured": 1634814000000,
+        "lastFeatured": 1636023600000,
+        "timesFeatured": 1,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      },
+      "CN": {
+        "firstFeatured": 1619866800000,
+        "lastFeatured": 1634209200000,
+        "timesFeatured": 2,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      }
+    },
+    "Gladiia": {
+      "rarity": 6,
+      "name": "Gladiia",
+      "class": "Specialist",
+      "subclass": "Puller",
+      "tags": [
+        "Shift",
+        "DPS",
+        "Crowd-Control"
+      ],
+      "headhunting": false,
+      "limited": false,
+      "recruitment": false,
+      "release_date_cn": 1619866800000,
+      "release_date_en": 1634814000000,
+      "gender": "Female",
+      "birthplace": "Ægir",
+      "birthday": [
+        11,
+        6
+      ],
+      "race": "Undisclosed",
+      "height": 181,
+      "combat_experience": "17 Years",
+      "faction": "Aegir",
+      "subfaction": "Abyssal"
+    },
+    "Passenger": {
+      "rarity": 6,
+      "name": "Passenger",
+      "class": "Caster",
+      "subclass": "Chain Caster",
+      "tags": [
+        "DPS"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1618484400000,
+      "release_date_en": 1632999600000,
+      "gender": "Male",
+      "birthplace": "Columbia",
+      "birthday": [
+        9,
+        1
+      ],
+      "race": "Liberi",
+      "height": 187,
+      "combat_experience": "16 Years",
+      "faction": "Sargon",
+      "EN": {
+        "firstFeatured": 1632999600000,
+        "lastFeatured": 1634209200000,
+        "timesFeatured": 1,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      },
+      "CN": {
+        "firstFeatured": 1618484400000,
+        "lastFeatured": 1630580400000,
+        "timesFeatured": 2,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      }
+    },
+    "Ash": {
+      "rarity": 6,
+      "name": "Ash",
+      "class": "Sniper",
+      "subclass": "Marksman Sniper",
+      "tags": [
+        "DPS"
+      ],
+      "headhunting": true,
+      "limited": true,
+      "recruitment": true,
+      "release_date_cn": 1615287600000,
+      "release_date_en": 1629284400000,
+      "gender": "Female",
+      "birthplace": "Unknown",
+      "birthday": [
+        12,
+        24
+      ],
+      "race": "Unknown",
+      "height": 170,
+      "combat_experience": "Unknown",
+      "faction": "Rainbow",
+      "EN": {
+        "firstFeatured": 1629284400000,
+        "lastFeatured": 1630494000000,
+        "timesFeatured": 1,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      },
+      "CN": {
+        "firstFeatured": 1615287600000,
+        "lastFeatured": 1616497200000,
+        "timesFeatured": 1,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      }
+    },
+    "Dusk": {
+      "rarity": 6,
+      "name": "Dusk",
+      "class": "Caster",
+      "subclass": "AoE Caster",
+      "tags": [
+        "AoE",
+        "DPS",
+        "Crowd-Control"
+      ],
+      "headhunting": true,
+      "limited": true,
+      "recruitment": true,
+      "release_date_cn": 1612522800000,
+      "release_date_en": 1627642800000,
+      "gender": "Female",
+      "birthplace": "Yen",
+      "birthday": [
+        11,
+        11
+      ],
+      "race": "Undisclosed",
+      "height": 162,
+      "combat_experience": "Undisclosed",
+      "faction": "Yan",
+      "subfaction": "Sui",
+      "EN": {
+        "firstFeatured": 1627642800000,
+        "lastFeatured": 1628852400000,
+        "timesFeatured": 1,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      },
+      "CN": {
+        "firstFeatured": 1612522800000,
+        "lastFeatured": 1613732400000,
+        "timesFeatured": 1,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      }
+    },
+    "Saga": {
+      "rarity": 6,
+      "name": "Saga",
+      "class": "Vanguard",
+      "subclass": "Pioneer Vanguard",
+      "tags": [
+        "DP-Recovery",
+        "DPS"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1612522800000,
+      "release_date_en": 1627642800000,
+      "gender": "Female",
+      "birthplace": "Higashi",
+      "birthday": [
+        12,
+        31
+      ],
+      "race": "Perro",
+      "height": 164,
+      "combat_experience": "2 Years",
+      "faction": "Higashi",
+      "EN": {
+        "firstFeatured": 1627642800000,
+        "lastFeatured": 1639134000000,
+        "timesFeatured": 2,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      },
+      "CN": {
+        "firstFeatured": 1612522800000,
+        "lastFeatured": 1638183600000,
+        "timesFeatured": 3,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      }
+    },
+    "Archetto": {
+      "rarity": 6,
+      "name": "Archetto",
+      "class": "Sniper",
+      "subclass": "Marksman Sniper",
+      "tags": [
+        "DPS"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1609844400000,
+      "release_date_en": 1625569200000,
+      "gender": "Female",
+      "birthplace": "Laterano",
+      "birthday": [
+        11,
+        16
+      ],
+      "race": "Liberi",
+      "height": 152,
+      "combat_experience": "2 Years",
+      "faction": "Laterano",
+      "EN": {
+        "firstFeatured": 1625569200000,
+        "lastFeatured": 1637924400000,
+        "timesFeatured": 2,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      },
+      "CN": {
+        "firstFeatured": 1609844400000,
+        "lastFeatured": 1632999600000,
+        "timesFeatured": 3,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      }
+    },
+    "Mountain": {
+      "rarity": 6,
+      "name": "Mountain",
+      "class": "Guard",
+      "subclass": "Brawler",
+      "tags": [
+        "DPS",
+        "Survival"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1608202800000,
+      "release_date_en": 1624359600000,
+      "gender": "Male",
+      "birthplace": "Columbia",
+      "birthday": [
+        7,
+        16
+      ],
+      "race": "Feline",
+      "height": 195,
+      "faction": "Columbia",
+      "EN": {
+        "firstFeatured": 1624359600000,
+        "lastFeatured": 1635505200000,
+        "timesFeatured": 2,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      },
+      "CN": {
+        "firstFeatured": 1608202800000,
+        "lastFeatured": 1640084400000,
+        "timesFeatured": 3,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      }
+    },
+    "Mudrock": {
+      "rarity": 6,
+      "name": "Mudrock",
+      "class": "Defender",
+      "subclass": "Enmity Defender",
+      "tags": [
+        "Survival",
+        "Defense",
+        "DPS"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1604228400000,
+      "release_date_en": 1619780400000,
+      "gender": "Female",
+      "birthplace": "Kazdel",
+      "birthday": [
+        9,
+        21
+      ],
+      "race": "Sarkaz",
+      "height": 163,
+      "combat_experience": "4 Years",
+      "faction": "Rhodes Island",
+      "EN": {
+        "firstFeatured": 1619780400000,
+        "lastFeatured": 1634295600000,
+        "timesFeatured": 2,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      },
+      "CN": {
+        "firstFeatured": 1604228400000,
+        "lastFeatured": 1629370800000,
+        "timesFeatured": 3,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      }
+    },
+    "Rosmontis": {
+      "rarity": 6,
+      "name": "Rosmontis",
+      "class": "Sniper",
+      "subclass": "Aftershock Sniper",
+      "tags": [
+        "DPS"
+      ],
+      "headhunting": true,
+      "limited": true,
+      "recruitment": true,
+      "release_date_cn": 1604228400000,
+      "release_date_en": 1619780400000,
+      "gender": "Female",
+      "birthplace": "Columbia",
+      "birthday": [
+        7,
+        6
+      ],
+      "race": "Feline",
+      "height": 142,
+      "combat_experience": "1 Year",
+      "faction": "Rhodes Island",
+      "subfaction": "Elite",
+      "EN": {
+        "firstFeatured": 1619780400000,
+        "lastFeatured": 1620990000000,
+        "timesFeatured": 1,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      },
+      "CN": {
+        "firstFeatured": 1604228400000,
+        "lastFeatured": 1605438000000,
+        "timesFeatured": 1,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      }
+    },
+    "Blemishine": {
+      "rarity": 6,
+      "name": "Blemishine",
+      "class": "Defender",
+      "subclass": "Healing Defender",
+      "tags": [
+        "Defense",
+        "Healing",
+        "DPS"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1602759600000,
+      "release_date_en": 1617879600000,
+      "gender": "Female",
+      "birthplace": "Kazimierz",
+      "birthday": [
+        7,
+        15
+      ],
+      "race": "Kuranta",
+      "height": 165,
+      "faction": "Kazimierz",
+      "EN": {
+        "firstFeatured": 1617879600000,
+        "lastFeatured": 1629457200000,
+        "timesFeatured": 2,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      },
+      "CN": {
+        "firstFeatured": 1602759600000,
+        "lastFeatured": 1634295600000,
+        "timesFeatured": 3,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      }
+    },
+    "Surtr": {
+      "rarity": 6,
+      "name": "Surtr",
+      "class": "Guard",
+      "subclass": "Arts Guard",
+      "tags": [
+        "DPS"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1600945200000,
+      "release_date_en": 1616670000000,
+      "gender": "Female",
+      "birthplace": "Unknown",
+      "birthday": [
+        1,
+        22
+      ],
+      "race": "Sarkaz",
+      "height": 162,
+      "combat_experience": "2 Years",
+      "faction": "Rhodes Island",
+      "EN": {
+        "firstFeatured": 1616670000000,
+        "lastFeatured": 1640343600000,
+        "timesFeatured": 3,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      },
+      "CN": {
+        "firstFeatured": 1600945200000,
+        "lastFeatured": 1638183600000,
+        "timesFeatured": 4,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      }
+    },
+    "Eunectes": {
+      "rarity": 6,
+      "name": "Eunectes",
+      "class": "Defender",
+      "subclass": "Duelist Defender",
+      "tags": [
+        "DPS",
+        "Survival",
+        "Defense"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1598353200000,
+      "release_date_en": 1614250800000,
+      "gender": "Female",
+      "birthplace": "Sargon",
+      "birthday": [
+        10,
+        30
+      ],
+      "race": "Pythia",
+      "height": 171,
+      "combat_experience": "None",
+      "faction": "Sargon",
+      "EN": {
+        "firstFeatured": 1614250800000,
+        "lastFeatured": 1636714800000,
+        "timesFeatured": 3,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      },
+      "CN": {
+        "firstFeatured": 1598353200000,
+        "lastFeatured": 1627988400000,
+        "timesFeatured": 5,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      }
+    },
+    "Thorns": {
+      "rarity": 6,
+      "name": "Thorns",
+      "class": "Guard",
+      "subclass": "Ranged Guard",
+      "tags": [
+        "DPS",
+        "Defense"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1597143600000,
+      "release_date_en": 1611140400000,
+      "gender": "Male",
+      "birthplace": "Iberia",
+      "birthday": [
+        3,
+        17
+      ],
+      "race": "Ægir",
+      "height": 177,
+      "combat_experience": "5 Years",
+      "faction": "Iberia",
+      "EN": {
+        "firstFeatured": 1611140400000,
+        "lastFeatured": 1637838000000,
+        "timesFeatured": 3,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      },
+      "CN": {
+        "firstFeatured": 1597143600000,
+        "lastFeatured": 1631185200000,
+        "timesFeatured": 5,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      }
+    },
+    "Suzuran": {
+      "rarity": 6,
+      "name": "Suzuran",
+      "class": "Supporter",
+      "subclass": "Slower",
+      "tags": [
+        "Slow",
+        "Support",
+        "DPS"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1594292400000,
+      "release_date_en": 1603882800000,
+      "gender": "Female",
+      "birthplace": "Higashi",
+      "birthday": [
+        10,
+        9
+      ],
+      "race": "Vulpo",
+      "height": 137,
+      "combat_experience": "None",
+      "faction": "Siracusa",
+      "EN": {
+        "firstFeatured": 1603882800000,
+        "lastFeatured": 1640948400000,
+        "timesFeatured": 5,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      },
+      "CN": {
+        "firstFeatured": 1594292400000,
+        "lastFeatured": 1640257200000,
+        "timesFeatured": 5,
+        "firstInShop": 1639047600000,
+        "lastInShop": 1640257200000,
+        "timesInShop": 1
+      }
+    },
+    "Rosa (Poca)": {
+      "rarity": 6,
+      "name": "Rosa (Poca)",
+      "class": "Sniper",
+      "subclass": "Heavyweight Sniper",
+      "tags": [
+        "DPS",
+        "Crowd-Control"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1592478000000,
+      "release_date_en": 1601377200000,
+      "gender": "Female",
+      "birthplace": "Ursus",
+      "birthday": [
+        10,
+        31
+      ],
+      "race": "Ursus",
+      "height": 174,
+      "combat_experience": "None",
+      "faction": "Ursus",
+      "subfaction": "Student",
+      "EN": {
+        "firstFeatured": 1601377200000,
+        "lastFeatured": 1627038000000,
+        "timesFeatured": 3,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      },
+      "CN": {
+        "firstFeatured": 1592478000000,
+        "lastFeatured": 1636628400000,
+        "timesFeatured": 4,
+        "firstInShop": 1635418800000,
+        "lastInShop": 1636628400000,
+        "timesInShop": 1
+      }
+    },
+    "Weedy": {
+      "rarity": 6,
+      "name": "Weedy",
+      "class": "Specialist",
+      "subclass": "Pusher",
+      "tags": [
+        "Shift",
+        "DPS",
+        "Crowd-Control"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1588330800000,
+      "release_date_en": 1609326000000,
+      "gender": "Female",
+      "birthplace": "Iberia",
+      "birthday": [
+        1,
+        23
+      ],
+      "race": "Ægir",
+      "height": 155,
+      "combat_experience": "3 Years",
+      "faction": "Rhodes Island",
+      "EN": {
+        "firstFeatured": 1609326000000,
+        "lastFeatured": 1637838000000,
+        "timesFeatured": 3,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      },
+      "CN": {
+        "firstFeatured": 1588330800000,
+        "lastFeatured": 1632999600000,
+        "timesFeatured": 4,
+        "firstInShop": 1631790000000,
+        "lastInShop": 1632999600000,
+        "timesInShop": 1
+      }
+    },
+    "W": {
+      "rarity": 6,
+      "name": "W",
+      "class": "Sniper",
+      "subclass": "AoE Sniper",
+      "tags": [
+        "DPS",
+        "Crowd-Control"
+      ],
+      "headhunting": true,
+      "limited": true,
+      "recruitment": true,
+      "release_date_cn": 1588330800000,
+      "release_date_en": 1609326000000,
+      "gender": "Female",
+      "birthplace": "Kazdel",
+      "birthday": null,
+      "race": "Sarkaz",
+      "height": 165,
+      "combat_experience": "11 Years",
+      "faction": "Babel",
+      "EN": {
+        "firstFeatured": 1609326000000,
+        "lastFeatured": 1610535600000,
+        "timesFeatured": 1,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      },
+      "CN": {
+        "firstFeatured": 1588330800000,
+        "lastFeatured": 1589540400000,
+        "timesFeatured": 1,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      }
+    },
+    "Phantom": {
+      "rarity": 6,
+      "name": "Phantom",
+      "class": "Specialist",
+      "subclass": "Fast-Redeploy",
+      "tags": [
+        "Fast-Redeploy",
+        "Crowd-Control",
+        "DPS"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1587466800000,
+      "release_date_en": 1607598000000,
+      "gender": "Male",
+      "birthplace": "Victoria",
+      "birthday": [
+        1,
+        19
+      ],
+      "race": "Feline",
+      "height": 185,
+      "combat_experience": "9 Years",
+      "faction": "Victoria",
+      "EN": {
+        "firstFeatured": 1607598000000,
+        "lastFeatured": 1632222000000,
+        "timesFeatured": 3,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      },
+      "CN": {
+        "firstFeatured": 1587466800000,
+        "lastFeatured": 1638183600000,
+        "timesFeatured": 5,
+        "firstInShop": 1628161200000,
+        "lastInShop": 1629370800000,
+        "timesInShop": 1
+      }
+    },
+    "Bagpipe": {
+      "rarity": 6,
+      "name": "Bagpipe",
+      "class": "Vanguard",
+      "subclass": "Charger Vanguard",
+      "tags": [
+        "DP-Recovery",
+        "DPS"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1584442800000,
+      "release_date_en": 1599735600000,
+      "gender": "Female",
+      "birthplace": "Victoria",
+      "birthday": [
+        7,
+        17
+      ],
+      "race": "Vouivre",
+      "height": 167,
+      "combat_experience": "Five Years",
+      "faction": "Victoria",
+      "EN": {
+        "firstFeatured": 1599735600000,
+        "lastFeatured": 1623409200000,
+        "timesFeatured": 3,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      },
+      "CN": {
+        "firstFeatured": 1584442800000,
+        "lastFeatured": 1625742000000,
+        "timesFeatured": 4,
+        "firstInShop": 1624532400000,
+        "lastInShop": 1625742000000,
+        "timesInShop": 1
+      }
+    },
+    "Ceobe": {
+      "rarity": 6,
+      "name": "Ceobe",
+      "class": "Caster",
+      "subclass": "ST Caster",
+      "tags": [
+        "DPS",
+        "Crowd-Control"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1582628400000,
+      "release_date_en": 1598439600000,
+      "gender": "Female",
+      "birthplace": "Bolívar",
+      "birthday": [
+        3,
+        3
+      ],
+      "race": "Perro",
+      "height": 153,
+      "combat_experience": "3 Years",
+      "faction": "Rhodes Island",
+      "EN": {
+        "firstFeatured": 1598439600000,
+        "lastFeatured": 1640343600000,
+        "timesFeatured": 4,
+        "firstInShop": 1639134000000,
+        "lastInShop": 1640343600000,
+        "timesInShop": 1
+      },
+      "CN": {
+        "firstFeatured": 1582628400000,
+        "lastFeatured": 1631790000000,
+        "timesFeatured": 5,
+        "firstInShop": 1616065200000,
+        "lastInShop": 1617274800000,
+        "timesInShop": 1
+      }
+    },
+    "Nian": {
+      "rarity": 6,
+      "name": "Nian",
+      "class": "Defender",
+      "subclass": "Normal Defender",
+      "tags": [
+        "Defense",
+        "Support"
+      ],
+      "headhunting": true,
+      "limited": true,
+      "recruitment": true,
+      "release_date_cn": 1579172400000,
+      "release_date_en": 1596020400000,
+      "gender": "Female",
+      "birthplace": "Yen",
+      "birthday": [
+        9,
+        9
+      ],
+      "race": "Undisclosed",
+      "height": 165,
+      "combat_experience": "Undisclosed",
+      "faction": "Yan",
+      "subfaction": "Sui",
+      "EN": {
+        "firstFeatured": 1596020400000,
+        "lastFeatured": 1627383600000,
+        "timesFeatured": 2,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      },
+      "CN": {
+        "firstFeatured": 1579172400000,
+        "lastFeatured": 1612263600000,
+        "timesFeatured": 2,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      }
+    },
+    "Aak": {
+      "rarity": 6,
+      "name": "Aak",
+      "class": "Specialist",
+      "subclass": "Sacrificial Specialist",
+      "tags": [
+        "Support",
+        "DPS"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1579172400000,
+      "release_date_en": 1596020400000,
+      "gender": "Male",
+      "birthplace": "Lungmen",
+      "birthday": [
+        3,
+        25
+      ],
+      "race": "Feline",
+      "height": 161,
+      "combat_experience": "None",
+      "faction": "Great Lungmen",
+      "subfaction": "Lee",
+      "EN": {
+        "firstFeatured": 1596020400000,
+        "lastFeatured": 1636714800000,
+        "timesFeatured": 5,
+        "firstInShop": 1635505200000,
+        "lastInShop": 1636714800000,
+        "timesInShop": 1
+      },
+      "CN": {
+        "firstFeatured": 1579172400000,
+        "lastFeatured": 1622113200000,
+        "timesFeatured": 5,
+        "firstInShop": 1620903600000,
+        "lastInShop": 1622113200000,
+        "timesInShop": 1
+      }
+    },
+    "Blaze": {
+      "rarity": 6,
+      "name": "Blaze",
+      "class": "Guard",
+      "subclass": "AoE Guard",
+      "tags": [
+        "DPS",
+        "Survival"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1577185200000,
+      "release_date_en": 1593514800000,
+      "gender": "Female",
+      "birthplace": "Victoria",
+      "birthday": null,
+      "race": "Feline",
+      "height": 172,
+      "combat_experience": "7 years",
+      "faction": "Rhodes Island",
+      "subfaction": "Elite",
+      "EN": {
+        "firstFeatured": 1593514800000,
+        "lastFeatured": 1633086000000,
+        "timesFeatured": 4,
+        "firstInShop": 1631876400000,
+        "lastInShop": 1633086000000,
+        "timesInShop": 1
+      },
+      "CN": {
+        "firstFeatured": 1577185200000,
+        "lastFeatured": 1620903600000,
+        "timesFeatured": 5,
+        "firstInShop": 1607598000000,
+        "lastInShop": 1620903600000,
+        "timesInShop": 2
+      }
+    },
+    "Mostima": {
+      "rarity": 6,
+      "name": "Mostima",
+      "class": "Caster",
+      "subclass": "AoE Caster",
+      "tags": [
+        "AoE",
+        "Support",
+        "Crowd-Control"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1574161200000,
+      "release_date_en": 1590577200000,
+      "gender": "Female",
+      "birthplace": "Laterano",
+      "birthday": [
+        12,
+        12
+      ],
+      "race": "Undisclosed",
+      "height": 170,
+      "combat_experience": "1 Year",
+      "faction": "Laterano",
+      "EN": {
+        "firstFeatured": 1590577200000,
+        "lastFeatured": 1641553200000,
+        "timesFeatured": 6,
+        "firstInShop": 1628247600000,
+        "lastInShop": 1629457200000,
+        "timesInShop": 1
+      },
+      "CN": {
+        "firstFeatured": 1574161200000,
+        "lastFeatured": 1641466800000,
+        "timesFeatured": 8,
+        "firstInShop": 1612436400000,
+        "lastInShop": 1641466800000,
+        "timesInShop": 2
+      }
+    },
+    "Magallan": {
+      "rarity": 6,
+      "name": "Magallan",
+      "class": "Supporter",
+      "subclass": "Summoner Supporter",
+      "tags": [
+        "Support",
+        "Slow",
+        "DPS"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1571137200000,
+      "release_date_en": 1585134000000,
+      "gender": "Female",
+      "birthplace": "Columbia",
+      "birthday": [
+        10,
+        17
+      ],
+      "race": "Liberi",
+      "height": 160,
+      "combat_experience": "None",
+      "faction": "Columbia",
+      "subfaction": "Rhine Lab",
+      "EN": {
+        "firstFeatured": 1585134000000,
+        "lastFeatured": 1618570800000,
+        "timesFeatured": 5,
+        "firstInShop": 1617361200000,
+        "lastInShop": 1618570800000,
+        "timesInShop": 1
+      },
+      "CN": {
+        "firstFeatured": 1571137200000,
+        "lastFeatured": 1631790000000,
+        "timesFeatured": 5,
+        "firstInShop": 1603969200000,
+        "lastInShop": 1631790000000,
+        "timesInShop": 2
+      }
+    },
+    "Hellagur": {
+      "rarity": 6,
+      "name": "Hellagur",
+      "class": "Guard",
+      "subclass": "Enmity Guard",
+      "tags": [
+        "DPS",
+        "Survival"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1568113200000,
+      "release_date_en": 1586948400000,
+      "gender": "Male",
+      "birthplace": "Ursus",
+      "birthday": [
+        5,
+        5
+      ],
+      "race": "Liberi",
+      "height": 193,
+      "combat_experience": "44 years",
+      "faction": "Ursus",
+      "EN": {
+        "firstFeatured": 1586948400000,
+        "lastFeatured": 1634295600000,
+        "timesFeatured": 6,
+        "firstInShop": 1620990000000,
+        "lastInShop": 1634295600000,
+        "timesInShop": 2
+      },
+      "CN": {
+        "firstFeatured": 1568113200000,
+        "lastFeatured": 1639047600000,
+        "timesFeatured": 6,
+        "firstInShop": 1600340400000,
+        "lastInShop": 1619694000000,
+        "timesInShop": 2
+      }
+    },
+    "Schwarz": {
+      "rarity": 6,
+      "name": "Schwarz",
+      "class": "Sniper",
+      "subclass": "Close Range Sniper",
+      "tags": [
+        "DPS"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1566903600000,
+      "release_date_en": 1588158000000,
+      "gender": "Female",
+      "birthplace": "Rim Billiton",
+      "birthday": null,
+      "race": "Feline",
+      "height": 169,
+      "combat_experience": "20 years",
+      "faction": "Columbia",
+      "subfaction": "Siesta",
+      "EN": {
+        "firstFeatured": 1588158000000,
+        "lastFeatured": 1630666800000,
+        "timesFeatured": 6,
+        "firstInShop": 1624618800000,
+        "lastInShop": 1625828400000,
+        "timesInShop": 1
+      },
+      "CN": {
+        "firstFeatured": 1566903600000,
+        "lastFeatured": 1638183600000,
+        "timesFeatured": 6,
+        "firstInShop": 1596711600000,
+        "lastInShop": 1616065200000,
+        "timesInShop": 2
+      }
+    },
+    "Ch'en": {
+      "rarity": 6,
+      "name": "Ch'en",
+      "class": "Guard",
+      "subclass": "Dualstrike Guard",
+      "tags": [
+        "Nuker",
+        "DPS"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1562670000000,
+      "release_date_en": 1582714800000,
+      "gender": "Female",
+      "birthplace": "Lungmen",
+      "birthday": [
+        7,
+        7
+      ],
+      "race": "Lung",
+      "height": 168,
+      "combat_experience": "4 years",
+      "faction": "Great Lungmen",
+      "subfaction": "L.G.D.",
+      "EN": {
+        "firstFeatured": 1582714800000,
+        "lastFeatured": 1641553200000,
+        "timesFeatured": 7,
+        "firstInShop": 1612522800000,
+        "lastInShop": 1641553200000,
+        "timesInShop": 3
+      },
+      "CN": {
+        "firstFeatured": 1562670000000,
+        "lastFeatured": 1636628400000,
+        "timesFeatured": 7,
+        "firstInShop": 1593082800000,
+        "lastInShop": 1612436400000,
+        "timesInShop": 2
+      }
+    },
+    "Skadi": {
+      "rarity": 6,
+      "name": "Skadi",
+      "class": "Guard",
+      "subclass": "Dreadnought Guard",
+      "tags": [
+        "DPS",
+        "Survival"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1559214000000,
+      "release_date_en": 1580900400000,
+      "gender": "Female",
+      "birthplace": "Ægir",
+      "birthday": [
+        3,
+        7
+      ],
+      "race": "Unknown",
+      "height": 166,
+      "combat_experience": "13 years",
+      "faction": "Aegir",
+      "subfaction": "Abyssal",
+      "EN": {
+        "firstFeatured": 1580900400000,
+        "lastFeatured": 1639134000000,
+        "timesFeatured": 6,
+        "firstInShop": 1610103600000,
+        "lastInShop": 1639134000000,
+        "timesInShop": 2
+      },
+      "CN": {
+        "firstFeatured": 1559214000000,
+        "lastFeatured": 1635418800000,
+        "timesFeatured": 9,
+        "firstInShop": 1588244400000,
+        "lastInShop": 1635418800000,
+        "timesInShop": 3
+      }
+    },
+    "SilverAsh": {
+      "rarity": 6,
+      "name": "SilverAsh",
+      "class": "Guard",
+      "subclass": "Ranged Guard",
+      "tags": [
+        "DPS",
+        "Support"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1556622000000,
+      "release_date_en": 1579172400000,
+      "gender": "Male",
+      "birthplace": "Kjerag",
+      "birthday": [
+        2,
+        15
+      ],
+      "race": "Feline",
+      "height": 192,
+      "combat_experience": "4 years",
+      "faction": "Kjerag",
+      "subfaction": "Karlan",
+      "EN": {
+        "firstFeatured": 1579690800000,
+        "lastFeatured": 1635505200000,
+        "timesFeatured": 7,
+        "firstInShop": 1595588400000,
+        "lastInShop": 1635505200000,
+        "timesInShop": 3
+      },
+      "CN": {
+        "firstFeatured": 1558609200000,
+        "lastFeatured": 1641466800000,
+        "timesFeatured": 9,
+        "firstInShop": 1570014000000,
+        "lastInShop": 1611226800000,
+        "timesInShop": 3
+      }
+    },
+    "Saria": {
+      "rarity": 6,
+      "name": "Saria",
+      "class": "Defender",
+      "subclass": "Healing Defender",
+      "tags": [
+        "Defense",
+        "Healing",
+        "Support"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1556622000000,
+      "release_date_en": 1579172400000,
+      "gender": "Female",
+      "birthplace": "Columbia",
+      "birthday": [
+        4,
+        23
+      ],
+      "race": "Vouivre",
+      "height": 174,
+      "combat_experience": "5 years",
+      "faction": "Columbia",
+      "subfaction": "Rhine Lab",
+      "EN": {
+        "firstFeatured": 1581073200000,
+        "lastFeatured": 1624618800000,
+        "timesFeatured": 6,
+        "firstInShop": 1581073200000,
+        "lastInShop": 1624618800000,
+        "timesInShop": 4
+      },
+      "CN": {
+        "firstFeatured": 1560337200000,
+        "lastFeatured": 1626951600000,
+        "timesFeatured": 9,
+        "firstInShop": 1560337200000,
+        "lastInShop": 1626951600000,
+        "timesInShop": 6
+      }
+    },
+    "Hoshiguma": {
+      "rarity": 6,
+      "name": "Hoshiguma",
+      "class": "Defender",
+      "subclass": "Normal Defender",
+      "tags": [
+        "Defense",
+        "DPS"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1556622000000,
+      "release_date_en": 1579172400000,
+      "gender": "Female",
+      "birthplace": "Higashi",
+      "birthday": [
+        1,
+        20
+      ],
+      "race": "Oni",
+      "height": 184,
+      "combat_experience": "7 years",
+      "faction": "Great Lungmen",
+      "subfaction": "L.G.D.",
+      "EN": {
+        "firstFeatured": 1583924400000,
+        "lastFeatured": 1631876400000,
+        "timesFeatured": 7,
+        "firstInShop": 1590750000000,
+        "lastInShop": 1610103600000,
+        "timesInShop": 3
+      },
+      "CN": {
+        "firstFeatured": 1563793200000,
+        "lastFeatured": 1637838000000,
+        "timesFeatured": 8,
+        "firstInShop": 1573642800000,
+        "lastInShop": 1637838000000,
+        "timesInShop": 5
+      }
+    },
+    "Nightingale": {
+      "rarity": 6,
+      "name": "Nightingale",
+      "class": "Medic",
+      "subclass": "AoE Medic",
+      "tags": [
+        "Healing",
+        "Support"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1556622000000,
+      "release_date_en": 1579172400000,
+      "gender": "Female",
+      "birthplace": "Kazdel",
+      "birthday": [
+        5,
+        4
+      ],
+      "race": "Sarkaz",
+      "height": 164,
+      "combat_experience": "1 year",
+      "faction": "Followers",
+      "EN": {
+        "firstFeatured": 1579863600000,
+        "lastFeatured": 1637838000000,
+        "timesFeatured": 7,
+        "firstInShop": 1579863600000,
+        "lastInShop": 1631876400000,
+        "timesInShop": 5
+      },
+      "CN": {
+        "firstFeatured": 1557918000000,
+        "lastFeatured": 1639047600000,
+        "timesFeatured": 9,
+        "firstInShop": 1557918000000,
+        "lastInShop": 1639047600000,
+        "timesInShop": 6
+      }
+    },
+    "Shining": {
+      "rarity": 6,
+      "name": "Shining",
+      "class": "Medic",
+      "subclass": "ST Medic",
+      "tags": [
+        "Healing",
+        "Support"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1556622000000,
+      "release_date_en": 1579172400000,
+      "gender": "Female",
+      "birthplace": "Kazdel",
+      "birthday": [
+        10,
+        7
+      ],
+      "race": "Sarkaz",
+      "height": 175,
+      "combat_experience": "7 years",
+      "faction": "Followers",
+      "EN": {
+        "firstFeatured": 1581073200000,
+        "lastFeatured": 1619780400000,
+        "timesFeatured": 5,
+        "firstInShop": 1588330800000,
+        "lastInShop": 1619780400000,
+        "timesInShop": 4
+      },
+      "CN": {
+        "firstFeatured": 1560337200000,
+        "lastFeatured": 1630580400000,
+        "timesFeatured": 8,
+        "firstInShop": 1566385200000,
+        "lastInShop": 1630580400000,
+        "timesInShop": 6
+      }
+    },
+    "Angelina": {
+      "rarity": 6,
+      "name": "Angelina",
+      "class": "Supporter",
+      "subclass": "Slower",
+      "tags": [
+        "Slow",
+        "DPS",
+        "Support"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1556622000000,
+      "release_date_en": 1579172400000,
+      "gender": "Female",
+      "birthplace": "Siracusa",
+      "birthday": [
+        5,
+        14
+      ],
+      "race": "Vulpo",
+      "height": 162,
+      "combat_experience": "None",
+      "faction": "Siracusa",
+      "EN": {
+        "firstFeatured": 1579172400000,
+        "lastFeatured": 1622199600000,
+        "timesFeatured": 8,
+        "firstInShop": 1579172400000,
+        "lastInShop": 1617361200000,
+        "timesInShop": 5
+      },
+      "CN": {
+        "firstFeatured": 1556622000000,
+        "lastFeatured": 1628161200000,
+        "timesFeatured": 10,
+        "firstInShop": 1556622000000,
+        "lastInShop": 1628161200000,
+        "timesInShop": 5
+      }
+    },
+    "Eyjafjalla": {
+      "rarity": 6,
+      "name": "Eyjafjalla",
+      "class": "Caster",
+      "subclass": "ST Caster",
+      "tags": [
+        "DPS",
+        "Debuff"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1556622000000,
+      "release_date_en": 1579172400000,
+      "gender": "Female",
+      "birthplace": "Leithanien",
+      "birthday": [
+        10,
+        18
+      ],
+      "race": "Caprinae",
+      "height": 145,
+      "combat_experience": "None",
+      "faction": "Leithanien",
+      "EN": {
+        "firstFeatured": 1582282800000,
+        "lastFeatured": 1630666800000,
+        "timesFeatured": 6,
+        "firstInShop": 1601636400000,
+        "lastInShop": 1630666800000,
+        "timesInShop": 2
+      },
+      "CN": {
+        "firstFeatured": 1559214000000,
+        "lastFeatured": 1623322800000,
+        "timesFeatured": 8,
+        "firstInShop": 1580900400000,
+        "lastInShop": 1623322800000,
+        "timesInShop": 3
+      }
+    },
+    "Ifrit": {
+      "rarity": 6,
+      "name": "Ifrit",
+      "class": "Caster",
+      "subclass": "Blast Caster",
+      "tags": [
+        "AoE",
+        "Debuff"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1556622000000,
+      "release_date_en": 1579172400000,
+      "gender": "Female",
+      "birthplace": "Unknown",
+      "birthday": [
+        7,
+        22
+      ],
+      "race": "Sarkaz",
+      "height": 159,
+      "combat_experience": "None",
+      "faction": "Columbia",
+      "subfaction": "Rhine Lab",
+      "EN": {
+        "firstFeatured": 1582282800000,
+        "lastFeatured": 1628247600000,
+        "timesFeatured": 7,
+        "firstInShop": 1582282800000,
+        "lastInShop": 1628247600000,
+        "timesInShop": 5
+      },
+      "CN": {
+        "firstFeatured": 1559214000000,
+        "lastFeatured": 1635418800000,
+        "timesFeatured": 8,
+        "firstInShop": 1559214000000,
+        "lastInShop": 1614855600000,
+        "timesInShop": 5
+      }
+    },
+    "Siege": {
+      "rarity": 6,
+      "name": "Siege",
+      "class": "Vanguard",
+      "subclass": "Pioneer Vanguard",
+      "tags": [
+        "DP-Recovery",
+        "DPS"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1556622000000,
+      "release_date_en": 1579172400000,
+      "gender": "Female",
+      "birthplace": "Victoria",
+      "birthday": [
+        7,
+        10
+      ],
+      "race": "Aslan",
+      "height": 172,
+      "combat_experience": "5 years",
+      "faction": "Victoria",
+      "subfaction": "Glasgow",
+      "EN": {
+        "firstFeatured": 1579863600000,
+        "lastFeatured": 1637924400000,
+        "timesFeatured": 7,
+        "firstInShop": 1583492400000,
+        "lastInShop": 1637924400000,
+        "timesInShop": 6
+      },
+      "CN": {
+        "firstFeatured": 1557918000000,
+        "lastFeatured": 1624532400000,
+        "timesFeatured": 9,
+        "firstInShop": 1562756400000,
+        "lastInShop": 1624532400000,
+        "timesInShop": 6
+      }
+    },
+    "Exusiai": {
+      "rarity": 6,
+      "name": "Exusiai",
+      "class": "Sniper",
+      "subclass": "Marksman Sniper",
+      "tags": [
+        "DPS"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1556622000000,
+      "release_date_en": 1579172400000,
+      "gender": "Female",
+      "birthplace": "Laterano",
+      "birthday": [
+        12,
+        24
+      ],
+      "race": "Sankta",
+      "height": 159,
+      "combat_experience": "2 years",
+      "faction": "Great Lungmen",
+      "subfaction": "Penguin Logistics",
+      "EN": {
+        "firstFeatured": 1579172400000,
+        "lastFeatured": 1623409200000,
+        "timesFeatured": 6,
+        "firstInShop": 1605265200000,
+        "lastInShop": 1623409200000,
+        "timesInShop": 2
+      },
+      "CN": {
+        "firstFeatured": 1556622000000,
+        "lastFeatured": 1634209200000,
+        "timesFeatured": 8,
+        "firstInShop": 1584529200000,
+        "lastInShop": 1634209200000,
+        "timesInShop": 3
+      }
+    },
+    "Kirara": {
+      "rarity": 5,
+      "name": "Kirara",
+      "class": "Specialist",
+      "subclass": "Stalker",
+      "tags": [
+        "DPS",
+        "Survival"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1622545200000,
+      "release_date_en": 1639047600000,
+      "gender": "Female",
+      "birthplace": "Higashi",
+      "birthday": [
+        11,
+        29
+      ],
+      "race": "Ægir",
+      "height": 160,
+      "combat_experience": "None",
+      "faction": "Higashi",
+      "EN": {
+        "firstFeatured": 1639047600000,
+        "lastFeatured": 1640257200000,
+        "timesFeatured": 1,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      },
+      "CN": {
+        "firstFeatured": 1622545200000,
+        "lastFeatured": 1637838000000,
+        "timesFeatured": 2,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      }
+    },
+    "Bena": {
+      "rarity": 5,
+      "name": "Bena",
+      "class": "Specialist",
+      "subclass": "Substitute Specialist",
+      "tags": [
+        "DPS",
+        "Fast-Redeploy"
+      ],
+      "headhunting": false,
+      "limited": false,
+      "recruitment": false,
+      "release_date_cn": 1622545200000,
+      "release_date_en": 1639047600000,
+      "gender": "Female",
+      "birthplace": "Victoria",
+      "birthday": [
+        4,
+        3
+      ],
+      "race": "Caprinae",
+      "height": 143,
+      "combat_experience": "None",
+      "faction": "Victoria"
+    },
+    "Akafuyu": {
+      "rarity": 5,
+      "name": "Akafuyu",
+      "class": "Guard",
+      "subclass": "Enmity Guard",
+      "tags": [
+        "Survival",
+        "DPS"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1619866800000,
+      "release_date_en": 1634814000000,
+      "gender": "Female",
+      "birthplace": "Higashi",
+      "birthday": [
+        3,
+        27
+      ],
+      "race": "Ægir",
+      "height": 176,
+      "combat_experience": "8 Years",
+      "faction": "Higashi",
+      "EN": {
+        "firstFeatured": 1634814000000,
+        "lastFeatured": 1636023600000,
+        "timesFeatured": 1,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      },
+      "CN": {
+        "firstFeatured": 1619866800000,
+        "lastFeatured": 1635418800000,
+        "timesFeatured": 2,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      }
+    },
+    "Toddifons": {
+      "rarity": 5,
+      "name": "Toddifons",
+      "class": "Sniper",
+      "subclass": "Heavyweight Sniper",
+      "tags": [
+        "DPS"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1618484400000,
+      "release_date_en": 1632999600000,
+      "gender": "Female",
+      "birthplace": "Victoria",
+      "birthday": [
+        7,
+        31
+      ],
+      "race": "Vouivre",
+      "height": 168,
+      "combat_experience": "2 Years",
+      "faction": "Victoria",
+      "EN": {
+        "firstFeatured": 1632999600000,
+        "lastFeatured": 1634209200000,
+        "timesFeatured": 1,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      },
+      "CN": {
+        "firstFeatured": 1618484400000,
+        "lastFeatured": 1631790000000,
+        "timesFeatured": 2,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      }
+    },
+    "Heavyrain": {
+      "rarity": 5,
+      "name": "Heavyrain",
+      "class": "Defender",
+      "subclass": "Normal Defender",
+      "tags": [
+        "Defense",
+        "Support"
+      ],
+      "headhunting": false,
+      "limited": false,
+      "recruitment": false,
+      "release_date_cn": 1618484400000,
+      "release_date_en": 1632999600000,
+      "gender": "Female",
+      "birthplace": "Sargon",
+      "birthday": [
+        3,
+        3
+      ],
+      "race": "Kuranta",
+      "height": 159,
+      "combat_experience": "5 Years",
+      "faction": "Rhodes Island"
+    },
+    "Frost": {
+      "rarity": 5,
+      "name": "Frost",
+      "class": "Specialist",
+      "subclass": "Trapper Specialist",
+      "tags": [
+        "Summon",
+        "Crowd-Control"
+      ],
+      "headhunting": true,
+      "limited": true,
+      "recruitment": true,
+      "release_date_cn": 1615287600000,
+      "release_date_en": 1629284400000,
+      "gender": "Female",
+      "birthplace": "Unknown",
+      "birthday": [
+        5,
+        4
+      ],
+      "race": "Unknown",
+      "height": 172,
+      "combat_experience": "Unknown",
+      "faction": "Rainbow",
+      "EN": {
+        "firstFeatured": 1629284400000,
+        "lastFeatured": 1630494000000,
+        "timesFeatured": 1,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      },
+      "CN": {
+        "firstFeatured": 1615287600000,
+        "lastFeatured": 1616497200000,
+        "timesFeatured": 1,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      }
+    },
+    "Blitz": {
+      "rarity": 5,
+      "name": "Blitz",
+      "class": "Defender",
+      "subclass": "Normal Defender",
+      "tags": [
+        "Defense",
+        "DPS"
+      ],
+      "headhunting": true,
+      "limited": true,
+      "recruitment": true,
+      "release_date_cn": 1615287600000,
+      "release_date_en": 1629284400000,
+      "gender": "Male",
+      "birthplace": "Unknown",
+      "birthday": [
+        4,
+        2
+      ],
+      "race": "Unknown",
+      "height": 175,
+      "combat_experience": "Unknown",
+      "faction": "Rainbow",
+      "EN": {
+        "firstFeatured": 1629284400000,
+        "lastFeatured": 1630494000000,
+        "timesFeatured": 1,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      },
+      "CN": {
+        "firstFeatured": 1615287600000,
+        "lastFeatured": 1616497200000,
+        "timesFeatured": 1,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      }
+    },
+    "Tachanka": {
+      "rarity": 5,
+      "name": "Tachanka",
+      "class": "Guard",
+      "subclass": "Dualstrike Guard",
+      "tags": [
+        "Nuker",
+        "DPS"
+      ],
+      "headhunting": false,
+      "limited": false,
+      "recruitment": false,
+      "release_date_cn": 1615287600000,
+      "release_date_en": 1629284400000,
+      "gender": "Male",
+      "birthplace": "Unknown",
+      "birthday": [
+        11,
+        3
+      ],
+      "race": "Unknown",
+      "height": 183,
+      "combat_experience": "Unknown",
+      "faction": "Rainbow"
+    },
+    "Mr. Nothing": {
+      "rarity": 5,
+      "name": "Mr. Nothing",
+      "class": "Specialist",
+      "subclass": "DP-Drain",
+      "tags": [
+        "Fast-Redeploy",
+        "DPS"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1612522800000,
+      "release_date_en": 1627642800000,
+      "gender": "Male",
+      "birthplace": "Yen",
+      "birthday": [
+        1,
+        13
+      ],
+      "race": "Liberi",
+      "height": 187,
+      "combat_experience": "7 Years",
+      "faction": "Yan",
+      "EN": {
+        "firstFeatured": 1627642800000,
+        "lastFeatured": 1640343600000,
+        "timesFeatured": 2,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      },
+      "CN": {
+        "firstFeatured": 1612522800000,
+        "lastFeatured": 1628161200000,
+        "timesFeatured": 2,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      }
+    },
+    "Lava the Purgatory": {
+      "rarity": 5,
+      "name": "Lava the Purgatory",
+      "class": "Caster",
+      "subclass": "AoE Caster",
+      "tags": [
+        "DPS"
+      ],
+      "headhunting": false,
+      "limited": false,
+      "recruitment": false,
+      "release_date_cn": 1612522800000,
+      "release_date_en": 1627642800000,
+      "gender": "Female",
+      "birthplace": "Victoria",
+      "birthday": [
+        6,
+        22
+      ],
+      "race": "Sarkaz",
+      "height": 158,
+      "combat_experience": "Undisclosed",
+      "faction": "Rhodes Island"
+    },
+    "Tuye": {
+      "rarity": 5,
+      "name": "Tuye",
+      "class": "Medic",
+      "subclass": "ST Medic",
+      "tags": [
+        "Healing"
+      ],
+      "headhunting": false,
+      "limited": false,
+      "recruitment": false,
+      "release_date_cn": 1611054000000,
+      "release_date_en": 1626174000000,
+      "gender": "Female",
+      "birthplace": "Sargon",
+      "birthday": [
+        4,
+        15
+      ],
+      "race": "Forte",
+      "height": 153,
+      "combat_experience": "None",
+      "faction": "Sargon"
+    },
+    "Iris": {
+      "rarity": 5,
+      "name": "Iris",
+      "class": "Caster",
+      "subclass": "Charge Caster",
+      "tags": [
+        "DPS"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1609844400000,
+      "release_date_en": 1625569200000,
+      "gender": "Female",
+      "birthplace": "Victoria",
+      "birthday": [
+        4,
+        2
+      ],
+      "race": "Feline",
+      "height": 147,
+      "combat_experience": "None",
+      "faction": "Victoria",
+      "EN": {
+        "firstFeatured": 1625569200000,
+        "lastFeatured": 1626778800000,
+        "timesFeatured": 1,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      },
+      "CN": {
+        "firstFeatured": 1609844400000,
+        "lastFeatured": 1638183600000,
+        "timesFeatured": 3,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      }
+    },
+    "Robin": {
+      "rarity": 5,
+      "name": "Robin",
+      "class": "Specialist",
+      "subclass": "Trapper Specialist",
+      "tags": [
+        "Summon",
+        "Shift"
+      ],
+      "headhunting": false,
+      "limited": false,
+      "recruitment": false,
+      "release_date_cn": 1608202800000,
+      "release_date_en": 1624359600000,
+      "gender": "Female",
+      "birthplace": "Columbia",
+      "birthday": [
+        5,
+        18
+      ],
+      "race": "Anaty",
+      "height": 155,
+      "faction": "Columbia"
+    },
+    "Kafka": {
+      "rarity": 5,
+      "name": "Kafka",
+      "class": "Specialist",
+      "subclass": "Fast-Redeploy",
+      "tags": [
+        "Fast-Redeploy",
+        "Crowd-Control"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1608202800000,
+      "release_date_en": 1624359600000,
+      "gender": "Female",
+      "birthplace": "Columbia",
+      "birthday": [
+        12,
+        1
+      ],
+      "race": "Liberi",
+      "height": 149,
+      "combat_experience": "None",
+      "faction": "Columbia",
+      "EN": {
+        "firstFeatured": 1624359600000,
+        "lastFeatured": 1636714800000,
+        "timesFeatured": 2,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      },
+      "CN": {
+        "firstFeatured": 1608202800000,
+        "lastFeatured": 1640084400000,
+        "timesFeatured": 4,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      }
+    },
+    "Amiya (Guard)": {
+      "rarity": 5,
+      "name": "Amiya (Guard)",
+      "class": "Guard",
+      "subclass": "Arts Guard",
+      "tags": [
+        "DPS",
+        "Support"
+      ],
+      "headhunting": false,
+      "limited": false,
+      "recruitment": false,
+      "release_date_cn": 1604228400000,
+      "release_date_en": 1619780400000,
+      "faction": "unknown"
+    },
+    "Whisperain": {
+      "rarity": 5,
+      "name": "Whisperain",
+      "class": "Medic",
+      "subclass": "Wide-Range Medic",
+      "tags": [
+        "Healing"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1604228400000,
+      "release_date_en": 1619780400000,
+      "gender": "Female",
+      "birthplace": "Iberia",
+      "birthday": [
+        3,
+        3
+      ],
+      "race": "Ægir",
+      "height": 169,
+      "combat_experience": "None",
+      "faction": "Iberia",
+      "EN": {
+        "firstFeatured": 1619780400000,
+        "lastFeatured": 1639134000000,
+        "timesFeatured": 3,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      },
+      "CN": {
+        "firstFeatured": 1604228400000,
+        "lastFeatured": 1631790000000,
+        "timesFeatured": 3,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      }
+    },
+    "Aosta": {
+      "rarity": 5,
+      "name": "Aosta",
+      "class": "Sniper",
+      "subclass": "Spreadshooter",
+      "tags": [
+        "AoE"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1602759600000,
+      "release_date_en": 1617879600000,
+      "gender": "Male",
+      "birthplace": "Siracusa",
+      "birthday": [
+        5,
+        9
+      ],
+      "race": "Lupo",
+      "height": 177,
+      "faction": "Siracusa",
+      "subfaction": "Chiave",
+      "EN": {
+        "firstFeatured": 1617879600000,
+        "lastFeatured": 1630666800000,
+        "timesFeatured": 2,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      },
+      "CN": {
+        "firstFeatured": 1602759600000,
+        "lastFeatured": 1634295600000,
+        "timesFeatured": 3,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      }
+    },
+    "Whislash": {
+      "rarity": 5,
+      "name": "Whislash",
+      "class": "Guard",
+      "subclass": "Support Guard",
+      "tags": [
+        "DPS",
+        "Support"
+      ],
+      "headhunting": false,
+      "limited": false,
+      "recruitment": false,
+      "release_date_cn": 1602759600000,
+      "release_date_en": 1617879600000,
+      "gender": "Female",
+      "birthplace": "Kazimierz",
+      "birthday": [
+        6,
+        28
+      ],
+      "race": "Kuranta",
+      "height": 165,
+      "faction": "Kazimierz"
+    },
+    "April": {
+      "rarity": 5,
+      "name": "April",
+      "class": "Sniper",
+      "subclass": "Marksman Sniper",
+      "tags": [
+        "DPS"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1600945200000,
+      "release_date_en": 1616670000000,
+      "gender": "Female",
+      "birthplace": "Rim Billiton",
+      "birthday": [
+        1,
+        27
+      ],
+      "race": "Cautus",
+      "height": 157,
+      "combat_experience": "None",
+      "faction": "RIM Billiton",
+      "EN": {
+        "firstFeatured": 1616670000000,
+        "lastFeatured": 1627038000000,
+        "timesFeatured": 2,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      },
+      "CN": {
+        "firstFeatured": 1600945200000,
+        "lastFeatured": 1638183600000,
+        "timesFeatured": 4,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      }
+    },
+    "Mint": {
+      "rarity": 5,
+      "name": "Mint",
+      "class": "Caster",
+      "subclass": "Modal Caster",
+      "tags": [
+        "AoE",
+        "Crowd-Control"
+      ],
+      "headhunting": false,
+      "limited": false,
+      "recruitment": false,
+      "release_date_cn": 1600945200000,
+      "release_date_en": 1616670000000,
+      "gender": "Female",
+      "birthplace": "Victoria",
+      "birthday": [
+        2,
+        5
+      ],
+      "race": "Feline",
+      "height": 155,
+      "combat_experience": "None",
+      "faction": "Victoria"
+    },
+    "Flint": {
+      "rarity": 5,
+      "name": "Flint",
+      "class": "Guard",
+      "subclass": "Brawler",
+      "tags": [
+        "DPS"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1598353200000,
+      "release_date_en": 1614250800000,
+      "gender": "Female",
+      "birthplace": "Sargon",
+      "birthday": [
+        9,
+        17
+      ],
+      "race": "Liberi",
+      "height": 144,
+      "combat_experience": "15 years (Self-reported)",
+      "faction": "Sargon",
+      "EN": {
+        "firstFeatured": 1614250800000,
+        "lastFeatured": 1625828400000,
+        "timesFeatured": 2,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      },
+      "CN": {
+        "firstFeatured": 1598353200000,
+        "lastFeatured": 1638183600000,
+        "timesFeatured": 6,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      }
+    },
+    "Tomimi": {
+      "rarity": 5,
+      "name": "Tomimi",
+      "class": "Caster",
+      "subclass": "ST Caster",
+      "tags": [
+        "DPS",
+        "Survival"
+      ],
+      "headhunting": false,
+      "limited": false,
+      "recruitment": false,
+      "release_date_cn": 1598353200000,
+      "release_date_en": 1614250800000,
+      "gender": "Female",
+      "birthplace": "Sargon",
+      "birthday": [
+        2,
+        2
+      ],
+      "race": "Archosauria",
+      "height": 142,
+      "combat_experience": "None",
+      "faction": "Sargon"
+    },
+    "Andreana": {
+      "rarity": 5,
+      "name": "Andreana",
+      "class": "Sniper",
+      "subclass": "Deadeye Sniper",
+      "tags": [
+        "DPS",
+        "Slow"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1597143600000,
+      "release_date_en": 1611140400000,
+      "gender": "Female",
+      "birthplace": "Iberia",
+      "birthday": [
+        11,
+        16
+      ],
+      "race": "Ægir",
+      "height": 166,
+      "combat_experience": "None",
+      "faction": "Aegir",
+      "subfaction": "Abyssal",
+      "EN": {
+        "firstFeatured": 1611140400000,
+        "lastFeatured": 1637838000000,
+        "timesFeatured": 3,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      },
+      "CN": {
+        "firstFeatured": 1597143600000,
+        "lastFeatured": 1631185200000,
+        "timesFeatured": 5,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      }
+    },
+    "Chiave": {
+      "rarity": 5,
+      "name": "Chiave",
+      "class": "Vanguard",
+      "subclass": "Pioneer Vanguard",
+      "tags": [
+        "DP-Recovery",
+        "DPS"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1595934000000,
+      "release_date_en": 1606388400000,
+      "gender": "Male",
+      "birthplace": "Siracusa",
+      "birthday": [
+        9,
+        9
+      ],
+      "race": "Vulpo",
+      "height": 182,
+      "combat_experience": "6 Years",
+      "faction": "Siracusa",
+      "subfaction": "Chiave",
+      "EN": {
+        "firstFeatured": 1606388400000,
+        "lastFeatured": 1626778800000,
+        "timesFeatured": 2,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      },
+      "CN": {
+        "firstFeatured": 1595934000000,
+        "lastFeatured": 1629370800000,
+        "timesFeatured": 3,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      }
+    },
+    "Beeswax": {
+      "rarity": 5,
+      "name": "Beeswax",
+      "class": "Caster",
+      "subclass": "Modal Caster",
+      "tags": [
+        "AoE",
+        "Defense"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1595934000000,
+      "release_date_en": 1606388400000,
+      "gender": "Female",
+      "birthplace": "Sargon",
+      "birthday": [
+        9,
+        15
+      ],
+      "race": "Caprinae",
+      "height": 157,
+      "combat_experience": "None",
+      "faction": "Sargon",
+      "EN": {
+        "firstFeatured": 1606388400000,
+        "lastFeatured": 1636714800000,
+        "timesFeatured": 3,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      },
+      "CN": {
+        "firstFeatured": 1595934000000,
+        "lastFeatured": 1638183600000,
+        "timesFeatured": 4,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      }
+    },
+    "Scene": {
+      "rarity": 5,
+      "name": "Scene",
+      "class": "Supporter",
+      "subclass": "Summoner Supporter",
+      "tags": [
+        "Summon",
+        "Support"
+      ],
+      "headhunting": false,
+      "limited": false,
+      "recruitment": false,
+      "release_date_cn": 1595934000000,
+      "release_date_en": 1612436400000,
+      "gender": "Female",
+      "birthplace": "Sargon",
+      "birthday": [
+        12,
+        31
+      ],
+      "race": "Pilosa",
+      "height": 154,
+      "combat_experience": "None",
+      "faction": "Sargon"
+    },
+    "Ayerscarpe": {
+      "rarity": 5,
+      "name": "Ayerscarpe",
+      "class": "Guard",
+      "subclass": "Ranged Guard",
+      "tags": [
+        "DPS",
+        "AoE"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1594292400000,
+      "release_date_en": 1603882800000,
+      "gender": "Male",
+      "birthplace": "RIM Billiton",
+      "birthday": [
+        10,
+        25
+      ],
+      "race": "Cautus",
+      "height": 173,
+      "combat_experience": "1 Year",
+      "faction": "RIM Billiton",
+      "EN": {
+        "firstFeatured": 1603882800000,
+        "lastFeatured": 1640948400000,
+        "timesFeatured": 4,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      },
+      "CN": {
+        "firstFeatured": 1594292400000,
+        "lastFeatured": 1638183600000,
+        "timesFeatured": 4,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      }
+    },
+    "Folinic": {
+      "rarity": 5,
+      "name": "Folinic",
+      "class": "Medic",
+      "subclass": "ST Medic",
+      "tags": [
+        "Healing",
+        "DPS"
+      ],
+      "headhunting": false,
+      "limited": false,
+      "recruitment": false,
+      "release_date_cn": 1594292400000,
+      "release_date_en": 1603882800000,
+      "gender": "Female",
+      "birthplace": "Ursus",
+      "birthday": [
+        8,
+        18
+      ],
+      "race": "Feline",
+      "height": 164,
+      "combat_experience": "Half-year mock combat training",
+      "faction": "Rhodes Island"
+    },
+    "Leonhardt": {
+      "rarity": 5,
+      "name": "Leonhardt",
+      "class": "Caster",
+      "subclass": "AoE Caster",
+      "tags": [
+        "AoE",
+        "Nuker"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1592478000000,
+      "release_date_en": 1601377200000,
+      "gender": "Male",
+      "birthplace": "Rim Billiton",
+      "birthday": [
+        8,
+        13
+      ],
+      "race": "Cautus",
+      "height": 165,
+      "combat_experience": "2 Years",
+      "faction": "RIM Billiton",
+      "EN": {
+        "firstFeatured": 1601377200000,
+        "lastFeatured": 1637838000000,
+        "timesFeatured": 3,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      },
+      "CN": {
+        "firstFeatured": 1592478000000,
+        "lastFeatured": 1635418800000,
+        "timesFeatured": 4,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      }
+    },
+    "Absinthe": {
+      "rarity": 5,
+      "name": "Absinthe",
+      "class": "Caster",
+      "subclass": "ST Caster",
+      "tags": [
+        "DPS"
+      ],
+      "headhunting": false,
+      "limited": false,
+      "recruitment": false,
+      "release_date_cn": 1592478000000,
+      "release_date_en": 1601377200000,
+      "gender": "Female",
+      "birthplace": "Ursus",
+      "birthday": [
+        11,
+        10
+      ],
+      "race": "Ursus",
+      "height": 159,
+      "combat_experience": "1 Month",
+      "faction": "Ursus"
+    },
+    "Tsukinogi": {
+      "rarity": 5,
+      "name": "Tsukinogi",
+      "class": "Supporter",
+      "subclass": "Buffer Supporter",
+      "tags": [
+        "Support",
+        "Survival"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1591095600000,
+      "release_date_en": 1605092400000,
+      "gender": "Female",
+      "birthplace": "Higashi",
+      "birthday": [
+        5,
+        3
+      ],
+      "race": "Elafia",
+      "height": 165,
+      "combat_experience": "2 Years",
+      "faction": "Higashi",
+      "EN": {
+        "firstFeatured": 1605092400000,
+        "lastFeatured": 1635505200000,
+        "timesFeatured": 3,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      },
+      "CN": {
+        "firstFeatured": 1591095600000,
+        "lastFeatured": 1641466800000,
+        "timesFeatured": 4,
+        "firstInShop": 1640257200000,
+        "lastInShop": 1641466800000,
+        "timesInShop": 1
+      }
+    },
+    "Asbestos": {
+      "rarity": 5,
+      "name": "Asbestos",
+      "class": "Defender",
+      "subclass": "Arts DPS Defender",
+      "tags": [
+        "Defense",
+        "DPS"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1591095600000,
+      "release_date_en": 1605092400000,
+      "gender": "Female",
+      "birthplace": "Rim Billiton",
+      "birthday": [
+        7,
+        30
+      ],
+      "race": "Savra",
+      "height": 156,
+      "combat_experience": "None",
+      "faction": "RIM Billiton",
+      "EN": {
+        "firstFeatured": 1605092400000,
+        "lastFeatured": 1623409200000,
+        "timesFeatured": 2,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      },
+      "CN": {
+        "firstFeatured": 1591095600000,
+        "lastFeatured": 1639047600000,
+        "timesFeatured": 4,
+        "firstInShop": 1637838000000,
+        "lastInShop": 1639047600000,
+        "timesInShop": 1
+      }
+    },
+    "Elysium": {
+      "rarity": 5,
+      "name": "Elysium",
+      "class": "Vanguard",
+      "subclass": "Standard Bearer Vanguard",
+      "tags": [
+        "DP-Recovery",
+        "Support"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1588330800000,
+      "release_date_en": 1609326000000,
+      "gender": "Male",
+      "birthplace": "Iberia",
+      "birthday": [
+        5,
+        8
+      ],
+      "race": "Liberi",
+      "height": 187,
+      "combat_experience": "2 Years",
+      "faction": "Rhodes Island",
+      "EN": {
+        "firstFeatured": 1609326000000,
+        "lastFeatured": 1637838000000,
+        "timesFeatured": 3,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      },
+      "CN": {
+        "firstFeatured": 1588330800000,
+        "lastFeatured": 1636628400000,
+        "timesFeatured": 5,
+        "firstInShop": 1635418800000,
+        "lastInShop": 1636628400000,
+        "timesInShop": 1
+      }
+    },
+    "Shamare": {
+      "rarity": 5,
+      "name": "Shamare",
+      "class": "Supporter",
+      "subclass": "Hexer Supporter",
+      "tags": [
+        "Debuff"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1587466800000,
+      "release_date_en": 1607598000000,
+      "gender": "Female",
+      "birthplace": "Siracusa",
+      "birthday": [
+        10,
+        29
+      ],
+      "race": "Vulpo",
+      "height": 138,
+      "combat_experience": "None",
+      "faction": "Siracusa",
+      "EN": {
+        "firstFeatured": 1607598000000,
+        "lastFeatured": 1632222000000,
+        "timesFeatured": 3,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      },
+      "CN": {
+        "firstFeatured": 1587466800000,
+        "lastFeatured": 1634209200000,
+        "timesFeatured": 4,
+        "firstInShop": 1632999600000,
+        "lastInShop": 1634209200000,
+        "timesInShop": 1
+      }
+    },
+    "Sideroca": {
+      "rarity": 5,
+      "name": "Sideroca",
+      "class": "Guard",
+      "subclass": "Arts Guard",
+      "tags": [
+        "Survival",
+        "DPS"
+      ],
+      "headhunting": false,
+      "limited": false,
+      "recruitment": false,
+      "release_date_cn": 1587466800000,
+      "release_date_en": 1607598000000,
+      "gender": "Female",
+      "birthplace": "Minos",
+      "birthday": [
+        3,
+        17
+      ],
+      "race": "Forte",
+      "height": 164,
+      "combat_experience": "5 Years",
+      "faction": "Minos"
+    },
+    "Sesa": {
+      "rarity": 5,
+      "name": "Sesa",
+      "class": "Sniper",
+      "subclass": "AoE Sniper",
+      "tags": [
+        "AoE",
+        "Debuff"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1584442800000,
+      "release_date_en": 1599735600000,
+      "gender": "Male",
+      "birthplace": "Sargon",
+      "birthday": [
+        4,
+        22
+      ],
+      "race": "Vouivre",
+      "height": 189,
+      "combat_experience": "None",
+      "faction": "Sargon",
+      "EN": {
+        "firstFeatured": 1599735600000,
+        "lastFeatured": 1634209200000,
+        "timesFeatured": 3,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      },
+      "CN": {
+        "firstFeatured": 1584442800000,
+        "lastFeatured": 1631790000000,
+        "timesFeatured": 5,
+        "firstInShop": 1630580400000,
+        "lastInShop": 1631790000000,
+        "timesInShop": 1
+      }
+    },
+    "Bibeak": {
+      "rarity": 5,
+      "name": "Bibeak",
+      "class": "Guard",
+      "subclass": "Dualstrike Guard",
+      "tags": [
+        "Nuker",
+        "DPS"
+      ],
+      "headhunting": false,
+      "limited": false,
+      "recruitment": false,
+      "release_date_cn": 1584442800000,
+      "release_date_en": 1599735600000,
+      "gender": "Female",
+      "birthplace": "Sami",
+      "birthday": [
+        12,
+        12
+      ],
+      "race": "Liberi",
+      "height": 161,
+      "combat_experience": "None",
+      "faction": "Sami"
+    },
+    "Leizi": {
+      "rarity": 5,
+      "name": "Leizi",
+      "class": "Caster",
+      "subclass": "Chain Caster",
+      "tags": [
+        "DPS"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1582628400000,
+      "release_date_en": 1598439600000,
+      "gender": "Female",
+      "birthplace": "Yen",
+      "birthday": [
+        3,
+        5
+      ],
+      "race": "Kylin",
+      "height": 171,
+      "combat_experience": "Five Years",
+      "faction": "Yan",
+      "EN": {
+        "firstFeatured": 1598439600000,
+        "lastFeatured": 1641553200000,
+        "timesFeatured": 5,
+        "firstInShop": 1640343600000,
+        "lastInShop": 1641553200000,
+        "timesInShop": 1
+      },
+      "CN": {
+        "firstFeatured": 1582628400000,
+        "lastFeatured": 1634209200000,
+        "timesFeatured": 5,
+        "firstInShop": 1613646000000,
+        "lastInShop": 1614855600000,
+        "timesInShop": 1
+      }
+    },
+    "Hung": {
+      "rarity": 5,
+      "name": "Hung",
+      "class": "Defender",
+      "subclass": "Healing Defender",
+      "tags": [
+        "Defense",
+        "Healing"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1579172400000,
+      "release_date_en": 1596020400000,
+      "gender": "Male",
+      "birthplace": "Lungmen",
+      "birthday": [
+        7,
+        1
+      ],
+      "race": "Perro",
+      "height": 183,
+      "combat_experience": "3 years",
+      "faction": "Great Lungmen",
+      "subfaction": "Lee",
+      "EN": {
+        "firstFeatured": 1596020400000,
+        "lastFeatured": 1627383600000,
+        "timesFeatured": 3,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      },
+      "CN": {
+        "firstFeatured": 1579172400000,
+        "lastFeatured": 1629370800000,
+        "timesFeatured": 5,
+        "firstInShop": 1628161200000,
+        "lastInShop": 1629370800000,
+        "timesInShop": 1
+      }
+    },
+    "Snowsant": {
+      "rarity": 5,
+      "name": "Snowsant",
+      "class": "Specialist",
+      "subclass": "Puller",
+      "tags": [
+        "Shift",
+        "Slow"
+      ],
+      "headhunting": false,
+      "limited": false,
+      "recruitment": false,
+      "release_date_cn": 1578567600000,
+      "release_date_en": 1596020400000,
+      "gender": "Female",
+      "birthplace": "Lungmen",
+      "birthday": [
+        10,
+        17
+      ],
+      "race": "Liberi",
+      "height": 155,
+      "combat_experience": "None",
+      "faction": "Great Lungmen"
+    },
+    "GreyThroat": {
+      "rarity": 5,
+      "name": "GreyThroat",
+      "class": "Sniper",
+      "subclass": "Marksman Sniper",
+      "tags": [
+        "DPS"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1577185200000,
+      "release_date_en": 1593514800000,
+      "gender": "Female",
+      "birthplace": "Undisclosed",
+      "birthday": [
+        11,
+        14
+      ],
+      "race": "Liberi",
+      "height": 162,
+      "combat_experience": "3 years",
+      "faction": "Rhodes Island",
+      "EN": {
+        "firstFeatured": 1593514800000,
+        "lastFeatured": 1634295600000,
+        "timesFeatured": 4,
+        "firstInShop": 1633086000000,
+        "lastInShop": 1634295600000,
+        "timesInShop": 1
+      },
+      "CN": {
+        "firstFeatured": 1577185200000,
+        "lastFeatured": 1641466800000,
+        "timesFeatured": 6,
+        "firstInShop": 1603969200000,
+        "lastInShop": 1626951600000,
+        "timesInShop": 2
+      }
+    },
+    "Broca": {
+      "rarity": 5,
+      "name": "Broca",
+      "class": "Guard",
+      "subclass": "AoE Guard",
+      "tags": [
+        "AoE",
+        "Survival"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1575975600000,
+      "release_date_en": 1594810800000,
+      "gender": "Male",
+      "birthplace": "Siracusa",
+      "birthday": [
+        2,
+        4
+      ],
+      "race": "Feline",
+      "height": 189,
+      "combat_experience": "5 years",
+      "faction": "Siracusa",
+      "subfaction": "Chiave",
+      "EN": {
+        "firstFeatured": 1594810800000,
+        "lastFeatured": 1637924400000,
+        "timesFeatured": 4,
+        "firstInShop": 1636714800000,
+        "lastInShop": 1637924400000,
+        "timesInShop": 1
+      },
+      "CN": {
+        "firstFeatured": 1575975600000,
+        "lastFeatured": 1636628400000,
+        "timesFeatured": 6,
+        "firstInShop": 1619694000000,
+        "lastInShop": 1620903600000,
+        "timesInShop": 1
+      }
+    },
+    "Reed": {
+      "rarity": 5,
+      "name": "Reed",
+      "class": "Vanguard",
+      "subclass": "Charger Vanguard",
+      "tags": [
+        "DP-Recovery",
+        "DPS"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1575975600000,
+      "release_date_en": 1594810800000,
+      "gender": "Female",
+      "birthplace": "Victoria",
+      "birthday": [
+        10,
+        16
+      ],
+      "race": "Draco",
+      "height": 172,
+      "combat_experience": "7 years",
+      "faction": "Victoria",
+      "EN": {
+        "firstFeatured": 1594810800000,
+        "lastFeatured": 1636714800000,
+        "timesFeatured": 5,
+        "firstInShop": 1635505200000,
+        "lastInShop": 1636714800000,
+        "timesInShop": 1
+      },
+      "CN": {
+        "firstFeatured": 1575975600000,
+        "lastFeatured": 1629370800000,
+        "timesFeatured": 5,
+        "firstInShop": 1607598000000,
+        "lastInShop": 1608807600000,
+        "timesInShop": 1
+      }
+    },
+    "Bison": {
+      "rarity": 5,
+      "name": "Bison",
+      "class": "Defender",
+      "subclass": "Normal Defender",
+      "tags": [
+        "Defense"
+      ],
+      "headhunting": false,
+      "limited": false,
+      "recruitment": false,
+      "release_date_cn": 1574161200000,
+      "release_date_en": 1590577200000,
+      "gender": "Male",
+      "birthplace": "Lungmen",
+      "birthday": [
+        10,
+        15
+      ],
+      "race": "Forte",
+      "height": 163,
+      "combat_experience": "1 Year",
+      "faction": "Great Lungmen"
+    },
+    "Waai Fu": {
+      "rarity": 5,
+      "name": "Waai Fu",
+      "class": "Specialist",
+      "subclass": "Fast-Redeploy",
+      "tags": [
+        "Fast-Redeploy",
+        "Debuff"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1574161200000,
+      "release_date_en": 1590577200000,
+      "gender": "Female",
+      "birthplace": "Yen",
+      "birthday": [
+        12,
+        1
+      ],
+      "race": "Feline",
+      "height": 162,
+      "combat_experience": "14 years",
+      "faction": "Great Lungmen",
+      "subfaction": "Lee",
+      "EN": {
+        "firstFeatured": 1590577200000,
+        "lastFeatured": 1631876400000,
+        "timesFeatured": 4,
+        "firstInShop": 1630666800000,
+        "lastInShop": 1631876400000,
+        "timesInShop": 1
+      },
+      "CN": {
+        "firstFeatured": 1574161200000,
+        "lastFeatured": 1637838000000,
+        "timesFeatured": 6,
+        "firstInShop": 1622113200000,
+        "lastInShop": 1623322800000,
+        "timesInShop": 1
+      }
+    },
+    "Ceylon": {
+      "rarity": 5,
+      "name": "Ceylon",
+      "class": "Medic",
+      "subclass": "Wide-Range Medic",
+      "tags": [
+        "Healing"
+      ],
+      "headhunting": false,
+      "limited": false,
+      "recruitment": false,
+      "release_date_cn": 1566903600000,
+      "release_date_en": 1588158000000,
+      "gender": "Female",
+      "birthplace": "Siesta (Independent City)",
+      "birthday": [
+        9,
+        25
+      ],
+      "race": "Liberi",
+      "height": 162,
+      "combat_experience": "No combat experience",
+      "faction": "Columbia",
+      "subfaction": "Siesta"
+    },
+    "Flamebringer": {
+      "rarity": 5,
+      "name": "Flamebringer",
+      "class": "Guard",
+      "subclass": "Dreadnought Guard",
+      "tags": [
+        "DPS",
+        "Survival"
+      ],
+      "headhunting": false,
+      "limited": false,
+      "recruitment": false,
+      "release_date_cn": 1571137200000,
+      "release_date_en": 1585134000000,
+      "gender": "Male",
+      "birthplace": "Kazdel",
+      "birthday": [
+        12,
+        25
+      ],
+      "race": "Sarkaz",
+      "height": 190,
+      "combat_experience": "15 years",
+      "faction": "Rhodes Island"
+    },
+    "Breeze": {
+      "rarity": 5,
+      "name": "Breeze",
+      "class": "Medic",
+      "subclass": "AoE Medic",
+      "tags": [
+        "Healing",
+        "Support"
+      ],
+      "headhunting": false,
+      "limited": false,
+      "recruitment": false,
+      "release_date_cn": 1572606000000,
+      "release_date_en": 1589972400000,
+      "gender": "Female",
+      "birthplace": "Victoria",
+      "birthday": [
+        6,
+        24
+      ],
+      "race": "Vulpo",
+      "height": 162,
+      "combat_experience": "1 year",
+      "faction": "Victoria"
+    },
+    "Executor": {
+      "rarity": 5,
+      "name": "Executor",
+      "class": "Sniper",
+      "subclass": "Spreadshooter",
+      "tags": [
+        "AoE"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1571137200000,
+      "release_date_en": 1585134000000,
+      "gender": "Male",
+      "birthplace": "Laterano",
+      "birthday": [
+        7,
+        7
+      ],
+      "race": "Sankta",
+      "height": 181,
+      "combat_experience": "5 years",
+      "faction": "Laterano",
+      "EN": {
+        "firstFeatured": 1585134000000,
+        "lastFeatured": 1620990000000,
+        "timesFeatured": 5,
+        "firstInShop": 1619780400000,
+        "lastInShop": 1620990000000,
+        "timesInShop": 1
+      },
+      "CN": {
+        "firstFeatured": 1571137200000,
+        "lastFeatured": 1634209200000,
+        "timesFeatured": 6,
+        "firstInShop": 1618484400000,
+        "lastInShop": 1619694000000,
+        "timesInShop": 1
+      }
+    },
+    "Astesia": {
+      "rarity": 5,
+      "name": "Astesia",
+      "class": "Guard",
+      "subclass": "Arts Guard",
+      "tags": [
+        "DPS",
+        "Defense"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1568113200000,
+      "release_date_en": 1586948400000,
+      "gender": "Female",
+      "birthplace": "Columbia",
+      "birthday": [
+        7,
+        10
+      ],
+      "race": "Liberi",
+      "height": 165,
+      "combat_experience": "No combat experience",
+      "faction": "Columbia",
+      "EN": {
+        "firstFeatured": 1586948400000,
+        "lastFeatured": 1641553200000,
+        "timesFeatured": 7,
+        "firstInShop": 1625828400000,
+        "lastInShop": 1627038000000,
+        "timesInShop": 1
+      },
+      "CN": {
+        "firstFeatured": 1568113200000,
+        "lastFeatured": 1641466800000,
+        "timesFeatured": 6,
+        "firstInShop": 1594292400000,
+        "lastInShop": 1624532400000,
+        "timesInShop": 2
+      }
+    },
+    "Glaucus": {
+      "rarity": 5,
+      "name": "Glaucus",
+      "class": "Supporter",
+      "subclass": "Slower",
+      "tags": [
+        "Slow",
+        "Crowd-Control"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1566903600000,
+      "release_date_en": 1588158000000,
+      "gender": "Female",
+      "birthplace": "Ægir Region",
+      "birthday": [
+        7,
+        27
+      ],
+      "race": "Unknown",
+      "height": 159,
+      "combat_experience": "4 years",
+      "faction": "Iberia",
+      "EN": {
+        "firstFeatured": 1588158000000,
+        "lastFeatured": 1625828400000,
+        "timesFeatured": 4,
+        "firstInShop": 1624618800000,
+        "lastInShop": 1625828400000,
+        "timesInShop": 1
+      },
+      "CN": {
+        "firstFeatured": 1566903600000,
+        "lastFeatured": 1632999600000,
+        "timesFeatured": 6,
+        "firstInShop": 1602759600000,
+        "lastInShop": 1632999600000,
+        "timesInShop": 2
+      }
+    },
+    "Swire": {
+      "rarity": 5,
+      "name": "Swire",
+      "class": "Guard",
+      "subclass": "Support Guard",
+      "tags": [
+        "DPS",
+        "Support"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1562670000000,
+      "release_date_en": 1582714800000,
+      "gender": "Female",
+      "birthplace": "Lungmen",
+      "birthday": [
+        7,
+        1
+      ],
+      "race": "Feline",
+      "height": 163,
+      "combat_experience": "3 years",
+      "faction": "Great Lungmen",
+      "subfaction": "L.G.D.",
+      "EN": {
+        "firstFeatured": 1582714800000,
+        "lastFeatured": 1633086000000,
+        "timesFeatured": 6,
+        "firstInShop": 1613732400000,
+        "lastInShop": 1614942000000,
+        "timesInShop": 1
+      },
+      "CN": {
+        "firstFeatured": 1562670000000,
+        "lastFeatured": 1624532400000,
+        "timesFeatured": 6,
+        "firstInShop": 1589454000000,
+        "lastInShop": 1590404400000,
+        "timesInShop": 1
+      }
+    },
+    "Grani": {
+      "rarity": 5,
+      "name": "Grani",
+      "class": "Vanguard",
+      "subclass": "Charger Vanguard",
+      "tags": [
+        "DP-Recovery",
+        "Defense"
+      ],
+      "headhunting": false,
+      "limited": false,
+      "recruitment": false,
+      "release_date_cn": 1559214000000,
+      "release_date_en": 1580900400000,
+      "gender": "Female",
+      "birthplace": "Victoria",
+      "birthday": [
+        12,
+        1
+      ],
+      "race": "Kuranta",
+      "height": 154,
+      "combat_experience": "2 years",
+      "faction": "Victoria"
+    },
+    "Nightmare": {
+      "rarity": 5,
+      "name": "Nightmare",
+      "class": "Caster",
+      "subclass": "ST Caster",
+      "tags": [
+        "DPS",
+        "Healing",
+        "Slow"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1559214000000,
+      "release_date_en": 1580900400000,
+      "gender": "Female",
+      "birthplace": "Victoria",
+      "birthday": [
+        6,
+        1
+      ],
+      "race": "Feline",
+      "height": 156,
+      "combat_experience": "6 Months",
+      "faction": "Victoria",
+      "EN": {
+        "firstFeatured": 1580900400000,
+        "lastFeatured": 1640948400000,
+        "timesFeatured": 7,
+        "firstInShop": 1611313200000,
+        "lastInShop": 1612522800000,
+        "timesInShop": 1
+      },
+      "CN": {
+        "firstFeatured": 1559214000000,
+        "lastFeatured": 1640257200000,
+        "timesFeatured": 8,
+        "firstInShop": 1588244400000,
+        "lastInShop": 1589367600000,
+        "timesInShop": 1
+      }
+    },
+    "Savage": {
+      "rarity": 5,
+      "name": "Savage",
+      "class": "Guard",
+      "subclass": "AoE Guard",
+      "tags": [
+        "AoE",
+        "Nuker"
+      ],
+      "headhunting": false,
+      "limited": false,
+      "recruitment": false,
+      "release_date_cn": 1556622000000,
+      "release_date_en": 1579172400000,
+      "gender": "Female",
+      "birthplace": "Rim Billiton",
+      "birthday": [
+        6,
+        30
+      ],
+      "race": "Cautus",
+      "height": 160,
+      "combat_experience": "4 years",
+      "faction": "RIM Billiton"
+    },
+    "FEater": {
+      "rarity": 5,
+      "name": "FEater",
+      "class": "Specialist",
+      "subclass": "Pusher",
+      "tags": [
+        "Shift",
+        "Slow"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1556622000000,
+      "release_date_en": 1579172400000,
+      "gender": "Female",
+      "birthplace": "Yen",
+      "birthday": [
+        8,
+        10
+      ],
+      "race": "Ursus",
+      "height": 160,
+      "faction": "Great Lungmen",
+      "EN": {
+        "firstFeatured": 1582714800000,
+        "lastFeatured": 1629457200000,
+        "timesFeatured": 5,
+        "firstInShop": 1601636400000,
+        "lastInShop": 1629457200000,
+        "timesInShop": 2
+      },
+      "CN": {
+        "firstFeatured": 1562670000000,
+        "lastFeatured": 1614855600000,
+        "timesFeatured": 6,
+        "firstInShop": 1585738800000,
+        "lastInShop": 1602759600000,
+        "timesInShop": 2
+      }
+    },
+    "Manticore": {
+      "rarity": 5,
+      "name": "Manticore",
+      "class": "Specialist",
+      "subclass": "Stalker",
+      "tags": [
+        "DPS",
+        "Survival"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1556622000000,
+      "release_date_en": 1579172400000,
+      "gender": "Female",
+      "birthplace": "Sargon",
+      "birthday": null,
+      "race": "Manticore",
+      "height": 155,
+      "combat_experience": "1 year",
+      "faction": "Sargon",
+      "EN": {
+        "firstFeatured": 1584702000000,
+        "lastFeatured": 1639134000000,
+        "timesFeatured": 6,
+        "firstInShop": 1600426800000,
+        "lastInShop": 1601636400000,
+        "timesInShop": 1
+      },
+      "CN": {
+        "firstFeatured": 1562756400000,
+        "lastFeatured": 1635505200000,
+        "timesFeatured": 7,
+        "firstInShop": 1578481200000,
+        "lastInShop": 1579690800000,
+        "timesInShop": 1
+      }
+    },
+    "Sora": {
+      "rarity": 5,
+      "name": "Sora",
+      "class": "Supporter",
+      "subclass": "Aura Supporter",
+      "tags": [
+        "Support",
+        "Healing"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1556622000000,
+      "release_date_en": 1579172400000,
+      "gender": "Female",
+      "birthplace": "Unknown as requested by management agency",
+      "birthday": [
+        9,
+        12
+      ],
+      "race": "Unknown as requested by management agency",
+      "height": 155,
+      "combat_experience": "None",
+      "faction": "Great Lungmen",
+      "subfaction": "Penguin Logistics",
+      "EN": {
+        "firstFeatured": 1588330800000,
+        "lastFeatured": 1633086000000,
+        "timesFeatured": 4,
+        "firstInShop": 1588330800000,
+        "lastInShop": 1633086000000,
+        "timesInShop": 2
+      },
+      "CN": {
+        "firstFeatured": 1561546800000,
+        "lastFeatured": 1632999600000,
+        "timesFeatured": 7,
+        "firstInShop": 1573642800000,
+        "lastInShop": 1613646000000,
+        "timesInShop": 2
+      }
+    },
+    "Istina": {
+      "rarity": 5,
+      "name": "Istina",
+      "class": "Supporter",
+      "subclass": "Slower",
+      "tags": [
+        "Slow",
+        "DPS"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1556622000000,
+      "release_date_en": 1579172400000,
+      "gender": "Female",
+      "birthplace": "Ursus",
+      "birthday": [
+        9,
+        22
+      ],
+      "race": "Ursus",
+      "height": 156,
+      "combat_experience": "None",
+      "faction": "Ursus",
+      "subfaction": "Student",
+      "EN": {
+        "firstFeatured": 1581073200000,
+        "lastFeatured": 1623409200000,
+        "timesFeatured": 5,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      },
+      "CN": {
+        "firstFeatured": 1560337200000,
+        "lastFeatured": 1639047600000,
+        "timesFeatured": 8,
+        "firstInShop": 1579690800000,
+        "lastInShop": 1622113200000,
+        "timesInShop": 2
+      }
+    },
+    "Pramanix": {
+      "rarity": 5,
+      "name": "Pramanix",
+      "class": "Supporter",
+      "subclass": "Hexer Supporter",
+      "tags": [
+        "Debuff"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1556622000000,
+      "release_date_en": 1579172400000,
+      "gender": "Female",
+      "birthplace": "Kjerag",
+      "birthday": [
+        2,
+        13
+      ],
+      "race": "Feline",
+      "height": 161,
+      "combat_experience": "Half a year",
+      "faction": "Kjerag",
+      "subfaction": "Karlan",
+      "EN": {
+        "firstFeatured": 1579690800000,
+        "lastFeatured": 1624618800000,
+        "timesFeatured": 4,
+        "firstInShop": 1593169200000,
+        "lastInShop": 1624618800000,
+        "timesInShop": 2
+      },
+      "CN": {
+        "firstFeatured": 1558609200000,
+        "lastFeatured": 1641294000000,
+        "timesFeatured": 8,
+        "firstInShop": 1565175600000,
+        "lastInShop": 1625742000000,
+        "timesInShop": 3
+      }
+    },
+    "Cliffheart": {
+      "rarity": 5,
+      "name": "Cliffheart",
+      "class": "Specialist",
+      "subclass": "Puller",
+      "tags": [
+        "Shift",
+        "DPS"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1556622000000,
+      "release_date_en": 1579172400000,
+      "gender": "Female",
+      "birthplace": "Kjerag",
+      "birthday": [
+        11,
+        28
+      ],
+      "race": "Feline",
+      "height": 163,
+      "combat_experience": "Half a year",
+      "faction": "Kjerag",
+      "subfaction": "Karlan",
+      "EN": {
+        "firstFeatured": 1579690800000,
+        "lastFeatured": 1640257200000,
+        "timesFeatured": 6,
+        "firstInShop": 1602846000000,
+        "lastInShop": 1604055600000,
+        "timesInShop": 1
+      },
+      "CN": {
+        "firstFeatured": 1558609200000,
+        "lastFeatured": 1623754800000,
+        "timesFeatured": 7,
+        "firstInShop": 1583319600000,
+        "lastInShop": 1584529200000,
+        "timesInShop": 1
+      }
+    },
+    "Firewatch": {
+      "rarity": 5,
+      "name": "Firewatch",
+      "class": "Sniper",
+      "subclass": "Deadeye Sniper",
+      "tags": [
+        "DPS",
+        "Nuker"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1556622000000,
+      "release_date_en": 1579172400000,
+      "gender": "Female",
+      "birthplace": "Unknown",
+      "birthday": null,
+      "race": "Elafia",
+      "height": 158,
+      "combat_experience": "5 years",
+      "faction": "Rhodes Island",
+      "EN": {
+        "firstFeatured": 1585911600000,
+        "lastFeatured": 1639134000000,
+        "timesFeatured": 6,
+        "firstInShop": 1585911600000,
+        "lastInShop": 1639134000000,
+        "timesInShop": 3
+      },
+      "CN": {
+        "firstFeatured": 1562756400000,
+        "lastFeatured": 1630580400000,
+        "timesFeatured": 6,
+        "firstInShop": 1568804400000,
+        "lastInShop": 1630580400000,
+        "timesInShop": 2
+      }
+    },
+    "Provence": {
+      "rarity": 5,
+      "name": "Provence",
+      "class": "Sniper",
+      "subclass": "Close Range Sniper",
+      "tags": [
+        "DPS"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1556622000000,
+      "release_date_en": 1579172400000,
+      "gender": "Female",
+      "birthplace": "Siracusa",
+      "birthday": [
+        11,
+        30
+      ],
+      "race": "Lupo",
+      "height": 162,
+      "combat_experience": "1 year",
+      "faction": "Siracusa",
+      "EN": {
+        "firstFeatured": 1583492400000,
+        "lastFeatured": 1640343600000,
+        "timesFeatured": 6,
+        "firstInShop": 1599217200000,
+        "lastInShop": 1640343600000,
+        "timesInShop": 2
+      },
+      "CN": {
+        "firstFeatured": 1563966000000,
+        "lastFeatured": 1631185200000,
+        "timesFeatured": 8,
+        "firstInShop": 1584529200000,
+        "lastInShop": 1585738800000,
+        "timesInShop": 1
+      }
+    },
+    "Vulcan": {
+      "rarity": 5,
+      "name": "Vulcan",
+      "class": "Defender",
+      "subclass": "Enmity Defender",
+      "tags": [
+        "Survival",
+        "Defense",
+        "DPS"
+      ],
+      "headhunting": false,
+      "limited": false,
+      "recruitment": false,
+      "release_date_cn": 1556622000000,
+      "release_date_en": 1579172400000,
+      "gender": "Female",
+      "birthplace": "Minos",
+      "birthday": [
+        4,
+        30
+      ],
+      "race": "Forte",
+      "height": 170,
+      "combat_experience": "2 years",
+      "faction": "Minos"
+    },
+    "Croissant": {
+      "rarity": 5,
+      "name": "Croissant",
+      "class": "Defender",
+      "subclass": "Normal Defender",
+      "tags": [
+        "Defense",
+        "Shift"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1556622000000,
+      "release_date_en": 1579172400000,
+      "gender": "Female",
+      "birthplace": "Minos",
+      "birthday": [
+        9,
+        29
+      ],
+      "race": "Forte",
+      "height": 163,
+      "combat_experience": "1 year",
+      "faction": "Great Lungmen",
+      "subfaction": "Penguin Logistics",
+      "EN": {
+        "firstFeatured": 1579172400000,
+        "lastFeatured": 1631876400000,
+        "timesFeatured": 6,
+        "firstInShop": 1579172400000,
+        "lastInShop": 1616151600000,
+        "timesInShop": 2
+      },
+      "CN": {
+        "firstFeatured": 1556622000000,
+        "lastFeatured": 1636628400000,
+        "timesFeatured": 7,
+        "firstInShop": 1556622000000,
+        "lastInShop": 1612436400000,
+        "timesInShop": 3
+      }
+    },
+    "Liskarm": {
+      "rarity": 5,
+      "name": "Liskarm",
+      "class": "Defender",
+      "subclass": "Normal Defender",
+      "tags": [
+        "Defense",
+        "DPS"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1556622000000,
+      "release_date_en": 1579172400000,
+      "gender": "Female",
+      "birthplace": "Vouivre",
+      "birthday": [
+        5,
+        18
+      ],
+      "race": "Vouivre",
+      "height": 156,
+      "combat_experience": "3 years",
+      "faction": "Columbia",
+      "subfaction": "Blacksteel",
+      "EN": {
+        "firstFeatured": 1583924400000,
+        "lastFeatured": 1630666800000,
+        "timesFeatured": 5,
+        "firstInShop": 1595588400000,
+        "lastInShop": 1630666800000,
+        "timesInShop": 2
+      },
+      "CN": {
+        "firstFeatured": 1563793200000,
+        "lastFeatured": 1633086000000,
+        "timesFeatured": 7,
+        "firstInShop": 1570014000000,
+        "lastInShop": 1616065200000,
+        "timesInShop": 3
+      }
+    },
+    "Projekt Red": {
+      "rarity": 5,
+      "name": "Projekt Red",
+      "class": "Specialist",
+      "subclass": "Fast-Redeploy",
+      "tags": [
+        "Fast-Redeploy",
+        "Crowd-Control"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1556622000000,
+      "release_date_en": 1579172400000,
+      "gender": "Female",
+      "birthplace": "Undisclosed",
+      "birthday": [
+        8,
+        25
+      ],
+      "race": "Lupo",
+      "height": 162,
+      "combat_experience": "9 years",
+      "faction": "Rhodes Island",
+      "subfaction": "Sweep",
+      "EN": {
+        "firstFeatured": 1581073200000,
+        "lastFeatured": 1637924400000,
+        "timesFeatured": 5,
+        "firstInShop": 1590750000000,
+        "lastInShop": 1622199600000,
+        "timesInShop": 2
+      },
+      "CN": {
+        "firstFeatured": 1560337200000,
+        "lastFeatured": 1626433200000,
+        "timesFeatured": 7,
+        "firstInShop": 1563966000000,
+        "lastInShop": 1606388400000,
+        "timesInShop": 3
+      }
+    },
+    "Nearl": {
+      "rarity": 5,
+      "name": "Nearl",
+      "class": "Defender",
+      "subclass": "Healing Defender",
+      "tags": [
+        "Defense",
+        "Healing"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1556622000000,
+      "release_date_en": 1579172400000,
+      "gender": "Female",
+      "birthplace": "Kazimierz",
+      "birthday": [
+        4,
+        23
+      ],
+      "race": "Kuranta",
+      "height": 171,
+      "combat_experience": "5 years",
+      "faction": "Followers",
+      "EN": {
+        "firstFeatured": 1580900400000,
+        "lastFeatured": 1637838000000,
+        "timesFeatured": 8,
+        "firstInShop": 1583492400000,
+        "lastInShop": 1619780400000,
+        "timesInShop": 2
+      },
+      "CN": {
+        "firstFeatured": 1559214000000,
+        "lastFeatured": 1640257200000,
+        "timesFeatured": 9,
+        "firstInShop": 1572433200000,
+        "lastInShop": 1640257200000,
+        "timesInShop": 3
+      }
+    },
+    "Warfarin": {
+      "rarity": 5,
+      "name": "Warfarin",
+      "class": "Medic",
+      "subclass": "ST Medic",
+      "tags": [
+        "Healing",
+        "Support"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1556622000000,
+      "release_date_en": 1579172400000,
+      "gender": "Female",
+      "birthplace": "Kazdel",
+      "birthday": [
+        6,
+        27
+      ],
+      "race": "Sarkaz",
+      "height": 157,
+      "combat_experience": "10 years",
+      "faction": "Rhodes Island",
+      "EN": {
+        "firstFeatured": 1587121200000,
+        "lastFeatured": 1623409200000,
+        "timesFeatured": 5,
+        "firstInShop": 1587121200000,
+        "lastInShop": 1613732400000,
+        "timesInShop": 2
+      },
+      "CN": {
+        "firstFeatured": 1562756400000,
+        "lastFeatured": 1639047600000,
+        "timesFeatured": 7,
+        "firstInShop": 1562756400000,
+        "lastInShop": 1591873200000,
+        "timesInShop": 2
+      }
+    },
+    "Silence": {
+      "rarity": 5,
+      "name": "Silence",
+      "class": "Medic",
+      "subclass": "ST Medic",
+      "tags": [
+        "Healing"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1556622000000,
+      "release_date_en": 1579172400000,
+      "gender": "Female",
+      "birthplace": "Columbia",
+      "birthday": [
+        5,
+        18
+      ],
+      "race": "Liberi",
+      "height": 154,
+      "combat_experience": "None",
+      "faction": "Columbia",
+      "subfaction": "Rhine Lab",
+      "EN": {
+        "firstFeatured": 1582282800000,
+        "lastFeatured": 1637838000000,
+        "timesFeatured": 7,
+        "firstInShop": 1608894000000,
+        "lastInShop": 1610103600000,
+        "timesInShop": 1
+      },
+      "CN": {
+        "firstFeatured": 1559214000000,
+        "lastFeatured": 1640084400000,
+        "timesFeatured": 7,
+        "firstInShop": 1580900400000,
+        "lastInShop": 1582110000000,
+        "timesInShop": 1
+      }
+    },
+    "Mayer": {
+      "rarity": 5,
+      "name": "Mayer",
+      "class": "Supporter",
+      "subclass": "Summoner Supporter",
+      "tags": [
+        "Summon",
+        "Crowd-Control"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1556622000000,
+      "release_date_en": 1579172400000,
+      "gender": "Female",
+      "birthplace": "Columbia",
+      "birthday": [
+        11,
+        20
+      ],
+      "race": "Anaty",
+      "height": 159,
+      "combat_experience": "None",
+      "faction": "Columbia",
+      "subfaction": "Rhine Lab",
+      "EN": {
+        "firstFeatured": 1582282800000,
+        "lastFeatured": 1618570800000,
+        "timesFeatured": 4,
+        "firstInShop": 1617361200000,
+        "lastInShop": 1618570800000,
+        "timesInShop": 1
+      },
+      "CN": {
+        "firstFeatured": 1559214000000,
+        "lastFeatured": 1628161200000,
+        "timesFeatured": 8,
+        "firstInShop": 1574852400000,
+        "lastInShop": 1628161200000,
+        "timesInShop": 2
+      }
+    },
+    "Skyfire": {
+      "rarity": 5,
+      "name": "Skyfire",
+      "class": "Caster",
+      "subclass": "AoE Caster",
+      "tags": [
+        "AoE",
+        "Crowd-Control"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1556622000000,
+      "release_date_en": 1579172400000,
+      "gender": "Female",
+      "birthplace": "Victoria",
+      "birthday": [
+        6,
+        1
+      ],
+      "race": "Feline",
+      "height": 162,
+      "combat_experience": "1 year",
+      "faction": "Victoria",
+      "EN": {
+        "firstFeatured": 1579172400000,
+        "lastFeatured": 1628247600000,
+        "timesFeatured": 6,
+        "firstInShop": 1589540400000,
+        "lastInShop": 1617361200000,
+        "timesInShop": 2
+      },
+      "CN": {
+        "firstFeatured": 1556622000000,
+        "lastFeatured": 1630580400000,
+        "timesFeatured": 6,
+        "firstInShop": 1566385200000,
+        "lastInShop": 1611226800000,
+        "timesInShop": 2
+      }
+    },
+    "Amiya": {
+      "rarity": 5,
+      "name": "Amiya",
+      "class": "Caster",
+      "subclass": "ST Caster",
+      "tags": [
+        "DPS"
+      ],
+      "headhunting": false,
+      "limited": false,
+      "recruitment": false,
+      "release_date_cn": 1556622000000,
+      "release_date_en": 1579172400000,
+      "gender": "Female",
+      "birthplace": "Rim Billiton",
+      "birthday": [
+        12,
+        23
+      ],
+      "race": "Cautus/Chimera",
+      "height": 142,
+      "combat_experience": "3 years",
+      "faction": "Rhodes Island"
+    },
+    "Meteorite": {
+      "rarity": 5,
+      "name": "Meteorite",
+      "class": "Sniper",
+      "subclass": "AoE Sniper",
+      "tags": [
+        "AoE",
+        "Debuff"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1556622000000,
+      "release_date_en": 1579172400000,
+      "gender": "Female",
+      "birthplace": "Kazdel",
+      "birthday": [
+        8,
+        30
+      ],
+      "race": "Sarkaz",
+      "height": 170,
+      "combat_experience": "6 years",
+      "faction": "Rhodes Island",
+      "EN": {
+        "firstFeatured": 1583924400000,
+        "lastFeatured": 1641553200000,
+        "timesFeatured": 6,
+        "firstInShop": 1594378800000,
+        "lastInShop": 1628247600000,
+        "timesInShop": 2
+      },
+      "CN": {
+        "firstFeatured": 1563793200000,
+        "lastFeatured": 1638183600000,
+        "timesFeatured": 7,
+        "firstInShop": 1571223600000,
+        "lastInShop": 1572433200000,
+        "timesInShop": 1
+      }
+    },
+    "Platinum": {
+      "rarity": 5,
+      "name": "Platinum",
+      "class": "Sniper",
+      "subclass": "Marksman Sniper",
+      "tags": [
+        "DPS"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1556622000000,
+      "release_date_en": 1579172400000,
+      "gender": "Female",
+      "birthplace": "Kazimierz",
+      "birthday": [
+        2,
+        13
+      ],
+      "race": "Kuranta",
+      "height": 160,
+      "combat_experience": "6 years",
+      "faction": "Kazimierz",
+      "EN": {
+        "firstFeatured": 1579863600000,
+        "lastFeatured": 1619089200000,
+        "timesFeatured": 7,
+        "firstInShop": 1605265200000,
+        "lastInShop": 1606474800000,
+        "timesInShop": 1
+      },
+      "CN": {
+        "firstFeatured": 1557918000000,
+        "lastFeatured": 1634295600000,
+        "timesFeatured": 8,
+        "firstInShop": 1576062000000,
+        "lastInShop": 1597921200000,
+        "timesInShop": 2
+      }
+    },
+    "Blue Poison": {
+      "rarity": 5,
+      "name": "Blue Poison",
+      "class": "Sniper",
+      "subclass": "Marksman Sniper",
+      "tags": [
+        "DPS"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1556622000000,
+      "release_date_en": 1579172400000,
+      "gender": "Female",
+      "birthplace": "Unknown",
+      "birthday": [
+        1,
+        18
+      ],
+      "race": "Anura",
+      "height": 157,
+      "combat_experience": "None",
+      "faction": "Iberia",
+      "EN": {
+        "firstFeatured": 1588158000000,
+        "lastFeatured": 1637924400000,
+        "timesFeatured": 7,
+        "firstInShop": 1591959600000,
+        "lastInShop": 1593169200000,
+        "timesInShop": 1
+      },
+      "CN": {
+        "firstFeatured": 1561546800000,
+        "lastFeatured": 1637838000000,
+        "timesFeatured": 8,
+        "firstInShop": 1561546800000,
+        "lastInShop": 1637838000000,
+        "timesInShop": 3
+      }
+    },
+    "Specter": {
+      "rarity": 5,
+      "name": "Specter",
+      "class": "Guard",
+      "subclass": "AoE Guard",
+      "tags": [
+        "AoE",
+        "Survival"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1556622000000,
+      "release_date_en": 1579172400000,
+      "gender": "Female",
+      "birthplace": "Ægir",
+      "birthday": [
+        7,
+        27
+      ],
+      "race": "Undisclosed",
+      "height": 162,
+      "combat_experience": "7 years",
+      "faction": "Aegir",
+      "subfaction": "Abyssal",
+      "EN": {
+        "firstFeatured": 1581073200000,
+        "lastFeatured": 1634295600000,
+        "timesFeatured": 5,
+        "firstInShop": 1581073200000,
+        "lastInShop": 1607684400000,
+        "timesInShop": 2
+      },
+      "CN": {
+        "firstFeatured": 1560337200000,
+        "lastFeatured": 1626433200000,
+        "timesFeatured": 6,
+        "firstInShop": 1560337200000,
+        "lastInShop": 1600340400000,
+        "timesInShop": 2
+      }
+    },
+    "Lappland": {
+      "rarity": 5,
+      "name": "Lappland",
+      "class": "Guard",
+      "subclass": "Ranged Guard",
+      "tags": [
+        "DPS",
+        "Debuff"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1556622000000,
+      "release_date_en": 1579172400000,
+      "gender": "Female",
+      "birthplace": "Siracusa",
+      "birthday": [
+        11,
+        11
+      ],
+      "race": "Lupo",
+      "height": 162,
+      "combat_experience": "5 years",
+      "faction": "Siracusa",
+      "EN": {
+        "firstFeatured": 1582282800000,
+        "lastFeatured": 1635505200000,
+        "timesFeatured": 6,
+        "firstInShop": 1582282800000,
+        "lastInShop": 1635505200000,
+        "timesInShop": 3
+      },
+      "CN": {
+        "firstFeatured": 1559214000000,
+        "lastFeatured": 1632999600000,
+        "timesFeatured": 8,
+        "firstInShop": 1559214000000,
+        "lastInShop": 1617274800000,
+        "timesInShop": 2
+      }
+    },
+    "Indra": {
+      "rarity": 5,
+      "name": "Indra",
+      "class": "Guard",
+      "subclass": "Brawler",
+      "tags": [
+        "DPS",
+        "Survival"
+      ],
+      "headhunting": false,
+      "limited": false,
+      "recruitment": false,
+      "release_date_cn": 1556622000000,
+      "release_date_en": 1579172400000,
+      "gender": "Female",
+      "birthplace": "Unknown",
+      "birthday": [
+        4,
+        15
+      ],
+      "race": "Feline",
+      "height": 173,
+      "combat_experience": "5 years",
+      "faction": "Victoria",
+      "subfaction": "Glasgow"
+    },
+    "Franka": {
+      "rarity": 5,
+      "name": "Franka",
+      "class": "Guard",
+      "subclass": "Dreadnought Guard",
+      "tags": [
+        "DPS",
+        "Survival"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1556622000000,
+      "release_date_en": 1579172400000,
+      "gender": "Female",
+      "birthplace": "Columbia",
+      "birthday": [
+        10,
+        30
+      ],
+      "race": "Vulpo",
+      "height": 163,
+      "combat_experience": "3 years",
+      "faction": "Columbia",
+      "subfaction": "Blacksteel",
+      "EN": {
+        "firstFeatured": 1579863600000,
+        "lastFeatured": 1637838000000,
+        "timesFeatured": 6,
+        "firstInShop": 1598007600000,
+        "lastInShop": 1599217200000,
+        "timesInShop": 1
+      },
+      "CN": {
+        "firstFeatured": 1557918000000,
+        "lastFeatured": 1640257200000,
+        "timesFeatured": 7,
+        "firstInShop": 1577271600000,
+        "lastInShop": 1610017200000,
+        "timesInShop": 2
+      }
+    },
+    "Texas": {
+      "rarity": 5,
+      "name": "Texas",
+      "class": "Vanguard",
+      "subclass": "Pioneer Vanguard",
+      "tags": [
+        "DP-Recovery",
+        "Crowd-Control"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1556622000000,
+      "release_date_en": 1579172400000,
+      "gender": "Female",
+      "birthplace": "Columbia",
+      "birthday": [
+        6,
+        1
+      ],
+      "race": "Lupo",
+      "height": 161,
+      "combat_experience": "3 years",
+      "faction": "Great Lungmen",
+      "subfaction": "Penguin Logistics",
+      "EN": {
+        "firstFeatured": 1579863600000,
+        "lastFeatured": 1620990000000,
+        "timesFeatured": 6,
+        "firstInShop": 1579863600000,
+        "lastInShop": 1608894000000,
+        "timesInShop": 2
+      },
+      "CN": {
+        "firstFeatured": 1557918000000,
+        "lastFeatured": 1607598000000,
+        "timesFeatured": 6,
+        "firstInShop": 1557918000000,
+        "lastInShop": 1593082800000,
+        "timesInShop": 2
+      }
+    },
+    "Zima": {
+      "rarity": 5,
+      "name": "Zima",
+      "class": "Vanguard",
+      "subclass": "Pioneer Vanguard",
+      "tags": [
+        "DP-Recovery",
+        "Support"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1556622000000,
+      "release_date_en": 1579172400000,
+      "gender": "Female",
+      "birthplace": "Ursus",
+      "birthday": [
+        7,
+        29
+      ],
+      "race": "Ursus",
+      "height": 162,
+      "combat_experience": "Half a year",
+      "faction": "Ursus",
+      "subfaction": "Student",
+      "EN": {
+        "firstFeatured": 1579172400000,
+        "lastFeatured": 1640343600000,
+        "timesFeatured": 8,
+        "firstInShop": 1584702000000,
+        "lastInShop": 1623409200000,
+        "timesInShop": 2
+      },
+      "CN": {
+        "firstFeatured": 1556622000000,
+        "lastFeatured": 1623322800000,
+        "timesFeatured": 9,
+        "firstInShop": 1587034800000,
+        "lastInShop": 1618484400000,
+        "timesInShop": 2
+      }
+    },
+    "Ptilopsis": {
+      "rarity": 5,
+      "name": "Ptilopsis",
+      "class": "Medic",
+      "subclass": "AoE Medic",
+      "tags": [
+        "Healing",
+        "Support"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1556622000000,
+      "release_date_en": 1579172400000,
+      "gender": "Female",
+      "birthplace": "Columbia",
+      "birthday": [
+        10,
+        6
+      ],
+      "race": "Liberi",
+      "height": 164,
+      "combat_experience": "None",
+      "faction": "Columbia",
+      "subfaction": "Rhine Lab",
+      "EN": {
+        "firstFeatured": 1583492400000,
+        "lastFeatured": 1632222000000,
+        "timesFeatured": 7,
+        "firstInShop": 1604055600000,
+        "lastInShop": 1605265200000,
+        "timesInShop": 1
+      },
+      "CN": {
+        "firstFeatured": 1561546800000,
+        "lastFeatured": 1635418800000,
+        "timesFeatured": 10,
+        "firstInShop": 1567594800000,
+        "lastInShop": 1635418800000,
+        "timesInShop": 2
+      }
+    },
+    "Indigo": {
+      "rarity": 4,
+      "name": "Indigo",
+      "class": "Caster",
+      "subclass": "Charge Caster",
+      "tags": [
+        "DPS",
+        "Crowd-Control"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1622545200000,
+      "release_date_en": 1639047600000,
+      "gender": "Female",
+      "birthplace": "Iberia",
+      "birthday": [
+        9,
+        30
+      ],
+      "race": "Phidia",
+      "height": 167,
+      "combat_experience": "None",
+      "faction": "Iberia",
+      "EN": {
+        "firstFeatured": 1639047600000,
+        "lastFeatured": 1640257200000,
+        "timesFeatured": 1,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      },
+      "CN": {
+        "firstFeatured": 1622545200000,
+        "lastFeatured": 1623754800000,
+        "timesFeatured": 1,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      }
+    },
+    "Beanstalk": {
+      "rarity": 4,
+      "name": "Beanstalk",
+      "class": "Vanguard",
+      "subclass": "Summoner Vanguard",
+      "tags": [
+        "DP-Recovery",
+        "Summon"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1609844400000,
+      "release_date_en": 1625569200000,
+      "gender": "Female",
+      "birthplace": "Columbia",
+      "birthday": [
+        3,
+        10
+      ],
+      "race": "Reproba",
+      "height": 155,
+      "combat_experience": "None",
+      "faction": "Columbia",
+      "EN": {
+        "firstFeatured": 1625569200000,
+        "lastFeatured": 1626778800000,
+        "timesFeatured": 1,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      },
+      "CN": {
+        "firstFeatured": 1609844400000,
+        "lastFeatured": 1611054000000,
+        "timesFeatured": 1,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      }
+    },
+    "Pinecone": {
+      "rarity": 4,
+      "name": "Pinecone",
+      "class": "Sniper",
+      "subclass": "Spreadshooter",
+      "tags": [
+        "AoE",
+        "DPS"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1608202800000,
+      "release_date_en": 1624359600000,
+      "gender": "Female",
+      "birthplace": "Columbia",
+      "birthday": [
+        3,
+        12
+      ],
+      "race": "Liberi",
+      "height": 148,
+      "combat_experience": "None",
+      "faction": "Columbia",
+      "EN": {
+        "firstFeatured": 1624359600000,
+        "lastFeatured": 1625569200000,
+        "timesFeatured": 1,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      },
+      "CN": {
+        "firstFeatured": 1608202800000,
+        "lastFeatured": 1640084400000,
+        "timesFeatured": 2,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      }
+    },
+    "Bubble": {
+      "rarity": 4,
+      "name": "Bubble",
+      "class": "Defender",
+      "subclass": "Normal Defender",
+      "tags": [
+        "Defense"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1602759600000,
+      "release_date_en": 1617879600000,
+      "gender": "Female",
+      "birthplace": "Sargon",
+      "birthday": [
+        3,
+        19
+      ],
+      "race": "Cerato",
+      "height": 135,
+      "combat_experience": "None",
+      "faction": "Sargon",
+      "EN": {
+        "firstFeatured": 1617879600000,
+        "lastFeatured": 1619089200000,
+        "timesFeatured": 1,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      },
+      "CN": {
+        "firstFeatured": 1602759600000,
+        "lastFeatured": 1634295600000,
+        "timesFeatured": 2,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      }
+    },
+    "Arene": {
+      "rarity": 4,
+      "name": "Arene",
+      "class": "Guard",
+      "subclass": "Ranged Guard",
+      "tags": [
+        "DPS"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1600945200000,
+      "release_date_en": 1616670000000,
+      "gender": "Male]",
+      "birthplace": "Laterano",
+      "birthday": [
+        9,
+        7
+      ],
+      "race": "Sankta",
+      "height": 161,
+      "combat_experience": "Six months",
+      "faction": "Laterano",
+      "EN": {
+        "firstFeatured": 1616670000000,
+        "lastFeatured": 1617879600000,
+        "timesFeatured": 1,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      },
+      "CN": {
+        "firstFeatured": 1600945200000,
+        "lastFeatured": 1602154800000,
+        "timesFeatured": 1,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      }
+    },
+    "Aciddrop": {
+      "rarity": 4,
+      "name": "Aciddrop",
+      "class": "Sniper",
+      "subclass": "Close Range Sniper",
+      "tags": [
+        "DPS"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1598353200000,
+      "release_date_en": 1614250800000,
+      "gender": "Female",
+      "birthplace": "Columbia",
+      "birthday": [
+        8,
+        13
+      ],
+      "race": "Liberi",
+      "height": 150,
+      "combat_experience": "1 Year",
+      "faction": "Columbia",
+      "EN": {
+        "firstFeatured": 1614250800000,
+        "lastFeatured": 1616065200000,
+        "timesFeatured": 1,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      },
+      "CN": {
+        "firstFeatured": 1598353200000,
+        "lastFeatured": 1627988400000,
+        "timesFeatured": 3,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      }
+    },
+    "Jaye": {
+      "rarity": 4,
+      "name": "Jaye",
+      "class": "Specialist",
+      "subclass": "DP-Drain",
+      "tags": [
+        "Fast-Redeploy",
+        "DPS"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1597143600000,
+      "release_date_en": 1611140400000,
+      "gender": "Male",
+      "birthplace": "Lungmen",
+      "birthday": [
+        9,
+        17
+      ],
+      "race": "Ursus",
+      "height": 174,
+      "combat_experience": "None",
+      "faction": "Great Lungmen",
+      "EN": {
+        "firstFeatured": 1611140400000,
+        "lastFeatured": 1612954800000,
+        "timesFeatured": 1,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      },
+      "CN": {
+        "firstFeatured": 1597143600000,
+        "lastFeatured": 1631185200000,
+        "timesFeatured": 3,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      }
+    },
+    "Click": {
+      "rarity": 4,
+      "name": "Click",
+      "class": "Caster",
+      "subclass": "Mech-Accord Caster",
+      "tags": [
+        "DPS",
+        "Crowd-Control"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1594292400000,
+      "release_date_en": 1603882800000,
+      "gender": "Female",
+      "birthplace": "Undisclosed",
+      "birthday": [
+        5,
+        9
+      ],
+      "race": "Zalak",
+      "height": 144,
+      "combat_experience": "None",
+      "faction": "Rhodes Island",
+      "EN": {
+        "firstFeatured": 1603882800000,
+        "lastFeatured": 1640948400000,
+        "timesFeatured": 2,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      },
+      "CN": {
+        "firstFeatured": 1594292400000,
+        "lastFeatured": 1625137200000,
+        "timesFeatured": 2,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      }
+    },
+    "Podenco": {
+      "rarity": 4,
+      "name": "Podenco",
+      "class": "Supporter",
+      "subclass": "Slower",
+      "tags": [
+        "Slow",
+        "Healing"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1592478000000,
+      "release_date_en": 1601377200000,
+      "gender": "Female",
+      "birthplace": "Bolívar",
+      "birthday": [
+        3,
+        25
+      ],
+      "race": "Perro",
+      "height": 145,
+      "combat_experience": "None",
+      "faction": "Rhodes Island",
+      "EN": {
+        "firstFeatured": 1601377200000,
+        "lastFeatured": 1602586800000,
+        "timesFeatured": 1,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      },
+      "CN": {
+        "firstFeatured": 1592478000000,
+        "lastFeatured": 1593687600000,
+        "timesFeatured": 1,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      }
+    },
+    "Jackie": {
+      "rarity": 4,
+      "name": "Jackie",
+      "class": "Guard",
+      "subclass": "Brawler",
+      "tags": [
+        "DPS"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1604228400000,
+      "release_date_en": 1619780400000,
+      "gender": "Female",
+      "birthplace": "Columbia",
+      "birthday": [
+        9,
+        15
+      ],
+      "race": "Perro",
+      "height": 157,
+      "combat_experience": "None",
+      "faction": "Columbia",
+      "EN": {
+        "firstFeatured": 1619780400000,
+        "lastFeatured": 1620990000000,
+        "timesFeatured": 1,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      },
+      "CN": {
+        "firstFeatured": 1604228400000,
+        "lastFeatured": 1605438000000,
+        "timesFeatured": 1,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      }
+    },
+    "Cutter": {
+      "rarity": 4,
+      "name": "Cutter",
+      "class": "Guard",
+      "subclass": "Dualstrike Guard",
+      "tags": [
+        "Nuker",
+        "DPS"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1587466800000,
+      "release_date_en": 1607598000000,
+      "gender": "Female",
+      "birthplace": "Columbia",
+      "birthday": [
+        5,
+        2
+      ],
+      "race": "Vulpo",
+      "height": 155,
+      "combat_experience": "3 Years",
+      "faction": "Columbia",
+      "EN": {
+        "firstFeatured": 1607598000000,
+        "lastFeatured": 1632222000000,
+        "timesFeatured": 2,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      },
+      "CN": {
+        "firstFeatured": 1587466800000,
+        "lastFeatured": 1618311600000,
+        "timesFeatured": 2,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      }
+    },
+    "Conviction": {
+      "rarity": 4,
+      "name": "Conviction",
+      "class": "Guard",
+      "subclass": "Dreadnought Guard",
+      "tags": [
+        "DPS",
+        "Survival",
+        "Crowd-Control"
+      ],
+      "headhunting": false,
+      "limited": false,
+      "recruitment": false,
+      "release_date_cn": 1585738800000,
+      "release_date_en": 1617274800000,
+      "gender": "Conviction",
+      "birthplace": "Minos",
+      "birthday": null,
+      "race": "Unknown (Suspected Liberi)",
+      "height": 145,
+      "combat_experience": "Unknown",
+      "faction": "Minos"
+    },
+    "Utage": {
+      "rarity": 4,
+      "name": "Utage",
+      "class": "Guard",
+      "subclass": "Enmity Guard",
+      "tags": [
+        "DPS",
+        "Survival"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1584442800000,
+      "release_date_en": 1599735600000,
+      "gender": "Female",
+      "birthplace": "Higashi",
+      "birthday": [
+        4,
+        4
+      ],
+      "race": "Unknown",
+      "height": 161,
+      "combat_experience": "None",
+      "faction": "Higashi",
+      "EN": {
+        "firstFeatured": 1599735600000,
+        "lastFeatured": 1600945200000,
+        "timesFeatured": 1,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      },
+      "CN": {
+        "firstFeatured": 1584442800000,
+        "lastFeatured": 1585566000000,
+        "timesFeatured": 1,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      }
+    },
+    "Purestream": {
+      "rarity": 4,
+      "name": "Purestream",
+      "class": "Medic",
+      "subclass": "Wide-Range Medic",
+      "tags": [
+        "Healing",
+        "Support"
+      ],
+      "headhunting": false,
+      "limited": false,
+      "recruitment": false,
+      "release_date_cn": 1583146800000,
+      "release_date_en": 1621422000000,
+      "gender": "Female",
+      "birthplace": "Yen",
+      "birthday": [
+        10,
+        24
+      ],
+      "race": "Ægir",
+      "height": 155,
+      "combat_experience": "None",
+      "faction": "Yan"
+    },
+    "Ambriel": {
+      "rarity": 4,
+      "name": "Ambriel",
+      "class": "Sniper",
+      "subclass": "Deadeye Sniper",
+      "tags": [
+        "DPS",
+        "Slow"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1577185200000,
+      "release_date_en": 1593514800000,
+      "gender": "Female",
+      "birthplace": "Laterano",
+      "birthday": [
+        1,
+        13
+      ],
+      "race": "Sankta",
+      "height": 160,
+      "combat_experience": "1 year",
+      "faction": "Laterano",
+      "EN": {
+        "firstFeatured": 1593514800000,
+        "lastFeatured": 1594724400000,
+        "timesFeatured": 1,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      },
+      "CN": {
+        "firstFeatured": 1577185200000,
+        "lastFeatured": 1578308400000,
+        "timesFeatured": 1,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      }
+    },
+    "May": {
+      "rarity": 4,
+      "name": "May",
+      "class": "Sniper",
+      "subclass": "Marksman Sniper",
+      "tags": [
+        "DPS",
+        "Slow"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1574161200000,
+      "release_date_en": 1590577200000,
+      "gender": "Female",
+      "birthplace": "Victoria",
+      "birthday": [
+        5,
+        1
+      ],
+      "race": "Liberi",
+      "height": 151,
+      "combat_experience": "Half a year",
+      "faction": "Victoria",
+      "EN": {
+        "firstFeatured": 1590577200000,
+        "lastFeatured": 1622199600000,
+        "timesFeatured": 2,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      },
+      "CN": {
+        "firstFeatured": 1574161200000,
+        "lastFeatured": 1608030000000,
+        "timesFeatured": 2,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      }
+    },
+    "Ethan": {
+      "rarity": 4,
+      "name": "Ethan",
+      "class": "Specialist",
+      "subclass": "Stalker",
+      "tags": [
+        "DPS",
+        "Crowd-Control"
+      ],
+      "headhunting": false,
+      "limited": false,
+      "recruitment": false,
+      "release_date_cn": 1572606000000,
+      "release_date_en": 1589972400000,
+      "gender": "Male",
+      "birthplace": "Unknown",
+      "birthday": [
+        1,
+        29
+      ],
+      "race": "Savra",
+      "height": 163,
+      "combat_experience": "2 years",
+      "faction": "Rhodes Island"
+    },
+    "Dur-nar": {
+      "rarity": 4,
+      "name": "Dur-nar",
+      "class": "Defender",
+      "subclass": "Arts DPS Defender",
+      "tags": [
+        "Defense",
+        "DPS"
+      ],
+      "headhunting": false,
+      "limited": false,
+      "recruitment": false,
+      "release_date_cn": 1569927600000,
+      "release_date_en": 1589972400000,
+      "gender": "Female",
+      "birthplace": "Columbia",
+      "birthday": [
+        8,
+        11
+      ],
+      "race": "Vulpo",
+      "height": 160,
+      "combat_experience": "8 years",
+      "faction": "Rhodes Island"
+    },
+    "Vermeil": {
+      "rarity": 4,
+      "name": "Vermeil",
+      "class": "Sniper",
+      "subclass": "Marksman Sniper",
+      "tags": [
+        "DPS"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1571137200000,
+      "release_date_en": 1585134000000,
+      "gender": "Female",
+      "birthplace": "Unknown",
+      "birthday": [
+        6,
+        25
+      ],
+      "race": "Vulpo",
+      "height": 153,
+      "combat_experience": "2 years",
+      "faction": "Siracusa",
+      "EN": {
+        "firstFeatured": 1585134000000,
+        "lastFeatured": 1586343600000,
+        "timesFeatured": 1,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      },
+      "CN": {
+        "firstFeatured": 1571137200000,
+        "lastFeatured": 1572260400000,
+        "timesFeatured": 1,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      }
+    },
+    "Myrtle": {
+      "rarity": 4,
+      "name": "Myrtle",
+      "class": "Vanguard",
+      "subclass": "Standard Bearer Vanguard",
+      "tags": [
+        "DP-Recovery",
+        "Healing"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1568113200000,
+      "release_date_en": 1586948400000,
+      "gender": "Female",
+      "birthplace": "Unknown",
+      "birthday": [
+        12,
+        13
+      ],
+      "race": "Durin",
+      "height": 131,
+      "combat_experience": "No combat experience",
+      "faction": "Rhodes Island",
+      "EN": {
+        "firstFeatured": 1586948400000,
+        "lastFeatured": 1588158000000,
+        "timesFeatured": 1,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      },
+      "CN": {
+        "firstFeatured": 1568113200000,
+        "lastFeatured": 1569236400000,
+        "timesFeatured": 1,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      }
+    },
+    "Sussurro": {
+      "rarity": 4,
+      "name": "Sussurro",
+      "class": "Medic",
+      "subclass": "ST Medic",
+      "tags": [
+        "Healing"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1566903600000,
+      "release_date_en": 1588158000000,
+      "gender": "Female",
+      "birthplace": "Siracusa",
+      "birthday": [
+        9,
+        4
+      ],
+      "race": "Vulpo",
+      "height": 142,
+      "combat_experience": "1 year",
+      "faction": "Rhodes Island",
+      "EN": {
+        "firstFeatured": 1588158000000,
+        "lastFeatured": 1589367600000,
+        "timesFeatured": 1,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      },
+      "CN": {
+        "firstFeatured": 1566903600000,
+        "lastFeatured": 1568026800000,
+        "timesFeatured": 1,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      }
+    },
+    "Greyy": {
+      "rarity": 4,
+      "name": "Greyy",
+      "class": "Caster",
+      "subclass": "AoE Caster",
+      "tags": [
+        "AoE",
+        "Slow"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1562670000000,
+      "release_date_en": 1582714800000,
+      "gender": "Male",
+      "birthplace": "Bolívar",
+      "birthday": [
+        6,
+        6
+      ],
+      "race": "Perro",
+      "height": 163,
+      "combat_experience": "None",
+      "faction": "Bolivar",
+      "EN": {
+        "firstFeatured": 1582714800000,
+        "lastFeatured": 1583924400000,
+        "timesFeatured": 1,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      },
+      "CN": {
+        "firstFeatured": 1562670000000,
+        "lastFeatured": 1563706800000,
+        "timesFeatured": 1,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      }
+    },
+    "Beehunter": {
+      "rarity": 4,
+      "name": "Beehunter",
+      "class": "Guard",
+      "subclass": "Brawler",
+      "tags": [
+        "DPS"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1559214000000,
+      "release_date_en": 1580900400000,
+      "gender": "Female",
+      "birthplace": "Ursus",
+      "birthday": [
+        10,
+        2
+      ],
+      "race": "Ursus",
+      "height": 163,
+      "combat_experience": "2 Years",
+      "faction": "Ursus",
+      "EN": {
+        "firstFeatured": 1580900400000,
+        "lastFeatured": 1607598000000,
+        "timesFeatured": 2,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      },
+      "CN": {
+        "firstFeatured": 1559214000000,
+        "lastFeatured": 1602759600000,
+        "timesFeatured": 2,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      }
+    },
+    "Shaw": {
+      "rarity": 4,
+      "name": "Shaw",
+      "class": "Specialist",
+      "subclass": "Pusher",
+      "tags": [
+        "Shift"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1556622000000,
+      "release_date_en": 1579172400000,
+      "gender": "Female",
+      "birthplace": "Lungmen",
+      "birthday": [
+        1,
+        5
+      ],
+      "race": "Zalak",
+      "height": 135,
+      "combat_experience": "None",
+      "faction": "Great Lungmen"
+    },
+    "Earthspirit": {
+      "rarity": 4,
+      "name": "Earthspirit",
+      "class": "Supporter",
+      "subclass": "Slower",
+      "tags": [
+        "Slow"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1556622000000,
+      "release_date_en": 1579172400000,
+      "gender": "Female",
+      "birthplace": "Leithanien",
+      "birthday": [
+        4,
+        5
+      ],
+      "race": "Caprinae",
+      "height": 161,
+      "combat_experience": "None",
+      "faction": "Leithanien"
+    },
+    "Deepcolor": {
+      "rarity": 4,
+      "name": "Deepcolor",
+      "class": "Supporter",
+      "subclass": "Summoner Supporter",
+      "tags": [
+        "Summon"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1556622000000,
+      "release_date_en": 1579172400000,
+      "gender": "Female",
+      "birthplace": "Undisclosed",
+      "birthday": [
+        6,
+        12
+      ],
+      "race": "Undisclosed",
+      "height": 163,
+      "combat_experience": "None",
+      "faction": "Aegir"
+    },
+    "Gummy": {
+      "rarity": 4,
+      "name": "Gummy",
+      "class": "Defender",
+      "subclass": "Healing Defender",
+      "tags": [
+        "Defense",
+        "Healing"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1556622000000,
+      "release_date_en": 1579172400000,
+      "gender": "Female",
+      "birthplace": "Ursus",
+      "birthday": [
+        10,
+        2
+      ],
+      "race": "Ursus",
+      "height": 155,
+      "combat_experience": "None",
+      "faction": "Ursus",
+      "subfaction": "Student"
+    },
+    "Cuora": {
+      "rarity": 4,
+      "name": "Cuora",
+      "class": "Defender",
+      "subclass": "Normal Defender",
+      "tags": [
+        "Defense"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1556622000000,
+      "release_date_en": 1579172400000,
+      "gender": "Female",
+      "birthplace": "Undisclosed",
+      "birthday": null,
+      "race": "Petram",
+      "height": 148,
+      "combat_experience": "None",
+      "faction": "Columbia"
+    },
+    "Matterhorn": {
+      "rarity": 4,
+      "name": "Matterhorn",
+      "class": "Defender",
+      "subclass": "Normal Defender",
+      "tags": [
+        "Defense"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1556622000000,
+      "release_date_en": 1579172400000,
+      "gender": "Male",
+      "birthplace": "Kjerag",
+      "birthday": [
+        5,
+        19
+      ],
+      "race": "Forte",
+      "height": 182,
+      "combat_experience": "6 years",
+      "faction": "Kjerag",
+      "subfaction": "Karlan",
+      "EN": {
+        "firstFeatured": 1579690800000,
+        "lastFeatured": 1580900400000,
+        "timesFeatured": 1,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      },
+      "CN": {
+        "firstFeatured": 1558609200000,
+        "lastFeatured": 1559127600000,
+        "timesFeatured": 1,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      }
+    },
+    "Perfumer": {
+      "rarity": 4,
+      "name": "Perfumer",
+      "class": "Medic",
+      "subclass": "AoE Medic",
+      "tags": [
+        "Healing"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1556622000000,
+      "release_date_en": 1579172400000,
+      "gender": "Female",
+      "birthplace": "Minos",
+      "birthday": [
+        1,
+        30
+      ],
+      "race": "Vulpo",
+      "height": 158,
+      "combat_experience": "1 year",
+      "faction": "Rhodes Island"
+    },
+    "Gavial": {
+      "rarity": 4,
+      "name": "Gavial",
+      "class": "Medic",
+      "subclass": "ST Medic",
+      "tags": [
+        "Healing"
+      ],
+      "headhunting": false,
+      "limited": false,
+      "recruitment": false,
+      "release_date_cn": 1556622000000,
+      "release_date_en": 1579172400000,
+      "gender": "Female",
+      "birthplace": "Undisclosed",
+      "birthday": [
+        5,
+        1
+      ],
+      "race": "Archosauria",
+      "height": 163,
+      "combat_experience": "8 years",
+      "faction": "Rhodes Island"
+    },
+    "Myrrh": {
+      "rarity": 4,
+      "name": "Myrrh",
+      "class": "Medic",
+      "subclass": "ST Medic",
+      "tags": [
+        "Healing"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1556622000000,
+      "release_date_en": 1579172400000,
+      "gender": "Female",
+      "birthplace": "Unknown",
+      "birthday": [
+        5,
+        5
+      ],
+      "race": "Vulpo",
+      "height": 143,
+      "combat_experience": "None",
+      "faction": "Rhodes Island"
+    },
+    "Rope": {
+      "rarity": 4,
+      "name": "Rope",
+      "class": "Specialist",
+      "subclass": "Puller",
+      "tags": [
+        "Shift"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1556622000000,
+      "release_date_en": 1579172400000,
+      "gender": "Female",
+      "birthplace": "Rim Billiton",
+      "birthday": [
+        4,
+        4
+      ],
+      "race": "Cautus",
+      "height": 155,
+      "combat_experience": "2 years",
+      "faction": "Great Lungmen",
+      "EN": {
+        "firstFeatured": 1580900400000,
+        "lastFeatured": 1607598000000,
+        "timesFeatured": 2,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      },
+      "CN": {
+        "firstFeatured": 1559214000000,
+        "lastFeatured": 1602759600000,
+        "timesFeatured": 2,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      }
+    },
+    "Gravel": {
+      "rarity": 4,
+      "name": "Gravel",
+      "class": "Specialist",
+      "subclass": "Fast-Redeploy",
+      "tags": [
+        "Fast-Redeploy",
+        "Defense"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1556622000000,
+      "release_date_en": 1579172400000,
+      "gender": "Female",
+      "birthplace": "Kazimierz",
+      "birthday": [
+        1,
+        20
+      ],
+      "race": "Zalak",
+      "height": 156,
+      "combat_experience": "4 years",
+      "faction": "Kazimierz"
+    },
+    "Mousse": {
+      "rarity": 4,
+      "name": "Mousse",
+      "class": "Guard",
+      "subclass": "Arts Guard",
+      "tags": [
+        "DPS"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1556622000000,
+      "release_date_en": 1579172400000,
+      "gender": "Female",
+      "birthplace": "Victoria",
+      "birthday": [
+        8,
+        19
+      ],
+      "race": "Feline",
+      "height": 154,
+      "combat_experience": "Half a year",
+      "faction": "Victoria"
+    },
+    "Estelle": {
+      "rarity": 4,
+      "name": "Estelle",
+      "class": "Guard",
+      "subclass": "AoE Guard",
+      "tags": [
+        "AoE",
+        "Survival"
+      ],
+      "headhunting": false,
+      "limited": false,
+      "recruitment": false,
+      "release_date_cn": 1556622000000,
+      "release_date_en": 1579172400000,
+      "gender": "Female",
+      "birthplace": "Undisclosed",
+      "birthday": [
+        2,
+        14
+      ],
+      "race": "Archosauria",
+      "height": 162,
+      "combat_experience": "Half a year",
+      "faction": "Sargon"
+    },
+    "Frostleaf": {
+      "rarity": 4,
+      "name": "Frostleaf",
+      "class": "Guard",
+      "subclass": "Ranged Guard",
+      "tags": [
+        "Slow",
+        "DPS"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1556622000000,
+      "release_date_en": 1579172400000,
+      "gender": "Female",
+      "birthplace": "Columbia",
+      "birthday": [
+        5,
+        1
+      ],
+      "race": "Vulpo",
+      "combat_experience": "7 years",
+      "faction": "Rhodes Island"
+    },
+    "Matoimaru": {
+      "rarity": 4,
+      "name": "Matoimaru",
+      "class": "Guard",
+      "subclass": "Dreadnought Guard",
+      "tags": [
+        "Survival",
+        "DPS"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1556622000000,
+      "release_date_en": 1579172400000,
+      "gender": "Female",
+      "birthplace": "The Far East",
+      "birthday": [
+        1,
+        3
+      ],
+      "race": "Oni",
+      "height": 172,
+      "combat_experience": "3 years",
+      "faction": "Higashi"
+    },
+    "Dobermann": {
+      "rarity": 4,
+      "name": "Dobermann",
+      "class": "Guard",
+      "subclass": "Support Guard",
+      "tags": [
+        "DPS",
+        "Support"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1556622000000,
+      "release_date_en": 1579172400000,
+      "gender": "Female",
+      "birthplace": "Bolívar",
+      "birthday": [
+        5,
+        27
+      ],
+      "race": "Perro",
+      "height": 163,
+      "combat_experience": "6 years",
+      "faction": "Rhodes Island"
+    },
+    "Vigna": {
+      "rarity": 4,
+      "name": "Vigna",
+      "class": "Vanguard",
+      "subclass": "Charger Vanguard",
+      "tags": [
+        "DPS",
+        "DP-Recovery"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1556622000000,
+      "release_date_en": 1579172400000,
+      "gender": "Female",
+      "birthplace": "Kazdel",
+      "birthday": [
+        12,
+        12
+      ],
+      "race": "Sarkaz",
+      "height": 142,
+      "combat_experience": "1 year",
+      "faction": "Columbia"
+    },
+    "Scavenger": {
+      "rarity": 4,
+      "name": "Scavenger",
+      "class": "Vanguard",
+      "subclass": "Pioneer Vanguard",
+      "tags": [
+        "DP-Recovery",
+        "DPS"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1556622000000,
+      "release_date_en": 1579172400000,
+      "gender": "Female",
+      "birthplace": "Unknown",
+      "birthday": [
+        8,
+        22
+      ],
+      "race": "Zalak",
+      "height": 164,
+      "combat_experience": "4 years",
+      "faction": "Rhodes Island",
+      "subfaction": "Sweep"
+    },
+    "Courier": {
+      "rarity": 4,
+      "name": "Courier",
+      "class": "Vanguard",
+      "subclass": "Pioneer Vanguard",
+      "tags": [
+        "DP-Recovery",
+        "Defense"
+      ],
+      "headhunting": false,
+      "limited": false,
+      "recruitment": false,
+      "release_date_cn": 1556622000000,
+      "release_date_en": 1579172400000,
+      "gender": "Male",
+      "birthplace": "Kjerag",
+      "birthday": [
+        3,
+        5
+      ],
+      "race": "Itra",
+      "height": 177,
+      "combat_experience": "2 years",
+      "faction": "Kjerag",
+      "subfaction": "Karlan"
+    },
+    "Shirayuki": {
+      "rarity": 4,
+      "name": "Shirayuki",
+      "class": "Sniper",
+      "subclass": "AoE Sniper",
+      "tags": [
+        "AoE",
+        "Slow"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1556622000000,
+      "release_date_en": 1579172400000,
+      "gender": "Female",
+      "birthplace": "Higashi",
+      "birthday": [
+        7,
+        20
+      ],
+      "race": "Anaty",
+      "height": 154,
+      "combat_experience": "3 years",
+      "faction": "Higashi"
+    },
+    "Meteor": {
+      "rarity": 4,
+      "name": "Meteor",
+      "class": "Sniper",
+      "subclass": "Marksman Sniper",
+      "tags": [
+        "DPS",
+        "Debuff"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1556622000000,
+      "release_date_en": 1579172400000,
+      "gender": "Female",
+      "birthplace": "Kazimierz",
+      "birthday": [
+        5,
+        1
+      ],
+      "race": "Kuranta",
+      "height": 164,
+      "combat_experience": "6 years",
+      "faction": "Kazimierz"
+    },
+    "Jessica": {
+      "rarity": 4,
+      "name": "Jessica",
+      "class": "Sniper",
+      "subclass": "Marksman Sniper",
+      "tags": [
+        "DPS",
+        "Survival"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1556622000000,
+      "release_date_en": 1579172400000,
+      "gender": "Female",
+      "birthplace": "Victoria",
+      "birthday": [
+        3,
+        3
+      ],
+      "race": "Feline",
+      "height": 147,
+      "combat_experience": "2 years",
+      "faction": "Columbia",
+      "subfaction": "Blacksteel"
+    },
+    "Gitano": {
+      "rarity": 4,
+      "name": "Gitano",
+      "class": "Caster",
+      "subclass": "AoE Caster",
+      "tags": [
+        "AoE"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1556622000000,
+      "release_date_en": 1579172400000,
+      "gender": "Female",
+      "birthplace": "Sami",
+      "birthday": [
+        1,
+        15
+      ],
+      "race": "Elafia",
+      "height": 171,
+      "combat_experience": "1 year",
+      "faction": "Sami"
+    },
+    "Haze": {
+      "rarity": 4,
+      "name": "Haze",
+      "class": "Caster",
+      "subclass": "ST Caster",
+      "tags": [
+        "DPS",
+        "Debuff"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1556622000000,
+      "release_date_en": 1579172400000,
+      "gender": "Female",
+      "birthplace": "Victoria",
+      "birthday": [
+        1,
+        2
+      ],
+      "race": "Feline",
+      "height": 158,
+      "combat_experience": "Half a year",
+      "faction": "Victoria"
+    }
+  }
+}
