@@ -16,6 +16,9 @@ type ReleaseInfo = {
   firstFeatured: number;
   lastFeatured: number;
   timesFeatured: number;
+  firstInShop: number;
+  lastInShop: number;
+  timesInShop: number;
 }
 
 type Operator = {
@@ -24,6 +27,9 @@ type Operator = {
   rarity: number;
   headhunting: boolean;
   recruitment: boolean;
+  limited: boolean;
+  faction: string;
+  subfaction: string;
   release_date_en: number;
   EN: ReleaseInfo | undefined;
   CN: ReleaseInfo | undefined;
@@ -31,11 +37,16 @@ type Operator = {
 
 type FeaturedTableData = {
 	name: string;
-	rarity: number;
+	rarity: string;
 	class: string;
+  faction: string;
+  subfaction: string;
 	daysSinceFeatured: number;
 	timesFeatured: number;
 	averageFeaturedInterval: number;
+  daysSinceShop: number;
+  timesShop: number;
+  averageShopInterval: number;
 };
 
 function getImage(value: string): string {
@@ -79,17 +90,24 @@ function portraitCellRenderer(params: ICellRendererParams): string {
   } catch(err) {}
 
   if (imgSrc) {
-    return '<img src="' + imgSrc + '" style="height: 100%" /> ' + '<span style="vertical-align: top">' + params.value + '</span>';
+    return '<img src="' + imgSrc + '" style="height: 100%; float: left;" /> ' + params.value;
   } else {
     return params.value;
   }
 }
 
 function getAverageFeaturedInterval(op: Operator): number {
-  if (!op.EN) {
+  if (!op.EN || op.EN.timesFeatured < 2) {
     return Infinity;
   }
   return days((op.EN.lastFeatured - op.EN.firstFeatured) / (op.EN.timesFeatured - 1));
+}
+
+function getAverageShopInterval(op: Operator): number {
+  if (!op.EN || op.EN.timesInShop < 2) {
+    return Infinity;
+  }
+  return days((op.EN.lastInShop - op.EN.firstInShop) / (op.EN.timesInShop - 1));
 }
 
 function FeaturedDataTable() {
@@ -101,14 +119,20 @@ function FeaturedDataTable() {
 		}).map((op) => {
 			let lastFeatured = (op.EN) ? daysSince(op.EN.lastFeatured) : Infinity;
 			let timesFeatured = (op.EN) ? op.EN.timesFeatured : 0;
-			let averageFeaturedInterval = getAverageFeaturedInterval(op);
+			let lastInShop = (op.EN) ? daysSince(op.EN.lastInShop) : Infinity;
+			let timesInShop = (op.EN) ? op.EN.timesInShop : 0;
 			return {
 				name: op.name,
-				rarity:  op.rarity,
+				rarity:  op.rarity.toString() + (op.limited ? " (LIMITED)" : ""),
 				class:  op.class,
+        faction: op.faction,
+        subfaction: op.subfaction,
 				daysSinceFeatured: lastFeatured,
 				timesFeatured: timesFeatured,
-				averageFeaturedInterval: averageFeaturedInterval
+				averageFeaturedInterval: getAverageFeaturedInterval(op),
+        daysSinceShop: lastInShop,
+        timesShop: timesInShop,
+        averageShopInterval: getAverageShopInterval(op)
 			};
 		});
 		setFeaturedData(featured); 
@@ -116,15 +140,20 @@ function FeaturedDataTable() {
 
   return (
 		<div>
-			<h1>Featured 5* and 6*</h1>
-			<div className="ag-theme-alpine-dark" style={{ height: 1000, width: 1200 }}>
+			<h1>Rhodes Island HR Analytics</h1>
+			<div className="ag-theme-alpine-dark" style={{ height: 1000 }}>
 				<AgGridReact rowData={ featuredData }>
 					<AgGridColumn field="name" sortable={ true } filter={ true } cellRenderer={ portraitCellRenderer }></AgGridColumn>
 					<AgGridColumn field="rarity" sortable={ true } filter={ true }></AgGridColumn>
 					<AgGridColumn field="class" sortable={ true } cellRenderer={ imageCellRenderer }></AgGridColumn>
+					<AgGridColumn field="faction" sortable={ true } cellRenderer={ portraitCellRenderer }></AgGridColumn>
+					<AgGridColumn field="subfaction" sortable={ true } cellRenderer={ portraitCellRenderer }></AgGridColumn>
 					<AgGridColumn field="daysSinceFeatured" sortable={ true } valueFormatter={ daysSinceValueFormatter }></AgGridColumn>
 					<AgGridColumn field="timesFeatured" sortable={ true }></AgGridColumn>
 					<AgGridColumn field="averageFeaturedInterval" sortable={ true } valueFormatter={ timeIntervalValueFormatter }></AgGridColumn>
+					<AgGridColumn field="daysSinceShop" sortable={ true } valueFormatter={ daysSinceValueFormatter }></AgGridColumn>
+					<AgGridColumn field="timesShop" sortable={ true }></AgGridColumn>
+					<AgGridColumn field="averageShopInterval" sortable={ true } valueFormatter={ timeIntervalValueFormatter }></AgGridColumn>
 				</AgGridReact>
 			</div>
 		</div>
