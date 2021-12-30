@@ -1,7 +1,7 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
 import './App.css';
-import { ICellRendererParams, ValueFormatterParams } from 'ag-grid-community';
+import { ICellRendererParams, ValueFormatterParams, RowClassParams, RowStyle } from 'ag-grid-community';
 import {AgGridColumn, AgGridReact} from 'ag-grid-react';
 
 import 'ag-grid-community/dist/styles/ag-grid.css';
@@ -119,7 +119,7 @@ function FeaturedDataTable() {
 		}).map((op) => {
 			let lastFeatured = (op.EN) ? daysSince(op.EN.lastFeatured) : Infinity;
 			let timesFeatured = (op.EN) ? op.EN.timesFeatured : 0;
-			let lastInShop = (op.EN) ? daysSince(op.EN.lastInShop) : Infinity;
+			let lastInShop = (op.EN && op.EN.timesInShop > 0) ? daysSince(op.EN.lastInShop) : Infinity;
 			let timesInShop = (op.EN) ? op.EN.timesInShop : 0;
 			return {
 				name: op.name,
@@ -138,11 +138,14 @@ function FeaturedDataTable() {
 		setFeaturedData(featured); 
 	}, []);
 
+  const rowClassRules = {
+    "limited": (params: RowClassParams) => { return params.data.rarity.includes("LIMITED"); }
+  };
   return (
 		<div>
 			<h1>Rhodes Island HR Analytics</h1>
 			<div className="ag-theme-alpine-dark" style={{ height: 1000 }}>
-				<AgGridReact rowData={ featuredData }>
+				<AgGridReact rowData={ featuredData } rowClassRules={ rowClassRules }>
 					<AgGridColumn field="name" sortable={ true } filter={ true } cellRenderer={ portraitCellRenderer }></AgGridColumn>
 					<AgGridColumn field="rarity" sortable={ true } filter={ true }></AgGridColumn>
 					<AgGridColumn field="class" sortable={ true } cellRenderer={ imageCellRenderer }></AgGridColumn>

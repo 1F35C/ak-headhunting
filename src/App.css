@@ -6,3 +6,6 @@ body {
   color: white;
 }
 
+.limited {
+  background-color: rgb(96,0,0) !important;
+}
