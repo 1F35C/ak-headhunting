@@ -28,22 +28,22 @@ type Operator = {
   CN: ReleaseInfo | undefined;
 }
 
+const data: { operators: { [id: string]: Operator } } = require('./data.json');
+const images: { [id: string]: string } = require('./images.json');
+
 type FeaturedTableData = {
-	name: string;
-	rarity: string;
-	class: string;
+  name: string;
+  rarity: string;
+  class: string;
   faction: string;
   subfaction: string;
-	daysSinceFeatured: number;
-	timesFeatured: number;
-	averageFeaturedInterval: number;
+  daysSinceFeatured: number;
+  timesFeatured: number;
+  averageFeaturedInterval: number;
   daysSinceShop: number;
   timesShop: number;
   averageShopInterval: number;
 };
-
-const data: { operators: { [id: string]: Operator } } = require('./data.json');
-const images: { [id: string]: string } = require('./images.json');
 
 const MILLISECONDS_IN_DAY = 3600 * 1000 * 24;
 
@@ -55,25 +55,25 @@ function getImage(value: string): string {
 }
 
 function days(unixInterval: number): number {
-	return Math.floor(unixInterval / MILLISECONDS_IN_DAY);
+  return Math.floor(unixInterval / MILLISECONDS_IN_DAY);
 }
 
 function daysSince(unixTime: number): number {
-	return days(Date.now() - unixTime)
+  return days(Date.now() - unixTime)
 }
 
 function daysSinceValueFormatter(params: ValueFormatterParams): string {
-	if (params.value < 0) { return "Now"; };
-	if (!isFinite(params.value)) { return "Never"; };
-	if (params.value === 1) { return params.value + "Day"; }
-	return params.value + " Days";
+  if (params.value < 0) { return "Now"; };
+  if (!isFinite(params.value)) { return "Never"; };
+  if (params.value === 1) { return params.value + "Day"; }
+  return params.value + " Days";
 }
 
 function timeIntervalValueFormatter(params: ValueFormatterParams): string {
-	if (params.value < 0) { return "Now"; };
-	if (!isFinite(params.value)) { return "N/A"; };
-	if (params.value === 1) { return params.value + "Day"; }
-	return params.value + " Days";
+  if (params.value < 0) { return "Now"; };
+  if (!isFinite(params.value)) { return "N/A"; };
+  if (params.value === 1) { return params.value + "Day"; }
+  return params.value + " Days";
 }
 
 
@@ -108,39 +108,39 @@ function getAverageShopInterval(op: Operator): number {
   return days((op.EN.lastInShop - op.EN.firstInShop) / (op.EN.timesInShop - 1));
 }
 
-export function DataTable() {
-	const [featuredData, setFeaturedData] = useState<FeaturedTableData[]>([]);
+export function DataTablePage() {
+  const [featuredData, setFeaturedData] = useState<FeaturedTableData[]>([]);
 
-	useEffect(() => {
-		let featured = Object.values(data.operators).filter((op) => {
-			return op.rarity > 4 && op.headhunting;
-		}).map((op) => {
-			let lastFeatured = (op.EN) ? daysSince(op.EN.lastFeatured) : Infinity;
-			let timesFeatured = (op.EN) ? op.EN.timesFeatured : 0;
-			let lastInShop = (op.EN && op.EN.timesInShop > 0) ? daysSince(op.EN.lastInShop) : Infinity;
-			let timesInShop = (op.EN) ? op.EN.timesInShop : 0;
-			return {
-				name: op.name,
-				rarity:  op.rarity.toString() + (op.limited ? " (LIMITED)" : ""),
-				class:  op.class,
+  useEffect(() => {
+    let featured = Object.values(data.operators).filter((op) => {
+      return op.rarity > 4 && op.headhunting;
+    }).map((op) => {
+      let lastFeatured = (op.EN) ? daysSince(op.EN.lastFeatured) : Infinity;
+      let timesFeatured = (op.EN) ? op.EN.timesFeatured : 0;
+      let lastInShop = (op.EN && op.EN.timesInShop > 0) ? daysSince(op.EN.lastInShop) : Infinity;
+      let timesInShop = (op.EN) ? op.EN.timesInShop : 0;
+      return {
+        name: op.name,
+        rarity:  op.rarity.toString() + (op.limited ? " (LIMITED)" : ""),
+        class:  op.class,
         faction: op.faction,
         subfaction: op.subfaction,
-				daysSinceFeatured: lastFeatured,
-				timesFeatured: timesFeatured,
-				averageFeaturedInterval: getAverageFeaturedInterval(op),
+        daysSinceFeatured: lastFeatured,
+        timesFeatured: timesFeatured,
+        averageFeaturedInterval: getAverageFeaturedInterval(op),
         daysSinceShop: lastInShop,
         timesShop: timesInShop,
         averageShopInterval: getAverageShopInterval(op)
-			};
-		});
-		setFeaturedData(featured); 
-	}, []);
+      };
+    });
+    setFeaturedData(featured);
+  }, []);
 
   const rowClassRules = {
     "limited": (params: RowClassParams) => { return params.data.rarity.includes("LIMITED"); }
   };
   return (
-		<div>
+    <div>
       <div className="flex">
         <div className="ag-theme-alpine-dark" style={{ width: "98%", height: 1000 }}>
           <AgGridReact rowData={ featuredData } rowClassRules={ rowClassRules }>
@@ -158,7 +158,7 @@ export function DataTable() {
           </AgGridReact>
         </div>
       </div>
-		</div>
-	);
+    </div>
+  );
 }
 
