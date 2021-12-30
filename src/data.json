@@ -1,5 +1,46 @@
 {
   "operators": {
+    "Pallas": {
+      "rarity": 6,
+      "name": "Pallas",
+      "class": "Guard",
+      "subclass": "Support Guard",
+      "tags": [
+        "DPS",
+        "Support"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "release_date_cn": 1625223600000,
+      "release_date_en": 1640775600000,
+      "gender": "Female",
+      "birthplace": "Minos",
+      "birthday": [
+        2,
+        8
+      ],
+      "race": "Forte",
+      "height": 162,
+      "combat_experience": "3 Years",
+      "faction": "Minos",
+      "EN": {
+        "firstFeatured": 1640775600000,
+        "lastFeatured": 1641985200000,
+        "timesFeatured": 1,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      },
+      "CN": {
+        "firstFeatured": 1625223600000,
+        "lastFeatured": 1640257200000,
+        "timesFeatured": 2,
+        "firstInShop": null,
+        "lastInShop": 0,
+        "timesInShop": 0
+      }
+    },
     "Carnelian": {
       "rarity": 6,
       "name": "Carnelian",
@@ -705,7 +746,7 @@
       "height": 174,
       "combat_experience": "None",
       "faction": "Ursus",
-      "subfaction": "Student",
+      "subfaction": "Ursus Student Union",
       "EN": {
         "firstFeatured": 1601377200000,
         "lastFeatured": 1627038000000,
@@ -3744,7 +3785,7 @@
       "height": 156,
       "combat_experience": "None",
       "faction": "Ursus",
-      "subfaction": "Student",
+      "subfaction": "Ursus Student Union",
       "EN": {
         "firstFeatured": 1581073200000,
         "lastFeatured": 1623409200000,
@@ -4060,8 +4101,8 @@
       "subfaction": "Sweep",
       "EN": {
         "firstFeatured": 1581073200000,
-        "lastFeatured": 1637924400000,
-        "timesFeatured": 5,
+        "lastFeatured": 1641985200000,
+        "timesFeatured": 6,
         "firstInShop": 1590750000000,
         "lastInShop": 1622199600000,
         "timesInShop": 2
@@ -4453,8 +4494,8 @@
       "subfaction": "Abyssal",
       "EN": {
         "firstFeatured": 1581073200000,
-        "lastFeatured": 1634295600000,
-        "timesFeatured": 5,
+        "lastFeatured": 1641985200000,
+        "timesFeatured": 6,
         "firstInShop": 1581073200000,
         "lastInShop": 1607684400000,
         "timesInShop": 2
@@ -4643,7 +4684,7 @@
       "height": 162,
       "combat_experience": "Half a year",
       "faction": "Ursus",
-      "subfaction": "Student",
+      "subfaction": "Ursus Student Union",
       "EN": {
         "firstFeatured": 1579172400000,
         "lastFeatured": 1640343600000,
@@ -5669,7 +5710,7 @@
       "height": 155,
       "combat_experience": "None",
       "faction": "Ursus",
-      "subfaction": "Student"
+      "subfaction": "Ursus Student Union"
     },
     "Cuora": {
       "rarity": 4,
