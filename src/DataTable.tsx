@@ -29,7 +29,10 @@ type Operator = {
 }
 
 const data: { operators: { [id: string]: Operator } } = require('./data.json');
-const images: { [id: string]: string } = require('./images.json');
+const images: { [id: string]: { [id: string]: string } } = require('./images.json');
+const CLASSES = "classes";
+const FACTIONS = "factions";
+const PORTRAITS = "portraits";
 
 type FeaturedTableData = {
   name: string;
@@ -47,9 +50,9 @@ type FeaturedTableData = {
 
 const MILLISECONDS_IN_DAY = 3600 * 1000 * 24;
 
-function getImage(value: string): string {
-  if (value in images) {
-    return images[value];
+function getImage(context: string, value: string): string {
+  if (context in images && value in images[context]) {
+    return images[context][value];
   }
   throw new Error("Image could not be found");
 }
@@ -76,22 +79,25 @@ function timeIntervalValueFormatter(params: ValueFormatterParams): string {
   return params.value + " Days";
 }
 
-
-function imageCellRenderer(params: ICellRendererParams): string {
-  return '<img src="' + getImage(params.value) + '" style="height: 100%" />';
+function getImageCellRenderer(context: string): (params: ICellRendererParams) => string {
+  return (params) => {
+    return '<img src="' + getImage(context, params.value) + '" style="height: 100%" />';
+  };
 }
 
-function portraitCellRenderer(params: ICellRendererParams): string {
-  let imgSrc = null;
-  try {
-    imgSrc = getImage(params.value);
-  } catch(err) {}
+function getImageTextCellRenderer(context: string): (params: ICellRendererParams) => string {
+  return (params) => {
+    let imgSrc = null;
+    try {
+      imgSrc = getImage(context, params.value);
+    } catch(err) {}
 
-  if (imgSrc) {
-    return '<img src="' + imgSrc + '" style="height: 100%; float: left;" /> ' + params.value;
-  } else {
-    return params.value;
-  }
+    if (imgSrc) {
+      return '<img src="' + imgSrc + '" style="height: 100%; float: left;" /> ' + params.value;
+    } else {
+      return params.value;
+    }
+  };
 }
 
 function getAverageFeaturedInterval(op: Operator): number {
@@ -144,11 +150,11 @@ export function DataTablePage() {
       <div className="flex">
         <div className="ag-theme-alpine-dark" style={{ width: "98%", height: 1000 }}>
           <AgGridReact rowData={ featuredData } rowClassRules={ rowClassRules }>
-            <AgGridColumn field="name" sortable={ true } filter={ true } cellRenderer={ portraitCellRenderer }></AgGridColumn>
+            <AgGridColumn field="name" sortable={ true } filter={ true } cellRenderer={ getImageTextCellRenderer(PORTRAITS) }></AgGridColumn>
             <AgGridColumn field="rarity" sortable={ true } filter={ true }></AgGridColumn>
-            <AgGridColumn field="class" sortable={ true } cellRenderer={ imageCellRenderer }></AgGridColumn>
-            <AgGridColumn field="faction" sortable={ true } cellRenderer={ portraitCellRenderer }></AgGridColumn>
-            <AgGridColumn field="subfaction" sortable={ true } cellRenderer={ portraitCellRenderer }></AgGridColumn>
+            <AgGridColumn field="class" sortable={ true } cellRenderer={ getImageCellRenderer(CLASSES) }></AgGridColumn>
+            <AgGridColumn field="faction" sortable={ true } cellRenderer={ getImageTextCellRenderer(FACTIONS) }></AgGridColumn>
+            <AgGridColumn field="subfaction" sortable={ true } cellRenderer={ getImageTextCellRenderer(FACTIONS) } ></AgGridColumn>
             <AgGridColumn field="daysSinceFeatured" sortable={ true } valueFormatter={ daysSinceValueFormatter }></AgGridColumn>
             <AgGridColumn field="timesFeatured" sortable={ true }></AgGridColumn>
             <AgGridColumn field="averageFeaturedInterval" sortable={ true } valueFormatter={ timeIntervalValueFormatter }></AgGridColumn>
