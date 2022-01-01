@@ -15,3 +15,25 @@ body {
   align-items:center;
   justify-content: center;
 }
+
+.search {
+  margin-bottom: 10px;
+}
+
+.header {
+
+}
+
+.clearfix {
+  overflow: auto;
+}
+
+.content {
+  padding-left: 1vw;
+  padding-right: 1vw;
+}
+
+.footer {
+  padding-left: 1vw;
+  padding-right: 1vw;
+}

@@ -159,8 +159,10 @@ export function DataTablePage() {
   };
 
   return (
-    <div>
-      Quick Search: <input type="text" onChange={ onQuickFilterChange } />
+    <div className="content">
+      <div className="search">
+        Quick Search: <input type="text" onChange={ onQuickFilterChange } />
+      </div>
       <div className="flex">
         <div className="ag-theme-alpine-dark" style={{ width: "100%", height: 1000 }}>
           <AgGridReact rowData={ featuredData }
