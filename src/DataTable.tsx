@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
-import { ICellRendererParams, ValueFormatterParams, RowClassParams, RowStyle } from 'ag-grid-community';
-import {AgGridColumn, AgGridReact} from 'ag-grid-react';
+import { GridApi, GridReadyEvent, ICellRendererParams, ValueFormatterParams, RowClassParams, RowStyle } from 'ag-grid-community';
+import { AgGridColumn, AgGridReact } from 'ag-grid-react';
 
 import 'ag-grid-community/dist/styles/ag-grid.css';
 import 'ag-grid-community/dist/styles/ag-theme-alpine-dark.css';
@@ -81,7 +81,7 @@ function timeIntervalValueFormatter(params: ValueFormatterParams): string {
 
 function getImageCellRenderer(context: string): (params: ICellRendererParams) => string {
   return (params) => {
-    return '<img src="' + getImage(context, params.value) + '" style="height: 100%" />';
+    return '<img src="' + getImage(context, params.value) + '" style="height: 100%" title="' + params.value + '"/>';
   };
 }
 
@@ -115,6 +115,7 @@ function getAverageShopInterval(op: Operator): number {
 }
 
 export function DataTablePage() {
+  const [gridApi, setGridApi] = useState<GridApi | null>(null);
   const [featuredData, setFeaturedData] = useState<FeaturedTableData[]>([]);
 
   useEffect(() => {
@@ -142,15 +143,30 @@ export function DataTablePage() {
     setFeaturedData(featured);
   }, []);
 
+  const onGridReady = (params: GridReadyEvent) => {
+    setGridApi(params.api);
+    params.columnApi.autoSizeAllColumns();
+  };
+
+  const onQuickFilterChange = (event: React.ChangeEvent<HTMLInputElement>): boolean => {
+    if (gridApi) {
+      gridApi.setQuickFilter(event.target.value);
+    }
+    return true;
+  };
   const rowClassRules = {
     "limited": (params: RowClassParams) => { return params.data.rarity.includes("LIMITED"); }
   };
+
   return (
     <div>
+      Quick Search: <input type="text" onChange={ onQuickFilterChange } />
       <div className="flex">
-        <div className="ag-theme-alpine-dark" style={{ width: "98%", height: 1000 }}>
-          <AgGridReact rowData={ featuredData } rowClassRules={ rowClassRules }>
-            <AgGridColumn field="name" sortable={ true } filter={ true } cellRenderer={ getImageTextCellRenderer(PORTRAITS) }></AgGridColumn>
+        <div className="ag-theme-alpine-dark" style={{ width: "100%", height: 1000 }}>
+          <AgGridReact rowData={ featuredData }
+                       rowClassRules={ rowClassRules }
+                       onGridReady={ onGridReady }>
+            <AgGridColumn field="name" minWidth={ 200 } sortable={ true } filter={ true } pinned="left" lockPinned={ true } cellRenderer={ getImageTextCellRenderer(PORTRAITS) }></AgGridColumn>
             <AgGridColumn field="rarity" sortable={ true } filter={ true }></AgGridColumn>
             <AgGridColumn field="class" sortable={ true } cellRenderer={ getImageCellRenderer(CLASSES) }></AgGridColumn>
             <AgGridColumn field="faction" sortable={ true } cellRenderer={ getImageTextCellRenderer(FACTIONS) }></AgGridColumn>
@@ -164,6 +180,7 @@ export function DataTablePage() {
           </AgGridReact>
         </div>
       </div>
+      (This data is optimized for desktop viewing)
     </div>
   );
 }
