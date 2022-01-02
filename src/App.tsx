@@ -5,21 +5,35 @@ import { DataTablePage } from './DataTable';
 import './App.css';
 
 type NavBarParams = {
-  goToAnalytics: () => void
-  goToData: () => void
-  goToAbout: () => void
+  selected: number;
+  goToAnalytics: () => void;
+  goToData: () => void;
+  goToAbout: () => void;
 };
 
 function NavBar (params: NavBarParams) {
   return (
     <div className="header clearfix">
       <h1 style={{float: "left"}}>Rhodes Island Headhunting Analytics</h1>
-      <div style={{float: "right"}}>
+      <div style={{float: "left"}}>
         <button onClick={ params.goToAnalytics }>Analytics</button>
         <button onClick={ params.goToData }>Data</button>
         <button onClick={ params.goToAbout }>About</button>
       </div>
     </div>
+  );
+}
+
+type HeaderParams = {
+  tab: number;
+  setTab: (tab: number) => void;
+};
+function Header (params: HeaderParams) {
+  return (
+    <NavBar selected={ params.tab }
+            goToAnalytics={ () => params.setTab(0) }
+            goToData={ () => params.setTab(1) }
+            goToAbout={ () => params.setTab(2) } />
   );
 }
 
@@ -88,9 +102,8 @@ function App() {
   
   return (
     <div>
-      <NavBar goToAnalytics={ () => setTab(0) }
-              goToData={ () => setTab(1) } 
-              goToAbout={ () => setTab(2) } />
+      <Header tab={ tab } setTab={ setTab }/>
+      <hr />
       { getTabContent(tab) }
       <Footer />
     </div>
