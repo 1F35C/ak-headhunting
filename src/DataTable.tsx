@@ -1,34 +1,12 @@
 import { useEffect, useState } from 'react';
 import { GridApi, GridReadyEvent, ICellRendererParams, ValueFormatterParams, RowClassParams, RowStyle } from 'ag-grid-community';
 import { AgGridColumn, AgGridReact } from 'ag-grid-react';
+import { Operator, OperatorDict } from './AKData';
 
 import 'ag-grid-community/dist/styles/ag-grid.css';
 import 'ag-grid-community/dist/styles/ag-theme-alpine.css';
 
-type ReleaseInfo = {
-  firstFeatured: number;
-  lastFeatured: number;
-  timesFeatured: number;
-  firstInShop: number;
-  lastInShop: number;
-  timesInShop: number;
-}
 
-type Operator = {
-  name: string;
-  class: string;
-  rarity: number;
-  headhunting: boolean;
-  recruitment: boolean;
-  limited: boolean;
-  faction: string;
-  subfaction: string;
-  release_date_en: number;
-  EN: ReleaseInfo | undefined;
-  CN: ReleaseInfo | undefined;
-}
-
-const data: { operators: { [id: string]: Operator } } = require('./data.json');
 const images: { [id: string]: { [id: string]: string } } = require('./images.json');
 const CLASSES = "classes";
 const FACTIONS = "factions";
@@ -114,12 +92,16 @@ function getAverageShopInterval(op: Operator): number {
   return days((op.EN.lastInShop - op.EN.firstInShop) / (op.EN.timesInShop - 1));
 }
 
-export function DataTablePage() {
+type DataTablePageParams = {
+  operators: OperatorDict
+};
+
+export function DataTablePage(params: DataTablePageParams) {
   const [gridApi, setGridApi] = useState<GridApi | null>(null);
   const [featuredData, setFeaturedData] = useState<FeaturedTableData[]>([]);
 
   useEffect(() => {
-    let featured = Object.values(data.operators).filter((op) => {
+    let featured = Object.values(params.operators).filter((op) => {
       return op.rarity > 4 && op.headhunting;
     }).map((op) => {
       let lastFeatured = (op.EN) ? daysSince(op.EN.lastFeatured) : Infinity;

@@ -2,6 +2,7 @@ import React from 'react';
 import { useEffect, useState } from 'react';
 import { AnalyticsPage } from './Analytics';
 import { DataTablePage } from './DataTable';
+import { AKData } from './AKData';
 import './App.css';
 import 'bulma';
 
@@ -150,7 +151,7 @@ function getTabContent(tab: number) {
       break;
     case 1:
       return (
-        <DataTablePage />
+        <DataTablePage operators={ AKData.getInstance().operators() }/>
       );
       break;
     case 2:
