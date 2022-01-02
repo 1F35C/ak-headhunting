@@ -3,7 +3,7 @@ import { GridApi, GridReadyEvent, ICellRendererParams, ValueFormatterParams, Row
 import { AgGridColumn, AgGridReact } from 'ag-grid-react';
 
 import 'ag-grid-community/dist/styles/ag-grid.css';
-import 'ag-grid-community/dist/styles/ag-theme-alpine-dark.css';
+import 'ag-grid-community/dist/styles/ag-theme-alpine.css';
 
 type ReleaseInfo = {
   firstFeatured: number;
@@ -79,13 +79,13 @@ function timeIntervalValueFormatter(params: ValueFormatterParams): string {
   return params.value + " Days";
 }
 
-function getImageCellRenderer(context: string): (params: ICellRendererParams) => string {
+function getImageCellRenderer(context: string, className: string="ak-icon"): (params: ICellRendererParams) => string {
   return (params) => {
-    return '<img src="' + getImage(context, params.value) + '" style="height: 100%" title="' + params.value + '"/>';
+    return '<img class="' + className + '" src="' + getImage(context, params.value) + '" title="' + params.value + '"/>';
   };
 }
 
-function getImageTextCellRenderer(context: string): (params: ICellRendererParams) => string {
+function getImageTextCellRenderer(context: string, className: string="ak-icon"): (params: ICellRendererParams) => string {
   return (params) => {
     let imgSrc = null;
     try {
@@ -93,7 +93,7 @@ function getImageTextCellRenderer(context: string): (params: ICellRendererParams
     } catch(err) {}
 
     if (imgSrc) {
-      return '<img src="' + imgSrc + '" style="height: 100%; float: left;" /> ' + params.value;
+      return '<img class="' + className + '" src="' + imgSrc + '" style="float: left;" /> ' + params.value;
     } else {
       return params.value;
     }
@@ -159,20 +159,20 @@ export function DataTablePage() {
   };
 
   return (
-    <div className="content">
+    <div className="container is-fluid">
       <div className="search">
         Quick Search: <input type="text" onChange={ onQuickFilterChange } />
       </div>
       <div className="flex">
-        <div className="ag-theme-alpine-dark" style={{ width: "100%", height: 1000 }}>
+        <div className="ag-theme-alpine" style={{ width: "100%", height: 1000 }}>
           <AgGridReact rowData={ featuredData }
                        rowClassRules={ rowClassRules }
                        onGridReady={ onGridReady }>
             <AgGridColumn field="name" minWidth={ 200 } sortable={ true } filter={ true } pinned="left" lockPinned={ true } cellRenderer={ getImageTextCellRenderer(PORTRAITS) }></AgGridColumn>
             <AgGridColumn field="rarity" sortable={ true } filter={ true }></AgGridColumn>
-            <AgGridColumn field="class" sortable={ true } cellRenderer={ getImageCellRenderer(CLASSES) }></AgGridColumn>
-            <AgGridColumn field="faction" sortable={ true } cellRenderer={ getImageTextCellRenderer(FACTIONS) }></AgGridColumn>
-            <AgGridColumn field="subfaction" sortable={ true } cellRenderer={ getImageTextCellRenderer(FACTIONS) } ></AgGridColumn>
+            <AgGridColumn field="class" sortable={ true } cellRenderer={ getImageCellRenderer(CLASSES, "ak-icon-inverted") }></AgGridColumn>
+            <AgGridColumn field="faction" sortable={ true } cellRenderer={ getImageTextCellRenderer(FACTIONS, "ak-icon-inverted") }></AgGridColumn>
+            <AgGridColumn field="subfaction" sortable={ true } cellRenderer={ getImageTextCellRenderer(FACTIONS, "ak-icon-inverted") } ></AgGridColumn>
             <AgGridColumn field="daysSinceFeatured" sortable={ true } valueFormatter={ daysSinceValueFormatter }></AgGridColumn>
             <AgGridColumn field="timesFeatured" sortable={ true }></AgGridColumn>
             <AgGridColumn field="averageFeaturedInterval" sortable={ true } valueFormatter={ timeIntervalValueFormatter }></AgGridColumn>

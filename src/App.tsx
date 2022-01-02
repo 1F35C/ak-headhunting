@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import { AnalyticsPage } from './Analytics';
 import { DataTablePage } from './DataTable';
 import './App.css';
+import 'bulma';
 
 type NavBarParams = {
   selected: number;
@@ -11,16 +12,42 @@ type NavBarParams = {
   goToAbout: () => void;
 };
 
+const ANALYTICS = 0;
+const DATA = 1;
+const ABOUT = 2;
+
 function NavBar (params: NavBarParams) {
+	let analyticsClass = "navbar-item" + (params.selected === ANALYTICS ? " is-active" : "");
+	let dataClass = "navbar-item" + (params.selected === DATA ? " is-active" : "");
+	let aboutClass = "navbar-item" + (params.selected === ABOUT ? " is-active" : "");
   return (
-    <div className="header clearfix">
-      <h1 style={{float: "left"}}>Rhodes Island Headhunting Analytics</h1>
-      <div style={{float: "left"}}>
-        <button onClick={ params.goToAnalytics }>Analytics</button>
-        <button onClick={ params.goToData }>Data</button>
-        <button onClick={ params.goToAbout }>About</button>
-      </div>
-    </div>
+		<nav className="navbar is-primary" role="navigation" aria-label="main navigation">
+			<div className="navbar-brand">
+				<span className="navbar-item nav-title">
+					<img src="ak-factions/logo_rhine.png" />Rhine Lab
+				</span>
+
+				<a role="button" className="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+				</a>
+			</div>
+
+			<div id="navbarBasicExample" className="navbar-menu">
+				<div className="navbar-start">
+					<a className={ analyticsClass } onClick={ params.goToAnalytics }>
+					  Analytics	
+					</a>
+					<a className={ dataClass } onClick={ params.goToData }>
+						Data
+					</a>
+					<a className={ aboutClass } onClick={ params.goToAbout }>
+						About
+					</a>
+				</div>
+			</div>
+		</nav>
   );
 }
 
@@ -47,33 +74,39 @@ function Footer() {
 
 function AboutPage () {
   return (
-    <div className="content">
-      <h2>About</h2>
-      This website is intended for analyzing and visualizing data for headhunting in Arknights video game by Hypergryph/Yostar.
-      <h2>Attributions</h2>
-      This project would not have been possible without:
-      <ul>
-        <li><a href="#">Aceship</a> for in-game assets.</li>
-        <li><a href="https://github.com/Kengxxiao/ArknightsGameData">Kengxxiao</a> for game data.</li>
-        <li><a href="https://gamepress.gg/arknights/">GamePress.com</a> for historical banner information.</li>
-        <li><a href="https://www.ag-grid.com/">AG Grid</a> for Javascript grid and charts.</li>
-      </ul>
-      <h2>Fair Use Disclaimer</h2>
-      <p>
-        This site and the content made available through this site are for educational and informational purposes only.
-      </p>
-      <p>
-        The site may contain copyrighted material owned by a third party, the use of which has not always been specifically authorized by the copyright owner.<br />
-        Notwithstanding a copyright owner’s rights under the Copyright Act, Section 107 of the Copyright Act allows limited use of copyrighted material without requiring permission from the rights holders, for purposes such as education, criticism, comment, news reporting, teaching, scholarship, and research. <br />
-        These so-called “fair uses” are permitted even if the use of the work would otherwise be infringing.
-      </p>
-      <p>
-        If you wish to use copyrighted material published on this site for your own purposes that go beyond fair use, you must obtain permission from the copyright owner.
-      </p>
-      <p>
-        If you believe that any content or postings on this site violates your intellectual property or other rights, please send me an email at 1f35c@tuta.io.
-      </p>
-    </div>
+    <>
+			<div className="section">
+				<h1 className="title">About</h1>
+				This website is intended for analyzing and visualizing data for headhunting in Arknights video game by Hypergryph/Yostar.
+			</div>
+			<div className="section">
+				<h1 className="title">Attributions</h1>
+				This project would not have been possible without:
+				<ul>
+					<li><a href="#">Aceship</a> for in-game assets.</li>
+					<li><a href="https://github.com/Kengxxiao/ArknightsGameData">Kengxxiao</a> for game data.</li>
+					<li><a href="https://gamepress.gg/arknights/">GamePress.com</a> for historical banner information.</li>
+					<li><a href="https://www.ag-grid.com/">AG Grid</a> for Javascript grid and charts.</li>
+				</ul>
+			</div>
+			<div className="section">
+				<h1 className="title">Fair Use Disclaimer</h1>
+				<p>
+					This site and the content made available through this site are for educational and informational purposes only.
+				</p>
+				<p>
+					The site may contain copyrighted material owned by a third party, the use of which has not always been specifically authorized by the copyright owner.<br />
+					Notwithstanding a copyright owner’s rights under the Copyright Act, Section 107 of the Copyright Act allows limited use of copyrighted material without requiring permission from the rights holders, for purposes such as education, criticism, comment, news reporting, teaching, scholarship, and research. <br />
+					These so-called “fair uses” are permitted even if the use of the work would otherwise be infringing.
+				</p>
+				<p>
+					If you wish to use copyrighted material published on this site for your own purposes that go beyond fair use, you must obtain permission from the copyright owner.
+				</p>
+				<p>
+					If you believe that any content or postings on this site violates your intellectual property or other rights, please send me an email at 1f35c@tuta.io.
+				</p>
+			</div>
+    </>
   );
 }
 
@@ -103,8 +136,7 @@ function App() {
   return (
     <div>
       <Header tab={ tab } setTab={ setTab }/>
-      <hr />
-      { getTabContent(tab) }
+			{ getTabContent(tab) }
       <Footer />
     </div>
   );

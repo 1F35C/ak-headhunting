@@ -1,39 +1,20 @@
-body {
-  background-image: radial-gradient(rgba(0,0,0,0.5), rgba(0,0,0,1)), url("../public/bg_corridor.png");
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
-  color: white;
-}
-
 .limited {
-  background-color: rgb(96,0,0) !important;
-}
-
-.flex {
-  display: flex;
-  align-items:center;
-  justify-content: center;
+  background-color: #EC9115 !important;
 }
 
 .search {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
-.header {
-
+.nav-title {
+	font-weight: bold;
 }
 
-.clearfix {
-  overflow: auto;
+.ak-icon {
+	height: 100%;
 }
 
-.content {
-  padding-left: 1vw;
-  padding-right: 1vw;
-}
-
-.footer {
-  padding-left: 1vw;
-  padding-right: 1vw;
+.ak-icon-inverted {
+	height: 100%;
+	filter: invert(1);
 }
