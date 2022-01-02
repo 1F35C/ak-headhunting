@@ -110,16 +110,6 @@ function AboutPage () {
 			This website is intended for analyzing and visualizing data for headhunting in Arknights video game by Hypergryph/Yostar.
 		</div>
 		<div className="section">
-			<h1 className="title">Attributions</h1>
-			This project would not have been possible without:
-			<ul>
-				<li><a href="#">Aceship</a> for in-game assets.</li>
-				<li><a href="https://github.com/Kengxxiao/ArknightsGameData">Kengxxiao</a> for game data.</li>
-				<li><a href="https://gamepress.gg/arknights/">GamePress.com</a> for historical banner information.</li>
-				<li><a href="https://www.ag-grid.com/">AG Grid</a> for Javascript grid and charts.</li>
-			</ul>
-		</div>
-		<div className="section">
 			<h1 className="title">Fair Use Disclaimer</h1>
 			<p>
 				This site and the content made available through this site are for educational and informational purposes only.
@@ -135,6 +125,17 @@ function AboutPage () {
 			<p>
 				If you believe that any content or postings on this site violates your intellectual property or other rights, please send me an email at 1f35c@tuta.io.
 			</p>
+		</div>
+		<div className="section">
+			<h1 className="title">Attributions</h1>
+			This project would not have been possible without:
+			<ul>
+				<li><a href="#">Aceship</a> for in-game assets.</li>
+				<li><a href="https://github.com/Kengxxiao/ArknightsGameData">Kengxxiao</a> for game data</li>
+				<li><a href="https://gamepress.gg/arknights/">GamePress.com</a> for historical banner information</li>
+				<li><a href="https://bulma.io/">Bulma</a> for responsive CSS framework</li>
+				<li><a href="https://www.ag-grid.com/">AG Grid</a> for Javascript grid and charts</li>
+			</ul>
 		</div>
     </>
   );
