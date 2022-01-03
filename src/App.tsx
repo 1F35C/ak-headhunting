@@ -146,7 +146,7 @@ function getTabContent(tab: number) {
   switch(tab) {
     case 0:
       return (
-        <AnalyticsPage />
+        <AnalyticsPage akdata={ AKData.getInstance() }/>
       );
       break;
     case 1:

@@ -10,6 +10,8 @@
     "@types/node": "^16.11.17",
     "@types/react": "^17.0.38",
     "@types/react-dom": "^17.0.11",
+    "ag-charts-community": "^4.2.0",
+    "ag-charts-react": "^4.2.0",
     "ag-grid-community": "^26.2.1",
     "ag-grid-react": "^26.2.0",
     "bulma": "^0.9.3",

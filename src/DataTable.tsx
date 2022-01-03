@@ -17,6 +17,7 @@ type FeaturedTableData = {
   rarity: string;
   class: string;
   faction: string;
+  gender: string;
   subfaction: string;
   daysSinceFeatured: number;
   timesFeatured: number;
@@ -112,6 +113,7 @@ export function DataTablePage(params: DataTablePageParams) {
         name: op.name,
         rarity:  op.rarity.toString() + (op.limited ? " (LIMITED)" : ""),
         class:  op.class,
+        gender: op.gender,
         faction: op.faction,
         subfaction: op.subfaction,
         daysSinceFeatured: lastFeatured,
@@ -153,6 +155,7 @@ export function DataTablePage(params: DataTablePageParams) {
             <AgGridColumn field="name" minWidth={ 200 } sortable={ true } filter={ true } pinned="left" lockPinned={ true } cellRenderer={ getImageTextCellRenderer(PORTRAITS) }></AgGridColumn>
             <AgGridColumn field="rarity" sortable={ true } filter={ true }></AgGridColumn>
             <AgGridColumn field="class" sortable={ true } cellRenderer={ getImageCellRenderer(CLASSES, "ak-icon-inverted") }></AgGridColumn>
+            <AgGridColumn field="gender" sortable={ true } ></AgGridColumn>
             <AgGridColumn field="faction" sortable={ true } cellRenderer={ getImageTextCellRenderer(FACTIONS, "ak-icon-inverted") }></AgGridColumn>
             <AgGridColumn field="subfaction" sortable={ true } cellRenderer={ getImageTextCellRenderer(FACTIONS, "ak-icon-inverted") } ></AgGridColumn>
             <AgGridColumn field="daysSinceFeatured" sortable={ true } valueFormatter={ daysSinceValueFormatter }></AgGridColumn>
