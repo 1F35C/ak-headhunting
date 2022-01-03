@@ -79,17 +79,17 @@ function getImageTextCellRenderer(context: string, className: string="ak-icon"):
 }
 
 function getAverageFeaturedInterval(op: Operator): number {
-  if (!op.EN || op.EN.timesFeatured < 2) {
+  if (op.EN.featured.length < 2) {
     return Infinity;
   }
-  return days((op.EN.lastFeatured - op.EN.firstFeatured) / (op.EN.timesFeatured - 1));
+  return days((op.EN.featured[op.EN.featured.length - 1].end - op.EN.featured[0].start) / (op.EN.featured.length - 1));
 }
 
 function getAverageShopInterval(op: Operator): number {
-  if (!op.EN || op.EN.timesInShop < 2) {
+  if (op.EN.shop.length < 2) {
     return Infinity;
   }
-  return days((op.EN.lastInShop - op.EN.firstInShop) / (op.EN.timesInShop - 1));
+  return days((op.EN.shop[op.EN.shop.length - 1].end - op.EN.shop[0].start) / (op.EN.shop.length- 1));
 }
 
 type DataTablePageParams = {
@@ -104,10 +104,10 @@ export function DataTablePage(params: DataTablePageParams) {
     let featured = Object.values(params.operators).filter((op) => {
       return op.rarity > 4 && op.headhunting;
     }).map((op) => {
-      let lastFeatured = (op.EN) ? daysSince(op.EN.lastFeatured) : Infinity;
-      let timesFeatured = (op.EN) ? op.EN.timesFeatured : 0;
-      let lastInShop = (op.EN && op.EN.timesInShop > 0) ? daysSince(op.EN.lastInShop) : Infinity;
-      let timesInShop = (op.EN) ? op.EN.timesInShop : 0;
+      let lastFeatured = (op.EN) ? daysSince(op.EN.featured[op.EN.featured.length - 1].end) : Infinity;
+      let timesFeatured = (op.EN) ? op.EN.featured.length : 0;
+      let lastInShop = (op.EN && op.EN.shop.length > 0) ? daysSince(op.EN.shop[op.EN.shop.length - 1].end) : Infinity;
+      let timesInShop = (op.EN) ? op.EN.shop.length : 0;
       return {
         name: op.name,
         rarity:  op.rarity.toString() + (op.limited ? " (LIMITED)" : ""),

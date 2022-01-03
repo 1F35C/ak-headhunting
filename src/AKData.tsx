@@ -1,10 +1,12 @@
+export type BannerInfo = {
+  start: number,
+  end: number,
+}
+
 export type ReleaseInfo = {
-  firstFeatured: number;
-  lastFeatured: number;
-  timesFeatured: number;
-  firstInShop: number;
-  lastInShop: number;
-  timesInShop: number;
+  released: number;
+  featured: [BannerInfo];
+  shop: [BannerInfo];
 }
 
 export type Operator = {
@@ -17,8 +19,8 @@ export type Operator = {
   faction: string;
   subfaction: string;
   release_date_en: number;
-  EN: ReleaseInfo | undefined;
-  CN: ReleaseInfo | undefined;
+  EN: ReleaseInfo;
+  CN: ReleaseInfo;
 }
 
 export type OperatorDict = { [id: string]: Operator }
