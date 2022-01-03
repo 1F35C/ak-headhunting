@@ -1,4 +1,5 @@
 import { AgChartsReact } from 'ag-charts-react';
+import * as agCharts from 'ag-charts-community';
 import { AKData, HistoricalGenderDataPoint } from './AKData';
 
 type GenderSectionParams = {
@@ -13,7 +14,7 @@ function transformHistoricalGenderPieData(data: HistoricalGenderDataPoint[]) {
   return [
       { label: 'Male', value: latestDataPoint.male },
       { label: 'Female', value: latestDataPoint.female },
-      { label: 'N/A', value: latestDataPoint.unknown }
+      { label: 'Conviction', value: latestDataPoint.unknown }
   ];
 }
 
@@ -30,12 +31,39 @@ function GenderSection(params: GenderSectionParams) {
       }
     ]
   };
+
+  let historicalLineOptions = {
+    series: [
+      {
+        data: params.historicalData,
+        xKey: 'time',
+        yKey: 'male',
+      },
+      {
+        data: params.historicalData,
+        xKey: 'time',
+        yKey: 'female',
+      }
+    ],
+    axes: [
+      {
+        type: 'time',
+        position: 'bottom',
+        tick: { count: agCharts.time.month.every(6) }
+      },
+      {
+        type: 'number',
+        position: 'left'
+      }
+    ]
+  };
   return (
     <div className="section">
       <div className="title">
         Gender Distribution
       </div>
       <AgChartsReact options={pieOptions} />;
+      <AgChartsReact options={historicalLineOptions} />;
     </div>
   );
 

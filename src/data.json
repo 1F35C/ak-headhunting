@@ -4116,7 +4116,7 @@
       "headhunting": false,
       "limited": false,
       "recruitment": false,
-      "faction": "unknown",
+      "faction": "Rhodes Island",
       "CN": {
         "released": 1604228400000,
         "featured": [],
@@ -4126,7 +4126,16 @@
         "released": 1619780400000,
         "featured": [],
         "shop": []
-      }
+      },
+      "gender": "Female",
+      "birthplace": "Rim Billiton",
+      "birthday": [
+        12,
+        23
+      ],
+      "race": "Cautus/Chimera",
+      "height": 142,
+      "combat_experience": "3 years"
     },
     "Whisperain": {
       "rarity": 5,
@@ -9412,7 +9421,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
-      "gender": "Male]",
+      "gender": "Male",
       "birthplace": "Laterano",
       "birthday": [
         9,

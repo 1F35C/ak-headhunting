@@ -91,11 +91,9 @@ export class AKData {
           break;
         default:
           result[result.length - 1].unknown += 1;
-          console.log(operators[idx].name);
       }
       lastReleased = operators[idx].EN.released;
     }
-    console.log(result);
     return result;
   }
 }
