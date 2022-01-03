@@ -102,10 +102,8 @@ export function DataTablePage(params: DataTablePageParams) {
   const [featuredData, setFeaturedData] = useState<FeaturedTableData[]>([]);
 
   useEffect(() => {
-    let featured = Object.values(params.operators).filter((op) => {
-      return op.rarity > 4 && op.headhunting;
-    }).map((op) => {
-      let lastFeatured = (op.EN) ? daysSince(op.EN.featured[op.EN.featured.length - 1].end) : Infinity;
+    let featured = Object.values(params.operators).map((op) => {
+      let lastFeatured = (op.EN && op.EN.featured.length > 0) ? daysSince(op.EN.featured[op.EN.featured.length - 1].end) : Infinity;
       let timesFeatured = (op.EN) ? op.EN.featured.length : 0;
       let lastInShop = (op.EN && op.EN.shop.length > 0) ? daysSince(op.EN.shop[op.EN.shop.length - 1].end) : Infinity;
       let timesInShop = (op.EN) ? op.EN.shop.length : 0;
