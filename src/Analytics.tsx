@@ -1,9 +1,10 @@
 import { AgChartsReact } from 'ag-charts-react';
 import * as agCharts from 'ag-charts-community';
-import { AKData, HistoricalGenderDataPoint } from './AKData';
+import { AKData, HistoricalGenderDataPoint, HistoricalAggregateDataPoint } from './AKData';
 
-type GenderSectionParams = {
-  historicalData: HistoricalGenderDataPoint[]
+type OperatorDemographyParams = {
+  genderData: HistoricalGenderDataPoint[],
+  raceData: HistoricalAggregateDataPoint[]
 };
 
 function transformHistoricalGenderPieData(data: HistoricalGenderDataPoint[]) {
@@ -18,10 +19,22 @@ function transformHistoricalGenderPieData(data: HistoricalGenderDataPoint[]) {
   ];
 }
 
-function GenderSection(params: GenderSectionParams) {
-  let pieData = transformHistoricalGenderPieData(params.historicalData);
-  let pieOptions = {
-    data: pieData,
+function transformAggregateDataForPie(data: HistoricalAggregateDataPoint[]) {
+  if (data.length === 0) {
+    return [];
+  }
+  let latestDataPoint = data[data.length - 1];
+  return Object.keys(latestDataPoint.data).map((key) => { return { label: key, value: latestDataPoint.data[key] }});
+}
+
+function OperatorDemography(params: OperatorDemographyParams) {
+  console.log(params.raceData);
+  let genderPieData = transformHistoricalGenderPieData(params.genderData);
+  let genderPieOptions = {
+    title: {
+      text: 'Gender Distribution'
+    },
+    data: genderPieData,
     series: [
       {
         type: 'pie',
@@ -33,14 +46,17 @@ function GenderSection(params: GenderSectionParams) {
   };
 
   let historicalLineOptions = {
+    title: {
+      text: 'Number of Operators by Gender'
+    },
     series: [
       {
-        data: params.historicalData,
+        data: params.genderData,
         xKey: 'time',
         yKey: 'male',
       },
       {
-        data: params.historicalData,
+        data: params.genderData,
         xKey: 'time',
         yKey: 'female',
       }
@@ -49,7 +65,7 @@ function GenderSection(params: GenderSectionParams) {
       {
         type: 'time',
         position: 'bottom',
-        tick: { count: agCharts.time.month.every(6) }
+        tick: { count: agCharts.time.month.every(3) }
       },
       {
         type: 'number',
@@ -57,16 +73,43 @@ function GenderSection(params: GenderSectionParams) {
       }
     ]
   };
+
+  let racePieData = transformAggregateDataForPie(params.raceData);
+  let racePieOptions = {
+    title: {
+      text: 'Race Distribution'
+    },
+    data: racePieData,
+    series: [
+      {
+        type: 'pie',
+        angleKey: 'value',
+        labelKey: 'label',
+        innerRadiusOffset: -50
+      }
+    ]
+  };
+
   return (
     <div className="section">
       <div className="title">
         Gender Distribution
       </div>
-      <AgChartsReact options={pieOptions} />;
-      <AgChartsReact options={historicalLineOptions} />;
+      <div className="columns">
+        <div className="column is-half">
+          <div className="box" style={{height: 500}}>
+            <AgChartsReact options={genderPieOptions} />
+          </div>
+        </div>
+        <div className="column is-half" style={{height: 500}}>
+          <div className="box" style={{height: 500}}>
+            <AgChartsReact options={historicalLineOptions} />
+          </div>
+        </div>
+      </div>
+      <AgChartsReact options={racePieOptions} />
     </div>
   );
-
 }
 
 type AnalyticsPageParams = {
@@ -97,7 +140,7 @@ export function AnalyticsPage(params: AnalyticsPageParams) {
         Operators with Upcoming Skins
       </div>
     </div>
-    <GenderSection historicalData={ params.akdata.historicalGenderData() }/>
+    <OperatorDemography genderData={ params.akdata.historicalGenderData() } raceData={ params.akdata.historicalRaceData() }/>
     </>
   );
 }

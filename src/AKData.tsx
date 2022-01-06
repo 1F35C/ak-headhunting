@@ -14,6 +14,7 @@ export type Operator = {
   class: string;
   rarity: number;
   gender: string;
+  race: string;
   headhunting: boolean;
   recruitment: boolean;
   limited: boolean;
@@ -36,6 +37,12 @@ export type HistoricalGenderDataPoint = {
   female: number,
   unknown: number
 }
+
+export type HistoricalAggregateDataPoint = {
+  time: Date,
+  data: { [id: string]: number }
+}
+
 
 export class AKData {
   _operators: OperatorDict = {};
@@ -93,6 +100,36 @@ export class AKData {
           result[result.length - 1].unknown += 1;
       }
       lastReleased = operators[idx].EN.released;
+    }
+    return result;
+  }
+
+  historicalRaceData(): HistoricalAggregateDataPoint[] {
+    return this.historicalAggregateData((op) => { return op.race });
+  }
+
+  historicalAggregateData(func: (op: Operator) => string): HistoricalAggregateDataPoint[] {
+    let operators = Object.values(this._operators).sort((op1, op2) => {
+      return op1.EN.released > op2.EN.released ? 1 : -1;
+    });
+    let result: HistoricalAggregateDataPoint[] = [{
+      time: new Date(operators[0].EN.released),
+      data: { [func(operators[0])] : 1 }
+    }];
+    let lastReleased = operators[0].EN.released;
+    for (let idx = 1; idx < operators.length; ++idx) {
+      if (operators[idx].EN.released !== lastReleased) {
+        result.push({
+          time: new Date(operators[idx].EN.released),
+          data: { ...result[result.length - 1].data }
+        });
+      }
+      let key = func(operators[idx]);
+      if (key in result[result.length - 1].data) {
+        result[result.length - 1].data[key] += 1;
+      } else {
+        result[result.length - 1].data[key] = 1;
+      }
     }
     return result;
   }
