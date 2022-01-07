@@ -31,11 +31,9 @@ type DataJsonFormat = {
   operators: OperatorDict
 }
 
-export type HistoricalGenderDataPoint = {
+export type HistoricalNumericDataPoint = {
   time: Date,
-  male: number,
-  female: number,
-  unknown: number
+  value: number
 }
 
 export type HistoricalAggregateDataPoint = {
@@ -43,6 +41,10 @@ export type HistoricalAggregateDataPoint = {
   data: { [id: string]: number }
 }
 
+const DAY_IN_UNIX_TIME = 24 * 3600 * 1000;
+function unixTimeDeltaToDays(delta: number): number {
+  return delta / DAY_IN_UNIX_TIME;
+}
 
 export class AKData {
   _operators: OperatorDict = {};
@@ -69,43 +71,32 @@ export class AKData {
     return AKData._instance;
   }
 
-  historicalGenderData(): HistoricalGenderDataPoint[] {
-    let operators = Object.values(this._operators).sort((op1, op2) => {
-      return op1.EN.released > op2.EN.released ? 1 : -1;
-    });
-    let result: HistoricalGenderDataPoint[] = [{
-      time: new Date(operators[0].EN.released),
-      male: (operators[0].gender === 'Male') ? 1 : 0,
-      female: (operators[0].gender === 'Female') ? 1 : 0,
-      unknown: (operators[0].gender !== 'Male' && operators[0].gender !== 'Female') ? 1 : 0
-    }];
-    let lastReleased = operators[0].EN.released;
-    for (let idx = 1; idx < operators.length; ++idx) {
-      if (operators[idx].EN.released !== lastReleased) {
-        result.push({
-          time: new Date(operators[idx].EN.released),
-          male: result[result.length - 1].male,
-          female: result[result.length - 1].female,
-          unknown: result[result.length - 1].unknown,
+  certificateShopDelay(): HistoricalNumericDataPoint[] {
+    let operators = Object.values(this._operators)
+        .filter((op) => {
+          return op.EN.shop.length > 0 && op.rarity === 6;
+        })
+        .sort((op1, op2) => {
+          return op1.EN.shop[0].start > op2.EN.shop[0].start ? 1 : -1;
         });
-      }
-      switch (operators[idx].gender) {
-        case 'Male':
-          result[result.length - 1].male += 1;
-          break;
-        case 'Female':
-          result[result.length - 1].female += 1;
-          break;
-        default:
-          result[result.length - 1].unknown += 1;
-      }
-      lastReleased = operators[idx].EN.released;
-    }
-    return result;
+    return operators.map((op) => {
+      return {
+        time: new Date(op.EN.shop[0].start),
+        value: unixTimeDeltaToDays(op.EN.shop[0].start - op.EN.released)
+      };
+    });
+  }
+
+  historicalGenderData(): HistoricalAggregateDataPoint[] {
+    return this.historicalAggregateData((op) => { return op.gender });
   }
 
   historicalRaceData(): HistoricalAggregateDataPoint[] {
     return this.historicalAggregateData((op) => { return op.race });
+  }
+
+  historicalFactionData(): HistoricalAggregateDataPoint[] {
+    return this.historicalAggregateData((op) => { return op.faction });
   }
 
   historicalAggregateData(func: (op: Operator) => string): HistoricalAggregateDataPoint[] {
@@ -123,6 +114,7 @@ export class AKData {
           time: new Date(operators[idx].EN.released),
           data: { ...result[result.length - 1].data }
         });
+        lastReleased = operators[idx].EN.released;
       }
       let key = func(operators[idx]);
       if (key in result[result.length - 1].data) {

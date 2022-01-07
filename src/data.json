@@ -113,7 +113,7 @@
         3,
         7
       ],
-      "race": "Undisclosed",
+      "race": "Unknown",
       "height": 166,
       "combat_experience": "——",
       "faction": "Aegir",
@@ -201,7 +201,7 @@
         11,
         6
       ],
-      "race": "Undisclosed",
+      "race": "Unknown",
       "height": 181,
       "combat_experience": "17 Years",
       "faction": "Aegir",
@@ -324,7 +324,7 @@
         11,
         11
       ],
-      "race": "Undisclosed",
+      "race": "Unknown",
       "height": 162,
       "combat_experience": "Undisclosed",
       "faction": "Yan",
@@ -1363,7 +1363,7 @@
         9,
         9
       ],
-      "race": "Undisclosed",
+      "race": "Unknown",
       "height": 165,
       "combat_experience": "Undisclosed",
       "faction": "Yan",
@@ -1585,7 +1585,7 @@
         12,
         12
       ],
-      "race": "Undisclosed",
+      "race": "Unknown",
       "height": 170,
       "combat_experience": "1 Year",
       "faction": "Laterano",
@@ -6713,7 +6713,7 @@
         9,
         12
       ],
-      "race": "Unknown as requested by management agency",
+      "race": "Unknown",
       "height": 155,
       "combat_experience": "None",
       "faction": "Great Lungmen",
@@ -8556,7 +8556,7 @@
         7,
         27
       ],
-      "race": "Undisclosed",
+      "race": "Unknown",
       "height": 162,
       "combat_experience": "7 years",
       "faction": "Aegir",
@@ -9756,7 +9756,7 @@
       "gender": "Conviction",
       "birthplace": "Minos",
       "birthday": null,
-      "race": "Unknown (Suspected Liberi)",
+      "race": "Unknown",
       "height": 145,
       "combat_experience": "Unknown",
       "faction": "Minos",
@@ -10308,7 +10308,7 @@
         6,
         12
       ],
-      "race": "Undisclosed",
+      "race": "Unknown",
       "height": 163,
       "combat_experience": "None",
       "faction": "Aegir",
