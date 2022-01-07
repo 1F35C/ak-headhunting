@@ -3,20 +3,28 @@ import * as agCharts from 'ag-charts-community';
 import { AKData, HistoricalNumericDataPoint, HistoricalAggregateDataPoint } from './AKData';
 
 type CertShopParams = {
-  delayData: HistoricalNumericDataPoint[]
+  certShop5StarDelayData: HistoricalNumericDataPoint[],
+  certShop6StarDelayData: HistoricalNumericDataPoint[]
 };
 
 function CertShop(params: CertShopParams) {
   let certShopDelayOptions = {
-    data: params.delayData,
     series: [
       {
+        data: params.certShop6StarDelayData,
         xKey: 'time',
-        yKey: 'value'
+        yKey: 'value',
+        yName: '6 Star'
+      },
+      {
+        data: params.certShop5StarDelayData,
+        xKey: 'time',
+        yKey: 'value',
+        yName: '5 Star'
       }
     ],
     title: {
-      text: 'Number of Operators by Gender'
+      text: 'Days between Release and Certificate Shop Debut'
     },
     axes: [
       {
@@ -37,6 +45,10 @@ function CertShop(params: CertShopParams) {
         Cert shop
       </div>
       <AgChartsReact options={certShopDelayOptions} />
+      <div className="box">
+      TODO: Featured operator wait histogram<br />
+      TODO: Shop operator wait histogram
+      </div>
     </div>
   );
 }
@@ -184,7 +196,7 @@ export function AnalyticsPage(params: AnalyticsPageParams) {
       Last: Ceobe (Release date, Debut date)<br />
       Next: Bagpipe (Release date)
     </div>
-    <CertShop delayData={ params.akdata.certificateShopDelay() } />
+    <CertShop certShop5StarDelayData={ params.akdata.certificateShop5StarDelay() } certShop6StarDelayData={ params.akdata.certificateShop6StarDelay() } />
     <div className="section">
       <div className="title">
         Operators that are overdue for certificate eshop

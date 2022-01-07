@@ -71,7 +71,23 @@ export class AKData {
     return AKData._instance;
   }
 
-  certificateShopDelay(): HistoricalNumericDataPoint[] {
+  certificateShop5StarDelay(): HistoricalNumericDataPoint[] {
+    let operators = Object.values(this._operators)
+        .filter((op) => {
+          return op.EN.shop.length > 0 && op.rarity === 5;
+        })
+        .sort((op1, op2) => {
+          return op1.EN.shop[0].start > op2.EN.shop[0].start ? 1 : -1;
+        });
+    return operators.map((op) => {
+      return {
+        time: new Date(op.EN.shop[0].start),
+        value: unixTimeDeltaToDays(op.EN.shop[0].start - op.EN.released)
+      };
+    });
+  }
+
+  certificateShop6StarDelay(): HistoricalNumericDataPoint[] {
     let operators = Object.values(this._operators)
         .filter((op) => {
           return op.EN.shop.length > 0 && op.rarity === 6;
