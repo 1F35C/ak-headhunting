@@ -162,8 +162,35 @@ function getTabContent(tab: number) {
   }
 }
 
+function getStartingTab() {
+  let hash = window.location.hash.substr(1).toLowerCase();
+  switch(hash) {
+    case "analytics":
+      return ANALYTICS;
+    case "data":
+      return DATA;
+    case "about":
+      return ABOUT;
+    default:
+      return ANALYTICS;
+  }
+}
+
 function App() {
-  const [tab, setTab] = useState(0);
+  const [tab, setTab] = useState(getStartingTab());
+
+  useEffect(() => {
+    switch(tab) {
+      case ANALYTICS:
+        window.location.hash = '#analytics';
+        break;
+      case DATA:
+        window.location.hash = '#data';
+        break;
+      case ABOUT:
+        window.location.hash = '#about';
+    }
+  }, [tab]);
   
   return (
     <>
