@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { GridApi, GridReadyEvent, ICellRendererParams, ValueFormatterParams, RowClassParams, RowStyle } from 'ag-grid-community';
+import { GridApi, GridReadyEvent, ICellRendererParams, ValueFormatterParams, RowClassParams } from 'ag-grid-community';
 import { AgGridColumn, AgGridReact } from 'ag-grid-react';
 import { getImage, Operator, OperatorDict } from './AKData';
 
@@ -115,7 +115,7 @@ export function DataTablePage(params: DataTablePageParams) {
       };
     });
     setFeaturedData(featured);
-  }, []);
+  }, [params.operators]);
 
   const onGridReady = (params: GridReadyEvent) => {
     setGridApi(params.api);

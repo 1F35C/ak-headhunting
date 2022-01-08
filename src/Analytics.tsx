@@ -112,7 +112,7 @@ function ShopOperatorCard(params:ShopOperatorCardParams) {
     <div className="card">
       <div className="card-image">
         <figure className="image is-1by1">
-          <img src={ getImage('portraits', params.operator) } title={ params.operator } />
+          <img src={ getImage('portraits', params.operator) } title={ params.operator } alt="" />
         </figure>
       </div>
       <div className="card-content">

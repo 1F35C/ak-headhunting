@@ -50,14 +50,15 @@ function NavBar (params: NavBarParams) {
 		});
 	}, []);
 
+  /* eslint-disable jsx-a11y/anchor-is-valid */
   return (
 		<nav className="navbar is-primary height-animated" role="navigation" aria-label="main navigation">
 			<div className="navbar-brand">
 				<span className="navbar-item nav-title">
-					<img src="ak-factions/logo_rhine.png" /><span className="strong">Rhine Lab</span>&nbsp;Data Archive
+					<img src="ak-factions/logo_rhine.png" alt="" /><span className="strong">Rhine Lab</span>&nbsp;Data Archive
 				</span>
 
-				<a role="button" className="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+				<a href="" role="button" className="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
 					<span aria-hidden="true"></span>
 					<span aria-hidden="true"></span>
 					<span aria-hidden="true"></span>
@@ -79,6 +80,7 @@ function NavBar (params: NavBarParams) {
 			</div>
 		</nav>
   );
+  /* eslint-enable jsx-a11y/anchor-is-valid */
 }
 
 type HeaderParams = {
@@ -103,6 +105,7 @@ function Footer() {
 }
 
 function AboutPage () {
+  /* eslint-disable jsx-a11y/anchor-is-valid */
   return (
     <>
 		<div className="section">
@@ -139,6 +142,7 @@ function AboutPage () {
 		</div>
     </>
   );
+  /* eslint-enable jsx-a11y/anchor-is-valid */
 }
 
 function getTabContent(tab: number, akData: AKData) {
@@ -147,17 +151,14 @@ function getTabContent(tab: number, akData: AKData) {
       return (
         <AnalyticsPage akdata={ akData }/>
       );
-      break;
     case 1:
       return (
         <DataTablePage operators={ akData.operators() }/>
       );
-      break;
     case 2:
       return (
         <AboutPage />
       );
-      break;
   }
 }
 
