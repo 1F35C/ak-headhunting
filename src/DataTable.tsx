@@ -1,13 +1,12 @@
 import { useEffect, useState } from 'react';
 import { GridApi, GridReadyEvent, ICellRendererParams, ValueFormatterParams, RowClassParams, RowStyle } from 'ag-grid-community';
 import { AgGridColumn, AgGridReact } from 'ag-grid-react';
-import { Operator, OperatorDict } from './AKData';
+import { getImage, Operator, OperatorDict } from './AKData';
 
 import 'ag-grid-community/dist/styles/ag-grid.css';
 import 'ag-grid-community/dist/styles/ag-theme-alpine.css';
 
 
-const images: { [id: string]: { [id: string]: string } } = require('./images.json');
 const CLASSES = "classes";
 const FACTIONS = "factions";
 const PORTRAITS = "portraits";
@@ -28,13 +27,6 @@ type FeaturedTableData = {
 };
 
 const MILLISECONDS_IN_DAY = 3600 * 1000 * 24;
-
-function getImage(context: string, value: string): string {
-  if (context in images && value in images[context]) {
-    return images[context][value];
-  }
-  throw new Error("Image could not be found");
-}
 
 function days(unixInterval: number): number {
   return Math.floor(unixInterval / MILLISECONDS_IN_DAY);

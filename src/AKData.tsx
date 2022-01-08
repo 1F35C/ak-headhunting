@@ -189,3 +189,13 @@ export class AKData {
     return result;
   }
 }
+
+const IMAGES: { [id: string]: { [id: string]: string } } = require('./images.json');
+
+export function getImage(context: string, value: string): string {
+  if (context in IMAGES && value in IMAGES[context]) {
+    return IMAGES[context][value];
+  }
+  throw new Error("Image could not be found");
+}
+
