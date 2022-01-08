@@ -51,7 +51,7 @@ function NavBar (params: NavBarParams) {
 	}, []);
 
   return (
-		<nav className="navbar is-primary" role="navigation" aria-label="main navigation">
+		<nav className="navbar is-primary height-animated" role="navigation" aria-label="main navigation">
 			<div className="navbar-brand">
 				<span className="navbar-item nav-title">
 					<img src="ak-factions/logo_rhine.png" /><span className="strong">Rhine Lab</span>&nbsp;Data Archive
@@ -141,16 +141,16 @@ function AboutPage () {
   );
 }
 
-function getTabContent(tab: number) {
+function getTabContent(tab: number, akData: AKData) {
   switch(tab) {
     case 0:
       return (
-        <AnalyticsPage akdata={ AKData.getInstance() }/>
+        <AnalyticsPage akdata={ akData }/>
       );
       break;
     case 1:
       return (
-        <DataTablePage operators={ AKData.getInstance().operators() }/>
+        <DataTablePage operators={ akData.operators() }/>
       );
       break;
     case 2:
@@ -177,6 +177,7 @@ function getStartingTab() {
 
 function App() {
   const [tab, setTab] = useState(getStartingTab());
+  const [akData, setAkData] = useState<AKData | null>(null);
 
   useEffect(() => {
     switch(tab) {
@@ -190,12 +191,31 @@ function App() {
         window.location.hash = '#about';
     }
   }, [tab]);
+
+  useEffect(() => {
+    setAkData(AKData.getInstance());
+  }, []);
   
+  let modal = (akData === null) ? (
+    <div className="modal is-active">
+      <div className="modal-background"></div>
+      <div className="modal-card">
+        <header className="modal-card-head">
+          Loading...
+        </header>
+        <section className="modal-card-body modal-card-foot">
+          <progress className="progress is-primary" />
+        </section>
+      </div>
+    </div>
+  ) : null;
+  let content = (akData !== null) ? getTabContent(tab, akData) : null;
   return (
     <>
-		<Header tab={ tab } setTab={ setTab }/>
-		{ getTabContent(tab) }
-		<Footer />
+    <Header tab={ tab } setTab={ setTab }/>
+    { content }
+    <Footer />
+    { modal }
     </>
   );
 }
