@@ -17,7 +17,7 @@ type BannerDurationChartParams = {
 function BannerDurationChart(params: BannerDurationChartParams) {
   let options = {
     title: {
-      text: 'Banners With New Operator in Shop'
+      text: 'Banner Durations for Debut/Regular Banners'
     },
     subtitle: {
       text: 'y-axis: duration of banner in days'
@@ -28,7 +28,7 @@ function BannerDurationChart(params: BannerDurationChartParams) {
         type: 'scatter',
         xKey: 'time',
         yKey: 'value',
-        yName: 'New',
+        yName: 'Debut',
         labelKey: 'label',
         marker: { shape: 'circle', size: 8, stroke: '#f03a5f', fill: '#f03a5f' }
       },
@@ -36,7 +36,7 @@ function BannerDurationChart(params: BannerDurationChartParams) {
         data: params.nonDebutBannerDurationData,
         type: 'scatter',
         xKey: 'time',
-        yName: 'Old',
+        yName: 'Regular',
         yKey: 'value',
         marker: { shape: 'cross', stroke: '#3488ce', fill: '#3488ce' }
       }
