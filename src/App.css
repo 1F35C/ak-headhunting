@@ -19,3 +19,13 @@
 	filter: invert(1);
 }
 
+.rounded {
+  background-color: white;
+  color: black;
+  padding: 6px;
+  border-radius: 6px;
+}
+
+.operator-well {
+  max-width: 1600px;
+}

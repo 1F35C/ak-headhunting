@@ -1,6 +1,7 @@
 import { AgChartsReact } from 'ag-charts-react';
 import * as agCharts from 'ag-charts-community';
 import {
+  getImage,
   AKData,
   Region,
   HistoricalNumericDataPoint,
@@ -9,14 +10,17 @@ import {
 } from './AKData';
 
 
-type BannerDurationBarParams = {
+type BannerDurationChartParams = {
   debutBannerDurationData: HistoricalAnnotatedNumericDataPoint[],
   nonDebutBannerDurationData: HistoricalNumericDataPoint[]
 }
-function BannerDurationBar(params: BannerDurationBarParams) {
+function BannerDurationChart(params: BannerDurationChartParams) {
   let options = {
     title: {
-      text: 'Rotating Banner Duration'
+      text: 'Banners With New Operator in Shop'
+    },
+    subtitle: {
+      text: 'y-axis: duration of banner in days'
     },
     series: [
       {
@@ -24,7 +28,7 @@ function BannerDurationBar(params: BannerDurationBarParams) {
         type: 'scatter',
         xKey: 'time',
         yKey: 'value',
-        yName: 'Debut',
+        yName: 'New',
         labelKey: 'label',
         marker: { shape: 'circle', size: 8, stroke: '#f03a5f', fill: '#f03a5f' }
       },
@@ -32,7 +36,7 @@ function BannerDurationBar(params: BannerDurationBarParams) {
         data: params.nonDebutBannerDurationData,
         type: 'scatter',
         xKey: 'time',
-        yName: 'Normal',
+        yName: 'Old',
         yKey: 'value',
         marker: { shape: 'cross', stroke: '#3488ce', fill: '#3488ce' }
       }
@@ -50,16 +54,19 @@ function BannerDurationBar(params: BannerDurationBarParams) {
 
   }
   return (
-    <AgChartsReact options={options} />
+    <div className="rounded">
+      <AgChartsReact options={options} />
+    </div>
   );
 }
 
-type CertShopParams = BannerDurationBarParams & {
+type ShopDebutWaitChartParams = {
   certShop5StarDelayData: HistoricalNumericDataPoint[],
   certShop6StarDelayData: HistoricalNumericDataPoint[]
 };
-function CertShop(params: CertShopParams) {
-  let certShopDelayOptions = {
+
+function ShopDebutWaitChart(params: ShopDebutWaitChartParams) {
+  let options = {
     series: [
       {
         data: params.certShop6StarDelayData,
@@ -89,18 +96,95 @@ function CertShop(params: CertShopParams) {
       }
     ]
   };
+  return (
+    <div className="rounded">
+      <AgChartsReact options={ options } />
+    </div>
+  );
+};
 
+type ShopOperatorCardParams = {
+  operator: string
+}
+
+function ShopOperatorCard(params:ShopOperatorCardParams) {
+  return (
+    <div className="card">
+      <div className="card-image">
+        <figure className="image is-1by1">
+          <img src={ getImage('portraits', params.operator) } title={ params.operator } />
+        </figure>
+      </div>
+      <div className="card-content">
+        <div className="title is-4">{ params.operator }</div>
+        Released
+        <div className="title is-5">{ 100 } days ago</div>
+      </div>
+    </div>
+  );
+}
+
+type CertShopParams = BannerDurationChartParams & ShopDebutWaitChartParams;
+function CertShop(params: CertShopParams) {
+  let shopOperators = [
+    "Mostima",
+    "Blaze",
+    "Aak",
+    "Ceobe",
+    "Bagpipe",
+    "Phantom",
+    "Weedy"
+  ];
+  let shopOperatorCardColumns = shopOperators.map((op) => {
+    return (
+      <div className="column">
+        <ShopOperatorCard operator={ op } />
+      </div>
+    );
+  });
   return (
     <div className="section">
       <div className="title">
-        Cert shop
+        Certficate Shop
       </div>
-      <BannerDurationBar debutBannerDurationData={ params.debutBannerDurationData }
-                         nonDebutBannerDurationData={ params.nonDebutBannerDurationData }/>
-      <AgChartsReact options={certShopDelayOptions} />
+      <div className="block">
+        <div className="container">
+          <div className="columns is-mobile">
+            { shopOperatorCardColumns }
+          </div>
+        </div>
+      </div>
+      <div className="block">
+        <div className="message is-info">
+          <div className="message-header">
+            Analysis 
+          </div>
+          <div className="message-body">
+            <div className="block rounded">
+              <p>
+                Since April 2021, a non-limited 6* operator, that was never in the certificate shop before, makes a debut, at a rate of once every 3 banners.
+              </p>
+              <p>
+                The operators debut happens sequentially, starting with the oldest non-debuted operator.
+                Since a new 6* operator is released more often than once every 3 banners, the wait time for shop debut will continue to increase until this pattern changes.
+              </p>
+            </div>
+            <div className="block columns is-desktop">
+              <div className="column is-full-tablet is-half-desktop">
+                <BannerDurationChart debutBannerDurationData={ params.debutBannerDurationData }
+                                     nonDebutBannerDurationData={ params.nonDebutBannerDurationData } />
+              </div>
+              <div className="column is-full-tablet is-half-desktop">
+                <ShopDebutWaitChart certShop5StarDelayData={ params.certShop5StarDelayData }
+                                    certShop6StarDelayData={ params.certShop6StarDelayData } />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div className="box">
-      TODO: Featured operator wait histogram<br />
-      TODO: Shop operator wait histogram
+        TODO: Featured operator wait histogram<br />
+        TODO: Shop operator wait histogram
       </div>
     </div>
   );
@@ -241,27 +325,10 @@ type AnalyticsPageParams = {
 export function AnalyticsPage(params: AnalyticsPageParams) {
   return (
     <>
-    <div className="section">
-      <div className="title">
-        Certificate Shop Debut
-      </div>
-      Last: Ceobe (Release date, Debut date)<br />
-      Next: Bagpipe (Release date)
-    </div>
     <CertShop debutBannerDurationData={ params.akdata.debutBannerDuration(Region.EN) }
               nonDebutBannerDurationData={ params.akdata.nonDebutBannerDuration(Region.EN) }
               certShop5StarDelayData={ params.akdata.certificateShop5StarDelay() }
               certShop6StarDelayData={ params.akdata.certificateShop6StarDelay() } />
-    <div className="section">
-      <div className="title">
-        Operators that are overdue for certificate eshop
-      </div>
-    </div>
-    <div className="section">
-      <div className="title">
-        Operators with Upcoming Skins
-      </div>
-    </div>
     <OperatorDemography genderData={ params.akdata.historicalGenderData() } raceData={ params.akdata.historicalRaceData() } factionData={ params.akdata.historicalFactionData() } />
     </>
   );
