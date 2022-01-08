@@ -44,7 +44,6 @@ function NavBar (params: NavBarParams) {
 						if ($target) {
 							$target.classList.toggle('is-active');
 						}
-
 					});
 				});
 			}
@@ -55,7 +54,7 @@ function NavBar (params: NavBarParams) {
 		<nav className="navbar is-primary" role="navigation" aria-label="main navigation">
 			<div className="navbar-brand">
 				<span className="navbar-item nav-title">
-					<img src="ak-factions/logo_rhine.png" />Rhine Lab
+					<img src="ak-factions/logo_rhine.png" /><span className="strong">Rhine Lab</span>&nbsp;Data Archive
 				</span>
 
 				<a role="button" className="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
