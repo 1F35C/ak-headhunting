@@ -13,14 +13,14 @@ type NavBarParams = {
   goToAbout: () => void;
 };
 
-const ANALYTICS = 0;
-const DATA = 1;
-const ABOUT = 2;
+const ANALYTICS_TAB = 0;
+const DATA_TAB = 1;
+const ABOUT_TAB = 2;
 
 function NavBar (params: NavBarParams) {
-	let analyticsClass = "navbar-item" + (params.selected === ANALYTICS ? " is-active" : "");
-	let dataClass = "navbar-item" + (params.selected === DATA ? " is-active" : "");
-	let aboutClass = "navbar-item" + (params.selected === ABOUT ? " is-active" : "");
+	let analyticsClass = "navbar-item" + (params.selected === ANALYTICS_TAB ? " is-active" : "");
+	let dataClass = "navbar-item" + (params.selected === DATA_TAB ? " is-active" : "");
+	let aboutClass = "navbar-item" + (params.selected === ABOUT_TAB ? " is-active" : "");
 
 	useEffect(() => {
 		document.addEventListener('DOMContentLoaded', () => {
@@ -165,13 +165,13 @@ function getStartingTab() {
   let hash = window.location.hash.substr(1).toLowerCase();
   switch(hash) {
     case "analytics":
-      return ANALYTICS;
+      return ANALYTICS_TAB;
     case "data":
-      return DATA;
+      return DATA_TAB;
     case "about":
-      return ABOUT;
+      return ABOUT_TAB;
     default:
-      return ANALYTICS;
+      return ANALYTICS_TAB;
   }
 }
 
@@ -181,13 +181,13 @@ function App() {
 
   useEffect(() => {
     switch(tab) {
-      case ANALYTICS:
+      case ANALYTICS_TAB:
         window.location.hash = '#analytics';
         break;
-      case DATA:
+      case DATA_TAB:
         window.location.hash = '#data';
         break;
-      case ABOUT:
+      case ABOUT_TAB:
         window.location.hash = '#about';
     }
   }, [tab]);
