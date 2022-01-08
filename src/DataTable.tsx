@@ -146,8 +146,8 @@ export function DataTablePage(params: DataTablePageParams) {
             <AgGridColumn field="rarity" sortable={ true } filter={ true }></AgGridColumn>
             <AgGridColumn field="class" sortable={ true } cellRenderer={ getImageCellRenderer(CLASSES, "ak-icon-inverted") }></AgGridColumn>
             <AgGridColumn field="gender" sortable={ true } ></AgGridColumn>
-            <AgGridColumn field="faction" sortable={ true } cellRenderer={ getImageTextCellRenderer(FACTIONS, "ak-icon-inverted") }></AgGridColumn>
-            <AgGridColumn field="subfaction" sortable={ true } cellRenderer={ getImageTextCellRenderer(FACTIONS, "ak-icon-inverted") } ></AgGridColumn>
+            <AgGridColumn field="faction" minWidth={ 200 } sortable={ true } cellRenderer={ getImageTextCellRenderer(FACTIONS, "ak-icon-inverted") }></AgGridColumn>
+            <AgGridColumn field="subfaction" minWidth={ 200 } sortable={ true } cellRenderer={ getImageTextCellRenderer(FACTIONS, "ak-icon-inverted") } ></AgGridColumn>
             <AgGridColumn field="daysSinceFeatured" sortable={ true } valueFormatter={ daysSinceValueFormatter }></AgGridColumn>
             <AgGridColumn field="timesFeatured" sortable={ true }></AgGridColumn>
             <AgGridColumn field="averageFeaturedInterval" sortable={ true } valueFormatter={ timeIntervalValueFormatter }></AgGridColumn>
