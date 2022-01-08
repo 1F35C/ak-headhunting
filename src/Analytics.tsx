@@ -1,12 +1,63 @@
 import { AgChartsReact } from 'ag-charts-react';
 import * as agCharts from 'ag-charts-community';
-import { AKData, HistoricalNumericDataPoint, HistoricalAggregateDataPoint } from './AKData';
+import {
+  AKData,
+  Region,
+  HistoricalNumericDataPoint,
+  HistoricalAnnotatedNumericDataPoint,
+  HistoricalAggregateDataPoint
+} from './AKData';
 
-type CertShopParams = {
+
+type BannerDurationBarParams = {
+  debutBannerDurationData: HistoricalAnnotatedNumericDataPoint[],
+  nonDebutBannerDurationData: HistoricalNumericDataPoint[]
+}
+function BannerDurationBar(params: BannerDurationBarParams) {
+  let options = {
+    title: {
+      text: 'Rotating Banner Duration'
+    },
+    series: [
+      {
+        data: params.debutBannerDurationData,
+        type: 'scatter',
+        xKey: 'time',
+        yKey: 'value',
+        yName: 'Debut',
+        labelKey: 'label',
+        marker: { shape: 'circle', size: 8, stroke: '#f03a5f', fill: '#f03a5f' }
+      },
+      {
+        data: params.nonDebutBannerDurationData,
+        type: 'scatter',
+        xKey: 'time',
+        yName: 'Normal',
+        yKey: 'value',
+        marker: { shape: 'cross', stroke: '#3488ce', fill: '#3488ce' }
+      }
+    ],
+    axes: [
+      {
+        type: 'time',
+        position: 'bottom'
+      },
+      {
+        type: 'number',
+        position: 'left'
+      }
+    ]
+
+  }
+  return (
+    <AgChartsReact options={options} />
+  );
+}
+
+type CertShopParams = BannerDurationBarParams & {
   certShop5StarDelayData: HistoricalNumericDataPoint[],
   certShop6StarDelayData: HistoricalNumericDataPoint[]
 };
-
 function CertShop(params: CertShopParams) {
   let certShopDelayOptions = {
     series: [
@@ -44,6 +95,8 @@ function CertShop(params: CertShopParams) {
       <div className="title">
         Cert shop
       </div>
+      <BannerDurationBar debutBannerDurationData={ params.debutBannerDurationData }
+                         nonDebutBannerDurationData={ params.nonDebutBannerDurationData }/>
       <AgChartsReact options={certShopDelayOptions} />
       <div className="box">
       TODO: Featured operator wait histogram<br />
@@ -82,7 +135,6 @@ function transformAggregateDataForLineOption(dataPoints: HistoricalAggregateData
     data: data,
     series: series 
   };
-  console.log(result);
   return result;
 }
 
@@ -196,7 +248,10 @@ export function AnalyticsPage(params: AnalyticsPageParams) {
       Last: Ceobe (Release date, Debut date)<br />
       Next: Bagpipe (Release date)
     </div>
-    <CertShop certShop5StarDelayData={ params.akdata.certificateShop5StarDelay() } certShop6StarDelayData={ params.akdata.certificateShop6StarDelay() } />
+    <CertShop debutBannerDurationData={ params.akdata.debutBannerDuration(Region.EN) }
+              nonDebutBannerDurationData={ params.akdata.nonDebutBannerDuration(Region.EN) }
+              certShop5StarDelayData={ params.akdata.certificateShop5StarDelay() }
+              certShop6StarDelayData={ params.akdata.certificateShop6StarDelay() } />
     <div className="section">
       <div className="title">
         Operators that are overdue for certificate eshop

@@ -1,6 +1,6 @@
-export type BannerInfo = {
-  start: number,
-  end: number,
+export enum Region {
+  EN = "EN",
+  CN = "CN"
 }
 
 export type ReleaseInfo = {
@@ -27,13 +27,34 @@ export type Operator = {
 
 export type OperatorDict = { [id: string]: Operator }
 
+type BannerInfo = {
+  start: number,
+  end: number,
+  title: string,
+  featured: string[],
+  shop: string[],
+  isLimited: boolean,
+  shopDebut6Star: string[],
+  shopDebut5Star: string[],
+  isEvent: boolean,
+  isRotating: boolean
+}
+
+type BannerDict = { [key in Region]: BannerInfo[] };
+
+
 type DataJsonFormat = {
-  operators: OperatorDict
+  operators: OperatorDict,
+  banners: BannerDict
 }
 
 export type HistoricalNumericDataPoint = {
   time: Date,
   value: number
+}
+
+export type HistoricalAnnotatedNumericDataPoint = HistoricalNumericDataPoint & {
+  label: string | null
 }
 
 export type HistoricalAggregateDataPoint = {
@@ -48,6 +69,10 @@ function unixTimeDeltaToDays(delta: number): number {
 
 export class AKData {
   _operators: OperatorDict = {};
+  _banners: BannerDict = {
+    [Region.EN]: [],
+    [Region.CN]: []
+  };
   
   constructor() {
     if (AKData._instance !== null) {
@@ -56,6 +81,7 @@ export class AKData {
 
     let data: DataJsonFormat = require('./data.json');
     this._operators = data.operators;
+    this._banners = data.banners;
     AKData._instance = this;
   }
 
@@ -69,6 +95,27 @@ export class AKData {
       AKData._instance = new AKData();
     }
     return AKData._instance;
+  }
+
+  debutBannerDuration(region: Region): HistoricalAnnotatedNumericDataPoint[] {
+    let banners = this._banners[region].filter((b) => b.isRotating && b.shopDebut6Star.length > 0);
+    return banners.map((b) => {
+      return {
+        time: new Date(b.start),
+        value: unixTimeDeltaToDays(b.end - b.start),
+        label: b.shopDebut6Star[0]
+      }
+    });
+  }
+
+  nonDebutBannerDuration(region: Region): HistoricalNumericDataPoint[] {
+    let banners = this._banners[region].filter((b) => b.isRotating && b.shopDebut6Star.length === 0);
+    return banners.map((b) => {
+      return {
+        time: new Date(b.start),
+        value: unixTimeDeltaToDays(b.end - b.start),
+      }
+    });
   }
 
   certificateShop5StarDelay(): HistoricalNumericDataPoint[] {

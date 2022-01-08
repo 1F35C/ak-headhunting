@@ -11103,8 +11103,8 @@
         "featured": [],
         "shop": [],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -11124,8 +11124,12 @@
           "Croissant"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [
+          "Angelina"
+        ],
+        "shopDebut5Star": [
+          "Croissant"
+        ],
         "isEvent": false,
         "isRotating": true
       },
@@ -11141,8 +11145,8 @@
         ],
         "shop": [],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -11162,8 +11166,12 @@
           "Texas"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [
+          "Nightingale"
+        ],
+        "shopDebut5Star": [
+          "Texas"
+        ],
         "isEvent": false,
         "isRotating": true
       },
@@ -11180,8 +11188,8 @@
         ],
         "shop": [],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -11201,8 +11209,12 @@
           "Specter"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [
+          "Saria"
+        ],
+        "shopDebut5Star": [
+          "Specter"
+        ],
         "isEvent": false,
         "isRotating": true
       },
@@ -11222,8 +11234,12 @@
           "Lappland"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [
+          "Ifrit"
+        ],
+        "shopDebut5Star": [
+          "Lappland"
+        ],
         "isEvent": false,
         "isRotating": true
       },
@@ -11239,8 +11255,8 @@
         ],
         "shop": [],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -11260,8 +11276,12 @@
           "Nearl"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [
+          "Siege"
+        ],
+        "shopDebut5Star": [
+          "Nearl"
+        ],
         "isEvent": false,
         "isRotating": true
       },
@@ -11276,8 +11296,8 @@
         ],
         "shop": [],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -11297,8 +11317,10 @@
           "Zima"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [
+          "Zima"
+        ],
         "isEvent": false,
         "isRotating": true
       },
@@ -11314,8 +11336,8 @@
         ],
         "shop": [],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -11335,8 +11357,10 @@
           "Firewatch"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [
+          "Firewatch"
+        ],
         "isEvent": false,
         "isRotating": true
       },
@@ -11352,8 +11376,8 @@
         ],
         "shop": [],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -11373,8 +11397,10 @@
           "Warfarin"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [
+          "Warfarin"
+        ],
         "isEvent": false,
         "isRotating": true
       },
@@ -11390,8 +11416,8 @@
         ],
         "shop": [],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -11411,8 +11437,12 @@
           "Shining"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [
+          "Shining"
+        ],
+        "shopDebut5Star": [
+          "Sora"
+        ],
         "isEvent": false,
         "isRotating": true
       },
@@ -11427,8 +11457,8 @@
         ],
         "shop": [],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -11448,8 +11478,10 @@
           "Ifrit"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [
+          "Skyfire"
+        ],
         "isEvent": false,
         "isRotating": true
       },
@@ -11465,8 +11497,8 @@
         ],
         "shop": [],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -11486,8 +11518,12 @@
           "Projekt Red"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [
+          "Hoshiguma"
+        ],
+        "shopDebut5Star": [
+          "Projekt Red"
+        ],
         "isEvent": false,
         "isRotating": true
       },
@@ -11509,8 +11545,8 @@
         ],
         "shop": [],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -11530,8 +11566,10 @@
           "Blue Poison"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [
+          "Blue Poison"
+        ],
         "isEvent": false,
         "isRotating": true
       },
@@ -11551,8 +11589,10 @@
           "Pramanix"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [
+          "Pramanix"
+        ],
         "isEvent": false,
         "isRotating": true
       },
@@ -11568,8 +11608,8 @@
         ],
         "shop": [],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -11589,8 +11629,10 @@
           "Meteorite"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [
+          "Meteorite"
+        ],
         "isEvent": false,
         "isRotating": true
       },
@@ -11605,8 +11647,8 @@
         ],
         "shop": [],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -11626,8 +11668,12 @@
           "Liskarm"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [
+          "SilverAsh"
+        ],
+        "shopDebut5Star": [
+          "Liskarm"
+        ],
         "isEvent": false,
         "isRotating": true
       },
@@ -11641,9 +11687,9 @@
           "Nian"
         ],
         "shop": [],
-        "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "isLimited": true,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -11663,8 +11709,8 @@
           "Firewatch"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": false,
         "isRotating": true
       },
@@ -11684,8 +11730,10 @@
           "Franka"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [
+          "Franka"
+        ],
         "isEvent": false,
         "isRotating": true
       },
@@ -11700,8 +11748,8 @@
         ],
         "shop": [],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -11721,8 +11769,10 @@
           "Provence"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [
+          "Provence"
+        ],
         "isEvent": false,
         "isRotating": true
       },
@@ -11738,8 +11788,8 @@
         ],
         "shop": [],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -11759,8 +11809,10 @@
           "Manticore"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [
+          "Manticore"
+        ],
         "isEvent": false,
         "isRotating": true
       },
@@ -11776,8 +11828,8 @@
         ],
         "shop": [],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -11797,8 +11849,12 @@
           "FEater"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [
+          "Eyjafjalla"
+        ],
+        "shopDebut5Star": [
+          "FEater"
+        ],
         "isEvent": false,
         "isRotating": true
       },
@@ -11818,8 +11874,10 @@
           "Cliffheart"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [
+          "Cliffheart"
+        ],
         "isEvent": false,
         "isRotating": true
       },
@@ -11835,8 +11893,8 @@
         ],
         "shop": [],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -11856,8 +11914,10 @@
           "Ptilopsis"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [
+          "Ptilopsis"
+        ],
         "isEvent": false,
         "isRotating": true
       },
@@ -11871,8 +11931,8 @@
         ],
         "shop": [],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -11892,8 +11952,12 @@
           "Platinum"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [
+          "Exusiai"
+        ],
+        "shopDebut5Star": [
+          "Platinum"
+        ],
         "isEvent": false,
         "isRotating": true
       },
@@ -11910,8 +11974,8 @@
         ],
         "shop": [],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -11925,8 +11989,8 @@
         ],
         "shop": [],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -11946,8 +12010,8 @@
           "Specter"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": false,
         "isRotating": true
       },
@@ -11963,8 +12027,8 @@
         ],
         "shop": [],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -11984,8 +12048,8 @@
           "Texas"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": false,
         "isRotating": true
       },
@@ -12005,8 +12069,10 @@
           "Silence"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [
+          "Silence"
+        ],
         "isEvent": false,
         "isRotating": true
       },
@@ -12020,9 +12086,9 @@
           "Weedy"
         ],
         "shop": [],
-        "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "isLimited": true,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -12042,8 +12108,10 @@
           "Lappland"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [
+          "Skadi"
+        ],
+        "shopDebut5Star": [],
         "isEvent": false,
         "isRotating": true
       },
@@ -12059,8 +12127,8 @@
         ],
         "shop": [],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -12080,8 +12148,10 @@
           "Nightmare"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [
+          "Nightmare"
+        ],
         "isEvent": false,
         "isRotating": true
       },
@@ -12103,8 +12173,8 @@
         ],
         "shop": [],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -12124,8 +12194,10 @@
           "Warfarin"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [
+          "Ch'en"
+        ],
+        "shopDebut5Star": [],
         "isEvent": false,
         "isRotating": true
       },
@@ -12145,8 +12217,10 @@
           "Swire"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [
+          "Swire"
+        ],
         "isEvent": false,
         "isRotating": true
       },
@@ -12162,8 +12236,8 @@
         ],
         "shop": [],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -12183,8 +12257,8 @@
           "Croissant"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": false,
         "isRotating": true
       },
@@ -12204,8 +12278,8 @@
           "Skyfire"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": false,
         "isRotating": true
       },
@@ -12221,8 +12295,8 @@
         ],
         "shop": [],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -12242,8 +12316,12 @@
           "Mayer"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [
+          "Magallan"
+        ],
+        "shopDebut5Star": [
+          "Mayer"
+        ],
         "isEvent": false,
         "isRotating": true
       },
@@ -12259,8 +12337,8 @@
         ],
         "shop": [],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -12280,8 +12358,8 @@
           "Nearl"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": false,
         "isRotating": true
       },
@@ -12296,9 +12374,9 @@
           "Whisperain"
         ],
         "shop": [],
-        "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "isLimited": true,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -12318,8 +12396,10 @@
           "Executor"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [
+          "Executor"
+        ],
         "isEvent": false,
         "isRotating": true
       },
@@ -12335,8 +12415,8 @@
         ],
         "shop": [],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -12356,8 +12436,10 @@
           "Projekt Red"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [
+          "Hellagur"
+        ],
+        "shopDebut5Star": [],
         "isEvent": false,
         "isRotating": true
       },
@@ -12379,8 +12461,8 @@
         ],
         "shop": [],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -12400,8 +12482,8 @@
           "Zima"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": false,
         "isRotating": true
       },
@@ -12421,8 +12503,8 @@
           "Pramanix"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": false,
         "isRotating": true
       },
@@ -12438,8 +12520,8 @@
         ],
         "shop": [],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -12459,8 +12541,12 @@
           "Glaucus"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [
+          "Schwarz"
+        ],
+        "shopDebut5Star": [
+          "Glaucus"
+        ],
         "isEvent": false,
         "isRotating": true
       },
@@ -12476,8 +12562,8 @@
         ],
         "shop": [],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -12497,8 +12583,10 @@
           "Astesia"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [
+          "Astesia"
+        ],
         "isEvent": false,
         "isRotating": true
       },
@@ -12512,9 +12600,9 @@
           "Nian"
         ],
         "shop": [],
-        "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "isLimited": true,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -12534,8 +12622,8 @@
           "Meteorite"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": false,
         "isRotating": true
       },
@@ -12549,9 +12637,9 @@
           "Dusk"
         ],
         "shop": [],
-        "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "isLimited": true,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -12571,8 +12659,10 @@
           "FEater"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [
+          "Mostima"
+        ],
+        "shopDebut5Star": [],
         "isEvent": false,
         "isRotating": true
       },
@@ -12586,9 +12676,9 @@
           "Ash"
         ],
         "shop": [],
-        "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "isLimited": true,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -12608,8 +12698,8 @@
           "Liskarm"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": false,
         "isRotating": true
       },
@@ -12629,8 +12719,10 @@
           "Waai Fu"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [
+          "Waai Fu"
+        ],
         "isEvent": false,
         "isRotating": true
       },
@@ -12646,8 +12738,8 @@
         ],
         "shop": [],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -12667,8 +12759,10 @@
           "Sora"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [
+          "Blaze"
+        ],
+        "shopDebut5Star": [],
         "isEvent": false,
         "isRotating": true
       },
@@ -12683,8 +12777,8 @@
         ],
         "shop": [],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -12704,8 +12798,10 @@
           "GreyThroat"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [
+          "GreyThroat"
+        ],
         "isEvent": false,
         "isRotating": true
       },
@@ -12725,8 +12821,8 @@
           "Lappland"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": false,
         "isRotating": true
       },
@@ -12740,9 +12836,9 @@
           "Skadi the Corrupting Heart"
         ],
         "shop": [],
-        "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "isLimited": true,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -12762,8 +12858,12 @@
           "Reed"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [
+          "Aak"
+        ],
+        "shopDebut5Star": [
+          "Reed"
+        ],
         "isEvent": false,
         "isRotating": true
       },
@@ -12785,8 +12885,8 @@
         ],
         "shop": [],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -12806,8 +12906,10 @@
           "Broca"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [
+          "Broca"
+        ],
         "isEvent": false,
         "isRotating": true
       },
@@ -12827,8 +12929,8 @@
           "Firewatch"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": false,
         "isRotating": true
       },
@@ -12844,8 +12946,8 @@
         ],
         "shop": [],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -12865,8 +12967,10 @@
           "Provence"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [
+          "Ceobe"
+        ],
+        "shopDebut5Star": [],
         "isEvent": false,
         "isRotating": true
       },
@@ -12882,8 +12986,8 @@
         ],
         "shop": [],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -12903,8 +13007,10 @@
           "Leizi"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [
+          "Leizi"
+        ],
         "isEvent": false,
         "isRotating": true
       },
@@ -12919,8 +13025,8 @@
         ],
         "shop": [],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -12940,8 +13046,8 @@
           "Texas"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": false,
         "isRotating": true
       }
@@ -12963,8 +13069,12 @@
           "Croissant"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [
+          "Angelina"
+        ],
+        "shopDebut5Star": [
+          "Croissant"
+        ],
         "isEvent": false,
         "isRotating": true
       },
@@ -12975,8 +13085,8 @@
         "featured": [],
         "shop": [],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -12996,8 +13106,12 @@
           "Texas"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [
+          "Nightingale"
+        ],
+        "shopDebut5Star": [
+          "Texas"
+        ],
         "isEvent": false,
         "isRotating": true
       },
@@ -13013,8 +13127,8 @@
         ],
         "shop": [],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -13034,8 +13148,12 @@
           "Lappland"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [
+          "Ifrit"
+        ],
+        "shopDebut5Star": [
+          "Lappland"
+        ],
         "isEvent": false,
         "isRotating": true
       },
@@ -13052,8 +13170,8 @@
         ],
         "shop": [],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -13073,8 +13191,12 @@
           "Specter"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [
+          "Saria"
+        ],
+        "shopDebut5Star": [
+          "Specter"
+        ],
         "isEvent": false,
         "isRotating": true
       },
@@ -13094,8 +13216,10 @@
           "Blue Poison"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [
+          "Blue Poison"
+        ],
         "isEvent": false,
         "isRotating": true
       },
@@ -13111,8 +13235,8 @@
         ],
         "shop": [],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -13132,8 +13256,12 @@
           "Warfarin"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [
+          "Siege"
+        ],
+        "shopDebut5Star": [
+          "Warfarin"
+        ],
         "isEvent": false,
         "isRotating": true
       },
@@ -13148,8 +13276,8 @@
         ],
         "shop": [],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -13169,8 +13297,10 @@
           "Projekt Red"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [
+          "Projekt Red"
+        ],
         "isEvent": false,
         "isRotating": true
       },
@@ -13190,8 +13320,10 @@
           "Pramanix"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [
+          "Pramanix"
+        ],
         "isEvent": false,
         "isRotating": true
       },
@@ -13211,8 +13343,12 @@
           "Skyfire"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [
+          "Shining"
+        ],
+        "shopDebut5Star": [
+          "Skyfire"
+        ],
         "isEvent": false,
         "isRotating": true
       },
@@ -13228,8 +13364,8 @@
         ],
         "shop": [],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -13249,8 +13385,10 @@
           "Ptilopsis"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [
+          "Ptilopsis"
+        ],
         "isEvent": false,
         "isRotating": true
       },
@@ -13266,8 +13404,8 @@
         ],
         "shop": [],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -13287,8 +13425,10 @@
           "Firewatch"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [
+          "Firewatch"
+        ],
         "isEvent": false,
         "isRotating": true
       },
@@ -13303,8 +13443,8 @@
         ],
         "shop": [],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -13324,8 +13464,12 @@
           "Liskarm"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [
+          "SilverAsh"
+        ],
+        "shopDebut5Star": [
+          "Liskarm"
+        ],
         "isEvent": false,
         "isRotating": true
       },
@@ -13341,8 +13485,8 @@
         ],
         "shop": [],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -13362,8 +13506,10 @@
           "Meteorite"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [
+          "Meteorite"
+        ],
         "isEvent": false,
         "isRotating": true
       },
@@ -13383,8 +13529,10 @@
           "Nearl"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [
+          "Nearl"
+        ],
         "isEvent": false,
         "isRotating": true
       },
@@ -13406,8 +13554,8 @@
         ],
         "shop": [],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -13427,8 +13575,12 @@
           "Sora"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [
+          "Hoshiguma"
+        ],
+        "shopDebut5Star": [
+          "Sora"
+        ],
         "isEvent": false,
         "isRotating": true
       },
@@ -13444,8 +13596,8 @@
         ],
         "shop": [],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -13465,8 +13617,10 @@
           "Mayer"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [
+          "Mayer"
+        ],
         "isEvent": false,
         "isRotating": true
       },
@@ -13481,8 +13635,8 @@
         ],
         "shop": [],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -13502,8 +13656,10 @@
           "Platinum"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [
+          "Platinum"
+        ],
         "isEvent": false,
         "isRotating": true
       },
@@ -13519,8 +13675,8 @@
         ],
         "shop": [],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -13540,8 +13696,10 @@
           "Franka"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [
+          "Franka"
+        ],
         "isEvent": false,
         "isRotating": true
       },
@@ -13561,8 +13719,10 @@
           "Manticore"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [
+          "Manticore"
+        ],
         "isEvent": false,
         "isRotating": true
       },
@@ -13576,9 +13736,9 @@
           "Nian"
         ],
         "shop": [],
-        "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "isLimited": true,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -13598,8 +13758,10 @@
           "Istina"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [
+          "Istina"
+        ],
         "isEvent": false,
         "isRotating": true
       },
@@ -13619,8 +13781,12 @@
           "Silence"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [
+          "Eyjafjalla"
+        ],
+        "shopDebut5Star": [
+          "Silence"
+        ],
         "isEvent": false,
         "isRotating": true
       },
@@ -13640,8 +13806,8 @@
           "Projekt Red"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": false,
         "isRotating": true
       },
@@ -13656,8 +13822,8 @@
         ],
         "shop": [],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -13677,8 +13843,10 @@
           "Cliffheart"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [
+          "Cliffheart"
+        ],
         "isEvent": false,
         "isRotating": true
       },
@@ -13694,8 +13862,8 @@
         ],
         "shop": [],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -13715,8 +13883,12 @@
           "Provence"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [
+          "Exusiai"
+        ],
+        "shopDebut5Star": [
+          "Provence"
+        ],
         "isEvent": false,
         "isRotating": true
       },
@@ -13736,8 +13908,10 @@
           "FEater"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [
+          "FEater"
+        ],
         "isEvent": false,
         "isRotating": true
       },
@@ -13757,8 +13931,10 @@
           "Zima"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [
+          "Zima"
+        ],
         "isEvent": false,
         "isRotating": true
       },
@@ -13774,8 +13950,8 @@
         ],
         "shop": [],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -13795,8 +13971,12 @@
           "Nightmare"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [
+          "Skadi"
+        ],
+        "shopDebut5Star": [
+          "Nightmare"
+        ],
         "isEvent": false,
         "isRotating": true
       },
@@ -13810,9 +13990,9 @@
           "Weedy"
         ],
         "shop": [],
-        "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "isLimited": true,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -13832,8 +14012,10 @@
           "Swire"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [
+          "Swire"
+        ],
         "isEvent": false,
         "isRotating": true
       },
@@ -13855,8 +14037,8 @@
         ],
         "shop": [],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -13876,8 +14058,8 @@
           "Warfarin"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": false,
         "isRotating": true
       },
@@ -13891,8 +14073,8 @@
         ],
         "shop": [],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -13912,8 +14094,8 @@
           "Texas"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": false,
         "isRotating": true
       },
@@ -13929,8 +14111,8 @@
         ],
         "shop": [],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -13950,8 +14132,10 @@
           "Blue Poison"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [
+          "Ch'en"
+        ],
+        "shopDebut5Star": [],
         "isEvent": false,
         "isRotating": true
       },
@@ -13967,8 +14151,8 @@
         ],
         "shop": [],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -13988,8 +14172,10 @@
           "Astesia"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [
+          "Astesia"
+        ],
         "isEvent": false,
         "isRotating": true
       },
@@ -14009,8 +14195,8 @@
           "Nearl"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": false,
         "isRotating": true
       },
@@ -14024,8 +14210,8 @@
         ],
         "shop": [],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -14045,8 +14231,10 @@
           "Platinum"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [
+          "Schwarz"
+        ],
+        "shopDebut5Star": [],
         "isEvent": false,
         "isRotating": true
       },
@@ -14062,8 +14250,8 @@
         ],
         "shop": [],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -14083,8 +14271,8 @@
           "Croissant"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": false,
         "isRotating": true
       },
@@ -14100,8 +14288,8 @@
         ],
         "shop": [],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -14121,8 +14309,8 @@
           "Specter"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": false,
         "isRotating": true
       },
@@ -14138,8 +14326,8 @@
         ],
         "shop": [],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -14155,8 +14343,8 @@
         ],
         "shop": [],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -14176,8 +14364,10 @@
           "Liskarm"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [
+          "Hellagur"
+        ],
+        "shopDebut5Star": [],
         "isEvent": false,
         "isRotating": true
       },
@@ -14193,8 +14383,8 @@
         ],
         "shop": [],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -14211,8 +14401,8 @@
         ],
         "shop": [],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -14232,8 +14422,8 @@
           "Saria"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": false,
         "isRotating": true
       },
@@ -14249,8 +14439,8 @@
         ],
         "shop": [],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -14270,8 +14460,10 @@
           "Glaucus"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [
+          "Glaucus"
+        ],
         "isEvent": false,
         "isRotating": true
       },
@@ -14291,8 +14483,12 @@
           "GreyThroat"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [
+          "Magallan"
+        ],
+        "shopDebut5Star": [
+          "GreyThroat"
+        ],
         "isEvent": false,
         "isRotating": true
       },
@@ -14307,9 +14503,9 @@
           "Whisperain"
         ],
         "shop": [],
-        "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "isLimited": true,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -14329,8 +14525,8 @@
           "Projekt Red"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": false,
         "isRotating": true
       },
@@ -14352,8 +14548,8 @@
         ],
         "shop": [],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -14373,8 +14569,8 @@
           "Pramanix"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": false,
         "isRotating": true
       },
@@ -14390,8 +14586,8 @@
         ],
         "shop": [],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -14411,8 +14607,12 @@
           "Reed"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [
+          "Blaze"
+        ],
+        "shopDebut5Star": [
+          "Reed"
+        ],
         "isEvent": false,
         "isRotating": true
       },
@@ -14428,8 +14628,8 @@
         ],
         "shop": [],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -14449,8 +14649,8 @@
           "Franka"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": false,
         "isRotating": true
       },
@@ -14466,8 +14666,8 @@
         ],
         "shop": [],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -14487,8 +14687,8 @@
           "Skyfire"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": false,
         "isRotating": true
       },
@@ -14502,9 +14702,9 @@
           "Nian"
         ],
         "shop": [],
-        "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "isLimited": true,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -14524,8 +14724,8 @@
           "Croissant"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": false,
         "isRotating": true
       },
@@ -14545,8 +14745,10 @@
           "Sora"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [
+          "Mostima"
+        ],
+        "shopDebut5Star": [],
         "isEvent": false,
         "isRotating": true
       },
@@ -14560,9 +14762,9 @@
           "Dusk"
         ],
         "shop": [],
-        "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "isLimited": true,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -14582,8 +14784,10 @@
           "Leizi"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [
+          "Leizi"
+        ],
         "isEvent": false,
         "isRotating": true
       },
@@ -14603,8 +14807,8 @@
           "Liskarm"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": false,
         "isRotating": true
       },
@@ -14618,9 +14822,9 @@
           "Ash"
         ],
         "shop": [],
-        "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "isLimited": true,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -14640,8 +14844,10 @@
           "Lappland"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [
+          "Ceobe"
+        ],
+        "shopDebut5Star": [],
         "isEvent": false,
         "isRotating": true
       },
@@ -14657,8 +14863,8 @@
         ],
         "shop": [],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -14678,8 +14884,8 @@
           "Zima"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": false,
         "isRotating": true
       },
@@ -14694,8 +14900,8 @@
         ],
         "shop": [],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -14715,8 +14921,10 @@
           "Executor"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [
+          "Executor"
+        ],
         "isEvent": false,
         "isRotating": true
       },
@@ -14736,8 +14944,10 @@
           "Broca"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [
+          "Broca"
+        ],
         "isEvent": false,
         "isRotating": true
       },
@@ -14751,9 +14961,9 @@
           "Skadi the Corrupting Heart"
         ],
         "shop": [],
-        "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "isLimited": true,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -14773,8 +14983,10 @@
           "Istina"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [
+          "Aak"
+        ],
+        "shopDebut5Star": [],
         "isEvent": false,
         "isRotating": true
       },
@@ -14796,8 +15008,8 @@
         ],
         "shop": [],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -14817,8 +15029,10 @@
           "Waai Fu"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [
+          "Waai Fu"
+        ],
         "isEvent": false,
         "isRotating": true
       },
@@ -14834,8 +15048,8 @@
         ],
         "shop": [],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -14855,8 +15069,8 @@
           "Astesia"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": false,
         "isRotating": true
       },
@@ -14872,8 +15086,8 @@
         ],
         "shop": [],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -14893,8 +15107,10 @@
           "Pramanix"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [
+          "Bagpipe"
+        ],
+        "shopDebut5Star": [],
         "isEvent": false,
         "isRotating": true
       },
@@ -14909,8 +15125,8 @@
         ],
         "shop": [],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -14929,8 +15145,8 @@
           "GreyThroat"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": false,
         "isRotating": true
       },
@@ -14946,8 +15162,8 @@
         ],
         "shop": [],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -14967,8 +15183,8 @@
           "Mayer"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": false,
         "isRotating": true
       },
@@ -14982,9 +15198,9 @@
           "La Pluma"
         ],
         "shop": [],
-        "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "isLimited": true,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -15004,8 +15220,12 @@
           "Hung"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [
+          "Phantom"
+        ],
+        "shopDebut5Star": [
+          "Hung"
+        ],
         "isEvent": false,
         "isRotating": true
       },
@@ -15025,8 +15245,8 @@
           "Firewatch"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": false,
         "isRotating": true
       },
@@ -15042,8 +15262,8 @@
         ],
         "shop": [],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -15063,8 +15283,10 @@
           "Sesa"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [
+          "Sesa"
+        ],
         "isEvent": false,
         "isRotating": true
       },
@@ -15084,8 +15306,10 @@
           "Glaucus"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [
+          "Weedy"
+        ],
+        "shopDebut5Star": [],
         "isEvent": false,
         "isRotating": true
       },
@@ -15101,8 +15325,8 @@
         ],
         "shop": [],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -15122,8 +15346,10 @@
           "Shamare"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [
+          "Shamare"
+        ],
         "isEvent": false,
         "isRotating": true
       },
@@ -15139,8 +15365,8 @@
         ],
         "shop": [],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -15160,8 +15386,8 @@
           "Ptilopsis"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": false,
         "isRotating": true
       },
@@ -15176,8 +15402,8 @@
         ],
         "shop": [],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -15197,8 +15423,12 @@
           "Elysium"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [
+          "Rosa (Poca)"
+        ],
+        "shopDebut5Star": [
+          "Elysium"
+        ],
         "isEvent": false,
         "isRotating": true
       },
@@ -15212,9 +15442,9 @@
           "Corroserum"
         ],
         "shop": [],
-        "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "isLimited": true,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -15234,8 +15464,8 @@
           "Blue Poison"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": false,
         "isRotating": true
       },
@@ -15257,8 +15487,8 @@
         ],
         "shop": [],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -15278,8 +15508,10 @@
           "Asbestos"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [
+          "Asbestos"
+        ],
         "isEvent": false,
         "isRotating": true
       },
@@ -15295,8 +15527,8 @@
         ],
         "shop": [],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -15316,8 +15548,10 @@
           "Nearl"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [
+          "Suzuran"
+        ],
+        "shopDebut5Star": [],
         "isEvent": false,
         "isRotating": true
       },
@@ -15332,8 +15566,8 @@
         ],
         "shop": [],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -15353,8 +15587,10 @@
           "Tsukinogi"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [
+          "Tsukinogi"
+        ],
         "isEvent": false,
         "isRotating": true
       },
@@ -15365,8 +15601,8 @@
         "featured": [],
         "shop": [],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": true,
         "isRotating": false
       },
@@ -15386,8 +15622,8 @@
           "Reed"
         ],
         "isLimited": false,
-        "isShop6StarDebut": false,
-        "isShop5StarDebut": false,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
         "isEvent": false,
         "isRotating": true
       }
