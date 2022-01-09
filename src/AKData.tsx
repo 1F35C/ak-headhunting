@@ -1,6 +1,6 @@
 import { unixTimeDeltaToDays, TimeUnit } from './util';
 
-const PUBLIC_URL = '/ak-headhunting/';
+const PUBLIC_URL = '/ak-headhunting';
 
 export enum Region {
   EN = "EN",
