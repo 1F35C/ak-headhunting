@@ -1,4 +1,7 @@
 import { unixTimeDeltaToDays, TimeUnit } from './util';
+
+const PUBLIC_URL = '/ak-headhunting/';
+
 export enum Region {
   EN = "EN",
   CN = "CN"
@@ -221,7 +224,11 @@ const IMAGES: { [id: string]: { [id: string]: string } } = require('./images.jso
 
 export function getImage(context: string, value: string): string {
   if (context in IMAGES && value in IMAGES[context]) {
-    return IMAGES[context][value];
+    if (window.location.href.toLowerCase().includes('localhost')) {
+      return IMAGES[context][value];
+    } else {
+      return PUBLIC_URL + IMAGES[context][value];
+    }
   }
   throw new Error("Image could not be found");
 }
