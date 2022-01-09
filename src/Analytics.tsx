@@ -193,7 +193,7 @@ function CertShop(params: CertShopParams) {
           <div className="message-body">
             <div className="block rounded">
               <p>
-                Since April 2021, a non-limited 6* operator, that was never in the certificate shop before, makes a debut, at a rate of once every 3 banners.
+                Since April 2021, a non-limited 6* operator, one that was never in the certificate shop before, makes a debut at a rate of once every 3 banners.
               </p>
               <p>
                 The operators debut happens sequentially, starting with the oldest non-debuted operator.
