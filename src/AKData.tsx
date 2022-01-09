@@ -1,3 +1,4 @@
+import { unixTimeDeltaToDays, TimeUnit } from './util';
 export enum Region {
   EN = "EN",
   CN = "CN"
@@ -5,8 +6,8 @@ export enum Region {
 
 export type ReleaseInfo = {
   released: number;
-  featured: [BannerInfo];
-  shop: [BannerInfo];
+  featured: BannerInfo[];
+  shop: BannerInfo[];
 }
 
 export type Operator = {
@@ -62,9 +63,17 @@ export type HistoricalAggregateDataPoint = {
   data: { [id: string]: number }
 }
 
-const DAY_IN_UNIX_TIME = 24 * 3600 * 1000;
-function unixTimeDeltaToDays(delta: number): number {
-  return delta / DAY_IN_UNIX_TIME;
+function indexOfLatestShopOperator(operators: Operator[], region: Region): number {
+  if (operators.length <= 1) {
+    throw new Error('Operator count sus');
+  }
+
+  for (let idx = operators.length - 1; idx >= 0; --idx) {
+    if (operators[idx][region].shop.length > 0) {
+      return idx;
+    }
+  }
+  return -1;
 }
 
 export class AKData {
@@ -85,16 +94,34 @@ export class AKData {
     AKData._instance = this;
   }
 
-  operators(): OperatorDict {
-    return this._operators;
-  }
-
   static _instance: AKData | null = null;
   static getInstance(): AKData {
     if (AKData._instance === null) {
       AKData._instance = new AKData();
     }
     return AKData._instance;
+  }
+
+  operators(): OperatorDict {
+    return this._operators;
+  }
+  
+  banners(region: Region): BannerInfo[] {
+    return this._banners[region];
+  }
+
+  recentAndUpcomingShopOperators(before: number, after: number, region: Region): [Operator[], number[]] {
+    let sorted = Object.values(this._operators)
+      .filter(op => !op.limited && op.rarity === 6)
+      .sort((op1, op2) => {
+        return (op1[region].released > op2[region].released) ? 1 : -1;
+      });
+    let latestIdx = indexOfLatestShopOperator(sorted, region);
+    let operators = sorted.slice(latestIdx - before, latestIdx + 1 + after);
+    let predictions = operators.map((op, idx) => {
+      return operators[before][region].shop[0].start + (idx - before) * 3 * TimeUnit.BANNER;
+    });
+    return [operators, predictions];
   }
 
   debutBannerDuration(region: Region): HistoricalAnnotatedNumericDataPoint[] {

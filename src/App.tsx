@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import { AnalyticsPage } from './Analytics';
 import { DataTablePage } from './DataTable';
 import { AKData } from './AKData';
+import DataContext from './DataContext';
 import './App.css';
 import 'bulma';
 
@@ -32,15 +33,15 @@ function NavBar (params: NavBarParams) {
 			if ($navbarBurgers.length > 0) {
 
 				// Add a click event on each of them
-				$navbarBurgers.forEach( el => {
-					el.addEventListener('click', () => {
+				$navbarBurgers.forEach( burger => {
+					burger.addEventListener('click', () => {
 
 						// Get the target from the "data-target" attribute
-						const target = el.dataset.target;
+						const target = burger.dataset.target;
 						const $target = document.getElementById(target);
 
 						// Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-						el.classList.toggle('is-active');
+						burger.classList.toggle('is-active');
 						if ($target) {
 							$target.classList.toggle('is-active');
 						}
@@ -58,7 +59,7 @@ function NavBar (params: NavBarParams) {
 					<img src="ak-factions/logo_rhine.png" alt="" /><span className="strong">Rhine Lab</span>&nbsp;Data Archive
 				</span>
 
-				<a href="" role="button" className="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+				<a role="button" className="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
 					<span aria-hidden="true"></span>
 					<span aria-hidden="true"></span>
 					<span aria-hidden="true"></span>
@@ -210,11 +211,15 @@ function App() {
       </div>
     </div>
   ) : null;
+
   let content = (akData !== null) ? getTabContent(tab, akData) : null;
+
   return (
     <>
     <Header tab={ tab } setTab={ setTab }/>
+    <DataContext.Provider value={ akData }>
     { content }
+    </DataContext.Provider>
     <Footer />
     { modal }
     </>

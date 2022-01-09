@@ -2,12 +2,16 @@ import { AgChartsReact } from 'ag-charts-react';
 import * as agCharts from 'ag-charts-community';
 import {
   getImage,
+  Operator,
   AKData,
   Region,
+  ReleaseInfo,
   HistoricalNumericDataPoint,
   HistoricalAnnotatedNumericDataPoint,
   HistoricalAggregateDataPoint
 } from './AKData';
+import { unixTimeDeltaToDays, daysSince, TimeUnit } from './util';
+import { useAKData } from './DataContext';
 
 
 type BannerDurationChartParams = {
@@ -104,21 +108,54 @@ function ShopDebutWaitChart(params: ShopDebutWaitChartParams) {
 };
 
 type ShopOperatorCardParams = {
-  operator: string
+  operator: Operator,
+  prediction: number
+}
+
+function shopOperatorStatus(releaseInfo: ReleaseInfo, prediction: number) {
+  if (releaseInfo.shop.length === 0) {
+    return (
+      <>
+      Expected<br />
+      <strong>in { -daysSince(prediction) } days</strong>
+      </>
+    );
+  } else if (releaseInfo.shop[0].start < Date.now() && Date.now() < releaseInfo.shop[0].end) {
+    return (
+      <>
+      Currently Active
+      </>
+    );
+  }
+  return (
+    <>
+    Debuted<br />
+    <strong>{ daysSince(releaseInfo.shop[0].start) } days ago</strong>
+    </>
+  ); 
+
 }
 
 function ShopOperatorCard(params:ShopOperatorCardParams) {
+  let releaseInfo = params.operator.EN;
+  let daysSinceRelease = daysSince(releaseInfo.released);
+  let status = shopOperatorStatus(releaseInfo, params.prediction);
   return (
-    <div className="card">
+    <div className="card" style={{height: "100%"}}>
       <div className="card-image">
         <figure className="image is-1by1">
-          <img src={ getImage('portraits', params.operator) } title={ params.operator } alt="" />
+          <img src={ getImage('portraits', params.operator.name) } title={ params.operator.name } alt="" />
         </figure>
       </div>
       <div className="card-content">
-        <div className="title is-4">{ params.operator }</div>
-        Released
-        <div className="title is-5">{ 100 } days ago</div>
+        <div className="title is-4">{ params.operator.name }</div>
+        <p>
+        Released<br />
+        <strong>{ daysSinceRelease } days ago</strong>
+        </p>
+        { status }
+        <p>
+        </p>
       </div>
     </div>
   );
@@ -126,19 +163,13 @@ function ShopOperatorCard(params:ShopOperatorCardParams) {
 
 type CertShopParams = BannerDurationChartParams & ShopDebutWaitChartParams;
 function CertShop(params: CertShopParams) {
-  let shopOperators = [
-    "Mostima",
-    "Blaze",
-    "Aak",
-    "Ceobe",
-    "Bagpipe",
-    "Phantom",
-    "Weedy"
-  ];
-  let shopOperatorCardColumns = shopOperators.map((op) => {
+  let akData = useAKData();
+  // TODO
+  let [shopOperators, predictions]= akData.recentAndUpcomingShopOperators(2, 3, Region.EN);
+  let shopOperatorCardColumns = shopOperators.map((op, idx) => {
     return (
-      <div className="column">
-        <ShopOperatorCard operator={ op } />
+      <div className="column" key={ op.name }>
+        <ShopOperatorCard operator={ op } prediction={ predictions[idx] }/>
       </div>
     );
   });
