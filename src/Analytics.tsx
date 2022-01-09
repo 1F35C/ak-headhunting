@@ -10,7 +10,7 @@ import {
   HistoricalAnnotatedNumericDataPoint,
   HistoricalAggregateDataPoint
 } from './AKData';
-import { unixTimeDeltaToDays, daysSince, TimeUnit } from './util';
+import { daysSince } from './util';
 import { useAKData } from './DataContext';
 
 
