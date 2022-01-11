@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from 'react';
 import { AgChartsReact } from 'ag-charts-react';
 import * as agCharts from 'ag-charts-community';
 import {
@@ -117,7 +118,7 @@ function shopOperatorStatus(releaseInfo: ReleaseInfo, prediction: number) {
     return (
       <>
       Expected<br />
-      <strong>in { -daysSince(prediction) } days</strong>
+      <strong>in { -daysSince(prediction) }d</strong>
       </>
     );
   } else if (releaseInfo.shop[0].start < Date.now() && Date.now() < releaseInfo.shop[0].end) {
@@ -130,7 +131,7 @@ function shopOperatorStatus(releaseInfo: ReleaseInfo, prediction: number) {
   return (
     <>
     Debuted<br />
-    <strong>{ daysSince(releaseInfo.shop[0].start) } days ago</strong>
+    <strong>{ daysSince(releaseInfo.shop[0].start) }d ago</strong>
     </>
   ); 
 
@@ -141,17 +142,20 @@ function ShopOperatorCard(params:ShopOperatorCardParams) {
   let daysSinceRelease = daysSince(releaseInfo.released);
   let status = shopOperatorStatus(releaseInfo, params.prediction);
   return (
-    <div className="card" style={{height: "100%"}}>
+    <div className="card operator-card">
       <div className="card-image">
         <figure className="image is-1by1">
-          <img src={ getImage('portraits', params.operator.name) } title={ params.operator.name } alt="" />
+          <img src={ getImage('portraits', params.operator.name) }
+               title={ params.operator.name }
+               style={ { pointerEvents: 'none' } }
+               alt="" />
         </figure>
       </div>
       <div className="card-content">
         <div className="title is-4">{ params.operator.name }</div>
         <p>
         Released<br />
-        <strong>{ daysSinceRelease } days ago</strong>
+        <strong>{ daysSinceRelease }d ago</strong>
         </p>
         { status }
         <p>
@@ -161,29 +165,94 @@ function ShopOperatorCard(params:ShopOperatorCardParams) {
   );
 }
 
-type CertShopParams = BannerDurationChartParams & ShopDebutWaitChartParams;
-function CertShop(params: CertShopParams) {
-  let akData = useAKData();
-  // TODO
-  let [shopOperators, predictions]= akData.recentAndUpcomingShopOperators(2, 3, Region.EN);
-  let shopOperatorCardColumns = shopOperators.map((op, idx) => {
+type DragGrab = {
+  grabX: number,
+  scrollX: number
+}
+
+type CertShopOperatorsParams = {
+  operators: Operator[],
+  predictions: number[]
+}
+function CertShopOperators(params: CertShopOperatorsParams) {
+  let [dragGrab, setDragGrab] = useState<DragGrab | null>(null);
+
+  let shopOperatorCardColumns = params.operators.map((op, idx) => {
     return (
       <div className="column" key={ op.name }>
-        <ShopOperatorCard operator={ op } prediction={ predictions[idx] }/>
+        <ShopOperatorCard operator={ op } prediction={ params.predictions[idx] }/>
       </div>
     );
   });
+
+  useEffect(() => {
+    const container = document.getElementById("operator-card-container");
+    if (!container) {
+      throw new Error("Operator card container not found");
+    }
+
+    // Center container
+    let scrollAmount = (container.scrollWidth - container.offsetWidth) / 2;
+    container.scrollLeft = scrollAmount;
+
+    (() => {
+      // Use closure to keep the scope tight for these variable
+      let dragGrab: DragGrab | null = null;
+      const container = document.getElementById("operator-card-container");
+
+      if (!container) {
+        throw new Error('container could not be found');
+      }
+
+      const mouseMove = (ev: MouseEvent) => {
+        if (dragGrab === null) {
+          return false;
+        }
+        container.scrollLeft = dragGrab.scrollX - (ev.clientX - dragGrab.grabX);
+        return false;
+      };
+
+      const mouseUp = (ev: MouseEvent) => {
+        setDragGrab(null);
+        window.removeEventListener('mousemove', mouseMove);
+        window.removeEventListener('mouseup', mouseUp);
+      };
+
+      const mouseDown = (ev: MouseEvent) => {
+        dragGrab = {
+          grabX: ev.clientX,
+          scrollX: container.scrollLeft
+        };
+        window.addEventListener('mousemove', mouseMove);
+        window.addEventListener('mouseup', mouseUp);
+      };
+
+      container.addEventListener('mousedown', mouseDown);
+    })();
+  }, []);
+  
+
+  return (
+    <div id="operator-card-container">
+      <div className="columns is-mobile">
+        { shopOperatorCardColumns }
+      </div>
+    </div>
+  );
+}
+
+type CertShopParams = BannerDurationChartParams & ShopDebutWaitChartParams;
+function CertShop(params: CertShopParams) {
+  let akData = useAKData();
+  let [shopOperators, predictions] = akData.recentAndUpcomingShopOperators(10, 10, Region.EN);
+  
   return (
     <div className="section">
       <div className="title">
         Certficate Shop
       </div>
       <div className="block">
-        <div className="container">
-          <div className="columns is-mobile">
-            { shopOperatorCardColumns }
-          </div>
-        </div>
+        <CertShopOperators operators={ shopOperators } predictions={ predictions } />
       </div>
       <div className="block">
         <div className="message is-info">

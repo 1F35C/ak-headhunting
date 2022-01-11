@@ -29,3 +29,24 @@
 .operator-well {
   max-width: 1600px;
 }
+
+#operator-card-container {
+  overflow-x: visible;
+  overflow-y: hidden;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  cursor: grab;
+  user-select: none;
+
+  background-color: #eee;
+  border-radius: 6px;
+}
+
+#operator-card-container.grabbing {
+  cursor: grabbing;
+}
+
+.operator-card {
+  height: 100%;
+  width: 180px;
+}
