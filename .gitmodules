@@ -1,0 +1,3 @@
+[submodule "submodules/AN-EN-Tags"]
+	path = submodules/AN-EN-Tags
+	url = https://github.com/Aceship/AN-EN-Tags.git

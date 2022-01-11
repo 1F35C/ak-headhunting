@@ -1,0 +1,17 @@
+#!/bin/bash
+
+src="submodules/AN-EN-Tags/img/avatars";
+# Copy portraits fromi AN-EN-Tags
+pushd .;
+cd ${src};
+git pull origin master;
+files=$(ls | egrep "char_[0-9]+_[a-z0-9]+.png");
+popd;
+
+for f in ${files}; do
+  dest="public/ak-portraits/${f}";
+  if [ ! -e "${dest}" ]; then
+    cp "${src}/${f}" "${dest}";
+  fi;
+done;
+
