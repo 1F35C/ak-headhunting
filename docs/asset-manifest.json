@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/ak-headhunting/static/css/main.45798046.css",
-    "main.js": "/ak-headhunting/static/js/main.4abfffe8.js",
+    "main.css": "/ak-headhunting/static/css/main.c6b4835a.css",
+    "main.js": "/ak-headhunting/static/js/main.adf95f79.js",
     "static/js/787.78cc0278.chunk.js": "/ak-headhunting/static/js/787.78cc0278.chunk.js",
     "index.html": "/ak-headhunting/index.html",
-    "main.45798046.css.map": "/ak-headhunting/static/css/main.45798046.css.map",
-    "main.4abfffe8.js.map": "/ak-headhunting/static/js/main.4abfffe8.js.map",
+    "main.c6b4835a.css.map": "/ak-headhunting/static/css/main.c6b4835a.css.map",
+    "main.adf95f79.js.map": "/ak-headhunting/static/js/main.adf95f79.js.map",
     "787.78cc0278.chunk.js.map": "/ak-headhunting/static/js/787.78cc0278.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.45798046.css",
-    "static/js/main.4abfffe8.js"
+    "static/css/main.c6b4835a.css",
+    "static/js/main.adf95f79.js"
   ]
 }
