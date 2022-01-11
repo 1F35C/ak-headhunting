@@ -61,9 +61,11 @@ export type HistoricalAnnotatedNumericDataPoint = HistoricalNumericDataPoint & {
   label: string | null
 }
 
+export type AggregateData = { [id: string]: number }
+
 export type HistoricalAggregateDataPoint = {
   time: Date,
-  data: { [id: string]: number }
+  data: AggregateData
 }
 
 function indexOfLatestShopOperator(operators: Operator[], region: Region): number {
@@ -184,12 +186,12 @@ export class AKData {
     return this.historicalAggregateData((op) => { return op.gender });
   }
 
-  historicalRaceData(): HistoricalAggregateDataPoint[] {
-    return this.historicalAggregateData((op) => { return op.race });
+  raceData(): AggregateData {
+    return this.aggregateData((op) => { return op.race });
   }
 
-  historicalFactionData(): HistoricalAggregateDataPoint[] {
-    return this.historicalAggregateData((op) => { return op.faction });
+  factionData(): AggregateData {
+    return this.aggregateData((op) => { return op.faction });
   }
 
   historicalAggregateData(func: (op: Operator) => string): HistoricalAggregateDataPoint[] {
@@ -216,6 +218,19 @@ export class AKData {
         result[result.length - 1].data[key] = 1;
       }
     }
+    return result;
+  }
+
+  aggregateData(func: (op: Operator) => string): AggregateData {
+    let result: AggregateData = {}
+    Object.values(this._operators).forEach(op => {
+      let key = func(op);
+      if (key in result) {
+        result[key]++;
+      } else {
+        result[key] = 1;
+      }
+    });
     return result;
   }
 }

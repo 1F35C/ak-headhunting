@@ -11092,6 +11092,830 @@
         "featured": [],
         "shop": []
       }
+    },
+    "Spot": {
+      "rarity": 3,
+      "name": "Spot",
+      "class": "Defender",
+      "subclass": "Healing Defender",
+      "tags": [
+        "Defense",
+        "Healing"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "gender": "Male",
+      "birthplace": "Sargon",
+      "birthday": [
+        4,
+        30
+      ],
+      "race": "Rebbah",
+      "height": 169,
+      "combat_experience": "1 year",
+      "faction": "Rhodes Island",
+      "subfaction": "Reserve 6",
+      "CN": {
+        "released": 1562670000000,
+        "featured": [],
+        "shop": []
+      },
+      "EN": {
+        "released": 1582369200000,
+        "featured": [],
+        "shop": []
+      }
+    },
+    "Popukar": {
+      "rarity": 3,
+      "name": "Popukar",
+      "class": "Guard",
+      "subclass": "AoE Guard",
+      "tags": [
+        "AoE",
+        "Survival"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "gender": "Female",
+      "birthplace": "Rim Billiton",
+      "birthday": [
+        7,
+        2
+      ],
+      "race": "Cautus",
+      "height": 144,
+      "combat_experience": "4 years",
+      "faction": "Rhodes Island",
+      "subfaction": "Reserve 6",
+      "CN": {
+        "released": 1562670000000,
+        "featured": [],
+        "shop": []
+      },
+      "EN": {
+        "released": 1582714800000,
+        "featured": [],
+        "shop": []
+      }
+    },
+    "Midnight": {
+      "rarity": 3,
+      "name": "Midnight",
+      "class": "Guard",
+      "subclass": "Ranged Guard",
+      "tags": [
+        "DPS"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "gender": "Male",
+      "birthplace": "Far East",
+      "birthday": [
+        5,
+        20
+      ],
+      "race": "Sarkaz",
+      "height": 187,
+      "combat_experience": "None",
+      "faction": "Rhodes Island",
+      "subfaction": "Reserve 6",
+      "CN": {
+        "released": 1559214000000,
+        "featured": [],
+        "shop": []
+      },
+      "EN": {
+        "released": 1580900400000,
+        "featured": [],
+        "shop": []
+      }
+    },
+    "Catapult": {
+      "rarity": 3,
+      "name": "Catapult",
+      "class": "Sniper",
+      "subclass": "AoE Sniper",
+      "tags": [
+        "AoE"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "gender": "Female",
+      "birthplace": "Kazimierz",
+      "birthday": [
+        8,
+        8
+      ],
+      "race": "Kuranta",
+      "height": 163,
+      "combat_experience": "1 year",
+      "faction": "Rhodes Island",
+      "subfaction": "Reserve 6",
+      "CN": {
+        "released": 1558609200000,
+        "featured": [],
+        "shop": []
+      },
+      "EN": {
+        "released": 1579690800000,
+        "featured": [],
+        "shop": []
+      }
+    },
+    "Orchid": {
+      "rarity": 3,
+      "name": "Orchid",
+      "class": "Supporter",
+      "subclass": "Slower",
+      "tags": [
+        "Slow"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "gender": "Female",
+      "birthplace": "Columbia",
+      "birthday": [
+        1,
+        15
+      ],
+      "race": "Liberi",
+      "height": 164,
+      "combat_experience": "None",
+      "faction": "Rhodes Island",
+      "subfaction": "Reserve 6",
+      "CN": {
+        "released": 1556622000000,
+        "featured": [],
+        "shop": []
+      },
+      "EN": {
+        "released": 1579172400000,
+        "featured": [],
+        "shop": []
+      }
+    },
+    "Steward": {
+      "rarity": 3,
+      "name": "Steward",
+      "class": "Caster",
+      "subclass": "ST Caster",
+      "tags": [
+        "DPS"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "gender": "Male",
+      "birthplace": "Kjerag",
+      "birthday": [
+        12,
+        24
+      ],
+      "race": "Vulpo",
+      "height": 172,
+      "combat_experience": "Half a year",
+      "faction": "Rhodes Island",
+      "subfaction": "Reserve 4",
+      "CN": {
+        "released": 1556622000000,
+        "featured": [],
+        "shop": []
+      },
+      "EN": {
+        "released": 1579172400000,
+        "featured": [],
+        "shop": []
+      }
+    },
+    "Ansel": {
+      "rarity": 3,
+      "name": "Ansel",
+      "class": "Medic",
+      "subclass": "ST Medic",
+      "tags": [
+        "Healing"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "gender": "Male",
+      "birthplace": "Rim Billiton",
+      "birthday": [
+        1,
+        31
+      ],
+      "race": "Cautus",
+      "height": 163,
+      "combat_experience": "Half a year",
+      "faction": "Rhodes Island",
+      "subfaction": "Reserve 4",
+      "CN": {
+        "released": 1556622000000,
+        "featured": [],
+        "shop": []
+      },
+      "EN": {
+        "released": 1579172400000,
+        "featured": [],
+        "shop": []
+      }
+    },
+    "Hibiscus": {
+      "rarity": 3,
+      "name": "Hibiscus",
+      "class": "Medic",
+      "subclass": "ST Medic",
+      "tags": [
+        "Healing"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "gender": "Female",
+      "birthplace": "Victoria",
+      "birthday": [
+        6,
+        21
+      ],
+      "race": "Sarkaz",
+      "height": 153,
+      "combat_experience": "1 year",
+      "faction": "Rhodes Island",
+      "subfaction": "Reserve 1",
+      "CN": {
+        "released": 1556622000000,
+        "featured": [],
+        "shop": []
+      },
+      "EN": {
+        "released": 1579172400000,
+        "featured": [],
+        "shop": []
+      }
+    },
+    "Lava": {
+      "rarity": 3,
+      "name": "Lava",
+      "class": "Caster",
+      "subclass": "AoE Caster",
+      "tags": [
+        "AoE"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "gender": "Female",
+      "birthplace": "Victoria",
+      "birthday": [
+        6,
+        22
+      ],
+      "race": "Sarkaz",
+      "height": 154,
+      "combat_experience": "Half a year",
+      "faction": "Rhodes Island",
+      "subfaction": "Reserve 1",
+      "CN": {
+        "released": 1556622000000,
+        "featured": [],
+        "shop": []
+      },
+      "EN": {
+        "released": 1579172400000,
+        "featured": [],
+        "shop": []
+      }
+    },
+    "Adnachiel": {
+      "rarity": 3,
+      "name": "Adnachiel",
+      "class": "Sniper",
+      "subclass": "Marksman Sniper",
+      "tags": [
+        "DPS"
+      ],
+      "headhunting": false,
+      "limited": false,
+      "recruitment": false,
+      "gender": "Male",
+      "birthplace": "Laterano",
+      "birthday": [
+        5,
+        30
+      ],
+      "race": "Sankta",
+      "height": 171,
+      "combat_experience": "Half a year",
+      "faction": "Rhodes Island",
+      "subfaction": "Reserve 4",
+      "CN": {
+        "released": 1556622000000,
+        "featured": [],
+        "shop": []
+      },
+      "EN": {
+        "released": 1579172400000,
+        "featured": [],
+        "shop": []
+      }
+    },
+    "Kroos": {
+      "rarity": 3,
+      "name": "Kroos",
+      "class": "Sniper",
+      "subclass": "Marksman Sniper",
+      "tags": [
+        "DPS"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "gender": "Female",
+      "birthplace": "Rim Billiton",
+      "birthday": [
+        11,
+        22
+      ],
+      "race": "Cautus",
+      "height": 154,
+      "combat_experience": "1 year",
+      "faction": "Rhodes Island",
+      "subfaction": "Reserve 1",
+      "CN": {
+        "released": 1556622000000,
+        "featured": [],
+        "shop": []
+      },
+      "EN": {
+        "released": 1579172400000,
+        "featured": [],
+        "shop": []
+      }
+    },
+    "Beagle": {
+      "rarity": 3,
+      "name": "Beagle",
+      "class": "Defender",
+      "subclass": "Normal Defender",
+      "tags": [
+        "Defense"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "gender": "Female",
+      "birthplace": "Bolívar",
+      "birthday": [
+        3,
+        2
+      ],
+      "race": "Perro",
+      "height": 154,
+      "combat_experience": "1 year",
+      "faction": "Rhodes Island",
+      "subfaction": "Reserve 1",
+      "CN": {
+        "released": 1556622000000,
+        "featured": [],
+        "shop": []
+      },
+      "EN": {
+        "released": 1579172400000,
+        "featured": [],
+        "shop": []
+      }
+    },
+    "Cardigan": {
+      "rarity": 3,
+      "name": "Cardigan",
+      "class": "Defender",
+      "subclass": "Normal Defender",
+      "tags": [
+        "Defense"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "gender": "Female",
+      "birthplace": "Leithanien",
+      "birthday": [
+        8,
+        2
+      ],
+      "race": "Perro",
+      "height": 156,
+      "combat_experience": "Half a year",
+      "faction": "Rhodes Island",
+      "subfaction": "Reserve 4",
+      "CN": {
+        "released": 1556622000000,
+        "featured": [],
+        "shop": []
+      },
+      "EN": {
+        "released": 1579172400000,
+        "featured": [],
+        "shop": []
+      }
+    },
+    "Melantha": {
+      "rarity": 3,
+      "name": "Melantha",
+      "class": "Guard",
+      "subclass": "Dreadnought Guard",
+      "tags": [
+        "DPS",
+        "Survival"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "gender": "Female",
+      "birthplace": "Victoria",
+      "birthday": [
+        3,
+        19
+      ],
+      "race": "Feline",
+      "height": 161,
+      "combat_experience": "Half a year",
+      "faction": "Rhodes Island",
+      "subfaction": "Reserve 4",
+      "CN": {
+        "released": 1556622000000,
+        "featured": [],
+        "shop": []
+      },
+      "EN": {
+        "released": 1579172400000,
+        "featured": [],
+        "shop": []
+      }
+    },
+    "Plume": {
+      "rarity": 3,
+      "name": "Plume",
+      "class": "Vanguard",
+      "subclass": "Charger Vanguard",
+      "tags": [
+        "DPS",
+        "DP-Recovery"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "gender": "Female",
+      "birthplace": "Laterano",
+      "birthday": [
+        10,
+        28
+      ],
+      "race": "Liberi",
+      "height": 158,
+      "combat_experience": "1 year",
+      "faction": "Laterano",
+      "CN": {
+        "released": 1556622000000,
+        "featured": [],
+        "shop": []
+      },
+      "EN": {
+        "released": 1579172400000,
+        "featured": [],
+        "shop": []
+      }
+    },
+    "Vanilla": {
+      "rarity": 3,
+      "name": "Vanilla",
+      "class": "Vanguard",
+      "subclass": "Pioneer Vanguard",
+      "tags": [
+        "DP-Recovery"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "gender": "Female",
+      "birthplace": "Vouivre",
+      "birthday": [
+        2,
+        16
+      ],
+      "race": "Vouivre",
+      "height": 172,
+      "combat_experience": "1 year",
+      "faction": "Columbia",
+      "subfaction": "Blacksteel",
+      "CN": {
+        "released": 1556622000000,
+        "featured": [],
+        "shop": []
+      },
+      "EN": {
+        "released": 1579172400000,
+        "featured": [],
+        "shop": []
+      }
+    },
+    "Fang": {
+      "rarity": 3,
+      "name": "Fang",
+      "class": "Vanguard",
+      "subclass": "Pioneer Vanguard",
+      "tags": [
+        "DP-Recovery"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": true,
+      "gender": "Female",
+      "birthplace": "Kazimierz",
+      "birthday": [
+        12,
+        2
+      ],
+      "race": "Kuranta",
+      "height": 158,
+      "combat_experience": "1 year",
+      "faction": "Rhodes Island",
+      "subfaction": "Reserve 1",
+      "CN": {
+        "released": 1556622000000,
+        "featured": [],
+        "shop": []
+      },
+      "EN": {
+        "released": 1579172400000,
+        "featured": [],
+        "shop": []
+      }
+    },
+    "12F": {
+      "rarity": 2,
+      "name": "12F",
+      "class": "Caster",
+      "subclass": "AoE Caster",
+      "tags": [
+        "Starter"
+      ],
+      "headhunting": false,
+      "limited": false,
+      "recruitment": false,
+      "gender": "Male",
+      "birthplace": "Unknown",
+      "birthday": [
+        3,
+        3
+      ],
+      "race": "Savra",
+      "height": 181,
+      "combat_experience": "5 years",
+      "faction": "Rhodes Island",
+      "CN": {
+        "released": 1556622000000,
+        "featured": [],
+        "shop": []
+      },
+      "EN": {
+        "released": 1579172400000,
+        "featured": [],
+        "shop": []
+      }
+    },
+    "Durin": {
+      "rarity": 2,
+      "name": "Durin",
+      "class": "Caster",
+      "subclass": "ST Caster",
+      "tags": [
+        "Starter"
+      ],
+      "headhunting": false,
+      "limited": false,
+      "recruitment": false,
+      "gender": "Female",
+      "birthplace": "Undisclosed",
+      "birthday": [
+        12,
+        15
+      ],
+      "race": "Durin",
+      "height": 131,
+      "combat_experience": "2 years",
+      "faction": "Rhodes Island",
+      "subfaction": "Action 4",
+      "CN": {
+        "released": 1556622000000,
+        "featured": [],
+        "shop": []
+      },
+      "EN": {
+        "released": 1579172400000,
+        "featured": [],
+        "shop": []
+      }
+    },
+    "Rangers": {
+      "rarity": 2,
+      "name": "Rangers",
+      "class": "Sniper",
+      "subclass": "Marksman Sniper",
+      "tags": [
+        "Starter"
+      ],
+      "headhunting": false,
+      "limited": false,
+      "recruitment": false,
+      "gender": "Male",
+      "birthplace": "Undisclosed",
+      "birthday": [
+        7,
+        22
+      ],
+      "race": "Savra",
+      "height": 179,
+      "combat_experience": "5 years",
+      "faction": "Rhodes Island",
+      "subfaction": "Action 4",
+      "CN": {
+        "released": 1556622000000,
+        "featured": [],
+        "shop": []
+      },
+      "EN": {
+        "released": 1579172400000,
+        "featured": [],
+        "shop": []
+      }
+    },
+    "Noir Corne": {
+      "rarity": 2,
+      "name": "Noir Corne",
+      "class": "Defender",
+      "subclass": "Normal Defender",
+      "tags": [
+        "Starter"
+      ],
+      "headhunting": false,
+      "limited": false,
+      "recruitment": false,
+      "gender": "Male",
+      "birthplace": "The Far East",
+      "birthday": [
+        8,
+        30
+      ],
+      "race": "Oni",
+      "height": 180,
+      "combat_experience": "8 years",
+      "faction": "Rhodes Island",
+      "subfaction": "Action 4",
+      "CN": {
+        "released": 1556622000000,
+        "featured": [],
+        "shop": []
+      },
+      "EN": {
+        "released": 1579172400000,
+        "featured": [],
+        "shop": []
+      }
+    },
+    "Yato": {
+      "rarity": 2,
+      "name": "Yato",
+      "class": "Vanguard",
+      "subclass": "Pioneer Vanguard",
+      "tags": [
+        "Starter"
+      ],
+      "headhunting": false,
+      "limited": false,
+      "recruitment": false,
+      "gender": "Female",
+      "birthplace": "The Far East",
+      "birthday": [
+        5,
+        14
+      ],
+      "race": "Oni",
+      "height": 161,
+      "combat_experience": "8 years",
+      "faction": "Rhodes Island",
+      "subfaction": "Action 4",
+      "CN": {
+        "released": 1556622000000,
+        "featured": [],
+        "shop": []
+      },
+      "EN": {
+        "released": 1579172400000,
+        "featured": [],
+        "shop": []
+      }
+    },
+    "THRM-EX": {
+      "rarity": 1,
+      "name": "THRM-EX",
+      "class": "Specialist",
+      "subclass": "Fast-Redeploy",
+      "tags": [
+        "Nuker",
+        "Robot"
+      ],
+      "headhunting": false,
+      "limited": false,
+      "recruitment": false,
+      "gender": "Male",
+      "birthday": [
+        2,
+        15
+      ],
+      "height": 160,
+      "combat_experience": "Less than 1 year",
+      "faction": "Rhodes Island",
+      "CN": {
+        "released": 1588330800000,
+        "featured": [],
+        "shop": []
+      },
+      "EN": {
+        "released": 1609326000000,
+        "featured": [],
+        "shop": []
+      },
+      "race": "N/A"
+    },
+    "Castle-3": {
+      "rarity": 1,
+      "name": "Castle-3",
+      "class": "Guard",
+      "subclass": "Dreadnought Guard",
+      "tags": [
+        "Support",
+        "Robot"
+      ],
+      "headhunting": false,
+      "limited": false,
+      "recruitment": false,
+      "gender": "Male",
+      "birthday": [
+        12,
+        10
+      ],
+      "height": 167,
+      "combat_experience": "3 years",
+      "faction": "Rhodes Island",
+      "CN": {
+        "released": 1556622000000,
+        "featured": [],
+        "shop": []
+      },
+      "EN": {
+        "released": 1579172400000,
+        "featured": [],
+        "shop": []
+      },
+      "race": "N/A"
+    },
+    "Lancet-2": {
+      "rarity": 1,
+      "name": "Lancet-2",
+      "class": "Medic",
+      "subclass": "ST Medic",
+      "tags": [
+        "Healing",
+        "Robot"
+      ],
+      "headhunting": false,
+      "limited": false,
+      "recruitment": false,
+      "gender": "Female",
+      "birthday": [
+        5,
+        12
+      ],
+      "height": 149,
+      "combat_experience": "2 years",
+      "faction": "Rhodes Island",
+      "CN": {
+        "released": 1556622000000,
+        "featured": [],
+        "shop": []
+      },
+      "EN": {
+        "released": 1579172400000,
+        "featured": [],
+        "shop": []
+      },
+      "race": "N/A"
     }
   },
   "banners": {

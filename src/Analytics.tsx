@@ -9,11 +9,33 @@ import {
   ReleaseInfo,
   HistoricalNumericDataPoint,
   HistoricalAnnotatedNumericDataPoint,
+  AggregateData,
   HistoricalAggregateDataPoint
 } from './AKData';
 import { daysSince } from './util';
 import { useAKData } from './DataContext';
 
+function BannerWaitChart() {
+  let akData = useAKData();
+  return (
+    <>
+    6* banner featured interval
+    </>
+  );
+}
+
+function Banner() {
+  return (
+   <div className="section">
+      <div className="title">
+        Banner 
+      </div>
+      <div className="block">
+        <BannerWaitChart />
+      </div>
+    </div>
+  );
+}
 
 type BannerDurationChartParams = {
   debutBannerDurationData: HistoricalAnnotatedNumericDataPoint[],
@@ -292,17 +314,16 @@ function CertShop(params: CertShopParams) {
 
 type OperatorDemographyParams = {
   genderData: HistoricalAggregateDataPoint[],
-  raceData: HistoricalAggregateDataPoint[],
-  factionData: HistoricalAggregateDataPoint[]
+  raceData: AggregateData,
+  factionData: AggregateData
 };
 
-function transformAggregateDataForPie(data: HistoricalAggregateDataPoint[], sliceLimit: number = 12) {
+function transformAggregateDataForPie(data: AggregateData, sliceLimit: number = 12) {
   if (data.length === 0) {
     return [];
   }
-  let latestDataPoint = data[data.length - 1];
-  var slices = Object.keys(latestDataPoint.data)
-      .map((key) => { return { label: key, value: latestDataPoint.data[key] }})
+  var slices = Object.keys(data)
+      .map((key) => { return { label: key, value: data[key] }})
       .sort((s1, s2) => { return s1.value < s2.value ? 1 : -1; });
 
   if (slices.length > sliceLimit) {
@@ -323,7 +344,8 @@ function transformAggregateDataForLineOption(dataPoints: HistoricalAggregateData
 }
 
 function OperatorDemography(params: OperatorDemographyParams) {
-  let genderPieData = transformAggregateDataForPie(params.genderData);
+  let latestGenderData = params.genderData[params.genderData.length - 1].data;
+  let genderPieData = transformAggregateDataForPie(latestGenderData);
   let genderPieOptions = {
     title: {
       text: 'Gender Distribution'
@@ -429,7 +451,8 @@ export function AnalyticsPage(params: AnalyticsPageParams) {
               nonDebutBannerDurationData={ params.akdata.nonDebutBannerDuration(Region.EN) }
               certShop5StarDelayData={ params.akdata.certificateShop5StarDelay() }
               certShop6StarDelayData={ params.akdata.certificateShop6StarDelay() } />
-    <OperatorDemography genderData={ params.akdata.historicalGenderData() } raceData={ params.akdata.historicalRaceData() } factionData={ params.akdata.historicalFactionData() } />
+    <Banner />
+    <OperatorDemography genderData={ params.akdata.historicalGenderData() } raceData={ params.akdata.raceData() } factionData={ params.akdata.factionData() } />
     </>
   );
 }
