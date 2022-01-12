@@ -18,6 +18,7 @@ export type Operator = {
   class: string;
   rarity: number;
   gender: string;
+  height: number;
   race: string;
   headhunting: boolean;
   recruitment: boolean;
@@ -64,6 +65,8 @@ export type HistoricalAnnotatedNumericDataPoint = HistoricalNumericDataPoint & {
 export type AggregateData = { [id: string]: number }
 
 export type AggregateData2D = { [id: string]: AggregateData }
+
+export type HeightDatum = { height: number }
 
 export type HistoricalAggregateDataPoint = {
   time: Date,
@@ -182,6 +185,12 @@ export class AKData {
 
   historicalGenderData(): HistoricalAggregateDataPoint[] {
     return this.historicalAggregateData(op => op.gender);
+  }
+
+  heightData(): HeightDatum[] {
+    return Object.values(this._operators).filter(op => op.height).map(op => {
+      return { height: op.height };
+    });
   }
 
   raceData(): AggregateData {

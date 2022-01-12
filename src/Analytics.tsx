@@ -9,6 +9,7 @@ import {
   ReleaseInfo,
   HistoricalNumericDataPoint,
   HistoricalAnnotatedNumericDataPoint,
+  HeightDatum,
   AggregateData,
   AggregateData2D,
   HistoricalAggregateDataPoint
@@ -320,7 +321,8 @@ type OperatorDemographyParams = {
   rarityData: HistoricalAggregateDataPoint[],
   classData: HistoricalAggregateDataPoint[],
   rarityGenderData: AggregateData2D,
-  classGenderData: AggregateData2D
+  classGenderData: AggregateData2D,
+  heightData: HeightDatum[]
 };
 
 function transformAggregateDataForPie(data: AggregateData, sliceLimit: number = 12) {
@@ -540,11 +542,27 @@ function OperatorDemography(params: OperatorDemographyParams) {
     ]
   };
 
+  let heightHistogramOptions = {
+    title: {
+      text: 'Operator Heights'
+    },
+    data: params.heightData,
+    series: [
+      {
+        type: 'histogram',
+        xKey: 'height',
+        xKeyName: 'Height'
+      }
+    ],
+    legend: { enabled: false }
+  };
+
   return (
     <div className="section">
       <div className="title">
-        Demographics 
+        Operator Demographics 
       </div>
+      <div className="title is-4">Classification</div>
       <div className="columns is-desktop">
         <div className="column is-full-tablet is-half-desktop">
           <div className="box" style={{height: 500}}>
@@ -558,17 +576,19 @@ function OperatorDemography(params: OperatorDemographyParams) {
         </div>
       </div>
       <div className="columns is-desktop">
-        <div className="column is-full-tablet is-one-third-desktop">
+        <div className="column is-full-tablet is-half-desktop">
           <div className="box" style={{height: 500}}>
-            <AgChartsReact options={ factionPieOptions } />
+            <AgChartsReact options={ rarityLineOptions } />
           </div>
         </div>
-        <div className="column is-full-tablet is-one-third-desktop">
+        <div className="column is-full-tablet is-half-desktop">
           <div className="box" style={{height: 500}}>
-            <AgChartsReact options={ racePieOptions } />
+            <AgChartsReact options={ classLineOptions } />
           </div>
         </div>
       </div>
+
+      <div className="title is-4">Gender</div>
       <div className="columns is-desktop">
         <div className="column is-full-tablet is-one-third-desktop">
           <div className="box" style={{height: 500}}>
@@ -586,14 +606,31 @@ function OperatorDemography(params: OperatorDemographyParams) {
           </div>
         </div>
       </div>
-      <div className="box" style={{height: 500}}>
-        <AgChartsReact options={ rarityLineOptions } />
+      <div className="columns is-desktop">
+        <div className="column is-full-tablet is-full">
+          <div className="box" style={{height: 500}}>
+            <AgChartsReact options={ genderLineOptions } />
+          </div>
+        </div>
       </div>
-      <div className="box" style={{height: 500}}>
-        <AgChartsReact options={ genderLineOptions } />
-      </div>
-      <div className="box" style={{height: 500}}>
-        <AgChartsReact options={ classLineOptions } />
+
+      <div className="title is-4">Profile</div>
+      <div className="columns is-desktop">
+        <div className="column is-full-tablet is-one-third-desktop">
+          <div className="box" style={{height: 500}}>
+            <AgChartsReact options={ factionPieOptions } />
+          </div>
+        </div>
+        <div className="column is-full-tablet is-one-third-desktop">
+          <div className="box" style={{height: 500}}>
+            <AgChartsReact options={ racePieOptions } />
+          </div>
+        </div>
+        <div className="column is-full-tablet is-one-third-desktop">
+          <div className="box" style={{height: 500}}>
+            <AgChartsReact options={ heightHistogramOptions } />
+          </div>
+        </div>
       </div>
 
     </div>
@@ -617,7 +654,8 @@ export function AnalyticsPage(params: AnalyticsPageParams) {
                         rarityData={ params.akdata.rarityData() }
                         classData={ params.akdata.classData() }
                         rarityGenderData={ params.akdata.rarityGenderData() }
-                        classGenderData={ params.akdata.classGenderData() } />
+                        classGenderData={ params.akdata.classGenderData() }
+                        heightData={ params.akdata.heightData() } />
     </>
   );
 }
