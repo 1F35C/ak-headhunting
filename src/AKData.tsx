@@ -132,8 +132,8 @@ export class AKData {
   }
 
   debutBannerDuration(region: Region): HistoricalAnnotatedNumericDataPoint[] {
-    let banners = this._banners[region].filter((b) => b.isRotating && b.shopDebut6Star.length > 0);
-    return banners.map((b) => {
+    let banners = this._banners[region].filter(b => b.isRotating && b.shopDebut6Star.length > 0);
+    return banners.map(b => {
       return {
         time: new Date(b.start),
         value: unixTimeDeltaToDays(b.end - b.start),
@@ -143,8 +143,8 @@ export class AKData {
   }
 
   nonDebutBannerDuration(region: Region): HistoricalNumericDataPoint[] {
-    let banners = this._banners[region].filter((b) => b.isRotating && b.shopDebut6Star.length === 0);
-    return banners.map((b) => {
+    let banners = this._banners[region].filter(b => b.isRotating && b.shopDebut6Star.length === 0);
+    return banners.map(b => {
       return {
         time: new Date(b.start),
         value: unixTimeDeltaToDays(b.end - b.start),
@@ -154,13 +154,11 @@ export class AKData {
 
   certificateShop5StarDelay(): HistoricalNumericDataPoint[] {
     let operators = Object.values(this._operators)
-        .filter((op) => {
-          return op.EN.shop.length > 0 && op.rarity === 5;
-        })
+        .filter(op => op.EN.shop.length > 0 && op.rarity === 5)
         .sort((op1, op2) => {
           return op1.EN.shop[0].start > op2.EN.shop[0].start ? 1 : -1;
         });
-    return operators.map((op) => {
+    return operators.map(op => {
       return {
         time: new Date(op.EN.shop[0].start),
         value: unixTimeDeltaToDays(op.EN.shop[0].start - op.EN.released)
@@ -170,13 +168,11 @@ export class AKData {
 
   certificateShop6StarDelay(): HistoricalNumericDataPoint[] {
     let operators = Object.values(this._operators)
-        .filter((op) => {
-          return op.EN.shop.length > 0 && op.rarity === 6;
-        })
+        .filter(op => op.EN.shop.length > 0 && op.rarity === 6)
         .sort((op1, op2) => {
           return op1.EN.shop[0].start > op2.EN.shop[0].start ? 1 : -1;
         });
-    return operators.map((op) => {
+    return operators.map(op => {
       return {
         time: new Date(op.EN.shop[0].start),
         value: unixTimeDeltaToDays(op.EN.shop[0].start - op.EN.released)
@@ -185,41 +181,43 @@ export class AKData {
   }
 
   historicalGenderData(): HistoricalAggregateDataPoint[] {
-    return this.historicalAggregateData((op) => { return op.gender });
+    return this.historicalAggregateData(op => op.gender);
   }
 
   raceData(): AggregateData {
-    return this.aggregateData((op) => { return op.race });
+    return this.aggregateData(op => op.race);
   }
 
   factionData(): AggregateData {
-    return this.aggregateData((op) => { return op.faction });
+    return this.aggregateData(op => op.faction);
   }
   
   classData(): HistoricalAggregateDataPoint[] {
-    return this.historicalAggregateData((op) => { return op.class });
+    return this.historicalAggregateData(op => op.class);
   }
 
   rarityData(): HistoricalAggregateDataPoint[] {
-    return this.historicalAggregateData((op) => { return op.rarity.toString() });
+    return this.historicalAggregateData(op => op.rarity.toString());
   }
 
   rarityGenderData(): AggregateData2D {
-    return this.aggregateData2D((op) => { return op.rarity.toString() }, op => op.gender);
+    return this.aggregateData2D(op => op.rarity.toString(), op => op.gender);
   }
 
   classGenderData(): AggregateData2D {
-    return this.aggregateData2D((op) => { return op.class }, op => op.gender);
+    return this.aggregateData2D(op => op.class, op => op.gender);
   }
 
   historicalAggregateData(func: (op: Operator) => string): HistoricalAggregateDataPoint[] {
     let operators = Object.values(this._operators).sort((op1, op2) => {
       return op1.EN.released > op2.EN.released ? 1 : -1;
     });
+
     let result: HistoricalAggregateDataPoint[] = [{
       time: new Date(operators[0].EN.released),
       data: { [func(operators[0])] : 1 }
     }];
+
     let lastReleased = operators[0].EN.released;
     for (let idx = 1; idx < operators.length; ++idx) {
       if (operators[idx].EN.released !== lastReleased) {

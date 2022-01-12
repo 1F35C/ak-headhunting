@@ -328,7 +328,7 @@ function transformAggregateDataForPie(data: AggregateData, sliceLimit: number = 
     return [];
   }
   var slices = Object.keys(data)
-      .map((key) => { return { label: key, value: data[key] }})
+      .map(key => { return { label: key, value: data[key] }})
       .sort((s1, s2) => { return s1.value < s2.value ? 1 : -1; });
 
   if (slices.length > sliceLimit) {
@@ -339,8 +339,8 @@ function transformAggregateDataForPie(data: AggregateData, sliceLimit: number = 
 }
 
 function transformAggregateDataForLineOption(dataPoints: HistoricalAggregateDataPoint[]) {
-  let data = dataPoints.map((dp) => { return { ...dp.data, time: dp.time }; });
-  let series = Object.keys(dataPoints[data.length - 1].data).map((key) => { return {xKey: 'time', yKey: key }; });
+  let data = dataPoints.map(dp => { return { ...dp.data, time: dp.time }; });
+  let series = Object.keys(dataPoints[data.length - 1].data).map(key => { return {xKey: 'time', yKey: key }; });
   return {
     data: data,
     series: series 

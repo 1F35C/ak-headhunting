@@ -54,13 +54,13 @@ function timeIntervalValueFormatter(params: ValueFormatterParams): string {
 }
 
 function getImageCellRenderer(context: string, className: string="ak-icon"): (params: ICellRendererParams) => string {
-  return (params) => {
+  return params => {
     return '<img class="' + className + '" src="' + getImage(context, params.value) + '" title="' + params.value + '"/>';
   };
 }
 
 function getImageTextCellRenderer(context: string, className: string="ak-icon"): (params: ICellRendererParams) => string {
-  return (params) => {
+  return params => {
     let imgSrc = null;
     try {
       imgSrc = getImage(context, params.value);
@@ -97,7 +97,7 @@ export function DataTablePage(params: DataTablePageParams) {
   const [featuredData, setFeaturedData] = useState<FeaturedTableData[]>([]);
 
   useEffect(() => {
-    let featured = Object.values(params.operators).map((op) => {
+    let featured = Object.values(params.operators).map(op => {
       let lastFeatured = (op.EN && op.EN.featured.length > 0) ? daysSince(op.EN.featured[op.EN.featured.length - 1].end) : Infinity;
       let timesFeatured = (op.EN) ? op.EN.featured.length : 0;
       let lastInShop = (op.EN && op.EN.shop.length > 0) ? daysSince(op.EN.shop[op.EN.shop.length - 1].end) : Infinity;
