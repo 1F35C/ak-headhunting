@@ -6,7 +6,6 @@ import { getImage, Operator, OperatorDict } from './AKData';
 import 'ag-grid-community/dist/styles/ag-grid.css';
 import 'ag-grid-community/dist/styles/ag-theme-alpine.css';
 
-
 const CLASSES = "classes";
 const FACTIONS = "factions";
 const PORTRAITS = "portraits";
@@ -18,6 +17,7 @@ type FeaturedTableData = {
   faction: string;
   gender: string;
   subfaction: string;
+  released: number;
   daysSinceFeatured: number;
   timesFeatured: number;
   averageFeaturedInterval: number;
@@ -36,18 +36,21 @@ function daysSince(unixTime: number): number {
   return days(Date.now() - unixTime)
 }
 
+function dateValueFormatter(params:ValueFormatterParams): string {
+  const date = new Date(params.value);
+  return date.getFullYear() + "-" + String(date.getMonth() + 1).padStart(2, '0') + "-" + String(date.getDate()).padStart(2, '0');
+}
+
 function daysSinceValueFormatter(params: ValueFormatterParams): string {
   if (params.value < 0) { return "Now"; };
   if (!isFinite(params.value)) { return "Never"; };
-  if (params.value === 1) { return params.value + "Day"; }
-  return params.value + " Days";
+  return params.value + "d";
 }
 
 function timeIntervalValueFormatter(params: ValueFormatterParams): string {
   if (params.value < 0) { return "Now"; };
   if (!isFinite(params.value)) { return "N/A"; };
-  if (params.value === 1) { return params.value + "Day"; }
-  return params.value + " Days";
+  return params.value + "d";
 }
 
 function getImageCellRenderer(context: string, className: string="ak-icon"): (params: ICellRendererParams) => string {
@@ -106,6 +109,7 @@ export function DataTablePage(params: DataTablePageParams) {
         gender: op.gender,
         faction: op.faction,
         subfaction: op.subfaction,
+        released: op.EN.released,
         daysSinceFeatured: lastFeatured,
         timesFeatured: timesFeatured,
         averageFeaturedInterval: getAverageFeaturedInterval(op),
@@ -148,6 +152,7 @@ export function DataTablePage(params: DataTablePageParams) {
             <AgGridColumn field="gender" sortable={ true } ></AgGridColumn>
             <AgGridColumn field="faction" minWidth={ 200 } sortable={ true } cellRenderer={ getImageTextCellRenderer(FACTIONS, "ak-icon-inverted") }></AgGridColumn>
             <AgGridColumn field="subfaction" minWidth={ 200 } sortable={ true } cellRenderer={ getImageTextCellRenderer(FACTIONS, "ak-icon-inverted") } ></AgGridColumn>
+            <AgGridColumn field="released" sortable={ true } valueFormatter={ dateValueFormatter }></AgGridColumn>
             <AgGridColumn field="daysSinceFeatured" sortable={ true } valueFormatter={ daysSinceValueFormatter }></AgGridColumn>
             <AgGridColumn field="timesFeatured" sortable={ true }></AgGridColumn>
             <AgGridColumn field="averageFeaturedInterval" sortable={ true } valueFormatter={ timeIntervalValueFormatter }></AgGridColumn>

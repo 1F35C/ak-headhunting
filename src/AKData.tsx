@@ -63,6 +63,8 @@ export type HistoricalAnnotatedNumericDataPoint = HistoricalNumericDataPoint & {
 
 export type AggregateData = { [id: string]: number }
 
+export type AggregateData2D = { [id: string]: AggregateData }
+
 export type HistoricalAggregateDataPoint = {
   time: Date,
   data: AggregateData
@@ -193,6 +195,22 @@ export class AKData {
   factionData(): AggregateData {
     return this.aggregateData((op) => { return op.faction });
   }
+  
+  classData(): HistoricalAggregateDataPoint[] {
+    return this.historicalAggregateData((op) => { return op.class });
+  }
+
+  rarityData(): HistoricalAggregateDataPoint[] {
+    return this.historicalAggregateData((op) => { return op.rarity.toString() });
+  }
+
+  rarityGenderData(): AggregateData2D {
+    return this.aggregateData2D((op) => { return op.rarity.toString() }, op => op.gender);
+  }
+
+  classGenderData(): AggregateData2D {
+    return this.aggregateData2D((op) => { return op.class }, op => op.gender);
+  }
 
   historicalAggregateData(func: (op: Operator) => string): HistoricalAggregateDataPoint[] {
     let operators = Object.values(this._operators).sort((op1, op2) => {
@@ -229,6 +247,23 @@ export class AKData {
         result[key]++;
       } else {
         result[key] = 1;
+      }
+    });
+    return result;
+  }
+
+  aggregateData2D(func1: (op: Operator) => string, func2: (op: Operator) => string): AggregateData2D {
+    let result: AggregateData2D = {};
+    Object.values(this._operators).forEach(op => {
+      let key1 = func1(op);
+      if (! (key1 in result)) {
+        result[key1] = {};
+      }
+      let key2 = func2(op);
+      if (key2 in result[key1]) {
+        result[key1][key2]++;
+      } else {
+        result[key1][key2] = 1;
       }
     });
     return result;

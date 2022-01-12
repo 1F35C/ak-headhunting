@@ -10,6 +10,7 @@ import {
   HistoricalNumericDataPoint,
   HistoricalAnnotatedNumericDataPoint,
   AggregateData,
+  AggregateData2D,
   HistoricalAggregateDataPoint
 } from './AKData';
 import { daysSince } from './util';
@@ -315,7 +316,11 @@ function CertShop(params: CertShopParams) {
 type OperatorDemographyParams = {
   genderData: HistoricalAggregateDataPoint[],
   raceData: AggregateData,
-  factionData: AggregateData
+  factionData: AggregateData,
+  rarityData: HistoricalAggregateDataPoint[],
+  classData: HistoricalAggregateDataPoint[],
+  rarityGenderData: AggregateData2D,
+  classGenderData: AggregateData2D
 };
 
 function transformAggregateDataForPie(data: AggregateData, sliceLimit: number = 12) {
@@ -336,14 +341,67 @@ function transformAggregateDataForPie(data: AggregateData, sliceLimit: number = 
 function transformAggregateDataForLineOption(dataPoints: HistoricalAggregateDataPoint[]) {
   let data = dataPoints.map((dp) => { return { ...dp.data, time: dp.time }; });
   let series = Object.keys(dataPoints[data.length - 1].data).map((key) => { return {xKey: 'time', yKey: key }; });
-  let result = {
+  return {
     data: data,
     series: series 
   };
-  return result;
+}
+
+function transformAggregateData2DForBar(data: AggregateData2D, yKeys: string[] = []) {
+  if (yKeys.length === 0) {
+    let yKeySet = new Set<string>();
+    Object.keys(data).forEach(key => {
+      Object.keys(data[key]).forEach(subkey => {
+        yKeySet.add(subkey);
+      });
+    });
+    yKeys = Array.from(yKeySet);
+  }
+
+  let flattened = Object.keys(data).map(key => {
+    let entry: { [id:string]: any } = {
+      'key': key,
+      ...data[key]
+    };
+    yKeys.forEach(yKey => {
+      if (! (yKey in entry)) {
+        entry[yKey] = 0;
+      }
+    });
+    return entry;
+  });
+
+  return {
+    data: flattened,
+    series: [
+      {
+        type: 'column',
+        xKey: 'key',
+        yKeys: Array.from(yKeys)
+      }
+    ]
+  };
 }
 
 function OperatorDemography(params: OperatorDemographyParams) {
+  let latestRarityData = params.rarityData[params.rarityData.length - 1].data;
+  let rarityPieData = transformAggregateDataForPie(latestRarityData);
+  let rarityPieOptions = {
+    title: {
+      text: 'Rarity Distribution'
+    },
+    data: rarityPieData,
+    series: [
+      {
+        type: 'pie',
+        angleKey: 'value',
+        labelKey: 'label',
+        innerRadiusOffset: -30
+      }
+    ]
+  };
+
+
   let latestGenderData = params.genderData[params.genderData.length - 1].data;
   let genderPieData = transformAggregateDataForPie(latestGenderData);
   let genderPieOptions = {
@@ -393,10 +451,78 @@ function OperatorDemography(params: OperatorDemographyParams) {
     ]
   };
 
+  let latestClassData = params.classData[params.classData.length - 1].data;
+  let classPieData = transformAggregateDataForPie(latestClassData);
+  let classPieOptions = {
+    title: {
+      text: 'Class Distribution'
+    },
+    data: classPieData,
+    series: [
+      {
+        type: 'pie',
+        angleKey: 'value',
+        labelKey: 'label',
+        innerRadiusOffset: -30
+      }
+    ]
+
+  };
+
+  let rarityGenderBarChartOptions = {
+    ...transformAggregateData2DForBar(params.rarityGenderData, ['Female', 'Male', 'Conviction']),
+    title: {
+      text: 'Operator Genders by Rarity'
+    }
+  };
+
+  let classGenderBarChartOptions = {
+    ...transformAggregateData2DForBar(params.classGenderData, ['Female', 'Male', 'Conviction']),
+    title: {
+      text: 'Operator Genders by Class'
+    }
+  };
+
+  let rarityLineOptions = {
+    ...transformAggregateDataForLineOption(params.rarityData),
+    title: {
+      text: 'Operators by Rarity over Time'
+    },
+    axes: [
+      {
+        type: 'time',
+        position: 'bottom',
+        tick: { count: agCharts.time.month.every(3) }
+      },
+      {
+        type: 'number',
+        position: 'left'
+      }
+    ]
+  };
+
   let genderLineOptions = {
     ...transformAggregateDataForLineOption(params.genderData),
     title: {
-      text: 'Number of Operators by Gender'
+      text: 'Operators by Gender over Time'
+    },
+    axes: [
+      {
+        type: 'time',
+        position: 'bottom',
+        tick: { count: agCharts.time.month.every(3) }
+      },
+      {
+        type: 'number',
+        position: 'left'
+      }
+    ]
+  };
+
+  let classLineOptions = {
+    ...transformAggregateDataForLineOption(params.classData),
+    title: {
+      text: 'Operators by Class over Time'
     },
     axes: [
       {
@@ -417,24 +543,54 @@ function OperatorDemography(params: OperatorDemographyParams) {
         Demographics 
       </div>
       <div className="columns is-desktop">
+        <div className="column is-full-tablet is-half-desktop">
+          <div className="box" style={{height: 500}}>
+            <AgChartsReact options={ rarityPieOptions } />
+          </div>
+        </div>
+        <div className="column is-full-tablet is-half-desktop">
+          <div className="box" style={{height: 500}}>
+            <AgChartsReact options={ classPieOptions } />
+          </div>
+        </div>
+      </div>
+      <div className="columns is-desktop">
         <div className="column is-full-tablet is-one-third-desktop">
           <div className="box" style={{height: 500}}>
-            <AgChartsReact options={genderPieOptions} />
+            <AgChartsReact options={ factionPieOptions } />
           </div>
         </div>
         <div className="column is-full-tablet is-one-third-desktop">
           <div className="box" style={{height: 500}}>
-            <AgChartsReact options={racePieOptions} />
+            <AgChartsReact options={ racePieOptions } />
+          </div>
+        </div>
+      </div>
+      <div className="columns is-desktop">
+        <div className="column is-full-tablet is-one-third-desktop">
+          <div className="box" style={{height: 500}}>
+            <AgChartsReact options={ genderPieOptions } />
           </div>
         </div>
         <div className="column is-full-tablet is-one-third-desktop">
           <div className="box" style={{height: 500}}>
-            <AgChartsReact options={factionPieOptions} />
+            <AgChartsReact options={ rarityGenderBarChartOptions } />
+          </div>
+        </div>
+        <div className="column is-full-tablet is-one-third-desktop">
+          <div className="box" style={{height: 500}}>
+            <AgChartsReact options={ classGenderBarChartOptions } />
           </div>
         </div>
       </div>
       <div className="box" style={{height: 500}}>
-        <AgChartsReact options={genderLineOptions} />
+        <AgChartsReact options={ rarityLineOptions } />
+      </div>
+      <div className="box" style={{height: 500}}>
+        <AgChartsReact options={ genderLineOptions } />
+      </div>
+      <div className="box" style={{height: 500}}>
+        <AgChartsReact options={ classLineOptions } />
       </div>
 
     </div>
@@ -452,7 +608,13 @@ export function AnalyticsPage(params: AnalyticsPageParams) {
               certShop5StarDelayData={ params.akdata.certificateShop5StarDelay() }
               certShop6StarDelayData={ params.akdata.certificateShop6StarDelay() } />
     <Banner />
-    <OperatorDemography genderData={ params.akdata.historicalGenderData() } raceData={ params.akdata.raceData() } factionData={ params.akdata.factionData() } />
+    <OperatorDemography genderData={ params.akdata.historicalGenderData() }
+                        raceData={ params.akdata.raceData() }
+                        factionData={ params.akdata.factionData() }
+                        rarityData={ params.akdata.rarityData() }
+                        classData={ params.akdata.classData() }
+                        rarityGenderData={ params.akdata.rarityGenderData() }
+                        classGenderData={ params.akdata.classGenderData() } />
     </>
   );
 }
