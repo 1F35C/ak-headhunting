@@ -338,9 +338,12 @@ function transformAggregateDataForPie(data: AggregateData, sliceLimit: number = 
   return slices;
 }
 
-function transformAggregateDataForLineOption(dataPoints: HistoricalAggregateDataPoint[]) {
+function transformAggregateDataForLineOption(dataPoints: HistoricalAggregateDataPoint[], yKeys: string[] = []) {
   let data = dataPoints.map(dp => { return { ...dp.data, time: dp.time }; });
-  let series = Object.keys(dataPoints[data.length - 1].data).map(key => { return {xKey: 'time', yKey: key }; });
+  if (yKeys.length === 0) {
+    yKeys = Object.keys(dataPoints[data.length - 1].data);
+  }
+  let series = yKeys.map(key => { return {xKey: 'time', yKey: key }; });
   return {
     data: data,
     series: series 
@@ -502,7 +505,7 @@ function OperatorDemography(params: OperatorDemographyParams) {
   };
 
   let genderLineOptions = {
-    ...transformAggregateDataForLineOption(params.genderData),
+    ...transformAggregateDataForLineOption(params.genderData, ['Female', 'Male', 'Conviction']),
     title: {
       text: 'Operators by Gender over Time'
     },
