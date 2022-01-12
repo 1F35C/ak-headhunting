@@ -26,10 +26,6 @@
   border-radius: 6px;
 }
 
-.operator-well {
-  max-width: 1600px;
-}
-
 #operator-card-container {
   overflow-x: visible;
   overflow-y: hidden;
@@ -40,6 +36,10 @@
 
   background-color: #eee;
   border-radius: 6px;
+
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.75rem;
 }
 
 #operator-card-container.grabbing {
