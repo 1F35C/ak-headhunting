@@ -205,6 +205,10 @@ export class AKData {
     return this.historicalAggregateData(op => op.class);
   }
 
+  classRarityData(): AggregateData2D {
+    return this.aggregateData2D(op => op.class, op => op.rarity.toString());
+  }
+
   rarityData(): HistoricalAggregateDataPoint[] {
     return this.historicalAggregateData(op => op.rarity.toString());
   }
