@@ -10,3 +10,7 @@ export function unixTimeDeltaToDays(delta: number): number {
 export function daysSince(unixTime: number): number {
   return Math.floor((Date.now() - unixTime) / TimeUnit.DAY);
 }
+export function getQuarter(unixTime: number): string {
+  const date = new Date(unixTime);
+  return date.getFullYear() + '\'Q ' + (Math.floor(date.getMonth() / 3) + 1);
+}

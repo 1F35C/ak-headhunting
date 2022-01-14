@@ -11,7 +11,8 @@
       ],
       "headhunting": true,
       "limited": false,
-      "recruitment": true,
+      "recruitment": false,
+      "event": false,
       "gender": "Female",
       "birthplace": "Minos",
       "birthday": [
@@ -58,7 +59,8 @@
       ],
       "headhunting": true,
       "limited": false,
-      "recruitment": true,
+      "recruitment": false,
+      "event": false,
       "gender": "Female",
       "birthplace": "Sargon",
       "birthday": [
@@ -106,7 +108,8 @@
       ],
       "headhunting": true,
       "limited": true,
-      "recruitment": true,
+      "recruitment": false,
+      "event": false,
       "gender": "Female",
       "birthplace": "Ægir",
       "birthday": [
@@ -149,7 +152,8 @@
       ],
       "headhunting": true,
       "limited": false,
-      "recruitment": true,
+      "recruitment": false,
+      "event": false,
       "gender": "Female",
       "birthplace": "Rhodes Island",
       "birthday": null,
@@ -195,6 +199,7 @@
       "headhunting": false,
       "limited": false,
       "recruitment": false,
+      "event": true,
       "gender": "Female",
       "birthplace": "Ægir",
       "birthday": [
@@ -227,7 +232,8 @@
       ],
       "headhunting": true,
       "limited": false,
-      "recruitment": true,
+      "recruitment": false,
+      "event": false,
       "gender": "Male",
       "birthplace": "Columbia",
       "birthday": [
@@ -273,7 +279,8 @@
       ],
       "headhunting": true,
       "limited": true,
-      "recruitment": true,
+      "recruitment": false,
+      "event": false,
       "gender": "Female",
       "birthplace": "Unknown",
       "birthday": [
@@ -317,7 +324,8 @@
       ],
       "headhunting": true,
       "limited": true,
-      "recruitment": true,
+      "recruitment": false,
+      "event": false,
       "gender": "Female",
       "birthplace": "Yen",
       "birthday": [
@@ -361,7 +369,8 @@
       ],
       "headhunting": true,
       "limited": false,
-      "recruitment": true,
+      "recruitment": false,
+      "event": false,
       "gender": "Female",
       "birthplace": "Higashi",
       "birthday": [
@@ -415,7 +424,8 @@
       ],
       "headhunting": true,
       "limited": false,
-      "recruitment": true,
+      "recruitment": false,
+      "event": false,
       "gender": "Female",
       "birthplace": "Laterano",
       "birthday": [
@@ -470,7 +480,8 @@
       ],
       "headhunting": true,
       "limited": false,
-      "recruitment": true,
+      "recruitment": false,
+      "event": false,
       "gender": "Male",
       "birthplace": "Columbia",
       "birthday": [
@@ -525,7 +536,8 @@
       ],
       "headhunting": true,
       "limited": false,
-      "recruitment": true,
+      "recruitment": false,
+      "event": false,
       "gender": "Female",
       "birthplace": "Kazdel",
       "birthday": [
@@ -579,7 +591,8 @@
       ],
       "headhunting": true,
       "limited": true,
-      "recruitment": true,
+      "recruitment": false,
+      "event": false,
       "gender": "Female",
       "birthplace": "Columbia",
       "birthday": [
@@ -624,7 +637,8 @@
       ],
       "headhunting": true,
       "limited": false,
-      "recruitment": true,
+      "recruitment": false,
+      "event": false,
       "gender": "Female",
       "birthplace": "Kazimierz",
       "birthday": [
@@ -677,7 +691,8 @@
       ],
       "headhunting": true,
       "limited": false,
-      "recruitment": true,
+      "recruitment": false,
+      "event": false,
       "gender": "Female",
       "birthplace": "Unknown",
       "birthday": [
@@ -741,7 +756,8 @@
       ],
       "headhunting": true,
       "limited": false,
-      "recruitment": true,
+      "recruitment": false,
+      "event": false,
       "gender": "Female",
       "birthplace": "Sargon",
       "birthday": [
@@ -808,7 +824,8 @@
       ],
       "headhunting": true,
       "limited": false,
-      "recruitment": true,
+      "recruitment": false,
+      "event": false,
       "gender": "Male",
       "birthplace": "Iberia",
       "birthday": [
@@ -876,7 +893,8 @@
       ],
       "headhunting": true,
       "limited": false,
-      "recruitment": true,
+      "recruitment": false,
+      "event": false,
       "gender": "Female",
       "birthplace": "Higashi",
       "birthday": [
@@ -945,75 +963,6 @@
         "shop": []
       }
     },
-    "Rosa (Poca)": {
-      "rarity": 6,
-      "name": "Rosa (Poca)",
-      "class": "Sniper",
-      "subclass": "Heavyweight Sniper",
-      "tags": [
-        "DPS",
-        "Crowd-Control"
-      ],
-      "headhunting": true,
-      "limited": false,
-      "recruitment": true,
-      "gender": "Female",
-      "birthplace": "Ursus",
-      "birthday": [
-        10,
-        31
-      ],
-      "race": "Ursus",
-      "height": 174,
-      "combat_experience": "None",
-      "faction": "Ursus",
-      "subfaction": "Ursus Student Union",
-      "CN": {
-        "released": 1592478000000,
-        "featured": [
-          {
-            "start": 1592478000000,
-            "end": 1593687600000
-          },
-          {
-            "start": 1605178800000,
-            "end": 1606388400000
-          },
-          {
-            "start": 1626951600000,
-            "end": 1628161200000
-          },
-          {
-            "start": 1635418800000,
-            "end": 1636628400000
-          }
-        ],
-        "shop": [
-          {
-            "start": 1635418800000,
-            "end": 1636628400000
-          }
-        ]
-      },
-      "EN": {
-        "released": 1601377200000,
-        "featured": [
-          {
-            "start": 1601377200000,
-            "end": 1602586800000
-          },
-          {
-            "start": 1613732400000,
-            "end": 1614942000000
-          },
-          {
-            "start": 1625828400000,
-            "end": 1627038000000
-          }
-        ],
-        "shop": []
-      }
-    },
     "Weedy": {
       "rarity": 6,
       "name": "Weedy",
@@ -1026,7 +975,8 @@
       ],
       "headhunting": true,
       "limited": false,
-      "recruitment": true,
+      "recruitment": false,
+      "event": false,
       "gender": "Female",
       "birthplace": "Iberia",
       "birthday": [
@@ -1094,7 +1044,8 @@
       ],
       "headhunting": true,
       "limited": true,
-      "recruitment": true,
+      "recruitment": false,
+      "event": false,
       "gender": "Female",
       "birthplace": "Kazdel",
       "birthday": null,
@@ -1135,7 +1086,8 @@
       ],
       "headhunting": true,
       "limited": false,
-      "recruitment": true,
+      "recruitment": false,
+      "event": false,
       "gender": "Male",
       "birthplace": "Victoria",
       "birthday": [
@@ -1207,7 +1159,8 @@
       ],
       "headhunting": true,
       "limited": false,
-      "recruitment": true,
+      "recruitment": false,
+      "event": false,
       "gender": "Female",
       "birthplace": "Victoria",
       "birthday": [
@@ -1283,7 +1236,8 @@
       ],
       "headhunting": true,
       "limited": false,
-      "recruitment": true,
+      "recruitment": false,
+      "event": false,
       "gender": "Female",
       "birthplace": "Bolívar",
       "birthday": [
@@ -1364,7 +1318,8 @@
       ],
       "headhunting": true,
       "limited": true,
-      "recruitment": true,
+      "recruitment": false,
+      "event": false,
       "gender": "Female",
       "birthplace": "Yen",
       "birthday": [
@@ -1417,6 +1372,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Male",
       "birthplace": "Lungmen",
       "birthday": [
@@ -1503,6 +1459,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Female",
       "birthplace": "Victoria",
       "birthday": null,
@@ -1591,6 +1548,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Female",
       "birthplace": "Laterano",
       "birthday": [
@@ -1697,6 +1655,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Female",
       "birthplace": "Columbia",
       "birthday": [
@@ -1795,6 +1754,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Male",
       "birthplace": "Ursus",
       "birthday": [
@@ -1895,6 +1855,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Female",
       "birthplace": "Rim Billiton",
       "birthday": null,
@@ -1990,6 +1951,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Female",
       "birthplace": "Lungmen",
       "birthday": [
@@ -2104,6 +2066,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Female",
       "birthplace": "Ægir",
       "birthday": [
@@ -2222,6 +2185,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Male",
       "birthplace": "Kjerag",
       "birthday": [
@@ -2349,6 +2313,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Female",
       "birthplace": "Columbia",
       "birthday": [
@@ -2487,6 +2452,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Female",
       "birthplace": "Higashi",
       "birthday": [
@@ -2617,6 +2583,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Female",
       "birthplace": "Kazdel",
       "birthday": [
@@ -2762,6 +2729,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Female",
       "birthplace": "Kazdel",
       "birthday": [
@@ -2891,7 +2859,8 @@
       ],
       "headhunting": true,
       "limited": false,
-      "recruitment": true,
+      "recruitment": false,
+      "event": false,
       "gender": "Female",
       "birthplace": "Siracusa",
       "birthday": [
@@ -3044,7 +3013,8 @@
       ],
       "headhunting": true,
       "limited": false,
-      "recruitment": true,
+      "recruitment": false,
+      "event": false,
       "gender": "Female",
       "birthplace": "Leithanien",
       "birthday": [
@@ -3158,6 +3128,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Female",
       "birthplace": "Unknown",
       "birthday": [
@@ -3296,6 +3267,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Female",
       "birthplace": "Victoria",
       "birthday": [
@@ -3445,6 +3417,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Female",
       "birthplace": "Laterano",
       "birthday": [
@@ -3558,7 +3531,8 @@
       ],
       "headhunting": true,
       "limited": false,
-      "recruitment": true,
+      "recruitment": false,
+      "event": false,
       "gender": "Female",
       "birthplace": "Higashi",
       "birthday": [
@@ -3606,6 +3580,7 @@
       "headhunting": false,
       "limited": false,
       "recruitment": false,
+      "event": true,
       "gender": "Female",
       "birthplace": "Victoria",
       "birthday": [
@@ -3638,7 +3613,8 @@
       ],
       "headhunting": true,
       "limited": false,
-      "recruitment": true,
+      "recruitment": false,
+      "event": false,
       "gender": "Female",
       "birthplace": "Higashi",
       "birthday": [
@@ -3684,7 +3660,8 @@
       ],
       "headhunting": true,
       "limited": false,
-      "recruitment": true,
+      "recruitment": false,
+      "event": false,
       "gender": "Female",
       "birthplace": "Victoria",
       "birthday": [
@@ -3732,6 +3709,7 @@
       "headhunting": false,
       "limited": false,
       "recruitment": false,
+      "event": true,
       "gender": "Female",
       "birthplace": "Sargon",
       "birthday": [
@@ -3764,7 +3742,8 @@
       ],
       "headhunting": true,
       "limited": true,
-      "recruitment": true,
+      "recruitment": false,
+      "event": false,
       "gender": "Female",
       "birthplace": "Unknown",
       "birthday": [
@@ -3807,7 +3786,8 @@
       ],
       "headhunting": true,
       "limited": true,
-      "recruitment": true,
+      "recruitment": false,
+      "event": false,
       "gender": "Male",
       "birthplace": "Unknown",
       "birthday": [
@@ -3851,6 +3831,7 @@
       "headhunting": false,
       "limited": false,
       "recruitment": false,
+      "event": true,
       "gender": "Male",
       "birthplace": "Unknown",
       "birthday": [
@@ -3883,7 +3864,8 @@
       ],
       "headhunting": true,
       "limited": false,
-      "recruitment": true,
+      "recruitment": false,
+      "event": false,
       "gender": "Male",
       "birthplace": "Yen",
       "birthday": [
@@ -3934,6 +3916,7 @@
       "headhunting": false,
       "limited": false,
       "recruitment": false,
+      "event": true,
       "gender": "Female",
       "birthplace": "Victoria",
       "birthday": [
@@ -3966,6 +3949,7 @@
       "headhunting": false,
       "limited": false,
       "recruitment": false,
+      "event": true,
       "gender": "Female",
       "birthplace": "Sargon",
       "birthday": [
@@ -3997,7 +3981,8 @@
       ],
       "headhunting": true,
       "limited": false,
-      "recruitment": true,
+      "recruitment": false,
+      "event": false,
       "gender": "Female",
       "birthplace": "Victoria",
       "birthday": [
@@ -4053,6 +4038,7 @@
       "headhunting": false,
       "limited": false,
       "recruitment": false,
+      "event": true,
       "gender": "Female",
       "birthplace": "Columbia",
       "birthday": [
@@ -4084,7 +4070,8 @@
       ],
       "headhunting": true,
       "limited": false,
-      "recruitment": true,
+      "recruitment": false,
+      "event": false,
       "gender": "Female",
       "birthplace": "Columbia",
       "birthday": [
@@ -4144,6 +4131,7 @@
       "headhunting": false,
       "limited": false,
       "recruitment": false,
+      "event": false,
       "faction": "Rhodes Island",
       "CN": {
         "released": 1604228400000,
@@ -4175,7 +4163,8 @@
       ],
       "headhunting": true,
       "limited": false,
-      "recruitment": true,
+      "recruitment": false,
+      "event": false,
       "gender": "Female",
       "birthplace": "Iberia",
       "birthday": [
@@ -4233,7 +4222,8 @@
       ],
       "headhunting": true,
       "limited": false,
-      "recruitment": true,
+      "recruitment": false,
+      "event": false,
       "gender": "Male",
       "birthplace": "Siracusa",
       "birthday": [
@@ -4289,6 +4279,7 @@
       "headhunting": false,
       "limited": false,
       "recruitment": false,
+      "event": true,
       "gender": "Female",
       "birthplace": "Kazimierz",
       "birthday": [
@@ -4319,7 +4310,8 @@
       ],
       "headhunting": true,
       "limited": false,
-      "recruitment": true,
+      "recruitment": false,
+      "event": false,
       "gender": "Female",
       "birthplace": "Rim Billiton",
       "birthday": [
@@ -4379,6 +4371,7 @@
       "headhunting": false,
       "limited": false,
       "recruitment": false,
+      "event": true,
       "gender": "Female",
       "birthplace": "Victoria",
       "birthday": [
@@ -4410,7 +4403,8 @@
       ],
       "headhunting": true,
       "limited": false,
-      "recruitment": true,
+      "recruitment": false,
+      "event": false,
       "gender": "Female",
       "birthplace": "Sargon",
       "birthday": [
@@ -4478,6 +4472,7 @@
       "headhunting": false,
       "limited": false,
       "recruitment": false,
+      "event": true,
       "gender": "Female",
       "birthplace": "Sargon",
       "birthday": [
@@ -4510,7 +4505,8 @@
       ],
       "headhunting": true,
       "limited": false,
-      "recruitment": true,
+      "recruitment": false,
+      "event": false,
       "gender": "Female",
       "birthplace": "Iberia",
       "birthday": [
@@ -4578,7 +4574,8 @@
       ],
       "headhunting": true,
       "limited": false,
-      "recruitment": true,
+      "recruitment": false,
+      "event": false,
       "gender": "Male",
       "birthplace": "Siracusa",
       "birthday": [
@@ -4634,7 +4631,8 @@
       ],
       "headhunting": true,
       "limited": false,
-      "recruitment": true,
+      "recruitment": false,
+      "event": false,
       "gender": "Female",
       "birthplace": "Sargon",
       "birthday": [
@@ -4698,6 +4696,7 @@
       "headhunting": false,
       "limited": false,
       "recruitment": false,
+      "event": true,
       "gender": "Female",
       "birthplace": "Sargon",
       "birthday": [
@@ -4730,7 +4729,8 @@
       ],
       "headhunting": true,
       "limited": false,
-      "recruitment": true,
+      "recruitment": false,
+      "event": false,
       "gender": "Male",
       "birthplace": "RIM Billiton",
       "birthday": [
@@ -4798,6 +4798,7 @@
       "headhunting": false,
       "limited": false,
       "recruitment": false,
+      "event": true,
       "gender": "Female",
       "birthplace": "Ursus",
       "birthday": [
@@ -4830,7 +4831,8 @@
       ],
       "headhunting": true,
       "limited": false,
-      "recruitment": true,
+      "recruitment": false,
+      "event": false,
       "gender": "Male",
       "birthplace": "Rim Billiton",
       "birthday": [
@@ -4893,6 +4895,7 @@
       "headhunting": false,
       "limited": false,
       "recruitment": false,
+      "event": true,
       "gender": "Female",
       "birthplace": "Ursus",
       "birthday": [
@@ -4918,14 +4921,15 @@
       "rarity": 5,
       "name": "Tsukinogi",
       "class": "Supporter",
-      "subclass": "Buffer Supporter",
+      "subclass": "Abjurer Supporter",
       "tags": [
         "Support",
         "Survival"
       ],
       "headhunting": true,
       "limited": false,
-      "recruitment": true,
+      "recruitment": false,
+      "event": false,
       "gender": "Female",
       "birthplace": "Higashi",
       "birthday": [
@@ -4993,7 +4997,8 @@
       ],
       "headhunting": true,
       "limited": false,
-      "recruitment": true,
+      "recruitment": false,
+      "event": false,
       "gender": "Female",
       "birthplace": "Rim Billiton",
       "birthday": [
@@ -5061,7 +5066,8 @@
       ],
       "headhunting": true,
       "limited": false,
-      "recruitment": true,
+      "recruitment": false,
+      "event": false,
       "gender": "Male",
       "birthplace": "Iberia",
       "birthday": [
@@ -5132,7 +5138,8 @@
       ],
       "headhunting": true,
       "limited": false,
-      "recruitment": true,
+      "recruitment": false,
+      "event": false,
       "gender": "Female",
       "birthplace": "Siracusa",
       "birthday": [
@@ -5201,6 +5208,7 @@
       "headhunting": false,
       "limited": false,
       "recruitment": false,
+      "event": true,
       "gender": "Female",
       "birthplace": "Minos",
       "birthday": [
@@ -5233,7 +5241,8 @@
       ],
       "headhunting": true,
       "limited": false,
-      "recruitment": true,
+      "recruitment": false,
+      "event": false,
       "gender": "Male",
       "birthplace": "Sargon",
       "birthday": [
@@ -5306,6 +5315,7 @@
       "headhunting": false,
       "limited": false,
       "recruitment": false,
+      "event": true,
       "gender": "Female",
       "birthplace": "Sami",
       "birthday": [
@@ -5337,7 +5347,8 @@
       ],
       "headhunting": true,
       "limited": false,
-      "recruitment": true,
+      "recruitment": false,
+      "event": false,
       "gender": "Female",
       "birthplace": "Yen",
       "birthday": [
@@ -5423,6 +5434,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Male",
       "birthplace": "Lungmen",
       "birthday": [
@@ -5496,6 +5508,7 @@
       "headhunting": false,
       "limited": false,
       "recruitment": false,
+      "event": true,
       "gender": "Female",
       "birthplace": "Lungmen",
       "birthday": [
@@ -5528,6 +5541,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Female",
       "birthplace": "Undisclosed",
       "birthday": [
@@ -5617,6 +5631,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Male",
       "birthplace": "Siracusa",
       "birthday": [
@@ -5703,6 +5718,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Female",
       "birthplace": "Victoria",
       "birthday": [
@@ -5795,6 +5811,7 @@
       "headhunting": false,
       "limited": false,
       "recruitment": false,
+      "event": true,
       "gender": "Male",
       "birthplace": "Lungmen",
       "birthday": [
@@ -5828,6 +5845,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Female",
       "birthplace": "Yen",
       "birthday": [
@@ -5913,6 +5931,7 @@
       "headhunting": false,
       "limited": false,
       "recruitment": false,
+      "event": true,
       "gender": "Female",
       "birthplace": "Siesta (Independent City)",
       "birthday": [
@@ -5947,6 +5966,7 @@
       "headhunting": false,
       "limited": false,
       "recruitment": false,
+      "event": true,
       "gender": "Male",
       "birthplace": "Kazdel",
       "birthday": [
@@ -5980,6 +6000,7 @@
       "headhunting": false,
       "limited": false,
       "recruitment": false,
+      "event": false,
       "gender": "Female",
       "birthplace": "Victoria",
       "birthday": [
@@ -6012,6 +6033,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Male",
       "birthplace": "Laterano",
       "birthday": [
@@ -6101,6 +6123,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Female",
       "birthplace": "Columbia",
       "birthday": [
@@ -6202,6 +6225,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Female",
       "birthplace": "Ægir Region",
       "birthday": [
@@ -6291,6 +6315,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Female",
       "birthplace": "Lungmen",
       "birthday": [
@@ -6385,6 +6410,7 @@
       "headhunting": false,
       "limited": false,
       "recruitment": false,
+      "event": true,
       "gender": "Female",
       "birthplace": "Victoria",
       "birthday": [
@@ -6419,6 +6445,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Female",
       "birthplace": "Victoria",
       "birthday": [
@@ -6524,6 +6551,7 @@
       "headhunting": false,
       "limited": false,
       "recruitment": false,
+      "event": true,
       "gender": "Female",
       "birthplace": "Rim Billiton",
       "birthday": [
@@ -6557,6 +6585,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Female",
       "birthplace": "Yen",
       "birthday": [
@@ -6657,6 +6686,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Female",
       "birthplace": "Sargon",
       "birthday": null,
@@ -6750,7 +6780,8 @@
       ],
       "headhunting": true,
       "limited": false,
-      "recruitment": true,
+      "recruitment": false,
+      "event": false,
       "gender": "Female",
       "birthplace": "Unknown as requested by management agency",
       "birthday": [
@@ -6849,6 +6880,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Female",
       "birthplace": "Ursus",
       "birthday": [
@@ -6945,6 +6977,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Female",
       "birthplace": "Kjerag",
       "birthday": [
@@ -7051,6 +7084,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Female",
       "birthplace": "Kjerag",
       "birthday": [
@@ -7149,6 +7183,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Female",
       "birthplace": "Unknown",
       "birthday": null,
@@ -7250,6 +7285,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Female",
       "birthplace": "Siracusa",
       "birthday": [
@@ -7355,7 +7391,8 @@
       ],
       "headhunting": false,
       "limited": false,
-      "recruitment": false,
+      "recruitment": true,
+      "event": false,
       "gender": "Female",
       "birthplace": "Minos",
       "birthday": [
@@ -7389,6 +7426,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Female",
       "birthplace": "Minos",
       "birthday": [
@@ -7499,6 +7537,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Female",
       "birthplace": "Vouivre",
       "birthday": [
@@ -7605,6 +7644,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Female",
       "birthplace": "Undisclosed",
       "birthday": [
@@ -7715,6 +7755,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Female",
       "birthplace": "Kazimierz",
       "birthday": [
@@ -7840,6 +7881,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Female",
       "birthplace": "Kazdel",
       "birthday": [
@@ -7940,6 +7982,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Female",
       "birthplace": "Columbia",
       "birthday": [
@@ -8042,6 +8085,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Female",
       "birthplace": "Columbia",
       "birthday": [
@@ -8139,7 +8183,8 @@
       ],
       "headhunting": true,
       "limited": false,
-      "recruitment": true,
+      "recruitment": false,
+      "event": false,
       "gender": "Female",
       "birthplace": "Victoria",
       "birthday": [
@@ -8240,6 +8285,7 @@
       "headhunting": false,
       "limited": false,
       "recruitment": false,
+      "event": false,
       "gender": "Female",
       "birthplace": "Rim Billiton",
       "birthday": [
@@ -8273,6 +8319,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Female",
       "birthplace": "Kazdel",
       "birthday": [
@@ -8373,6 +8420,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Female",
       "birthplace": "Kazimierz",
       "birthday": [
@@ -8481,6 +8529,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Female",
       "birthplace": "Unknown",
       "birthday": [
@@ -8594,6 +8643,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Female",
       "birthplace": "Ægir",
       "birthday": [
@@ -8699,7 +8749,8 @@
       ],
       "headhunting": true,
       "limited": false,
-      "recruitment": true,
+      "recruitment": false,
+      "event": false,
       "gender": "Female",
       "birthplace": "Siracusa",
       "birthday": [
@@ -8812,7 +8863,8 @@
       ],
       "headhunting": false,
       "limited": false,
-      "recruitment": false,
+      "recruitment": true,
+      "event": false,
       "gender": "Female",
       "birthplace": "Unknown",
       "birthday": [
@@ -8846,7 +8898,8 @@
       ],
       "headhunting": true,
       "limited": false,
-      "recruitment": true,
+      "recruitment": false,
+      "event": false,
       "gender": "Female",
       "birthplace": "Columbia",
       "birthday": [
@@ -8949,6 +9002,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Female",
       "birthplace": "Columbia",
       "birthday": [
@@ -9059,6 +9113,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Female",
       "birthplace": "Ursus",
       "birthday": [
@@ -9181,6 +9236,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Female",
       "birthplace": "Columbia",
       "birthday": [
@@ -9298,7 +9354,8 @@
       ],
       "headhunting": true,
       "limited": false,
-      "recruitment": true,
+      "recruitment": false,
+      "event": false,
       "gender": "Female",
       "birthplace": "Iberia",
       "birthday": [
@@ -9341,7 +9398,8 @@
       ],
       "headhunting": true,
       "limited": false,
-      "recruitment": true,
+      "recruitment": false,
+      "event": false,
       "gender": "Female",
       "birthplace": "Columbia",
       "birthday": [
@@ -9384,7 +9442,8 @@
       ],
       "headhunting": true,
       "limited": false,
-      "recruitment": true,
+      "recruitment": false,
+      "event": false,
       "gender": "Female",
       "birthplace": "Columbia",
       "birthday": [
@@ -9430,7 +9489,8 @@
       ],
       "headhunting": true,
       "limited": false,
-      "recruitment": true,
+      "recruitment": false,
+      "event": false,
       "gender": "Female",
       "birthplace": "Sargon",
       "birthday": [
@@ -9476,7 +9536,8 @@
       ],
       "headhunting": true,
       "limited": false,
-      "recruitment": true,
+      "recruitment": false,
+      "event": false,
       "gender": "Male",
       "birthplace": "Laterano",
       "birthday": [
@@ -9518,7 +9579,8 @@
       ],
       "headhunting": true,
       "limited": false,
-      "recruitment": true,
+      "recruitment": false,
+      "event": false,
       "gender": "Female",
       "birthplace": "Columbia",
       "birthday": [
@@ -9569,7 +9631,8 @@
       ],
       "headhunting": true,
       "limited": false,
-      "recruitment": true,
+      "recruitment": false,
+      "event": false,
       "gender": "Male",
       "birthplace": "Lungmen",
       "birthday": [
@@ -9620,7 +9683,8 @@
       ],
       "headhunting": true,
       "limited": false,
-      "recruitment": true,
+      "recruitment": false,
+      "event": false,
       "gender": "Female",
       "birthplace": "Undisclosed",
       "birthday": [
@@ -9671,7 +9735,8 @@
       ],
       "headhunting": true,
       "limited": false,
-      "recruitment": true,
+      "recruitment": false,
+      "event": false,
       "gender": "Female",
       "birthplace": "Bolívar",
       "birthday": [
@@ -9713,7 +9778,8 @@
       ],
       "headhunting": true,
       "limited": false,
-      "recruitment": true,
+      "recruitment": false,
+      "event": false,
       "gender": "Female",
       "birthplace": "Columbia",
       "birthday": [
@@ -9756,7 +9822,8 @@
       ],
       "headhunting": true,
       "limited": false,
-      "recruitment": true,
+      "recruitment": false,
+      "event": false,
       "gender": "Female",
       "birthplace": "Columbia",
       "birthday": [
@@ -9809,6 +9876,7 @@
       "headhunting": false,
       "limited": false,
       "recruitment": false,
+      "event": false,
       "gender": "Conviction",
       "birthplace": "Minos",
       "birthday": null,
@@ -9838,7 +9906,8 @@
       ],
       "headhunting": true,
       "limited": false,
-      "recruitment": true,
+      "recruitment": false,
+      "event": false,
       "gender": "Female",
       "birthplace": "Higashi",
       "birthday": [
@@ -9881,7 +9950,8 @@
       ],
       "headhunting": false,
       "limited": false,
-      "recruitment": false,
+      "recruitment": true,
+      "event": true,
       "gender": "Female",
       "birthplace": "Yen",
       "birthday": [
@@ -9915,6 +9985,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Female",
       "birthplace": "Laterano",
       "birthday": [
@@ -9958,6 +10029,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Female",
       "birthplace": "Victoria",
       "birthday": [
@@ -10009,6 +10081,7 @@
       "headhunting": false,
       "limited": false,
       "recruitment": false,
+      "event": false,
       "gender": "Male",
       "birthplace": "Unknown",
       "birthday": [
@@ -10042,6 +10115,7 @@
       "headhunting": false,
       "limited": false,
       "recruitment": false,
+      "event": false,
       "gender": "Female",
       "birthplace": "Columbia",
       "birthday": [
@@ -10074,6 +10148,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Female",
       "birthplace": "Unknown",
       "birthday": [
@@ -10117,6 +10192,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Female",
       "birthplace": "Unknown",
       "birthday": [
@@ -10159,6 +10235,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Female",
       "birthplace": "Siracusa",
       "birthday": [
@@ -10202,6 +10279,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Male",
       "birthplace": "Bolívar",
       "birthday": [
@@ -10244,6 +10322,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Female",
       "birthplace": "Ursus",
       "birthday": [
@@ -10294,6 +10373,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Female",
       "birthplace": "Lungmen",
       "birthday": [
@@ -10326,6 +10406,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Female",
       "birthplace": "Leithanien",
       "birthday": [
@@ -10357,7 +10438,8 @@
       ],
       "headhunting": true,
       "limited": false,
-      "recruitment": true,
+      "recruitment": false,
+      "event": false,
       "gender": "Female",
       "birthplace": "Undisclosed",
       "birthday": [
@@ -10391,6 +10473,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Female",
       "birthplace": "Ursus",
       "birthday": [
@@ -10424,6 +10507,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Female",
       "birthplace": "Undisclosed",
       "birthday": null,
@@ -10453,6 +10537,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Male",
       "birthplace": "Kjerag",
       "birthday": [
@@ -10496,6 +10581,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Female",
       "birthplace": "Minos",
       "birthday": [
@@ -10528,6 +10614,7 @@
       "headhunting": false,
       "limited": false,
       "recruitment": false,
+      "event": false,
       "gender": "Female",
       "birthplace": "Undisclosed",
       "birthday": [
@@ -10560,6 +10647,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Female",
       "birthplace": "Unknown",
       "birthday": [
@@ -10592,6 +10680,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Female",
       "birthplace": "Rim Billiton",
       "birthday": [
@@ -10643,6 +10732,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Female",
       "birthplace": "Kazimierz",
       "birthday": [
@@ -10675,6 +10765,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Female",
       "birthplace": "Victoria",
       "birthday": [
@@ -10707,7 +10798,8 @@
       ],
       "headhunting": false,
       "limited": false,
-      "recruitment": false,
+      "recruitment": true,
+      "event": false,
       "gender": "Female",
       "birthplace": "Undisclosed",
       "birthday": [
@@ -10741,6 +10833,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Female",
       "birthplace": "Columbia",
       "birthday": [
@@ -10773,6 +10866,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Female",
       "birthplace": "The Far East",
       "birthday": [
@@ -10806,6 +10900,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Female",
       "birthplace": "Bolívar",
       "birthday": [
@@ -10839,6 +10934,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Female",
       "birthplace": "Kazdel",
       "birthday": [
@@ -10872,6 +10968,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Female",
       "birthplace": "Unknown",
       "birthday": [
@@ -10906,6 +11003,7 @@
       "headhunting": false,
       "limited": false,
       "recruitment": false,
+      "event": false,
       "gender": "Male",
       "birthplace": "Kjerag",
       "birthday": [
@@ -10940,6 +11038,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Female",
       "birthplace": "Higashi",
       "birthday": [
@@ -10973,6 +11072,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Female",
       "birthplace": "Kazimierz",
       "birthday": [
@@ -11006,6 +11106,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Female",
       "birthplace": "Victoria",
       "birthday": [
@@ -11039,6 +11140,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Female",
       "birthplace": "Sami",
       "birthday": [
@@ -11072,6 +11174,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Female",
       "birthplace": "Victoria",
       "birthday": [
@@ -11105,6 +11208,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Male",
       "birthplace": "Sargon",
       "birthday": [
@@ -11139,6 +11243,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Female",
       "birthplace": "Rim Billiton",
       "birthday": [
@@ -11172,6 +11277,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Male",
       "birthplace": "Far East",
       "birthday": [
@@ -11205,6 +11311,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Female",
       "birthplace": "Kazimierz",
       "birthday": [
@@ -11238,6 +11345,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Female",
       "birthplace": "Columbia",
       "birthday": [
@@ -11271,6 +11379,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Male",
       "birthplace": "Kjerag",
       "birthday": [
@@ -11304,6 +11413,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Male",
       "birthplace": "Rim Billiton",
       "birthday": [
@@ -11337,6 +11447,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Female",
       "birthplace": "Victoria",
       "birthday": [
@@ -11370,6 +11481,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Female",
       "birthplace": "Victoria",
       "birthday": [
@@ -11402,7 +11514,8 @@
       ],
       "headhunting": false,
       "limited": false,
-      "recruitment": false,
+      "recruitment": true,
+      "event": false,
       "gender": "Male",
       "birthplace": "Laterano",
       "birthday": [
@@ -11436,6 +11549,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Female",
       "birthplace": "Rim Billiton",
       "birthday": [
@@ -11469,6 +11583,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Female",
       "birthplace": "Bolívar",
       "birthday": [
@@ -11501,7 +11616,8 @@
       ],
       "headhunting": true,
       "limited": false,
-      "recruitment": true,
+      "recruitment": false,
+      "event": false,
       "gender": "Female",
       "birthplace": "Leithanien",
       "birthday": [
@@ -11536,6 +11652,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Female",
       "birthplace": "Victoria",
       "birthday": [
@@ -11570,6 +11687,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Female",
       "birthplace": "Laterano",
       "birthday": [
@@ -11602,6 +11720,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Female",
       "birthplace": "Vouivre",
       "birthday": [
@@ -11635,6 +11754,7 @@
       "headhunting": true,
       "limited": false,
       "recruitment": true,
+      "event": false,
       "gender": "Female",
       "birthplace": "Kazimierz",
       "birthday": [
@@ -11667,7 +11787,8 @@
       ],
       "headhunting": false,
       "limited": false,
-      "recruitment": false,
+      "recruitment": true,
+      "event": false,
       "gender": "Male",
       "birthplace": "Unknown",
       "birthday": [
@@ -11699,7 +11820,8 @@
       ],
       "headhunting": false,
       "limited": false,
-      "recruitment": false,
+      "recruitment": true,
+      "event": false,
       "gender": "Female",
       "birthplace": "Undisclosed",
       "birthday": [
@@ -11732,7 +11854,8 @@
       ],
       "headhunting": false,
       "limited": false,
-      "recruitment": false,
+      "recruitment": true,
+      "event": false,
       "gender": "Male",
       "birthplace": "Undisclosed",
       "birthday": [
@@ -11765,7 +11888,8 @@
       ],
       "headhunting": false,
       "limited": false,
-      "recruitment": false,
+      "recruitment": true,
+      "event": false,
       "gender": "Male",
       "birthplace": "The Far East",
       "birthday": [
@@ -11798,7 +11922,8 @@
       ],
       "headhunting": false,
       "limited": false,
-      "recruitment": false,
+      "recruitment": true,
+      "event": false,
       "gender": "Female",
       "birthplace": "The Far East",
       "birthday": [
@@ -11832,7 +11957,8 @@
       ],
       "headhunting": false,
       "limited": false,
-      "recruitment": false,
+      "recruitment": true,
+      "event": false,
       "gender": "Male",
       "birthday": [
         2,
@@ -11864,7 +11990,8 @@
       ],
       "headhunting": false,
       "limited": false,
-      "recruitment": false,
+      "recruitment": true,
+      "event": false,
       "gender": "Male",
       "birthday": [
         12,
@@ -11896,7 +12023,8 @@
       ],
       "headhunting": false,
       "limited": false,
-      "recruitment": false,
+      "recruitment": true,
+      "event": false,
       "gender": "Female",
       "birthday": [
         5,
@@ -11916,6 +12044,76 @@
         "shop": []
       },
       "race": "N/A"
+    },
+    "Rosa": {
+      "rarity": 6,
+      "name": "Rosa",
+      "class": "Sniper",
+      "subclass": "Heavyweight Sniper",
+      "tags": [
+        "DPS",
+        "Crowd-Control"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": false,
+      "event": false,
+      "gender": "Female",
+      "birthplace": "Ursus",
+      "birthday": [
+        10,
+        31
+      ],
+      "race": "Ursus",
+      "height": 174,
+      "combat_experience": "None",
+      "faction": "Ursus",
+      "subfaction": "Ursus Student Union",
+      "CN": {
+        "released": 1592478000000,
+        "featured": [
+          {
+            "start": 1592478000000,
+            "end": 1593687600000
+          },
+          {
+            "start": 1605178800000,
+            "end": 1606388400000
+          },
+          {
+            "start": 1626951600000,
+            "end": 1628161200000
+          },
+          {
+            "start": 1635418800000,
+            "end": 1636628400000
+          }
+        ],
+        "shop": [
+          {
+            "start": 1635418800000,
+            "end": 1636628400000
+          }
+        ]
+      },
+      "EN": {
+        "released": 1601377200000,
+        "featured": [
+          {
+            "start": 1601377200000,
+            "end": 1602586800000
+          },
+          {
+            "start": 1613732400000,
+            "end": 1614942000000
+          },
+          {
+            "start": 1625828400000,
+            "end": 1627038000000
+          }
+        ],
+        "shop": []
+      }
     }
   },
   "banners": {
@@ -12648,7 +12846,7 @@
           "Istina",
           "Podenco",
           "Leonhardt",
-          "Rosa (Poca)"
+          "Rosa"
         ],
         "shop": [],
         "isLimited": false,
@@ -13034,7 +13232,7 @@
           "Ifrit",
           "Swire",
           "Sesa",
-          "Rosa (Poca)"
+          "Rosa"
         ],
         "shop": [
           "Ifrit",
@@ -13399,7 +13597,7 @@
           "Provence",
           "Ch'en",
           "Astesia",
-          "Rosa (Poca)",
+          "Rosa",
           "April"
         ],
         "shop": [
@@ -14931,7 +15129,7 @@
           "Istina",
           "Podenco",
           "Leonhardt",
-          "Rosa (Poca)"
+          "Rosa"
         ],
         "shop": [],
         "isLimited": false,
@@ -15141,12 +15339,12 @@
       {
         "start": 1599562800000,
         "end": 1600167600000,
-        "title": "Heart of Steel, The Rage Ironhide Retrospection",
+        "title": "Unbound Reflux Retrospection",
         "featured": [
-          "Meteorite",
-          "Aciddrop",
-          "Flint",
-          "Eunectes"
+          "Provence",
+          "Jaye",
+          "Andreana",
+          "Thorns"
         ],
         "shop": [],
         "isLimited": false,
@@ -15158,12 +15356,12 @@
       {
         "start": 1599562800000,
         "end": 1600167600000,
-        "title": "Unbound Reflux Retrospection",
+        "title": "Heart of Steel, The Rage Ironhide Retrospection",
         "featured": [
-          "Provence",
-          "Jaye",
-          "Andreana",
-          "Thorns"
+          "Meteorite",
+          "Aciddrop",
+          "Flint",
+          "Eunectes"
         ],
         "shop": [],
         "isLimited": false,
@@ -15342,7 +15540,7 @@
           "Projekt Red",
           "Nightingale",
           "Tsukinogi",
-          "Rosa (Poca)"
+          "Rosa"
         ],
         "shop": [
           "Nightingale",
@@ -15999,7 +16197,7 @@
           "Mayer",
           "Provence",
           "Angelina",
-          "Rosa (Poca)",
+          "Rosa",
           "Mr. Nothing"
         ],
         "shop": [
@@ -16240,15 +16438,15 @@
           "Ch'en",
           "Broca",
           "Elysium",
-          "Rosa (Poca)"
+          "Rosa"
         ],
         "shop": [
-          "Rosa (Poca)",
+          "Rosa",
           "Elysium"
         ],
         "isLimited": false,
         "shopDebut6Star": [
-          "Rosa (Poca)"
+          "Rosa"
         ],
         "shopDebut5Star": [
           "Elysium"

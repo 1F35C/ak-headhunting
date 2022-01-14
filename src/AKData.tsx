@@ -1,4 +1,4 @@
-import { unixTimeDeltaToDays, TimeUnit } from './util';
+import { unixTimeDeltaToDays, TimeUnit, getQuarter } from './util';
 
 const PUBLIC_URL = '/ak-headhunting';
 
@@ -23,6 +23,7 @@ export type Operator = {
   headhunting: boolean;
   recruitment: boolean;
   limited: boolean;
+  event: boolean;
   faction: string;
   subfaction: string;
   release_date_en: number;
@@ -66,7 +67,12 @@ export type AggregateData = { [id: string]: number }
 
 export type AggregateData2D = { [id: string]: AggregateData }
 
-export type HeightDatum = { height: number }
+export type HistogramDatum = { value: number }
+
+export type PeriodicAggregateData = {
+  period: string,
+  data: AggregateData
+}
 
 export type HistoricalAggregateDataPoint = {
   time: Date,
@@ -88,6 +94,7 @@ function indexOfLatestShopOperator(operators: Operator[], region: Region): numbe
 
 export class AKData {
   _operators: OperatorDict = {};
+  _sortedOperators: Operator[];
   _banners: BannerDict = {
     [Region.EN]: [],
     [Region.CN]: []
@@ -100,6 +107,10 @@ export class AKData {
 
     let data: DataJsonFormat = require('./data.json');
     this._operators = data.operators;
+    this._sortedOperators = Object.values(this._operators)
+        .sort((op1, op2) => {
+          return op1.EN.released > op2.EN.released ? 1 : -1;
+        });
     this._banners = data.banners;
     AKData._instance = this;
   }
@@ -121,13 +132,9 @@ export class AKData {
   }
 
   recentAndUpcomingShopOperators(before: number, after: number, region: Region): [Operator[], number[]] {
-    let sorted = Object.values(this._operators)
-      .filter(op => !op.limited && op.rarity === 6)
-      .sort((op1, op2) => {
-        return (op1[region].released > op2[region].released) ? 1 : -1;
-      });
-    let latestIdx = indexOfLatestShopOperator(sorted, region);
-    let operators = sorted.slice(latestIdx - before, latestIdx + 1 + after);
+    let sixStars = this._sortedOperators.filter(op => !op.limited && op.rarity === 6)
+    let latestIdx = indexOfLatestShopOperator(sixStars, region);
+    let operators = sixStars.slice(latestIdx - before, latestIdx + 1 + after);
     let predictions = operators.map((op, idx) => {
       return operators[before][region].shop[0].start + (idx - before) * 3 * TimeUnit.BANNER;
     });
@@ -183,13 +190,54 @@ export class AKData {
     });
   }
 
+  globalReleaseDelayData(): HistoricalAggregateDataPoint[] {
+    return this._sortedOperators.map(op => {
+      return {
+        time: new Date(op.EN.released),
+        data: { value: unixTimeDeltaToDays(op.EN.released - op.CN.released) }
+      };
+    });
+  }
+
+  quarterlyOperatorReleaseData(): PeriodicAggregateData[] {
+    let lastReleased = null;
+    let result: PeriodicAggregateData[] = [];
+    for (let idx = 1; idx < this._sortedOperators.length; ++idx) {
+      const operator = this._sortedOperators[idx];
+      if (operator.EN.released === this._sortedOperators[0].EN.released) {
+        continue;
+      }
+      const quarter = getQuarter(operator.EN.released);
+      if (lastReleased === null || quarter !== lastReleased) {
+        result.push({
+          'period': quarter,
+          'data': {
+            'event': 0,
+            'limited': 0,
+            'standard': 0
+          }
+        });
+        lastReleased = quarter;
+      }
+      if (operator.event) {
+        console.log(operator);
+        result[result.length - 1]['data']['event']++;
+      } else if (operator.limited) {
+        result[result.length - 1]['data']['limited']++;
+      } else if (operator.headhunting) {
+        result[result.length - 1]['data']['standard']++;
+      }
+    }
+    return result;
+  }
+
   historicalGenderData(): HistoricalAggregateDataPoint[] {
     return this.historicalAggregateData(op => op.gender);
   }
 
-  heightData(): HeightDatum[] {
+  heightData(): HistogramDatum[] {
     return Object.values(this._operators).filter(op => op.height).map(op => {
-      return { height: op.height };
+      return { value: op.height };
     });
   }
 
@@ -222,9 +270,7 @@ export class AKData {
   }
 
   historicalAggregateData(func: (op: Operator) => string): HistoricalAggregateDataPoint[] {
-    let operators = Object.values(this._operators).sort((op1, op2) => {
-      return op1.EN.released > op2.EN.released ? 1 : -1;
-    });
+    let operators = this._sortedOperators;
 
     let result: HistoricalAggregateDataPoint[] = [{
       time: new Date(operators[0].EN.released),

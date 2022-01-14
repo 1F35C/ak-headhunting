@@ -8,8 +8,9 @@ import {
   Region,
   ReleaseInfo,
   HistoricalNumericDataPoint,
+  PeriodicAggregateData,
   HistoricalAnnotatedNumericDataPoint,
-  HeightDatum,
+  HistogramDatum,
   AggregateData,
   AggregateData2D,
   HistoricalAggregateDataPoint
@@ -17,23 +18,33 @@ import {
 import { daysSince } from './util';
 import { useAKData } from './DataContext';
 
-function BannerWaitChart() {
-  let akData = useAKData();
-  return (
-    <>
-    6* banner featured interval
-    </>
-  );
+type AnyDict = { [id: string]: any }
+
+type BannerParams = {
+  globalReleaseDelayData: HistoricalAggregateDataPoint[]
+  quarterlyOperatorReleaseData: PeriodicAggregateData[]
+}
+function transformPeriodicAggregateData(data: PeriodicAggregateData[]): AnyDict[] {
+  return data.map(datum => {
+    return {
+      ...datum.data,
+      period: datum.period
+    }
+  });
 }
 
-function Banner() {
+function Banner(params: BannerParams) {
   return (
    <div className="section">
       <div className="title">
-        Banner 
+        Operator Releases
       </div>
       <div className="block">
-        <BannerWaitChart />
+        <LineChart data={ params.globalReleaseDelayData } title="Operator Release Delay between China and Global" />
+        <GroupedBarChart data={ transformPeriodicAggregateData(params.quarterlyOperatorReleaseData) }
+                         groupLabel="period"
+                         labels={ ['event', 'limited', 'standard'] }
+                         title="Operator Releases" />
       </div>
     </div>
   );
@@ -268,7 +279,7 @@ function CertShopOperators(params: CertShopOperatorsParams) {
 type CertShopParams = BannerDurationChartParams & ShopDebutWaitChartParams;
 function CertShop(params: CertShopParams) {
   let akData = useAKData();
-  let [shopOperators, predictions] = akData.recentAndUpcomingShopOperators(10, 10, Region.EN);
+  let [shopOperators, predictions] = akData.recentAndUpcomingShopOperators(6, 6, Region.EN);
   
   return (
     <div className="section">
@@ -281,7 +292,7 @@ function CertShop(params: CertShopParams) {
       <div className="block">
         <div className="message is-info">
           <div className="message-header">
-            Analysis 
+            Rationale
           </div>
           <div className="message-body">
             <div className="block rounded">
@@ -453,6 +464,59 @@ function StackedBarChart(params: StackedBarChartParams) {
   );
 }
 
+type HistogramChartParams = {
+  data: HistogramDatum[]
+  title: string
+  binCount?: number
+}
+
+type GroupedBarChartParams = {
+  data: AnyDict[]
+  groupLabel: string
+  labels: string[]
+  title: string
+};
+
+function GroupedBarChart(params: GroupedBarChartParams) {
+  let options = {
+    title: {
+      text: params.title
+    },
+    data: params.data,
+    series: [
+      {
+        type: 'column',
+        xKey: params.groupLabel,
+        yKeys: params.labels,
+        grouped: true
+      }
+    ]
+  };
+  return (
+    <AgChartsReact options={ options } />
+  );
+}
+
+function HistogramChart(params: HistogramChartParams) {
+  let options = {
+    title: {
+      text: params.title
+    },
+    data: params.data,
+    series: [
+      {
+        type: 'histogram',
+        xKey: 'value',
+        binCount: params.binCount || 10
+      }
+    ],
+    legend: { enabled: false }
+  };
+  return (
+    <AgChartsReact options={ options } />
+  );
+}
+
 type OperatorDemographyParams = {
   genderData: HistoricalAggregateDataPoint[],
   raceData: AggregateData,
@@ -462,23 +526,9 @@ type OperatorDemographyParams = {
   classRarityData: AggregateData2D,
   rarityGenderData: AggregateData2D,
   classGenderData: AggregateData2D,
-  heightData: HeightDatum[]
+  heightData: HistogramDatum[]
 };
 function OperatorDemography(params: OperatorDemographyParams) {
-  let heightHistogramOptions = {
-    title: {
-      text: 'Operator Heights'
-    },
-    data: params.heightData,
-    series: [
-      {
-        type: 'histogram',
-        xKey: 'height',
-        xKeyName: 'Height'
-      }
-    ],
-    legend: { enabled: false }
-  };
 
   return (
     <div className="section">
@@ -574,7 +624,8 @@ function OperatorDemography(params: OperatorDemographyParams) {
         </div>
         <div className="column is-full-tablet is-one-third-desktop">
           <div className="box" style={{height: 500}}>
-            <AgChartsReact options={ heightHistogramOptions } />
+            <HistogramChart data={ params.heightData }
+                            title="Height Distribution" />
           </div>
         </div>
       </div>
@@ -593,7 +644,8 @@ export function AnalyticsPage(params: AnalyticsPageParams) {
               nonDebutBannerDurationData={ params.akdata.nonDebutBannerDuration(Region.EN) }
               certShop5StarDelayData={ params.akdata.certificateShop5StarDelay() }
               certShop6StarDelayData={ params.akdata.certificateShop6StarDelay() } />
-    <Banner />
+    <Banner globalReleaseDelayData={ params.akdata.globalReleaseDelayData() }
+            quarterlyOperatorReleaseData={ params.akdata.quarterlyOperatorReleaseData() } />
     <OperatorDemography genderData={ params.akdata.historicalGenderData() }
                         raceData={ params.akdata.raceData() }
                         factionData={ params.akdata.factionData() }
