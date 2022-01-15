@@ -137,7 +137,7 @@ export function DataTablePage(params: DataTablePageParams) {
   };
 
   return (
-    <div className="container is-fluid">
+    <div className="section">
       <div className="search">
         Quick Search: <input type="text" onChange={ onQuickFilterChange } />
       </div>

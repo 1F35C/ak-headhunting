@@ -39,12 +39,18 @@ function Banner(params: BannerParams) {
       <div className="title">
         Operator Releases
       </div>
-      <div className="block">
-        <LineChart data={ params.globalReleaseDelayData } title="Operator Release Delay between China and Global" />
-        <GroupedBarChart data={ transformPeriodicAggregateData(params.quarterlyOperatorReleaseData) }
-                         groupLabel="period"
-                         labels={ ['event', 'limited', 'standard'] }
-                         title="Operator Releases" />
+      <div className="columns">
+        <div className="column is-full">
+          <LineChart data={ params.globalReleaseDelayData } title="Operator Release Delay between China and Global" />
+        </div>
+      </div>
+      <div className="columns">
+        <div className="column is-full">
+          <GroupedBarChart data={ transformPeriodicAggregateData(params.quarterlyOperatorReleaseData) }
+                           groupLabel="period"
+                           labels={ ['event', 'limited', 'standard'] }
+                           title="Operator Releases" />
+        </div>
       </div>
     </div>
   );
@@ -122,7 +128,7 @@ function ShopDebutWaitChart(params: ShopDebutWaitChartParams) {
       }
     ],
     title: {
-      text: 'Days between Release and Certificate Shop Debut'
+      text: 'Shop Debut Wait Time'
     },
     axes: [
       {
@@ -346,10 +352,14 @@ function transformAggregateDataForLineOption(dataPoints: HistoricalAggregateData
     yKeys = Object.keys(dataPoints[data.length - 1].data);
   }
   let series = yKeys.map(key => { return {xKey: 'time', yKey: key }; });
-  return {
+  let options: AnyDict = {
     data: data,
     series: series 
   };
+  if (yKeys.length === 1) {
+    options['legend'] = {enabled: false}
+  }
+  return options;
 }
 
 function transformAggregateData2DForBar(data: AggregateData2D, yKeys: string[] = []) {
