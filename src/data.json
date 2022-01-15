@@ -1,5 +1,83 @@
 {
   "operators": {
+    "Mizuki": {
+      "rarity": 6,
+      "name": "Mizuki",
+      "class": "Specialist",
+      "subclass": "Stalker",
+      "tags": [
+        "DPS",
+        "Crowd-Control"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": false,
+      "event": false,
+      "gender": "Male",
+      "birthplace": "Higashi",
+      "birthday": [
+        3,
+        22
+      ],
+      "race": "Ægir",
+      "height": 161,
+      "combat_experience": "None",
+      "faction": "Higashi",
+      "CN": {
+        "released": 1627988400000,
+        "featured": [
+          {
+            "start": 1627988400000,
+            "end": 1629198000000
+          }
+        ],
+        "shop": []
+      },
+      "EN": {
+        "released": 1642158000000,
+        "featured": [],
+        "shop": []
+      }
+    },
+    "Ch'en the Holungday": {
+      "rarity": 6,
+      "name": "Ch'en the Holungday",
+      "class": "Sniper",
+      "subclass": "Spreadshooter",
+      "tags": [
+        "DPS",
+        "AoE"
+      ],
+      "headhunting": true,
+      "limited": true,
+      "recruitment": false,
+      "event": false,
+      "gender": "Female",
+      "birthplace": "Lungmen",
+      "birthday": [
+        7,
+        7
+      ],
+      "race": "Lung",
+      "height": 168,
+      "combat_experience": "5 Years",
+      "faction": "Rhodes Island",
+      "CN": {
+        "released": 1627988400000,
+        "featured": [
+          {
+            "start": 1627988400000,
+            "end": 1629198000000
+          }
+        ],
+        "shop": []
+      },
+      "EN": {
+        "released": 1642158000000,
+        "featured": [],
+        "shop": []
+      }
+    },
     "Pallas": {
       "rarity": 6,
       "name": "Pallas",
@@ -327,7 +405,7 @@
       "recruitment": false,
       "event": false,
       "gender": "Female",
-      "birthplace": "Yen",
+      "birthplace": "Yan",
       "birthday": [
         11,
         11
@@ -1321,7 +1399,7 @@
       "recruitment": false,
       "event": false,
       "gender": "Female",
-      "birthplace": "Yen",
+      "birthplace": "Yan",
       "birthday": [
         9,
         9
@@ -3520,6 +3598,74 @@
         ]
       }
     },
+    "Tequila": {
+      "rarity": 5,
+      "name": "Tequila",
+      "class": "Guard",
+      "subclass": "Liberator Guard",
+      "tags": [
+        "Nuker"
+      ],
+      "headhunting": false,
+      "limited": false,
+      "recruitment": false,
+      "event": true,
+      "gender": "Male",
+      "birthplace": "Bolívar",
+      "birthday": null,
+      "race": "Perro",
+      "height": 182,
+      "combat_experience": "3 Years",
+      "faction": "Bolivar",
+      "CN": {
+        "released": 1627988400000,
+        "featured": [],
+        "shop": []
+      },
+      "EN": {
+        "released": 1642158000000,
+        "featured": [],
+        "shop": []
+      }
+    },
+    "La Pluma": {
+      "rarity": 5,
+      "name": "La Pluma",
+      "class": "Guard",
+      "subclass": "Reaper Guard",
+      "tags": [
+        "DPS"
+      ],
+      "headhunting": true,
+      "limited": false,
+      "recruitment": false,
+      "event": false,
+      "gender": "Female",
+      "birthplace": "Bolívar",
+      "birthday": [
+        8,
+        29
+      ],
+      "race": "Liberi",
+      "height": 166,
+      "combat_experience": "3 Years",
+      "faction": "Bolivar",
+      "CN": {
+        "released": 1627988400000,
+        "featured": [
+          {
+            "start": 1627988400000,
+            "end": 1629198000000
+          }
+        ],
+        "shop": []
+      },
+      "EN": {
+        "released": 1642158000000,
+        "featured": [],
+        "shop": []
+      }
+    },
     "Kirara": {
       "rarity": 5,
       "name": "Kirara",
@@ -3867,7 +4013,7 @@
       "recruitment": false,
       "event": false,
       "gender": "Male",
-      "birthplace": "Yen",
+      "birthplace": "Yan",
       "birthday": [
         1,
         13
@@ -5350,7 +5496,7 @@
       "recruitment": false,
       "event": false,
       "gender": "Female",
-      "birthplace": "Yen",
+      "birthplace": "Yan",
       "birthday": [
         3,
         5
@@ -5847,7 +5993,7 @@
       "recruitment": true,
       "event": false,
       "gender": "Female",
-      "birthplace": "Yen",
+      "birthplace": "Yan",
       "birthday": [
         12,
         1
@@ -6587,7 +6733,7 @@
       "recruitment": true,
       "event": false,
       "gender": "Female",
-      "birthplace": "Yen",
+      "birthplace": "Yan",
       "birthday": [
         8,
         10
@@ -9953,7 +10099,7 @@
       "recruitment": true,
       "event": true,
       "gender": "Female",
-      "birthplace": "Yen",
+      "birthplace": "Yan",
       "birthday": [
         10,
         24
@@ -15339,12 +15485,12 @@
       {
         "start": 1599562800000,
         "end": 1600167600000,
-        "title": "Unbound Reflux Retrospection",
+        "title": "Heart of Steel, The Rage Ironhide Retrospection",
         "featured": [
-          "Provence",
-          "Jaye",
-          "Andreana",
-          "Thorns"
+          "Meteorite",
+          "Aciddrop",
+          "Flint",
+          "Eunectes"
         ],
         "shop": [],
         "isLimited": false,
@@ -15356,12 +15502,12 @@
       {
         "start": 1599562800000,
         "end": 1600167600000,
-        "title": "Heart of Steel, The Rage Ironhide Retrospection",
+        "title": "Unbound Reflux Retrospection",
         "featured": [
-          "Meteorite",
-          "Aciddrop",
-          "Flint",
-          "Eunectes"
+          "Provence",
+          "Jaye",
+          "Andreana",
+          "Thorns"
         ],
         "shop": [],
         "isLimited": false,

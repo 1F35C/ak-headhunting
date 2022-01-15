@@ -44,7 +44,11 @@
     "Siesta": "/ak-factions/logo_siesta.png",
     "Ursus Student Union": "/ak-factions/logo_student.png",
     "Sui": "/ak-factions/logo_sui.png",
-    "Sweep": "/ak-factions/logo_sweep.png"
+    "Sweep": "/ak-factions/logo_sweep.png",
+    "Action 4": "/ak-factions/logo_action4.png",
+    "Reserve 1": "/ak-factions/logo_reserve1.png",
+    "Reserve 4": "/ak-factions/logo_reserve4.png",
+    "Reserve 6": "/ak-factions/logo_reserve6.png"
   },
   "portraits": {
     "Amiya": "/ak-portraits/char_002_amiya.png",
@@ -245,7 +249,7 @@
     "Saileach": "/ak-portraits/char_479_sleach.png",
     "Roberta": "/ak-portraits/char_484_robrta.png",
     "Pallas": "/ak-portraits/char_485_pallas.png",
-    "Tequilla": "/ak-portraits/char_486_takila.png",
+    "Tequila": "/ak-portraits/char_486_takila.png",
     "Corroserum": "/ak-portraits/char_489_serum.png",
     "Wild Mane": "/ak-portraits/char_496_wildmn.png",
     "Noir Corne": "/ak-portraits/char_500_noirc.png",
@@ -255,7 +259,7 @@
     "Amiya (Guard)": "/ak-portraits/char_1001_amiya2.png",
     "Lava the Purgatory": "/ak-portraits/char_1011_lava2.png",
     "Skadi the Corrupting Heart": "/ak-portraits/char_1012_skadi2.png",
-    "Chen the Holungday": "/ak-portraits/char_1013_chen2.png",
+    "Ch'en the Holungday": "/ak-portraits/char_1013_chen2.png",
     "Nearl the Radiant Knight": "/ak-portraits/char_1014_nearl2.png",
     "Ceobe": "/ak-portraits/char_2013_cerber.png",
     "Nian": "/ak-portraits/char_2014_nian.png",
