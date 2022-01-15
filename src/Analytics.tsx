@@ -285,7 +285,7 @@ function CertShopOperators(params: CertShopOperatorsParams) {
 type CertShopParams = BannerDurationChartParams & ShopDebutWaitChartParams;
 function CertShop(params: CertShopParams) {
   let akData = useAKData();
-  let [shopOperators, predictions] = akData.recentAndUpcomingShopOperators(6, 6, Region.EN);
+  let [shopOperators, predictions] = akData.recentAndUpcomingShopOperators(Region.EN, 6, 6);
   
   return (
     <div className="section">
@@ -650,15 +650,15 @@ export function AnalyticsPage() {
     <>
     <CertShop debutBannerDurationData={ akData.debutBannerDuration(Region.EN) }
               nonDebutBannerDurationData={ akData.nonDebutBannerDuration(Region.EN) }
-              certShop5StarDelayData={ akData.certificateShop5StarDelay() }
-              certShop6StarDelayData={ akData.certificateShop6StarDelay() } />
-    <Banner globalReleaseDelayData={ akData.globalReleaseDelayData() }
-            quarterlyOperatorReleaseData={ akData.quarterlyOperatorReleaseData() } />
-    <OperatorDemography genderData={ akData.historicalGenderData() }
+              certShop5StarDelayData={ akData.certificateShop5StarDelay(Region.EN) }
+              certShop6StarDelayData={ akData.certificateShop6StarDelay(Region.EN) } />
+    <Banner globalReleaseDelayData={ akData.releaseDelayData(Region.EN) }
+            quarterlyOperatorReleaseData={ akData.quarterlyOperatorReleaseData(Region.EN) } />
+    <OperatorDemography genderData={ akData.historicalGenderData(Region.EN) }
                         raceData={ akData.raceData() }
                         factionData={ akData.factionData() }
-                        rarityData={ akData.rarityData() }
-                        classData={ akData.classData() }
+                        rarityData={ akData.historicalRarityData(Region.EN) }
+                        classData={ akData.historicalClassData(Region.EN) }
                         classRarityData={ akData.classRarityData() }
                         rarityGenderData={ akData.rarityGenderData() }
                         classGenderData={ akData.classGenderData() }

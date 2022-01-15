@@ -100,7 +100,7 @@ export class AKData {
     [Region.CN]: []
   };
   
-  constructor() {
+  constructor(sortRegion: Region) {
     if (AKData._instance !== null) {
       throw new Error("Constructor not available for singleton");
     }
@@ -109,7 +109,7 @@ export class AKData {
     this._operators = data.operators;
     this._sortedOperators = Object.values(this._operators)
         .sort((op1, op2) => {
-          return op1.EN.released > op2.EN.released ? 1 : -1;
+          return op1[sortRegion].released > op2[sortRegion].released ? 1 : -1;
         });
     this._banners = data.banners;
     AKData._instance = this;
@@ -118,7 +118,7 @@ export class AKData {
   static _instance: AKData | null = null;
   static getInstance(): AKData {
     if (AKData._instance === null) {
-      AKData._instance = new AKData();
+      AKData._instance = new AKData(Region.EN);
     }
     return AKData._instance;
   }
@@ -131,7 +131,7 @@ export class AKData {
     return this._banners[region];
   }
 
-  recentAndUpcomingShopOperators(before: number, after: number, region: Region): [Operator[], number[]] {
+  recentAndUpcomingShopOperators(region: Region, before: number, after: number): [Operator[], number[]] {
     let sixStars = this._sortedOperators.filter(op => !op.limited && op.rarity === 6)
     let latestIdx = indexOfLatestShopOperator(sixStars, region);
     let operators = sixStars.slice(latestIdx - before, latestIdx + 1 + after);
@@ -162,52 +162,53 @@ export class AKData {
     });
   }
 
-  certificateShop5StarDelay(): HistoricalNumericDataPoint[] {
+  certificateShop5StarDelay(region: Region): HistoricalNumericDataPoint[] {
     let operators = Object.values(this._operators)
-        .filter(op => op.EN.shop.length > 0 && op.rarity === 5)
+        .filter(op => op[region].shop.length > 0 && op.rarity === 5)
         .sort((op1, op2) => {
-          return op1.EN.shop[0].start > op2.EN.shop[0].start ? 1 : -1;
+          return op1[region].shop[0].start > op2[region].shop[0].start ? 1 : -1;
         });
     return operators.map(op => {
       return {
-        time: new Date(op.EN.shop[0].start),
-        value: unixTimeDeltaToDays(op.EN.shop[0].start - op.EN.released)
+        time: new Date(op[region].shop[0].start),
+        value: unixTimeDeltaToDays(op[region].shop[0].start - op[region].released)
       };
     });
   }
 
-  certificateShop6StarDelay(): HistoricalNumericDataPoint[] {
+  certificateShop6StarDelay(region: Region): HistoricalNumericDataPoint[] {
     let operators = Object.values(this._operators)
-        .filter(op => op.EN.shop.length > 0 && op.rarity === 6)
+        .filter(op => op[region].shop.length > 0 && op.rarity === 6)
         .sort((op1, op2) => {
-          return op1.EN.shop[0].start > op2.EN.shop[0].start ? 1 : -1;
+          return op1[region].shop[0].start > op2[region].shop[0].start ? 1 : -1;
         });
     return operators.map(op => {
       return {
-        time: new Date(op.EN.shop[0].start),
-        value: unixTimeDeltaToDays(op.EN.shop[0].start - op.EN.released)
+        time: new Date(op[region].shop[0].start),
+        value: unixTimeDeltaToDays(op[region].shop[0].start - op[region].released)
       };
     });
   }
 
-  globalReleaseDelayData(): HistoricalAggregateDataPoint[] {
+  // Region doesn't make sense for this one
+  releaseDelayData(region: Region): HistoricalAggregateDataPoint[] {
     return this._sortedOperators.map(op => {
       return {
-        time: new Date(op.EN.released),
-        data: { value: unixTimeDeltaToDays(op.EN.released - op.CN.released) }
+        time: new Date(op[region].released),
+        data: { value: unixTimeDeltaToDays(op[region].released - op.CN.released) }
       };
     });
   }
 
-  quarterlyOperatorReleaseData(): PeriodicAggregateData[] {
+  quarterlyOperatorReleaseData(region: Region): PeriodicAggregateData[] {
     let lastReleased = null;
     let result: PeriodicAggregateData[] = [];
     for (let idx = 1; idx < this._sortedOperators.length; ++idx) {
       const operator = this._sortedOperators[idx];
-      if (operator.EN.released === this._sortedOperators[0].EN.released) {
+      if (operator[region].released === this._sortedOperators[0][region].released) {
         continue;
       }
-      const quarter = getQuarter(operator.EN.released);
+      const quarter = getQuarter(operator[region].released);
       if (lastReleased === null || quarter !== lastReleased) {
         result.push({
           'period': quarter,
@@ -231,8 +232,8 @@ export class AKData {
     return result;
   }
 
-  historicalGenderData(): HistoricalAggregateDataPoint[] {
-    return this.historicalAggregateData(op => op.gender);
+  historicalGenderData(region: Region): HistoricalAggregateDataPoint[] {
+    return this.historicalAggregateData(region, op => op.gender);
   }
 
   heightData(): HistogramDatum[] {
@@ -249,16 +250,16 @@ export class AKData {
     return this.aggregateData(op => op.faction);
   }
   
-  classData(): HistoricalAggregateDataPoint[] {
-    return this.historicalAggregateData(op => op.class);
+  historicalClassData(region: Region): HistoricalAggregateDataPoint[] {
+    return this.historicalAggregateData(region, op => op.class);
   }
 
   classRarityData(): AggregateData2D {
     return this.aggregateData2D(op => op.class, op => op.rarity.toString());
   }
 
-  rarityData(): HistoricalAggregateDataPoint[] {
-    return this.historicalAggregateData(op => op.rarity.toString());
+  historicalRarityData(region: Region): HistoricalAggregateDataPoint[] {
+    return this.historicalAggregateData(region, op => op.rarity.toString());
   }
 
   rarityGenderData(): AggregateData2D {
@@ -269,22 +270,22 @@ export class AKData {
     return this.aggregateData2D(op => op.class, op => op.gender);
   }
 
-  historicalAggregateData(func: (op: Operator) => string): HistoricalAggregateDataPoint[] {
+  historicalAggregateData(region: Region, func: (op: Operator) => string): HistoricalAggregateDataPoint[] {
     let operators = this._sortedOperators;
 
     let result: HistoricalAggregateDataPoint[] = [{
-      time: new Date(operators[0].EN.released),
+      time: new Date(operators[0][region].released),
       data: { [func(operators[0])] : 1 }
     }];
 
-    let lastReleased = operators[0].EN.released;
+    let lastReleased = operators[0][region].released;
     for (let idx = 1; idx < operators.length; ++idx) {
-      if (operators[idx].EN.released !== lastReleased) {
+      if (operators[idx][region].released !== lastReleased) {
         result.push({
-          time: new Date(operators[idx].EN.released),
+          time: new Date(operators[idx][region].released),
           data: { ...result[result.length - 1].data }
         });
-        lastReleased = operators[idx].EN.released;
+        lastReleased = operators[idx][region].released;
       }
       let key = func(operators[idx]);
       if (key in result[result.length - 1].data) {
