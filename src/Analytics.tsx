@@ -284,8 +284,9 @@ function CertShopOperators(params: CertShopOperatorsParams) {
 
 type CertShopParams = BannerDurationChartParams & ShopDebutWaitChartParams;
 function CertShop(params: CertShopParams) {
+  // Don't access akData from here?
   let akData = useAKData();
-  let [shopOperators, predictions] = akData.recentAndUpcomingShopOperators(Region.EN, 6, 6);
+  let [shopOperators, predictions] = akData.recentAndUpcomingShopOperators(6, 6);
   
   return (
     <div className="section">
@@ -648,17 +649,17 @@ export function AnalyticsPage() {
   let akData = useAKData();
   return (
     <>
-    <CertShop debutBannerDurationData={ akData.debutBannerDuration(Region.EN) }
-              nonDebutBannerDurationData={ akData.nonDebutBannerDuration(Region.EN) }
-              certShop5StarDelayData={ akData.certificateShop5StarDelay(Region.EN) }
-              certShop6StarDelayData={ akData.certificateShop6StarDelay(Region.EN) } />
-    <Banner globalReleaseDelayData={ akData.releaseDelayData(Region.EN) }
-            quarterlyOperatorReleaseData={ akData.quarterlyOperatorReleaseData(Region.EN) } />
-    <OperatorDemography genderData={ akData.historicalGenderData(Region.EN) }
+    <CertShop debutBannerDurationData={ akData.debutBannerDuration() }
+              nonDebutBannerDurationData={ akData.nonDebutBannerDuration() }
+              certShop5StarDelayData={ akData.certificateShop5StarDelay() }
+              certShop6StarDelayData={ akData.certificateShop6StarDelay() } />
+    <Banner globalReleaseDelayData={ akData.releaseDelayData() }
+            quarterlyOperatorReleaseData={ akData.quarterlyOperatorReleaseData() } />
+    <OperatorDemography genderData={ akData.historicalGenderData() }
                         raceData={ akData.raceData() }
                         factionData={ akData.factionData() }
-                        rarityData={ akData.historicalRarityData(Region.EN) }
-                        classData={ akData.historicalClassData(Region.EN) }
+                        rarityData={ akData.historicalRarityData() }
+                        classData={ akData.historicalClassData() }
                         classRarityData={ akData.classRarityData() }
                         rarityGenderData={ akData.rarityGenderData() }
                         classGenderData={ akData.classGenderData() }
