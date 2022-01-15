@@ -78,7 +78,7 @@ function NavBar (params: NavBarParams) {
 					  Home
 					</a>
 					<a className={ analyticsClass } onClick={ params.goToAnalytics }>
-					  Analytics	
+					  Visualizations
 					</a>
 					<a className={ dataClass } onClick={ params.goToData }>
 						Data
@@ -121,7 +121,9 @@ function AboutPage () {
     <div className="section">
       <div className="block">
         <h1 className="title">About</h1>
+        <p>
         This website is intended for analyzing and visualizing data for headhunting in Arknights video game by Hypergryph/Yostar.
+        </p>
       </div>
       <div className="block">
         <h1 className="title">Fair Use Disclaimer</h1>
@@ -142,20 +144,22 @@ function AboutPage () {
       </div>
       <div className="block">
         <h1 className="title">Attributions</h1>
-        <h2 className="subtitle">Special thanks to:</h2>
-        <ul>
-          <li><a href="https://www.arknights.global/">Hypergryph/Yostar</a> for creating the game</li>
-          <li><a href="https://aceship.github.io/AN-EN-Tags/index.html">Aceship</a> for in-game assets</li>
-          <li><a href="https://github.com/Kengxxiao/ArknightsGameData">Kengxxiao</a> for in-game data</li>
-          <li><a href="https://gamepress.gg/arknights/">GamePress.com</a> for historical banner information</li>
-        </ul>
+        <p>
+          <h2 className="subtitle">Special thanks to:</h2>
+          <ul>
+            <li><a href="https://www.arknights.global/">Hypergryph/Yostar</a> for creating the game</li>
+            <li><a href="https://aceship.github.io/AN-EN-Tags/index.html">Aceship</a> for in-game assets</li>
+            <li><a href="https://github.com/Kengxxiao/ArknightsGameData">Kengxxiao</a> for in-game data</li>
+            <li><a href="https://gamepress.gg/arknights/">GamePress.com</a> for historical banner information</li>
+          </ul>
+        </p>
       </div>
       <div className="block">
         <h2 className="subtitle">This website was created using:</h2>
         <ul>
-          <li><a href="https://reactjs.org/">React</a>&nbsp;- Javascriont Frontend Framework</li>
-          <li><a href="https://bulma.io/">Bulma</a>&nbsp;- responsive CSS framework</li>
-          <li><a href="https://www.ag-grid.com/">AG Grid</a>&nbsp;- Javascript grid and charts</li>
+          <li><a href="https://reactjs.org/">React</a>&nbsp;- Javascript frontend framework</li>
+          <li><a href="https://bulma.io/">Bulma</a>&nbsp;- Responsive CSS framework</li>
+          <li><a href="https://www.ag-grid.com/">AG Grid</a>&nbsp;- Javascript grids and charts</li>
         </ul>
       </div>
     </div>
