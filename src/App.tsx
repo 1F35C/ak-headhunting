@@ -1,5 +1,6 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
+import { HomePage } from './Home';
 import { AnalyticsPage } from './Analytics';
 import { DataTablePage } from './DataTable';
 import { AKData } from './AKData';
@@ -166,11 +167,11 @@ function getTabContent(tab: AppTab, akData: AKData) {
   switch(tab) {
     case AppTab.Home:
       return (
-        <div>home</div>
+        <HomePage />
       );
     case AppTab.Analytics:
       return (
-        <AnalyticsPage akdata={ akData }/>
+        <AnalyticsPage />
       );
     case AppTab.Data:
       return (

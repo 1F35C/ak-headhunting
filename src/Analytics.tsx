@@ -644,27 +644,25 @@ function OperatorDemography(params: OperatorDemographyParams) {
   );
 }
 
-type AnalyticsPageParams = {
-  akdata: AKData
-};
-export function AnalyticsPage(params: AnalyticsPageParams) {
+export function AnalyticsPage() {
+  let akData = useAKData();
   return (
     <>
-    <CertShop debutBannerDurationData={ params.akdata.debutBannerDuration(Region.EN) }
-              nonDebutBannerDurationData={ params.akdata.nonDebutBannerDuration(Region.EN) }
-              certShop5StarDelayData={ params.akdata.certificateShop5StarDelay() }
-              certShop6StarDelayData={ params.akdata.certificateShop6StarDelay() } />
-    <Banner globalReleaseDelayData={ params.akdata.globalReleaseDelayData() }
-            quarterlyOperatorReleaseData={ params.akdata.quarterlyOperatorReleaseData() } />
-    <OperatorDemography genderData={ params.akdata.historicalGenderData() }
-                        raceData={ params.akdata.raceData() }
-                        factionData={ params.akdata.factionData() }
-                        rarityData={ params.akdata.rarityData() }
-                        classData={ params.akdata.classData() }
-                        classRarityData={ params.akdata.classRarityData() }
-                        rarityGenderData={ params.akdata.rarityGenderData() }
-                        classGenderData={ params.akdata.classGenderData() }
-                        heightData={ params.akdata.heightData() } />
+    <CertShop debutBannerDurationData={ akData.debutBannerDuration(Region.EN) }
+              nonDebutBannerDurationData={ akData.nonDebutBannerDuration(Region.EN) }
+              certShop5StarDelayData={ akData.certificateShop5StarDelay() }
+              certShop6StarDelayData={ akData.certificateShop6StarDelay() } />
+    <Banner globalReleaseDelayData={ akData.globalReleaseDelayData() }
+            quarterlyOperatorReleaseData={ akData.quarterlyOperatorReleaseData() } />
+    <OperatorDemography genderData={ akData.historicalGenderData() }
+                        raceData={ akData.raceData() }
+                        factionData={ akData.factionData() }
+                        rarityData={ akData.rarityData() }
+                        classData={ akData.classData() }
+                        classRarityData={ akData.classRarityData() }
+                        rarityGenderData={ akData.rarityGenderData() }
+                        classGenderData={ akData.classGenderData() }
+                        heightData={ akData.heightData() } />
     </>
   );
 }
