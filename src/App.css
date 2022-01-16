@@ -50,3 +50,11 @@
   height: 100%;
   width: 180px;
 }
+
+.six-star-bordered {
+  border: 2px solid orange;
+}
+
+.five-star-bordered {
+  border: 2px solid yellow;
+}

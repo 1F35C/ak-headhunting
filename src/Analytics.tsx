@@ -211,11 +211,11 @@ type DragGrab = {
   scrollX: number
 }
 
-type CertShopOperatorsParams = {
+export type CertShopOperatorsParams = {
   operators: Operator[],
   predictions: number[]
 }
-function CertShopOperators(params: CertShopOperatorsParams) {
+export function CertShopOperators(params: CertShopOperatorsParams) {
   let [dragGrab, setDragGrab] = useState<DragGrab | null>(null);
 
   let shopOperatorCardColumns = params.operators.map((op, idx) => {
@@ -311,12 +311,12 @@ function CertShop(params: CertShopParams) {
                 Since a new 6* operator is released more often than once every 3 banners, the wait time for shop debut will continue to increase until this pattern changes.
               </p>
             </div>
-            <div className="block columns is-desktop">
-              <div className="column is-full-tablet is-half-desktop">
+            <div className="columns is-desktop">
+              <div className="column is-half-desktop">
                 <BannerDurationChart debutBannerDurationData={ params.debutBannerDurationData }
                                      nonDebutBannerDurationData={ params.nonDebutBannerDurationData } />
               </div>
-              <div className="column is-full-tablet is-half-desktop">
+              <div className="column is-half-desktop">
                 <ShopDebutWaitChart certShop5StarDelayData={ params.certShop5StarDelayData }
                                     certShop6StarDelayData={ params.certShop6StarDelayData } />
               </div>

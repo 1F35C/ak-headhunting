@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { GridApi, GridReadyEvent, ICellRendererParams, ValueFormatterParams, RowClassParams } from 'ag-grid-community';
 import { AgGridColumn, AgGridReact } from 'ag-grid-react';
 import { getImage, Operator, OperatorDict } from './AKData';
+import { daysSince } from './util';
 
 import 'ag-grid-community/dist/styles/ag-grid.css';
 import 'ag-grid-community/dist/styles/ag-theme-alpine.css';
@@ -30,10 +31,6 @@ const MILLISECONDS_IN_DAY = 3600 * 1000 * 24;
 
 function days(unixInterval: number): number {
   return Math.floor(unixInterval / MILLISECONDS_IN_DAY);
-}
-
-function daysSince(unixTime: number): number {
-  return days(Date.now() - unixTime)
 }
 
 function dateValueFormatter(params:ValueFormatterParams): string {
@@ -98,10 +95,10 @@ export function DataTablePage(params: DataTablePageParams) {
 
   useEffect(() => {
     let featured = Object.values(params.operators).map(op => {
-      let lastFeatured = (op.EN && op.EN.featured.length > 0) ? daysSince(op.EN.featured[op.EN.featured.length - 1].end) : Infinity;
-      let timesFeatured = (op.EN) ? op.EN.featured.length : 0;
-      let lastInShop = (op.EN && op.EN.shop.length > 0) ? daysSince(op.EN.shop[op.EN.shop.length - 1].end) : Infinity;
-      let timesInShop = (op.EN) ? op.EN.shop.length : 0;
+      let lastFeatured = (op.EN.featured.length > 0) ? daysSince(op.EN.featured[op.EN.featured.length - 1].end) : Infinity;
+      let timesFeatured = op.EN.featured.length;
+      let lastInShop = (op.EN.shop.length > 0) ? daysSince(op.EN.shop[op.EN.shop.length - 1].end) : Infinity;
+      let timesInShop = op.EN.shop.length;
       return {
         name: op.name,
         rarity:  op.rarity.toString() + (op.limited ? " (LIMITED)" : ""),

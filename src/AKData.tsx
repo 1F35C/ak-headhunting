@@ -1,4 +1,4 @@
-import { unixTimeDeltaToDays, TimeUnit, getQuarter } from './util';
+import { daysSince, unixTimeDeltaToDays, TimeUnit, getQuarter } from './util';
 
 const PUBLIC_URL = '/ak-headhunting';
 
@@ -147,6 +147,14 @@ export class AKData {
     return this._banners[this._region];
   }
 
+  lastFeatured(op: Operator): number {
+    return (op[this._region].featured.length > 0) ? daysSince(op[this._region].featured[op.EN.featured.length - 1].end) : Infinity;
+  }
+
+  lastInShop(op: Operator): number {
+    return (op[this._region].shop.length > 0) ? daysSince(op[this._region].shop[op.EN.shop.length - 1].end) : Infinity;
+  }
+
   latestOperator(): Operator {
     const lastReleaseDate = this._sortedOperators[this._sortedOperators.length - 1][this._region].released;
     let latestBatch = this._sortedOperators
@@ -180,12 +188,18 @@ export class AKData {
     return result;
   }
 
-  overdueFeatured(): Operator[] {
-    return [];
+  overdueFeatured(rarity: number, count: number=10): Operator[] {
+    return this._sortedOperators
+        .filter(op => op.rarity === rarity && op[this._region].featured.length > 0 && !op.limited)
+        .sort((op1, op2) => this.lastFeatured(op1) < this.lastFeatured(op2) ? 1 : -1)
+        .slice(0, count);
   }
 
-  overdueShop(): Operator[] {
-    return [];
+  overdueShop(rarity: number, count: number=10): Operator[] {
+    return this._sortedOperators
+        .filter(op => op.rarity === rarity && op[this._region].shop.length > 0 && !op.limited)
+        .sort((op1, op2) => this.lastInShop(op1) < this.lastInShop(op2) ? 1 : -1)
+        .slice(0, count);
   }
 
   recentAndUpcomingShopOperators(before: number, after: number): [Operator[], number[]] {
