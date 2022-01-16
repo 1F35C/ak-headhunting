@@ -1,51 +1,5 @@
 import { daysSince, unixTimeDeltaToDays, TimeUnit, getQuarter } from './util';
-
-const PUBLIC_URL = '/ak-headhunting';
-
-export enum Region {
-  EN = "EN",
-  CN = "CN"
-}
-
-export type ReleaseInfo = {
-  released: number;
-  featured: BannerInfo[];
-  shop: BannerInfo[];
-}
-
-export type Operator = {
-  name: string;
-  class: string;
-  rarity: number;
-  gender: string;
-  height: number;
-  race: string;
-  headhunting: boolean;
-  recruitment: boolean;
-  limited: boolean;
-  birthday: [number, number];
-  event: boolean;
-  faction: string;
-  subfaction: string;
-  release_date_en: number;
-  EN: ReleaseInfo;
-  CN: ReleaseInfo;
-}
-
-export type OperatorDict = { [id: string]: Operator }
-
-type BannerInfo = {
-  start: number,
-  end: number,
-  title: string,
-  featured: string[],
-  shop: string[],
-  isLimited: boolean,
-  shopDebut6Star: string[],
-  shopDebut5Star: string[],
-  isEvent: boolean,
-  isRotating: boolean
-}
+import { AnyDict, BannerInfo, Operator, OperatorDict, Region, ReleaseInfo } from './Types';
 
 type BannerDict = { [key in Region]: BannerInfo[] };
 
@@ -108,12 +62,9 @@ function birthdayDelta(now: Date, op: Operator): number {
 
 export class AKData {
   _region: Region;
-  _operators: OperatorDict = {};
+  _operators: OperatorDict;
   _sortedOperators: Operator[];
-  _banners: BannerDict = {
-    [Region.EN]: [],
-    [Region.CN]: []
-  };
+  _banners: BannerDict;
   
   constructor(region: Region) {
     if (AKData._instance !== null) {
@@ -398,16 +349,4 @@ export class AKData {
   }
 }
 
-const IMAGES: { [id: string]: { [id: string]: string } } = require('./images.json');
-
-export function getImage(context: string, value: string): string {
-  if (context in IMAGES && value in IMAGES[context]) {
-    if (window.location.href.toLowerCase().includes('localhost')) {
-      return IMAGES[context][value];
-    } else {
-      return PUBLIC_URL + IMAGES[context][value];
-    }
-  }
-  throw new Error("Image could not be found");
-}
 

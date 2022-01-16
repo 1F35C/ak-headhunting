@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import { GridApi, GridReadyEvent, ICellRendererParams, ValueFormatterParams, RowClassParams } from 'ag-grid-community';
 import { AgGridColumn, AgGridReact } from 'ag-grid-react';
-import { getImage, Operator, OperatorDict } from './AKData';
-import { daysSince } from './util';
+import { Operator, OperatorDict } from './Types';
+import { getImage, daysSince } from './util';
 
 import 'ag-grid-community/dist/styles/ag-grid.css';
 import 'ag-grid-community/dist/styles/ag-theme-alpine.css';

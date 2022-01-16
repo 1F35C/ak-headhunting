@@ -2,11 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { AgChartsReact } from 'ag-charts-react';
 import * as agCharts from 'ag-charts-community';
 import {
-  getImage,
-  Operator,
   AKData,
-  Region,
-  ReleaseInfo,
   HistoricalNumericDataPoint,
   PeriodicAggregateData,
   HistoricalAnnotatedNumericDataPoint,
@@ -15,10 +11,10 @@ import {
   AggregateData2D,
   HistoricalAggregateDataPoint
 } from './AKData';
-import { daysSince } from './util';
+import { daysSince, getImage } from './util';
 import { useAKData } from './DataContext';
-
-type AnyDict = { [id: string]: any }
+import { AnyDict } from './Types';
+import { CertShopOperators } from './Elements';
 
 type BannerParams = {
   globalReleaseDelayData: HistoricalAggregateDataPoint[]
@@ -149,139 +145,6 @@ function ShopDebutWaitChart(params: ShopDebutWaitChartParams) {
   );
 };
 
-type ShopOperatorCardParams = {
-  operator: Operator,
-  prediction: number
-}
-
-function shopOperatorStatus(releaseInfo: ReleaseInfo, prediction: number) {
-  if (releaseInfo.shop.length === 0) {
-    return (
-      <>
-      Expected<br />
-      <strong>in { -daysSince(prediction) }d</strong>
-      </>
-    );
-  } else if (releaseInfo.shop[0].start < Date.now() && Date.now() < releaseInfo.shop[0].end) {
-    return (
-      <>
-      Currently Active
-      </>
-    );
-  }
-  return (
-    <>
-    Debuted<br />
-    <strong>{ daysSince(releaseInfo.shop[0].start) }d ago</strong>
-    </>
-  ); 
-
-}
-
-function ShopOperatorCard(params:ShopOperatorCardParams) {
-  let releaseInfo = params.operator.EN;
-  let daysSinceRelease = daysSince(releaseInfo.released);
-  let status = shopOperatorStatus(releaseInfo, params.prediction);
-  return (
-    <div className="card operator-card">
-      <div className="card-image">
-        <figure className="image is-1by1">
-          <img src={ getImage('portraits', params.operator.name) }
-               title={ params.operator.name }
-               style={ { pointerEvents: 'none' } }
-               alt="" />
-        </figure>
-      </div>
-      <div className="card-content">
-        <div className="title is-4">{ params.operator.name }</div>
-        <p>
-        Released<br />
-        <strong>{ daysSinceRelease }d ago</strong>
-        </p>
-        { status }
-        <p>
-        </p>
-      </div>
-    </div>
-  );
-}
-
-type DragGrab = {
-  grabX: number,
-  scrollX: number
-}
-
-export type CertShopOperatorsParams = {
-  operators: Operator[],
-  predictions: number[]
-}
-export function CertShopOperators(params: CertShopOperatorsParams) {
-  let [dragGrab, setDragGrab] = useState<DragGrab | null>(null);
-
-  let shopOperatorCardColumns = params.operators.map((op, idx) => {
-    return (
-      <div className="column" key={ op.name }>
-        <ShopOperatorCard operator={ op } prediction={ params.predictions[idx] }/>
-      </div>
-    );
-  });
-
-  useEffect(() => {
-    const container = document.getElementById("operator-card-container");
-    if (!container) {
-      throw new Error("Operator card container not found");
-    }
-
-    // Center container
-    let scrollAmount = (container.scrollWidth - container.offsetWidth) / 2;
-    container.scrollLeft = scrollAmount;
-
-    (() => {
-      // Use closure to keep the scope tight for these variable
-      let dragGrab: DragGrab | null = null;
-      const container = document.getElementById("operator-card-container");
-
-      if (!container) {
-        throw new Error('container could not be found');
-      }
-
-      const mouseMove = (ev: MouseEvent) => {
-        if (dragGrab === null) {
-          return false;
-        }
-        container.scrollLeft = dragGrab.scrollX - (ev.clientX - dragGrab.grabX);
-        return false;
-      };
-
-      const mouseUp = (ev: MouseEvent) => {
-        setDragGrab(null);
-        window.removeEventListener('mousemove', mouseMove);
-        window.removeEventListener('mouseup', mouseUp);
-      };
-
-      const mouseDown = (ev: MouseEvent) => {
-        dragGrab = {
-          grabX: ev.clientX,
-          scrollX: container.scrollLeft
-        };
-        window.addEventListener('mousemove', mouseMove);
-        window.addEventListener('mouseup', mouseUp);
-      };
-
-      container.addEventListener('mousedown', mouseDown);
-    })();
-  }, []);
-  
-
-  return (
-    <div id="operator-card-container">
-      <div className="columns is-mobile">
-        { shopOperatorCardColumns }
-      </div>
-    </div>
-  );
-}
-
 type CertShopParams = BannerDurationChartParams & ShopDebutWaitChartParams;
 function CertShop(params: CertShopParams) {
   // Don't access akData from here?
@@ -294,7 +157,10 @@ function CertShop(params: CertShopParams) {
         Certficate Shop
       </div>
       <div className="block">
-        <CertShopOperators operators={ shopOperators } predictions={ predictions } />
+        <CertShopOperators
+            operators={ shopOperators }
+            predictions={ predictions }
+            focus="center" />
       </div>
       <div className="block">
         <div className="message is-info">
