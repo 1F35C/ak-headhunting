@@ -23,6 +23,7 @@ export type Operator = {
   headhunting: boolean;
   recruitment: boolean;
   limited: boolean;
+  birthday: [number, number];
   event: boolean;
   faction: string;
   subfaction: string;
@@ -92,6 +93,19 @@ function indexOfLatestShopOperator(operators: Operator[], region: Region): numbe
   return -1;
 }
 
+function birthdayDelta(now: Date, op: Operator): number {
+  if (op.birthday === null) {
+    return Infinity;
+  }
+  let birthday = new Date(now.getFullYear(), op.birthday[0] - 1, op.birthday[1]);
+  let delta = Math.ceil((birthday.valueOf() - now.valueOf()) / TimeUnit.DAY);
+  if (delta < 0) {
+    birthday = new Date(now.getFullYear() + 1, op.birthday[0] - 1, op.birthday[1]);
+    delta = Math.ceil((birthday.valueOf() - now.valueOf()) / TimeUnit.DAY);
+  }
+  return delta;
+}
+
 export class AKData {
   _region: Region;
   _operators: OperatorDict = {};
@@ -129,8 +143,49 @@ export class AKData {
     return this._operators;
   }
   
-  banners(region: Region): BannerInfo[] {
-    return this._banners[region];
+  banners(): BannerInfo[] {
+    return this._banners[this._region];
+  }
+
+  latestOperator(): Operator {
+    const lastReleaseDate = this._sortedOperators[this._sortedOperators.length - 1][this._region].released;
+    let latestBatch = this._sortedOperators
+        .filter(op => op[this._region].released === lastReleaseDate)
+        .sort((op1, op2) => {
+          // Sort by rarity, then limited
+          if (op1.rarity === op2.rarity) {
+            if (op1.limited && op2.limited) { return 0; }
+            return op1.limited ? -1 : 1;
+          }
+          return op1.rarity < op2.rarity ? 1 : -1;
+        });
+    return latestBatch[0];
+  }
+  
+  // If there are operators whose birthdays are today, return that
+  // Otherwise, return operators whose birthdays are the next closest day.
+  upcomingBirthdays(): Operator[] {
+    let result: Operator[] = Array.of();
+    const now = new Date();
+    let closest = Infinity;
+    this._sortedOperators.forEach(op => {
+      let delta = birthdayDelta(now, op);
+      if (delta === closest) {
+        result.push(op);
+      } else if (delta < closest) {
+        result = Array.of(op);
+        closest = delta;
+      }
+    });
+    return result;
+  }
+
+  overdueFeatured(): Operator[] {
+    return [];
+  }
+
+  overdueShop(): Operator[] {
+    return [];
   }
 
   recentAndUpcomingShopOperators(before: number, after: number): [Operator[], number[]] {
@@ -223,7 +278,6 @@ export class AKData {
         lastReleased = quarter;
       }
       if (operator.event) {
-        console.log(operator);
         result[result.length - 1]['data']['event']++;
       } else if (operator.limited) {
         result[result.length - 1]['data']['limited']++;

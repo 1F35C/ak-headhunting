@@ -324,10 +324,6 @@ function CertShop(params: CertShopParams) {
           </div>
         </div>
       </div>
-      <div className="box">
-        TODO: Featured operator wait histogram<br />
-        TODO: Shop operator wait histogram
-      </div>
     </div>
   );
 }

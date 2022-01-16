@@ -7,8 +7,10 @@ function OperatorDurationTable(params: OperatorDurationTable) {
   return (
     <table className="table">
       <thead>
-        <th>Operator</th>
-        <th>{params.durationColumnTitle }</th>
+        <tr>
+          <th>Operator</th>
+          <th>{params.durationColumnTitle }</th>
+        </tr>
       </thead>
       <tbody>
         <tr>
@@ -22,7 +24,7 @@ function OperatorDurationTable(params: OperatorDurationTable) {
 
 export function HomePage() {
   let akData = useAKData();
-
+  let latestOperator = akData.latestOperator();
   return (
     <>
       <div className="section">
@@ -31,27 +33,21 @@ export function HomePage() {
             <div className="level-item has-text-centered">
               <div>
                 <p className="heading">Operators on Record</p>
-                <p className="title">321</p>
+                <p className="title">{ Object.keys(akData.operators()).length }</p>
               </div>
             </div>
             <div className="level-item has-text-centered">
               <div>
                 <p className="heading">Banners on Record</p>
-                <p className="title">123</p>
+                <p className="title">{ akData.banners().length }</p>
               </div>
             </div>
             <div className="level-item has-text-centered">
               <div>
-                <p className="heading">CN Delay for latest operator</p>
-                <p><h1 className="title">123d</h1></p>
-                <p className="subtitle">(Ch'en the Holungday)</p>
-              </div>
-            </div>
-            <div className="level-item has-text-centered">
-              <div>
-                <p className="heading">Upcoming Birthday</p>
-                <p><h1 className="title">Kroos</h1></p>
-                <p className="subtitle">(December 07)</p>
+                <p className="heading">Latest Operator Delay (vs. CN)</p>
+                <p className="title">123d</p>
+                <p />
+                <p className="subtitle">({ latestOperator.name })</p>
               </div>
             </div>
           </div>
@@ -59,12 +55,30 @@ export function HomePage() {
       </div>
       <div className="section">
         <h1 className="title">Overdue Operators</h1>
-        <div className="columns">
+        <div className="columns is-desktop">
           <div className="column">
-            <OperatorDurationTable durationColumnTitle="Days since Featured" />
+            <div className="box">
+              <div className="columns is-desktop">
+                <div className="column is-half">
+                  <OperatorDurationTable durationColumnTitle="Days since Featured" />
+                </div>
+                <div className="column is-half">
+                  <OperatorDurationTable durationColumnTitle="Days since Shop Apprearance" />
+                </div>
+              </div>
+            </div>
           </div>
           <div className="column">
-            <OperatorDurationTable durationColumnTitle="Days since Shop Apprearance" />
+            <div className="box">
+              <div className="columns is-desktop">
+                <div className="column is-half">
+                  <OperatorDurationTable durationColumnTitle="Days since Featured" />
+                </div>
+                <div className="column is-half">
+                  <OperatorDurationTable durationColumnTitle="Days since Shop Apprearance" />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
