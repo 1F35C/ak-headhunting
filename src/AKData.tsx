@@ -147,14 +147,14 @@ export class AKData {
 
   overdueFeatured(rarity: number, count: number=10): Operator[] {
     return this._sortedOperators
-        .filter(op => op.rarity === rarity && !op.limited)
+        .filter(op => op.rarity === rarity && !op.limited && op.headhunting)
         .sort((op1, op2) => this.featuredWait(op1) < this.featuredWait(op2) ? 1 : -1)
         .slice(0, count);
   }
 
   overdueShop(rarity: number, count: number=10): Operator[] {
     return this._sortedOperators
-        .filter(op => op.rarity === rarity && !op.limited)
+        .filter(op => op.rarity === rarity && !op.limited && op.headhunting)
         .sort((op1, op2) => this.shopWait(op1) < this.shopWait(op2) ? 1 : -1)
         .slice(0, count);
   }
@@ -163,14 +163,14 @@ export class AKData {
     let sum = 0;
     let count = 0;
     this._sortedOperators
-        .filter(op => op.rarity === rarity && !op.limited)
+        .filter(op => op.rarity === rarity && !op.limited && op.headhunting)
         .forEach(op => {
       const featured = op[this._region].featured;
       for (let idx = 1; idx < featured.length; ++idx) {
         sum += featured[idx].start - featured[idx - 1].end;
         count++;
       }
-      if (featured.length > 0) {
+      if (featured.length > 0 && featured[0].start !== op[this._region].released) {
         sum += featured[0].start - op[this._region].released;
         count++;
       }
@@ -182,47 +182,19 @@ export class AKData {
     let sum = 0;
     let count = 0;
     this._sortedOperators
-        .filter(op => op.rarity === rarity && !op.limited)
+        .filter(op => op.rarity === rarity && !op.limited && op.headhunting)
         .forEach(op => {
       const shop = op[this._region].shop;
       for (let idx = 1; idx < shop.length; ++idx) {
         sum += shop[idx].start - shop[idx - 1].end;
         count++;
       }
-      if (shop.length > 0) {
+      if (shop.length > 0 && shop[0].start !== op[this._region].released) {
         sum += shop[0].start - op[this._region].released;
         count++;
       }
     });
     return unixTimeDeltaToDays(sum / count);
-  }
-
-  getFeaturedMax(rarity: number): number {
-    let max = 0;
-    this._sortedOperators
-        .filter(op => op.rarity === rarity && op[this._region].featured.length > 0 && !op.limited)
-        .forEach(op => {
-      const featured = op[this._region].featured;
-      for (let idx = 1; idx < featured.length; ++idx) {
-        const gap = featured[idx].start - featured[idx - 1].start;
-        if (gap > max) { max = gap; }
-      }
-    });
-    return unixTimeDeltaToDays(max);
-  }
-
-  getShopMax(rarity: number): number {
-    let max = 0;
-    this._sortedOperators
-        .filter(op => op.rarity === rarity && op[this._region].shop.length > 0 && !op.limited)
-        .forEach(op => {
-      const shop = op[this._region].shop;
-      for (let idx = 1; idx < shop.length; ++idx) {
-        const gap = shop[idx].start - shop[idx - 1].start;
-        if (gap > max) { max = gap; }
-      }
-    });
-    return unixTimeDeltaToDays(max);
   }
 
   recentAndUpcomingShopOperators(before: number, after: number): [Operator[], number[]] {

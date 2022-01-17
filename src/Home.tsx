@@ -12,10 +12,9 @@ type OperatorDurationTable = {
   durationColumnTitle: string
   data: OperatorDuration[]
   average: number
-  max: number
 }
 function OperatorDurationTable(params: OperatorDurationTable) {
-  let max = Math.max(params.data[0].duration, params.max);
+  let max = params.data[0].duration;
   let rows = params.data.map(od => {
     return (
       <tr key={ od.op.name }>
@@ -117,14 +116,12 @@ export function HomePage() {
                 <div className="column">
                   <OperatorDurationTable durationColumnTitle="Featured Banner Wait"
                                          data={ featured6Star }
-                                         average={ akData.getFeaturedAverage(6) }
-                                         max={ akData.getFeaturedMax(6) } />
+                                         average={ akData.getFeaturedAverage(6) } />
                 </div>
                 <div className="column">
                   <OperatorDurationTable durationColumnTitle="Shop Wait"
                                          data={ shop6Star }
-                                         average={ akData.getShopAverage(6) }
-                                         max={ akData.getShopMax(6) } />
+                                         average={ akData.getShopAverage(6) } />
                 </div>
               </div>
             </div>
@@ -136,14 +133,12 @@ export function HomePage() {
                 <div className="column">
                   <OperatorDurationTable durationColumnTitle="Featured Banner Wait"
                                          data={ featured5Star }
-                                         average={ akData.getFeaturedAverage(5) }
-                                         max={ akData.getFeaturedMax(5) } />
+                                         average={ akData.getFeaturedAverage(5) } />
                 </div>
                 <div className="column">
                   <OperatorDurationTable durationColumnTitle="Shop Wait"
                                          data={ shop5Star }
-                                         average={ akData.getShopAverage(5) }
-                                         max={ akData.getShopMax(5) } />
+                                         average={ akData.getShopAverage(5) } />
                 </div>
               </div>
             </div>
