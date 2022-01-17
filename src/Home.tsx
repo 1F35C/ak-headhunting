@@ -108,8 +108,8 @@ export function HomePage() {
       </div>
       <div className="section">
         <h1 className="title">Overdue Operators</h1>
-        <div className="columns is-desktop">
-          <div className="column is-full-tablet is-half-desktop">
+        <div className="columns">
+          <div className="column is-full-tablet is-full-desktop is-half-widescreen">
             <div className="box six-star-bordered">
               <h1 className="subtitle">6-Star</h1>
               <div className="columns">
@@ -126,7 +126,7 @@ export function HomePage() {
               </div>
             </div>
           </div>
-          <div className="column is-full-tablet is-half-desktop">
+          <div className="column is-full-tablet is-full-desktop is-half-widescreen">
             <div className="box five-star-bordered">
               <h1 className="subtitle">5-Star</h1>
               <div className="columns">
