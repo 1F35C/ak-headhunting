@@ -59,8 +59,21 @@
   border: 2px solid yellow;
 }
 
-.inline {
+.operator-table img {
   height: 50px;
 }
 
+.operator-table tr {
+  line-height: 50px;
+}
+
+.operator-table span {
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.operator-table progress {
+  margin-left: 1em;
+}
 
