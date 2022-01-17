@@ -35,7 +35,7 @@ function OperatorDurationTable(params: OperatorDurationTable) {
       { rows }
       <tr key="average">
         <td><span>AVERAGE</span></td>
-        <td><span>{ params.average }d<progress className="progress is-primary" value={ params.average } max={ max }>{ params.average }</progress></span></td>
+        <td><span>{ params.average }d<progress className="progress" value={ params.average } max={ max }>{ params.average }</progress></span></td>
       </tr>
       </tbody>
     </table>
