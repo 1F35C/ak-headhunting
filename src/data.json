@@ -35,7 +35,12 @@
       },
       "EN": {
         "released": 1642158000000,
-        "featured": [],
+        "featured": [
+          {
+            "start": 1642158000000,
+            "end": 1643367600000
+          }
+        ],
         "shop": []
       }
     },
@@ -74,7 +79,12 @@
       },
       "EN": {
         "released": 1642158000000,
-        "featured": [],
+        "featured": [
+          {
+            "start": 1642158000000,
+            "end": 1643367600000
+          }
+        ],
         "shop": []
       }
     },
@@ -342,6 +352,10 @@
           {
             "start": 1632999600000,
             "end": 1634209200000
+          },
+          {
+            "start": 1642762800000,
+            "end": 1643972400000
           }
         ],
         "shop": []
@@ -936,9 +950,18 @@
           {
             "start": 1629975600000,
             "end": 1631185200000
+          },
+          {
+            "start": 1642676400000,
+            "end": 1643886000000
           }
         ],
-        "shop": []
+        "shop": [
+          {
+            "start": 1642676400000,
+            "end": 1643886000000
+          }
+        ]
       },
       "EN": {
         "released": 1611140400000,
@@ -1298,9 +1321,18 @@
           {
             "start": 1622199600000,
             "end": 1623409200000
+          },
+          {
+            "start": 1642762800000,
+            "end": 1643972400000
           }
         ],
-        "shop": []
+        "shop": [
+          {
+            "start": 1642762800000,
+            "end": 1643972400000
+          }
+        ]
       }
     },
     "Ceobe": {
@@ -3137,6 +3169,10 @@
           {
             "start": 1622113200000,
             "end": 1623322800000
+          },
+          {
+            "start": 1642676400000,
+            "end": 1643886000000
           }
         ],
         "shop": [
@@ -3662,7 +3698,12 @@
       },
       "EN": {
         "released": 1642158000000,
-        "featured": [],
+        "featured": [
+          {
+            "start": 1642158000000,
+            "end": 1643367600000
+          }
+        ],
         "shop": []
       }
     },
@@ -4032,6 +4073,10 @@
           {
             "start": 1626951600000,
             "end": 1628161200000
+          },
+          {
+            "start": 1642676400000,
+            "end": 1643886000000
           }
         ],
         "shop": []
@@ -5637,6 +5682,10 @@
           {
             "start": 1626174000000,
             "end": 1627383600000
+          },
+          {
+            "start": 1642762800000,
+            "end": 1643972400000
           }
         ],
         "shop": []
@@ -6499,12 +6548,20 @@
           {
             "start": 1623322800000,
             "end": 1624532400000
+          },
+          {
+            "start": 1642676400000,
+            "end": 1643886000000
           }
         ],
         "shop": [
           {
             "start": 1589454000000,
             "end": 1590404400000
+          },
+          {
+            "start": 1642676400000,
+            "end": 1643886000000
           }
         ]
       },
@@ -7107,9 +7164,18 @@
           {
             "start": 1622199600000,
             "end": 1623409200000
+          },
+          {
+            "start": 1642762800000,
+            "end": 1643972400000
           }
         ],
-        "shop": []
+        "shop": [
+          {
+            "start": 1642762800000,
+            "end": 1643972400000
+          }
+        ]
       }
     },
     "Pramanix": {
@@ -7725,6 +7791,10 @@
           {
             "start": 1631876400000,
             "end": 1633086000000
+          },
+          {
+            "start": 1642676400000,
+            "end": 1643886000000
           }
         ],
         "shop": [
@@ -8308,6 +8378,10 @@
           {
             "start": 1617361200000,
             "end": 1618570800000
+          },
+          {
+            "start": 1642762800000,
+            "end": 1643972400000
           }
         ],
         "shop": [
@@ -14218,6 +14292,47 @@
         "shopDebut5Star": [],
         "isEvent": false,
         "isRotating": true
+      },
+      {
+        "start": 1642158000000,
+        "end": 1643367600000,
+        "title": "[Holiday Stars] - [Limited Headhunting · Carnival] Series",
+        "featured": [
+          "Ch'en the Holungday",
+          "Mizuki",
+          "La Pluma"
+        ],
+        "shop": [],
+        "isLimited": true,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
+        "isEvent": true,
+        "isRotating": false
+      },
+      {
+        "start": 1642762800000,
+        "end": 1643972400000,
+        "title": "Standard Pool 54 (EN)",
+        "featured": [
+          "Mayer",
+          "Istina",
+          "Hung",
+          "Bagpipe",
+          "Passenger"
+        ],
+        "shop": [
+          "Bagpipe",
+          "Istina"
+        ],
+        "isLimited": false,
+        "shopDebut6Star": [
+          "Bagpipe"
+        ],
+        "shopDebut5Star": [
+          "Istina"
+        ],
+        "isEvent": false,
+        "isRotating": true
       }
     ],
     "CN": [
@@ -15485,12 +15600,12 @@
       {
         "start": 1599562800000,
         "end": 1600167600000,
-        "title": "Heart of Steel, The Rage Ironhide Retrospection",
+        "title": "Unbound Reflux Retrospection",
         "featured": [
-          "Meteorite",
-          "Aciddrop",
-          "Flint",
-          "Eunectes"
+          "Provence",
+          "Jaye",
+          "Andreana",
+          "Thorns"
         ],
         "shop": [],
         "isLimited": false,
@@ -15502,12 +15617,12 @@
       {
         "start": 1599562800000,
         "end": 1600167600000,
-        "title": "Unbound Reflux Retrospection",
+        "title": "Heart of Steel, The Rage Ironhide Retrospection",
         "featured": [
-          "Provence",
-          "Jaye",
-          "Andreana",
-          "Thorns"
+          "Meteorite",
+          "Aciddrop",
+          "Flint",
+          "Eunectes"
         ],
         "shop": [],
         "isLimited": false,
@@ -16359,7 +16474,7 @@
       {
         "start": 1627988400000,
         "end": 1629198000000,
-        "title": "[Limited Headhunting · Summer] Series – [Summer Stars]",
+        "title": "[Holiday Stars] - [Limited Headhunting · Carnival] Series",
         "featured": [
           "Ch'en the Holungday",
           "Mizuki",
@@ -16794,6 +16909,45 @@
         "shopDebut5Star": [],
         "isEvent": false,
         "isRotating": true
+      },
+      {
+        "start": 1642676400000,
+        "end": 1643886000000,
+        "title": "Standard Pool 72",
+        "featured": [
+          "Liskarm",
+          "Eyjafjalla",
+          "Swire",
+          "Thorns",
+          "Mr. Nothing"
+        ],
+        "shop": [
+          "Thorns",
+          "Swire"
+        ],
+        "isLimited": false,
+        "shopDebut6Star": [
+          "Thorns"
+        ],
+        "shopDebut5Star": [],
+        "isEvent": false,
+        "isRotating": true
+      },
+      {
+        "start": 1643108400000,
+        "end": 1644318000000,
+        "title": "Unrestrained Liquor, Pellucid Heart - Spring Festival Series Limited Headhunting",
+        "featured": [
+          "Ling",
+          "Lee",
+          "Blacknight"
+        ],
+        "shop": [],
+        "isLimited": true,
+        "shopDebut6Star": [],
+        "shopDebut5Star": [],
+        "isEvent": true,
+        "isRotating": false
       }
     ]
   }
