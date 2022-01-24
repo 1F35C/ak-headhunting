@@ -108,39 +108,33 @@ export function HomePage() {
       </div>
       <div className="section">
         <h1 className="title">Overdue Operators</h1>
-        <div className="columns">
-          <div className="column is-full-tablet is-full-desktop is-half-widescreen">
-            <div className="box six-star-bordered">
-              <h1 className="subtitle">6-Star</h1>
-              <div className="columns">
-                <div className="column">
-                  <OperatorDurationTable durationColumnTitle="Featured Banner Wait"
-                                         data={ featured6Star }
-                                         average={ akData.getFeaturedAverage(6) } />
-                </div>
-                <div className="column">
-                  <OperatorDurationTable durationColumnTitle="Shop Wait"
-                                         data={ shop6Star }
-                                         average={ akData.getShopAverage(6) } />
-                </div>
-              </div>
+        <div className="box six-star-bordered">
+          <h1 className="subtitle">6-Star</h1>
+          <div className="columns">
+            <div className="column">
+              <OperatorDurationTable durationColumnTitle="Featured Banner Wait"
+                                     data={ featured6Star }
+                                     average={ akData.getFeaturedAverage(6) } />
+            </div>
+            <div className="column">
+              <OperatorDurationTable durationColumnTitle="Shop Wait"
+                                     data={ shop6Star }
+                                     average={ akData.getShopAverage(6) } />
             </div>
           </div>
-          <div className="column is-full-tablet is-full-desktop is-half-widescreen">
-            <div className="box five-star-bordered">
-              <h1 className="subtitle">5-Star</h1>
-              <div className="columns">
-                <div className="column">
-                  <OperatorDurationTable durationColumnTitle="Featured Banner Wait"
-                                         data={ featured5Star }
-                                         average={ akData.getFeaturedAverage(5) } />
-                </div>
-                <div className="column">
-                  <OperatorDurationTable durationColumnTitle="Shop Wait"
-                                         data={ shop5Star }
-                                         average={ akData.getShopAverage(5) } />
-                </div>
-              </div>
+        </div>
+        <div className="box five-star-bordered">
+          <h1 className="subtitle">5-Star</h1>
+          <div className="columns">
+            <div className="column">
+              <OperatorDurationTable durationColumnTitle="Featured Banner Wait"
+                                     data={ featured5Star }
+                                     average={ akData.getFeaturedAverage(5) } />
+            </div>
+            <div className="column">
+              <OperatorDurationTable durationColumnTitle="Shop Wait"
+                                     data={ shop5Star }
+                                     average={ akData.getShopAverage(5) } />
             </div>
           </div>
         </div>
