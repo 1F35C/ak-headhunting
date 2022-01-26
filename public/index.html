@@ -39,6 +39,8 @@
     if (!window.location.href.toLowerCase().includes('localhost')) {
       insights.init('H3h5I5kiOnG9RdfG');
       insights.trackPages();
+    } else {
+      console.log('Analytics disabled for localhost');
     }
     </script>
   </body>
